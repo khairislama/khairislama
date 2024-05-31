@@ -54,5 +54,5 @@
 
 <h3 align="left">GitHub Activity Graph:</h3>
 <p align="center">
-  <a href="https://github.com/ashutosh00710/github-readme-activity-graph"><img src="https://activity-graph.herokuapp.com/graph?username=khairislama&bg_color=ffffff&color=4caf50&line=4caf50&point=ff5722&area=true&hide_border=true" alt="GitHub Activity Graph" /></a>
+[![Khairi's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=khairislama)](https://github.com/ashutosh00710/github-readme-activity-graph)
 </p>
