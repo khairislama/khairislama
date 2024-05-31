@@ -38,21 +38,17 @@
 <a href="https://www.javascript.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a>
 </p>
 
+<h3 align="left">Quotes:</h3>
+<p align="left"><em>"Code is like humor. When you have to explain it, it’s bad."</em> - Cory House</p>
+
+<h3 align="left">GitHub Activity Graph:</h3>
+<p align="center">
+  <a href="https://github.com/ashutosh00710/github-readme-activity-graph"><img src="https://github-readme-activity-graph.vercel.app/graph?username=khairislama&theme=react-dark&hide_border=true" alt="GitHub Activity Graph" /></a>
+</p>
+
 <h3 align="left">GitHub Stats:</h3>
 <p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=khairislama&show_icons=true&locale=en&layout=compact" alt="khairislama" /></p>
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=khairislama&show_icons=true&locale=en" alt="khairislama" /></p>
 
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=khairislama&" alt="khairislama" /></p>
-
-
-<h3 align="left">Visitor Map:</h3>
-<p align="left"><img src="https://visitor-badge.glitch.me/badge?page_id=khairislama.visitor-badge" alt="visitor badge"/></p>
-
-<h3 align="left">Quotes:</h3>
-<p align="left"><em>"Code is like humor. When you have to explain it, it’s bad."</em> - Cory House</p>
-
-<h3 align="left">GitHub Activity Graph:</h3>
-<p align="center">
-[![Khairi's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=khairislama)](https://github.com/ashutosh00710/github-readme-activity-graph)
-</p>
