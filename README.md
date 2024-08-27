@@ -12,7 +12,6 @@
 - 🔭 I’m looking for prospects for my future plans.
 - 💬 Ask me about your deep thoughts and we'll have a long conversation.
 - 📫 How to reach me: khairi.slama.1996.br@gmail.com / +216 54 007 387 / Fb: khairi.slama / Linkedin: khairi-slama-808514187
-- ⚡ Fun fact: Everyone is special!
 - 🩵 I'd rather dance in the rain than cry in the storm.
 
 <h3 align="left">Connect with me:</h3>
