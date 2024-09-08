@@ -1,4 +1,8 @@
 {
+  "Navbar-top": {
+    "cv": "Download CV",
+    "language": "English"
+  },
   "Navbar": {
     "home": "Home",
     "about": "About",
