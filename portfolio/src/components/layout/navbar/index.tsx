@@ -10,7 +10,7 @@ function Navbar() {
       <NavbarTop />
       <nav className="h-10 md:h-12 lg:h-14 border-b-2 border-border bg-opacity-70 hover:bg-opacity-100 focus-within:bg-opacity-100 transition-all ease-in-out duration-300">
         <div className="flex items-center justify-between max-w-7xl mx-auto">
-          <div className="flex items-center justify-center gap-8">
+          <div className="flex items-center justify-center gap-10">
             <p>{translations("home")}</p>
             <p>{translations("about")}</p>
             <p>{translations("play")}</p>
