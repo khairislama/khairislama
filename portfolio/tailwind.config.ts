@@ -12,10 +12,6 @@ const config: Config = {
       colors: {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
-        navbar: {
-          background: "hsl(var(--navbar-background))",
-          foreground: "hsl(var(--navbar-foreground))",
-        },
         card: {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
@@ -81,6 +77,10 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+      },
+      fontFamily: {
+        rubik: ["var(--font-rubik)", "sans-serif"],
+        syne: ["var(--font-syne)", "sans-serif"],
       },
     },
   },
