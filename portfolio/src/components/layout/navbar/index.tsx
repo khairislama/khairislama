@@ -1,3 +1,4 @@
+import Avatar from "./Avatar";
 import NavbarTop from "./NavbarTop";
 import Navigation from "./Navigation";
 import SocialIcons from "./SocialIcons";
@@ -10,9 +11,7 @@ function Navbar() {
         <div className="relative flex items-center justify-between max-w-7xl mx-auto">
           <Navigation />
           <SocialIcons />
-          <div className="absolute border-2 border-border top-0 right-1/2 p-2 rounded-full">
-            KS
-          </div>
+          <Avatar />
         </div>
       </div>
     </header>

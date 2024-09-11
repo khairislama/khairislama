@@ -11,6 +11,27 @@ function SocialIcons() {
         className="w-8"
       />
       <Image
+        src="/icons/social/linkedin.svg"
+        alt="github carthabot"
+        width={20}
+        height={20}
+        className="w-8"
+      />
+      <Image
+        src="/icons/social/figma.svg"
+        alt="github carthabot"
+        width={20}
+        height={20}
+        className="w-8"
+      />
+      <Image
+        src="/icons/social/github.svg"
+        alt="github carthabot"
+        width={20}
+        height={20}
+        className="w-8"
+      />
+      <Image
         src="/icons/social/github.svg"
         alt="github carthabot"
         width={20}
