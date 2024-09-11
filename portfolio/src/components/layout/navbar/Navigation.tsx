@@ -1,14 +1,15 @@
 import { useTranslations } from "next-intl";
+import CustomLink from "./CustomLink";
 
 function Navigation() {
   const translations = useTranslations("Navbar");
   return (
     <nav className="flex items-center justify-center gap-6 uppercase ">
-      <p>{translations("home")}</p>
-      <p>{translations("about")}</p>
-      <p>{translations("play")}</p>
-      <p>{translations("projects")}</p>
-      <p>{translations("contact")}</p>
+      <CustomLink href="/" title={translations("home")} />
+      <CustomLink href="/" title={translations("about")} />
+      <CustomLink href="/" title={translations("play")} />
+      <CustomLink href="/" title={translations("projects")} />
+      <CustomLink href="/" title={translations("contact")} />
     </nav>
   );
 }
