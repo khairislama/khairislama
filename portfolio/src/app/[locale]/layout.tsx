@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Navbar } from "@/components/layout";
 import { Rubik, Syne } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -22,10 +23,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rubik.variable} ${syne.variable} antialiased debug-screens`}
+        className={`${rubik.variable} ${syne.variable} antialiased debug-screens bg-background`}
       >
-        <Navbar />
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
