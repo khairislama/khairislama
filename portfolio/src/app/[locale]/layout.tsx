@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rubik.variable} ${syne.variable} antialiased debug-screens bg-background`}
+        className={`${rubik.variable} ${syne.variable} antialiased debug-screens bg-background text-foreground/70`}
       >
         <ThemeProvider
           attribute="class"
