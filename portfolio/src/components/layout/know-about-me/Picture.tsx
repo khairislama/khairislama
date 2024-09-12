@@ -9,7 +9,7 @@ function Picture() {
           alt="Khairi SLAMA"
           width={705}
           height={969}
-          className="brightness-105"
+          className="brightness-105 w-full"
         />
       </div>
       <Image
@@ -24,7 +24,7 @@ function Picture() {
         alt="vertical rectangle"
         width={61}
         height={193}
-        className="absolute bottom-8 -left-10 z-20"
+        className="absolute -bottom-10 lg:bottom-8 left-0 lg:-left-10 z-20"
       />
     </div>
   );
