@@ -11,7 +11,7 @@ function Hero() {
       <div className="flex flex-col items-center justify-between max-w-3xl mx-auto mt-16 pb-16 z-20">
         <h1 className="text-3xl"> {translations("welcome")} </h1>
         <Picture />
-        <h2 className="text-center text-7xl uppercase font-bold text-primary mt-10">
+        <h2 className="text-center text-7xl uppercase font-bold text-foreground/70 mt-10">
           {translations("title")}
         </h2>
       </div>
@@ -21,7 +21,7 @@ function Hero() {
         alt="eclipse"
         width={1330}
         height={288}
-        className="absolute inset-0 object-cover w-full pointer-events-none brightness-125"
+        className="absolute inset-0 object-cover w-full pointer-events-none"
       />
       <Image
         src="/hero/background2.webp"
