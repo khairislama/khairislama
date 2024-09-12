@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <div className="h-96 bg-red-200 w-full"> {translations("home")} </div>
-      <div className="h-96 bg-red-200 w-full"> {translations("home")} </div>
+      <div className="h-96 w-full"> {translations("home")} </div>
+      <div className="h-96 w-full"> {translations("home")} </div>
       <div className="h-96 bg-red-200 w-full"> {translations("home")} </div>
       <div className="h-96 bg-green-200 w-full text-black">
         <h1 className="text-3xl font-bold">HELLLOOO there how are YOU gg</h1>
