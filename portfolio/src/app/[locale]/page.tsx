@@ -1,4 +1,3 @@
-import HireMe from "@/components/HireMe";
 import Hero from "@/components/layout/hero";
 import KnowAboutMe from "@/components/layout/know-about-me";
 import { useTranslations } from "next-intl";
@@ -21,7 +20,6 @@ export default function Home() {
           HELLLOOO there how are YOU gg
         </h1>
       </div>
-      <HireMe />
     </main>
   );
 }
