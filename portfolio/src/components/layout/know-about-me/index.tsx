@@ -8,7 +8,7 @@ function KnowAboutMe() {
     <section className="relative w-full my-16">
       <div className="max-w-7xl mx-auto flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-24 p-10 xl:p-0">
         <div className="my-auto flex flex-col gap-4 lg:gap-14">
-          <h2 className="font-syne font-bold text-5xl max-w-md">
+          <h2 className="font-syne font-bold text-5xl max-w-md text-balance">
             {" "}
             {translations("title")}{" "}
           </h2>

@@ -11,7 +11,7 @@ function Hero() {
       <div className="flex flex-col items-center justify-between max-w-3xl mx-auto mt-10 md:mt-14 lg:mt-16 pb-16 z-20">
         <h1 className="text-3xl"> {translations("welcome")} </h1>
         <Picture />
-        <h2 className="text-center text-5xl sm:text-6xl lg:text-7xl uppercase font-bold text-foreground/70 mt-10">
+        <h2 className="text-center text-5xl sm:text-6xl lg:text-7xl uppercase font-bold text-foreground/70 mt-10 text-balance">
           {translations("title")}
         </h2>
       </div>
