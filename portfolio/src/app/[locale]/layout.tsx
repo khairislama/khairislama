@@ -3,6 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout";
 import { Rubik, Syne } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import HireMe from "@/components/HireMe";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -33,6 +34,7 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
+          <HireMe />
         </ThemeProvider>
       </body>
     </html>

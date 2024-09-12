@@ -2,14 +2,14 @@ import Image from "next/image";
 
 function Picture() {
   return (
-    <div className="relative w-full h-[650px]">
-      <div className="w-full rounded-3xl overflow-hidden h-[650px]">
+    <div className="relative w-full h-[350px] sm:h-[650px]">
+      <div className="w-full rounded-3xl overflow-hidden h-full">
         <Image
-          src="/khairi SLAMA - graduation.webp"
+          src="/khairi-slama-graduation.webp"
           alt="Khairi SLAMA"
           width={705}
           height={969}
-          className="brightness-125 contrast-125"
+          className="brightness-105 w-full aspect-auto"
         />
       </div>
       <Image
@@ -24,7 +24,7 @@ function Picture() {
         alt="vertical rectangle"
         width={61}
         height={193}
-        className="absolute bottom-8 -left-10 z-20"
+        className="absolute -bottom-10 lg:bottom-8 left-0 lg:-left-10 z-20"
       />
     </div>
   );

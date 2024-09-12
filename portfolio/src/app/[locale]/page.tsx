@@ -1,5 +1,4 @@
-import Hero from "@/components/layout/hero";
-import KnowAboutMe from "@/components/layout/know-about-me";
+import { Hero, KnowAboutMe, Skills } from "@/components/layout";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
@@ -8,6 +7,7 @@ export default function Home() {
     <main className="">
       <Hero />
       <KnowAboutMe />
+      <Skills />
       <div className="h-96 w-full"> {translations("home")} </div>
       <div className="h-96 w-full"> {translations("home")} </div>
       <div className="h-96 bg-red-200 w-full"> {translations("home")} </div>
