@@ -12,7 +12,7 @@ const MotionLink = motion.create(Link);
 
 function Avatar() {
   return (
-    <TheAvatar className="absolute left-[50%] translate-x-[-50%]">
+    <TheAvatar className="absolute left-[50%] translate-x-[-50%] top-0">
       <MotionLink
         href="/"
         className="w-10 h-10 bg-foreground text-foreground flex items-center justify-center rounded-full text-2xl font-bold"
