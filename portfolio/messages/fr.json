@@ -1,9 +1,19 @@
 {
   "Navbar": {
-    "home": "Home",
-    "about": "About",
-    "play": "Play",
-    "projects": "Projects",
+    "cv": "Télécharger CV",
+    "home": "Accueil",
+    "about": "À propos",
+    "play": "Jouer",
+    "projects": "Projets",
     "contact": "Contact"
+  },
+  "Hero": {
+    "welcome": "Je suis Khairi",
+    "title": "Développeur logiciel mi-senior"
+  },
+  "KnowMe": {
+    "title": "Apprenons à mieux me connaître",
+    "description": "Diplômé en tant qu'ingénieur full stack avec une solide expérience en développement web et un fort accent sur la sécurité. Je suis passionné par l'idée de mettre mes compétences en œuvre sur des projets ambitieux et de livrer des solutions innovantes. Ce portfolio présente la diversité de mes réalisations, allant de conceptions web élégantes à des applications robustes et sécurisées. Mon parcours de développeur est animé par le désir de créer des solutions web performantes et impactantes.",
+    "call-to-action": "Découvrez-en plus sur moi"
   }
 }
