@@ -24,7 +24,7 @@ function Hero() {
         className="absolute inset-0 object-cover w-full pointer-events-none brightness-125"
       />
       <Image
-        src="/hero/background2.png"
+        src="/hero/background2.webp"
         alt="curvy lines"
         width={1200}
         height={1200}
