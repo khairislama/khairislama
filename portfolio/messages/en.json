@@ -1,5 +1,4 @@
 {
-  "Navbar-top": {},
   "Navbar": {
     "cv": "Download CV",
     "home": "Home",
@@ -7,5 +6,14 @@
     "play": "Play",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "Hero": {
+    "welcome": "I'm Khairi",
+    "title": "mid-senior software developer"
+  },
+  "KnowMe": {
+    "title": "Let's get to know me better",
+    "description": "Graduated as a full-stack engineer with a strong background in web development and a deep focus on security. I’m passionate about applying my skills to challenging projects and delivering innovative solutions. This portfolio highlights my diverse range of work, from sleek web designs to robust, secure applications. My journey as a developer is driven by the desire to build impactful, high-performing web solutions.",
+    "call-to-action": "Discover More About Me"
   }
 }
