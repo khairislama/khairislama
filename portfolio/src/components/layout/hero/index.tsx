@@ -23,8 +23,6 @@ function Hero() {
         height={288}
         className="absolute inset-0 object-cover w-full pointer-events-none"
       />
-
-      {/* Blurred and filtered background image */}
       <Image
         src="/hero/background2.png"
         alt="curvy lines"
