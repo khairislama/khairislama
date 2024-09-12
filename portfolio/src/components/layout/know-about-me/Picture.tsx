@@ -5,11 +5,11 @@ function Picture() {
     <div className="relative w-full h-[650px]">
       <div className="w-full rounded-3xl overflow-hidden h-[650px]">
         <Image
-          src="/khairi SLAMA - graduation.webp"
+          src="/khairi-slama-graduation.webp"
           alt="Khairi SLAMA"
           width={705}
           height={969}
-          className="brightness-125 contrast-125"
+          className="brightness-105"
         />
       </div>
       <Image
