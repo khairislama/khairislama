@@ -1,12 +1,13 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import SkillsGroup from "./SkillsGroup";
 
 function Skills() {
   const translations = useTranslations("Skills");
   return (
     <section className="relative w-full my-0 lg:my-24">
       <Image
-        src="/hero/eclipse3.svg"
+        src="/shapes/eclipse-tiny.svg"
         alt="eclipse"
         width={1330}
         height={288}
@@ -18,6 +19,7 @@ function Skills() {
         </h2>
         <h3 className="text-2xl mt-4">{translations("header")}</h3>
         <p className="text-lg mt-2">{translations("subtitle")}</p>
+        <SkillsGroup />
       </div>
     </section>
   );
