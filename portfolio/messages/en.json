@@ -22,6 +22,9 @@
     "subtitle": "I’ve had the opportunity to work across all kinds of tools"
   },
   "ProjectsOverview": {
-    "title": "Projects"
+    "title": "Projects",
+    "featured": "Featured Project",
+    "project-1-title": "Strong cast shop",
+    "project-1-description": "Strong cast e-commerce project aims to establish a robust online platform for selling high quality fishing lines in the USA market. As a web engineer, my role involves crafting a seamless user experience, efficient product management, and adherence to industry best practices. By leveraging Next.js and Shopify technologies, I am poised to create a customized solution that caters to Strong cast specific needs."
   }
 }

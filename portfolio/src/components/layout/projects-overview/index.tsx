@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import Overview from "./Overview";
 
 function ProjectsOverview() {
   const translations = useTranslations("ProjectsOverview");
@@ -16,6 +17,7 @@ function ProjectsOverview() {
         <h2 className="relative text-5xl sm:text-6xl lg:text-7xl font-syne font-bold text-primary/50 mt-0 md:mt-10">
           {translations("title")}
         </h2>
+        <Overview />
       </div>
     </section>
   );
