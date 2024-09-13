@@ -4,11 +4,11 @@ interface ISkill {
   height: number;
 }
 
-export const Skills: ISkill[] = [
-  { name: "next", width: 46, height: 21 },
+export const SKILLS: ISkill[] = [
+  { name: "next", width: 92, height: 55 },
   { name: "react", width: 44, height: 39 },
   { name: "tailwindcss", width: 44, height: 43 },
-  { name: "node", width: 44, height: 29 },
+  { name: "nodejs", width: 61, height: 37 },
   { name: "postgresql", width: 36, height: 34 },
   { name: "framer-motion", width: 36, height: 34 },
   { name: "typescript", width: 36, height: 34 },
