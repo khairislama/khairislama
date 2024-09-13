@@ -47,11 +47,11 @@ function SkillsGroup() {
         </div>
 
         {/* Second row: 6 icons */}
-        <div className="flex items-center justify-center gap-4 lg:gap-8 z-10">
+        <div className="relative flex items-center justify-center gap-4 lg:gap-8 z-10">
           {Array.from({ length: 6 }).map((_, i) => (
             <div
               key={i + 7} // Offset by 7 for the second row
-              className="w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center"
+              className="relative w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center"
             >
               <Image
                 src={`/skills/${SKILLS[i + 7].name}.png`}
@@ -69,14 +69,14 @@ function SkillsGroup() {
         alt="lines from skills bulls to the KS world"
         width={388}
         height={451}
-        className="absolute top-[80%] w-[70%] pointer-events-none hidden md:block"
+        className="absolute top-[80%] w-[70%] pointer-events-none hidden md:block z-0"
       />
       <Image
         src="/skills/world.svg"
         alt="The KS world"
         width={1240}
         height={511}
-        className="absolute -bottom-44 md:top-[250%] w-full"
+        className="absolute -bottom-44 md:top-[250%] w-full brightness-150"
       />
     </div>
   );
