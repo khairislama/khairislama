@@ -7,8 +7,8 @@ import Link from "next/link";
 function Overview() {
   const translations = useTranslations("ProjectsOverview");
   return (
-    <div className="flex flex-col md:flex-row gap-6">
-      <div className="flex flex-col gap-1 mt-10 md:text-start z-10 relative">
+    <div className="flex flex-col md:flex-row gap-6 relative">
+      <div className="flex flex-col gap-1 mt-10 md:text-start z-10 relative md:w-[calc(50%+8rem)] md:-mr-8">
         <p className="font-syne font-bold text-primary/80 text-sm">
           {" "}
           {translations("featured")}{" "}
@@ -17,7 +17,7 @@ function Overview() {
           {" "}
           {translations("project-1-title")}{" "}
         </h3>
-        <div className="p-4 bg-foreground/10 backdrop-blur-sm rounded-xl mt-8 relative">
+        <div className="p-4 bg-foreground/10 backdrop-blur-sm rounded-xl mt-8 relative z-20">
           <p className="text-justify font-rubik text-sm">
             {translations("project-1-description")}
           </p>
@@ -31,7 +31,7 @@ function Overview() {
           </Link>
         </div>
       </div>
-      <div className="relative w-full bg-black p-2 rounded-xl shadow-lg h-fit md:mt-20">
+      <div className="relative w-full bg-black p-2 rounded-xl shadow-lg h-fit md:mt-20 md:w-1/2">
         <Image
           src="/projects/gradient.svg"
           alt="gradient"
