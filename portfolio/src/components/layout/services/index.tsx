@@ -1,11 +1,10 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Overview from "./Overview";
 
-function ProjectsOverview() {
-  const translations = useTranslations("ProjectsOverview");
+function Services() {
+  const translations = useTranslations("Services");
   return (
-    <section className="relative w-full my-0 lg:my-24">
+    <section className="relative w-full">
       <Image
         src="/shapes/eclipse-tiny.svg"
         alt="eclipse"
@@ -17,14 +16,9 @@ function ProjectsOverview() {
         <h2 className="relative text-5xl sm:text-6xl lg:text-7xl font-syne font-bold text-primary/50 mt-0 md:mt-10">
           {translations("title")}
         </h2>
-        <Overview />
-      </div>
-      <div className="flex flex-col md:flex-row gap-4 p-4 relative">
-        <div className="bg-red-500/30 h-44 w-full md:w-[calc(50%+2rem)] md:-mr-8"></div>
-        <div className="bg-green-500/10 h-44 w-full md:w-1/2"></div>
       </div>
     </section>
   );
 }
 
-export default ProjectsOverview;
+export default Services;
