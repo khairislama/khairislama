@@ -4,6 +4,7 @@ import {
   ProjectsOverview,
   Skills,
 } from "@/components/layout";
+import Services from "@/components/layout/services";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
@@ -14,6 +15,8 @@ export default function Home() {
       <KnowAboutMe />
       <Skills />
       <ProjectsOverview />
+      <Services />
+      <div className="h-96 w-full"> {translations("home")} </div>
       <div className="h-96 w-full"> {translations("home")} </div>
       <div className="h-96 w-full"> {translations("home")} </div>
     </main>
