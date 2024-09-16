@@ -18,7 +18,6 @@ export default function Home() {
       <Services />
       <div className="h-96 w-full"> {translations("home")} </div>
       <div className="h-96 w-full"> {translations("home")} </div>
-      <div className="h-96 w-full"> {translations("home")} </div>
     </main>
   );
 }
