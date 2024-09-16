@@ -19,10 +19,6 @@ function ProjectsOverview() {
         </h2>
         <Overview />
       </div>
-      <div className="flex flex-col md:flex-row gap-4 p-4 relative">
-        <div className="bg-red-500/30 h-44 w-full md:w-[calc(50%+2rem)] md:-mr-8"></div>
-        <div className="bg-green-500/10 h-44 w-full md:w-1/2"></div>
-      </div>
     </section>
   );
 }
