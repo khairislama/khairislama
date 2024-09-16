@@ -6,10 +6,10 @@ function Navigation() {
   return (
     <nav className="flex items-center justify-center gap-6 uppercase ">
       <CustomLink href="/" title={translations("home")} />
-      <CustomLink href="/" title={translations("about")} />
-      <CustomLink href="/" title={translations("play")} />
-      <CustomLink href="/" title={translations("projects")} />
-      <CustomLink href="/" title={translations("contact")} />
+      <CustomLink href="/about" title={translations("about")} />
+      <CustomLink href="/play" title={translations("play")} />
+      <CustomLink href="/projects" title={translations("projects")} />
+      <CustomLink href="/contact" title={translations("contact")} />
     </nav>
   );
 }

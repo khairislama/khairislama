@@ -8,7 +8,7 @@ function Overview() {
   const translations = useTranslations("ProjectsOverview");
   return (
     <div className="flex flex-col md:flex-row gap-6 relative">
-      <div className="flex flex-col gap-1 mt-10 md:text-start z-10 relative md:w-[calc(50%+8rem)] md:-mr-8">
+      <div className="flex flex-col gap-1 mt-10 md:text-start md:w-[50%]">
         <p className="font-syne font-bold text-primary/80 text-sm">
           {" "}
           {translations("featured")}{" "}
