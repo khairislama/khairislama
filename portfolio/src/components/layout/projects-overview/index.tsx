@@ -14,9 +14,7 @@ function ProjectsOverview() {
         className="absolute object-cover w-full pointer-events-none -top-[0%] xl:-top-[15%] 2xl:-top-[35%] 2k:-top-[200%] -z-10 brightness-125"
       />
       <div className="max-w-7xl mx-auto flex flex-col p-10 xl:p-0 text-center">
-        <h2 className="relative text-5xl sm:text-6xl lg:text-7xl font-syne font-bold text-primary/50 mt-0 md:mt-10">
-          {translations("title")}
-        </h2>
+        <h2 className="text-header">{translations("title")}</h2>
         <Overview />
       </div>
     </section>
