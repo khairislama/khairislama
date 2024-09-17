@@ -51,7 +51,7 @@ function Overview() {
           alt="strong cast project metrix with A performance"
           width={1269}
           height={819}
-          className="rounded-xl relative z-10"
+          className="rounded-br-3xl rounded-tl-3xl relative z-10"
         />
       </div>
     </div>
