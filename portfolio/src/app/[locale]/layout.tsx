@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Navbar } from "@/components/layout";
+import { Footer, Navbar } from "@/components/layout";
 import { Rubik, Syne } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import HireMe from "@/components/HireMe";
@@ -35,6 +35,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <HireMe />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
