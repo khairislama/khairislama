@@ -16,6 +16,7 @@ function ProjectsOverview() {
       <div className="max-w-7xl mx-auto flex flex-col p-10 xl:p-0 text-center">
         <h2 className="text-header">{translations("title")}</h2>
         <Overview />
+        <Overview reverse />
       </div>
     </section>
   );

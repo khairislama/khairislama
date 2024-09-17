@@ -4,25 +4,49 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
-function Overview() {
+function Overview({ reverse }: { reverse?: boolean }) {
   const translations = useTranslations("ProjectsOverview");
   return (
-    <div className="flex flex-col md:flex-row relative md:mt-24">
-      <div className="flex flex-col gap-1 mt-10 xl:mt-28 md:text-start md:w-[calc(50%+4rem)] md:-mr-6">
-        <p className="font-syne font-bold text-primary/80 text-sm">
+    <div
+      className={`flex flex-col relative md:mt-24 ${
+        reverse ? "md:flex-row-reverse" : "md:flex-row"
+      }`}
+    >
+      <div
+        className={`flex flex-col gap-1 mt-10 xl:mt-28 md:text-start md:w-[calc(50%+4rem)] ${
+          reverse ? "md:-ml-6" : "md:-mr-6"
+        }`}
+      >
+        <p
+          className={`font-syne font-bold text-primary/80 text-sm ${
+            reverse && "text-end"
+          }`}
+        >
           {" "}
           {translations("featured")}{" "}
         </p>
-        <h3 className="font-rubik font-semibold text-2xl text-foreground/70">
+        <h3
+          className={`font-rubik font-semibold text-2xl text-foreground/70 ${
+            reverse && "text-end"
+          }`}
+        >
           {" "}
           {translations("project-1-title")}{" "}
         </h3>
-        <div className="p-4 bg-primary/10 backdrop-blur-2xl rounded-xl mt-8 relative z-20 md:pr-20 ">
+        <div
+          className={`p-4 bg-primary/10 backdrop-blur-2xl rounded-xl mt-8 relative z-20 ${
+            reverse ? "md:pl-10" : "md:pr-20"
+          }`}
+        >
           <p className="text-justify font-rubik text-sm">
             {translations("project-1-description")}
           </p>
         </div>
-        <div className="flex gap-6 p-2 items-center justify-center md:justify-start mt-4">
+        <div
+          className={`flex gap-6 p-2 items-center justify-center md:justify-start mt-4 ${
+            reverse && "flex-row-reverse"
+          }`}
+        >
           <Link href="" target="_blank">
             <GitHubLogoIcon className="w-8 h-8" />
           </Link>
@@ -51,7 +75,11 @@ function Overview() {
           alt="strong cast project metrix with A performance"
           width={1269}
           height={819}
-          className="rounded-br-3xl rounded-tl-3xl relative z-10"
+          className={`relative z-10 ${
+            reverse
+              ? "rounded-bl-3xl rounded-tr-3xl"
+              : "rounded-br-3xl rounded-tl-3xl"
+          }`}
         />
       </div>
     </div>
