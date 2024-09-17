@@ -4,7 +4,18 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
-function Overview({ reverse }: { reverse?: boolean }) {
+interface Props {
+  reverse?: boolean;
+  projectNumber: number;
+  image: {
+    width: number;
+    height: number;
+    src: string;
+    alt: string;
+  };
+}
+
+function Overview({ reverse, projectNumber, image }: Props) {
   const translations = useTranslations("ProjectsOverview");
   return (
     <div
@@ -31,7 +42,7 @@ function Overview({ reverse }: { reverse?: boolean }) {
           }`}
         >
           {" "}
-          {translations("project-1-title")}{" "}
+          {translations(`project-${projectNumber}-title`)}{" "}
         </h3>
         <div
           className={`p-4 bg-primary/10 backdrop-blur-2xl rounded-xl mt-8 relative z-20 ${
@@ -39,7 +50,7 @@ function Overview({ reverse }: { reverse?: boolean }) {
           }`}
         >
           <p className="text-justify font-rubik text-sm">
-            {translations("project-1-description")}
+            {translations(`project-${projectNumber}-description`)}
           </p>
         </div>
         <div
@@ -71,10 +82,10 @@ function Overview({ reverse }: { reverse?: boolean }) {
           className="absolute object-cover w-full pointer-events-none z-0 -bottom-[30%] -left-[40%]"
         />
         <Image
-          src="/projects/strong-cast-metrix.webp"
-          alt="strong cast project metrix with A performance"
-          width={1269}
-          height={819}
+          src={image.src}
+          alt={image.alt}
+          width={image.width}
+          height={image.height}
           className={`relative z-10 ${
             reverse
               ? "rounded-bl-3xl rounded-tr-3xl"

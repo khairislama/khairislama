@@ -29,5 +29,9 @@
   },
   "Services": {
     "title": "Services"
+  },
+  "Footer": {
+    "cooked with love in": "cooked with love in",
+    "with": "with"
   }
 }
