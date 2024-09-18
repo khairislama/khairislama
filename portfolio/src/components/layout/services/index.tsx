@@ -38,7 +38,7 @@ function Services() {
       />
       <div className="max-w-4xl mx-auto flex flex-col p-10 xl:p-0 text-center">
         <h2 className="text-header">{translations("title")}</h2>
-        <div className="grid grid-cols-5 gap-2 mt-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 mt-12">
           {Array.from({ length: 5 }).map((_, i) => (
             <div
               key={i}
@@ -60,7 +60,7 @@ function Services() {
           {Array.from({ length: 4 }).map((_, i) => (
             <div
               key={i}
-              className="w-full bg-[#373646] border-2 border-foreground/5 p-12 grid grid-cols-4 rounded-xl"
+              className="w-full bg-[#373646] border-2 border-foreground/5 p-4 flex flex-col items-center justify-center gap-6 sm:p-12 sm:grid sm:grid-cols-4 rounded-xl"
             >
               <div
                 className={`h-16 w-16 rounded-lg p-[2px] ${cards[i].border}`}
@@ -72,11 +72,11 @@ function Services() {
                 </div>
               </div>
               <div className="col-span-3 text-justify">
-                <h4 className="text-lg font-semibold">
+                <h4 className="text-lg font-semibold text-center sm:text-start">
                   {" "}
                   {translations(`card-${i + 1}-title`)}{" "}
                 </h4>
-                <p className="text-sm mt-2">
+                <p className="text-sm mt-2 text-center sm:text-start">
                   {" "}
                   {translations(`card-${i + 1}-description`)}{" "}
                 </p>
