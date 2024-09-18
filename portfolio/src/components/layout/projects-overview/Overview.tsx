@@ -30,7 +30,7 @@ function Overview({ reverse, projectNumber, image }: Props) {
       >
         <p
           className={`font-syne font-bold text-primary/80 text-sm ${
-            reverse && "text-end"
+            reverse && "md:text-end"
           }`}
         >
           {" "}
@@ -38,7 +38,7 @@ function Overview({ reverse, projectNumber, image }: Props) {
         </p>
         <h3
           className={`font-rubik font-semibold text-2xl text-foreground/70 ${
-            reverse && "text-end"
+            reverse && "md:text-end"
           }`}
         >
           {" "}
@@ -88,8 +88,8 @@ function Overview({ reverse, projectNumber, image }: Props) {
           height={image.height}
           className={`relative z-10 ${
             reverse
-              ? "rounded-bl-3xl rounded-tr-3xl"
-              : "rounded-br-3xl rounded-tl-3xl"
+              ? "md:rounded-bl-3xl md:rounded-tr-3xl"
+              : "md:rounded-br-3xl md:rounded-tl-3xl"
           }`}
         />
       </div>
