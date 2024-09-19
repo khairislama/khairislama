@@ -4,6 +4,7 @@ import NavbarTop from "./NavbarTop";
 import NavBurger from "./NavBurger";
 import Navigation from "./Navigation";
 import SocialIcons from "./SocialIcons";
+import { MoonIcon } from "@/components/MoonIcon";
 
 function Navbar() {
   return (
@@ -12,7 +13,12 @@ function Navbar() {
       <div className="h-12 lg:h-14 border-b-2 border-foreground/70 relative">
         <div className="relative hidden lg:flex items-center justify-between max-w-7xl mx-auto">
           <Navigation />
-          <SocialIcons />
+          <div className="flex items-center justify-center gap-8">
+            <SocialIcons />
+            <div className="w-9 h-9 p-1 rounded-full bg-foreground cursor-not-allowed">
+              <MoonIcon className="text-background" />
+            </div>
+          </div>
         </div>
         <Avatar />
         <NavBurger />

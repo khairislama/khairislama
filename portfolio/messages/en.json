@@ -46,7 +46,11 @@
     "card-4-description": "RESTful and GraphQL APIs for all platforms."
   },
   "Contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "available": "Available for work",
+    "hero": "Drop me a line or say 👋 on social networks",
+    "description": "Whether you're a design team in need of support or an early-stage company looking to level up your design, I'd love to talk about your project 💜",
+    "call-to-action": "Let’s create magic together ✨"
   },
   "Footer": {
     "cooked with love in": "cooked with love in",
