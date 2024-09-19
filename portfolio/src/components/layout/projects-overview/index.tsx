@@ -15,6 +15,12 @@ const IMAGES = [
     width: 1269,
     height: 819,
   },
+  {
+    src: "/projects/strong-cast-metrix.webp",
+    alt: "strong cast project metrix with A performance",
+    width: 1269,
+    height: 819,
+  },
 ];
 
 function ProjectsOverview() {
@@ -32,8 +38,8 @@ function ProjectsOverview() {
       <div className="max-w-7xl mx-auto flex flex-col p-10 xl:p-0 text-center">
         <h2 className="text-header">{translations("title")}</h2>
         <Overview projectNumber={1} image={IMAGES[0]} />
-        <Overview reverse projectNumber={1} image={IMAGES[1]} />
-        <Overview projectNumber={1} image={IMAGES[0]} />
+        <Overview reverse projectNumber={2} image={IMAGES[1]} />
+        <Overview projectNumber={3} image={IMAGES[2]} />
       </div>
     </section>
   );
