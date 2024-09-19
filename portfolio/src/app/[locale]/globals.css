@@ -12,11 +12,17 @@
   .inner-shadow {
     text-shadow: rgba(255, 255, 255, 0.5) 0 1px 1px;
   }
+  .contact-card-shadow {
+    box-shadow: 0 0 25px 5px rgba(112, 47, 210, 0.9);
+  }
 }
 
 @layer components {
   .text-header {
     @apply text-5xl sm:text-6xl lg:text-7xl font-syne font-bold mt-0 md:mt-10 text-primary/30 inner-shadow uppercase;
+  }
+  .contact-card {
+    @apply w-full max-w-4xl mx-auto bg-background-darker flex flex-col md:grid md:grid-cols-2 gap-2 contact-card-shadow relative p-10 rounded-md border border-[#702FD2] overflow-hidden;
   }
 }
 

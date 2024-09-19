@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 function Footer() {
   const translations = useTranslations("Footer");
   return (
-    <footer className="mt-10 bg-gradient-to-b from-background via-primary/50 to-primary/70 w-full pb-10">
+    <footer className="bg-gradient-to-b from-background via-primary/50 to-primary/70 w-full pb-10">
       <div className="max-w-4xl mx-auto flex flex-col items-center justify-center overflow-hidden">
         <Circle />
         <div className="bg-background/50 mt-14 p-3 rounded-xl border-foreground/70 border shadow-xl">
