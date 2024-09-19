@@ -1,4 +1,5 @@
 import {
+  ContactCard,
   Hero,
   KnowAboutMe,
   ProjectsOverview,
@@ -6,20 +7,17 @@ import {
   Testimonials,
 } from "@/components/layout";
 import Services from "@/components/layout/services";
-import { useTranslations } from "next-intl";
 
 export default function Home() {
-  const translations = useTranslations("Navbar");
   return (
-    <main className="">
+    <main className="w-full overflow-hidden">
       <Hero />
       <KnowAboutMe />
       <Skills />
       <ProjectsOverview />
       <Services />
       <Testimonials />
-      <div className="h-96 w-full"> {translations("home")} </div>
-      <div className="h-96 w-full"> {translations("home")} </div>
+      <ContactCard />
     </main>
   );
 }

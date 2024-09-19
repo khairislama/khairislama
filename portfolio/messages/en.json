@@ -45,6 +45,9 @@
     "card-4-title": "API Architect",
     "card-4-description": "RESTful and GraphQL APIs for all platforms."
   },
+  "Contact": {
+    "title": "Contact"
+  },
   "Footer": {
     "cooked with love in": "cooked with love in",
     "with": "with"

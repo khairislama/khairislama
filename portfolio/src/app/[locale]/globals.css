@@ -16,7 +16,7 @@
 
 @layer components {
   .text-header {
-    @apply text-5xl sm:text-6xl lg:text-7xl font-syne font-bold mt-0 md:mt-10 text-primary/30 inner-shadow;
+    @apply text-5xl sm:text-6xl lg:text-7xl font-syne font-bold mt-0 md:mt-10 text-primary/30 inner-shadow uppercase;
   }
 }
 
