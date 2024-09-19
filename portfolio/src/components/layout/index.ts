@@ -6,6 +6,7 @@ import ProjectsOverview from "./projects-overview";
 import Services from "./services";
 import Skills from "./skills";
 import Testimonials from "./testimonials";
+import ContactCard from "./contactCard";
 
 export {
   Footer,
@@ -16,4 +17,5 @@ export {
   Services,
   Skills,
   Testimonials,
+  ContactCard,
 };
