@@ -1,5 +1,8 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import SocialIcons from "../navbar/SocialIcons";
+import { Button } from "@/components/ui/button";
+import PrefixedLink from "@/components/PrefixedLink";
 
 function ContactCard() {
   const translations = useTranslations("Contact");
@@ -18,18 +21,27 @@ function ContactCard() {
           <div className="w-full flex flex-col gap-4 text-left">
             <div className="flex items-center justify-start gap-6">
               <div className="image">image</div>
-              <div className="image">Available for work</div>
+              <div className="image">{translations("available")}</div>
             </div>
-            <h4>Drop me a line or say 👋 on social networks</h4>
-            <p>
-              Whether you re a design team in need of support or an early-stage
-              company looking to level up your design,I d love to talk about
-              your project 💜
-            </p>
+            <h4 className="text-lg text-foreground font-semibold">
+              {translations("hero")}
+            </h4>
+            <p className="text-lg">{translations("description")}</p>
           </div>
           <div className="flex flex-col items-center justify-end">
-            <div className="icons">icons</div>
-            <div className="icons">Button</div>
+            <div className="flex items-center justify-around w-2/3 mt-10 ">
+              <SocialIcons />
+            </div>
+            <div className="mt-10">
+              <Button
+                size={"lg"}
+                className="bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              >
+                <PrefixedLink href="/contact">
+                  {translations("call-to-action")}
+                </PrefixedLink>
+              </Button>
+            </div>
           </div>
           <Image
             src="/shapes/contact-card.svg"
