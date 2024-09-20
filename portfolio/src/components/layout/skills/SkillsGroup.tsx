@@ -33,7 +33,7 @@ function SkillsGroup() {
           {Array.from({ length: 7 }).map((_, i) => (
             <div
               key={i}
-              className="w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center"
+              className="w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center lg:hover:scale-125 duration-300 transition-all ease-in-out"
             >
               <Image
                 src={`/skills/${SKILLS[i].name}.png`}
@@ -51,7 +51,7 @@ function SkillsGroup() {
           {Array.from({ length: 6 }).map((_, i) => (
             <div
               key={i + 7} // Offset by 7 for the second row
-              className="relative w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center"
+              className="relative w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center lg:hover:scale-125 duration-300 transition-all ease-in-out"
             >
               <Image
                 src={`/skills/${SKILLS[i + 7].name}.png`}
