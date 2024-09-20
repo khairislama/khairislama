@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Overview from "./Overview";
+import ProjectText from "./ProjectText";
+import ProjectImage from "./ProjectImage";
 
 const IMAGES = [
   {
@@ -37,9 +39,63 @@ function ProjectsOverview() {
       />
       <div className="max-w-7xl mx-auto flex flex-col p-10 xl:p-0 text-center">
         <h2 className="text-header">{translations("title")}</h2>
-        <Overview projectNumber={1} image={IMAGES[0]} />
-        <Overview reverse projectNumber={2} image={IMAGES[1]} />
-        <Overview projectNumber={3} image={IMAGES[2]} />
+        <Overview>
+          <ProjectText projectNumber={1}>
+            <div className="grid grid-cols-2 w-full mt-4">
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+            </div>
+          </ProjectText>
+          <ProjectImage image={IMAGES[0]} />
+        </Overview>
+        <Overview reverse>
+          <ProjectText projectNumber={2} reverse>
+            <div className="grid grid-cols-2 w-full mt-4">
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+            </div>
+          </ProjectText>
+          <ProjectImage image={IMAGES[1]} reverse />
+        </Overview>
+        <Overview>
+          <ProjectText projectNumber={3}>
+            <div className="grid grid-cols-2 w-full mt-4">
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+            </div>
+          </ProjectText>
+          <ProjectImage image={IMAGES[2]} />
+        </Overview>
       </div>
     </section>
   );
