@@ -40,7 +40,11 @@ function ProjectsOverview() {
       <div className="max-w-7xl mx-auto flex flex-col p-10 xl:p-0 text-center">
         <h2 className="text-header">{translations("title")}</h2>
         <Overview>
-          <ProjectText projectNumber={1}>
+          <ProjectText
+            projectNumber={1}
+            viewMore="/project/1"
+            demo="https://carthabot.vercel.app/"
+          >
             <div className="grid grid-cols-2 w-full mt-4">
               <div>
                 <p className="text-xl font-semibold">Over 35k</p>
@@ -59,7 +63,7 @@ function ProjectsOverview() {
           <ProjectImage image={IMAGES[0]} />
         </Overview>
         <Overview reverse>
-          <ProjectText projectNumber={2} reverse>
+          <ProjectText projectNumber={2} reverse viewMore="/project/2">
             <div className="grid grid-cols-2 w-full mt-4">
               <div>
                 <p className="text-xl font-semibold">Over 35k</p>
@@ -78,7 +82,11 @@ function ProjectsOverview() {
           <ProjectImage image={IMAGES[1]} reverse />
         </Overview>
         <Overview>
-          <ProjectText projectNumber={3}>
+          <ProjectText
+            projectNumber={3}
+            viewMore="/project/3"
+            demo="https://www.strong-cast.com/"
+          >
             <div className="grid grid-cols-2 w-full mt-4">
               <div>
                 <p className="text-xl font-semibold">Over 35k</p>
