@@ -2,6 +2,7 @@ import React from "react";
 import Picture from "./Picture";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import AnimatedText from "@/components/AnimatedText";
 
 function Hero() {
   const translations = useTranslations("Hero");
@@ -11,9 +12,10 @@ function Hero() {
       <div className="flex flex-col items-center justify-between max-w-3xl mx-auto mt-10 md:mt-14 lg:mt-16 pb-16 z-20">
         <h1 className="text-3xl"> {translations("welcome")} </h1>
         <Picture />
-        <h2 className="text-center text-5xl sm:text-6xl lg:text-7xl uppercase font-bold text-foreground/70 mt-10 text-balance">
-          {translations("title")}
-        </h2>
+        <AnimatedText
+          text={translations("title")}
+          className="text-center text-5xl sm:text-6xl lg:text-7xl uppercase font-bold text-foreground/70 mt-10 text-balance"
+        />
       </div>
       {/* Eclipse SVG positioned under h2 */}
       <Image
