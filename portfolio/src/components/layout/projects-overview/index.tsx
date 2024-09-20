@@ -7,21 +7,27 @@ import ProjectImage from "./ProjectImage";
 const IMAGES = [
   {
     src: "/projects/carthabot/hero.webp",
-    alt: "strong cast project metrix with A performance",
+    alt: "Carthabot hero section",
     width: 1866,
     height: 912,
   },
   {
     src: "/projects/formulation/recipe.webp",
-    alt: "strong cast project metrix with A performance",
-    width: 1269,
-    height: 819,
+    alt: "Formulation recipe page",
+    width: 1920,
+    height: 924,
   },
   {
     src: "/projects/strong-cast/product.webp",
     alt: "strong cast project metrix with A performance",
     width: 1269,
     height: 819,
+  },
+  {
+    src: "/projects/robot-playground/home.webp",
+    alt: "robot playground personal project",
+    width: 1842,
+    height: 936,
   },
 ];
 
@@ -103,6 +109,31 @@ function ProjectsOverview() {
             </div>
           </ProjectText>
           <ProjectImage image={IMAGES[2]} />
+        </Overview>
+        <Overview reverse>
+          <ProjectText
+            projectNumber={4}
+            reverse
+            viewMore="/project/4"
+            github="https://github.com/khairislama/robot-playground"
+            demo="https://robot-playground-three.vercel.app"
+          >
+            <div className="grid grid-cols-2 w-full mt-4">
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+            </div>
+          </ProjectText>
+          <ProjectImage image={IMAGES[3]} reverse />
         </Overview>
       </div>
     </section>
