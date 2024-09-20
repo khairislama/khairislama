@@ -19,8 +19,20 @@ function ContactCard() {
         <h2 className="text-header">{translations("title")}</h2>
         <div className="contact-card my-32">
           <div className="w-full flex flex-col gap-4 text-left">
-            <div className="flex items-center justify-start gap-6">
-              <div className="image">image</div>
+            <div className="flex flex-col sm:flex-row items-center justify-start gap-6">
+              <div className="aspect-square w-24 rounded-full flex items-center justify-center bg-gradient-to-b from-[#383838] to-background-darker">
+                <div className="aspect-square w-20 rounded-full flex items-center justify-center bg-gradient-to-b from-[#424242] to-background-darker">
+                  <div className="aspect-square w-16 rounded-full flex items-center justify-center bg-gradient-to-b from-[#616161] to-background-darker overflow-hidden">
+                    <Image
+                      src="/avatars/avatar-3.png"
+                      alt="@khairislama"
+                      width={100}
+                      height={100}
+                      className="w-full"
+                    />
+                  </div>
+                </div>
+              </div>
               <div className="image">{translations("available")}</div>
             </div>
             <h4 className="text-lg text-foreground font-semibold">

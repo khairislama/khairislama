@@ -4,10 +4,10 @@ import Overview from "./Overview";
 
 const IMAGES = [
   {
-    src: "/projects/strong-cast-metrix.webp",
+    src: "/projects/carthabot/hero.webp",
     alt: "strong cast project metrix with A performance",
-    width: 1269,
-    height: 819,
+    width: 1866,
+    height: 912,
   },
   {
     src: "/projects/strong-cast-metrix.webp",
