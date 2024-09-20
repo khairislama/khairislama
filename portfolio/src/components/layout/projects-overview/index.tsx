@@ -10,13 +10,13 @@ const IMAGES = [
     height: 912,
   },
   {
-    src: "/projects/strong-cast-metrix.webp",
+    src: "/projects/formulation/recipe.webp",
     alt: "strong cast project metrix with A performance",
     width: 1269,
     height: 819,
   },
   {
-    src: "/projects/strong-cast-metrix.webp",
+    src: "/projects/strong-cast/product.webp",
     alt: "strong cast project metrix with A performance",
     width: 1269,
     height: 819,
