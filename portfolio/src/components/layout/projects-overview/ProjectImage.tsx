@@ -12,7 +12,7 @@ interface Props {
 
 function ProjectImage({ image, reverse }: Props) {
   return (
-    <div className="relative w-full bg-black p-2 rounded-xl shadow-lg h-fit md:mt-20 md:w-1/2">
+    <div className="relative w-full bg-black p-2 rounded-xl shadow-lg md:mt-20 md:w-1/2">
       <Image
         src="/projects/gradient.svg"
         alt="gradient"
@@ -32,7 +32,7 @@ function ProjectImage({ image, reverse }: Props) {
         alt={image.alt}
         width={image.width}
         height={image.height}
-        className={`relative z-10 ${
+        className={`relative z-10 h-full object-cover ${
           reverse
             ? "md:rounded-bl-3xl md:rounded-tr-3xl"
             : "md:rounded-br-3xl md:rounded-tl-3xl"
