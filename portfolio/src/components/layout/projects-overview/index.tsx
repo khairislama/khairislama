@@ -3,6 +3,7 @@ import Image from "next/image";
 import Overview from "./Overview";
 import ProjectText from "./ProjectText";
 import ProjectImage from "./ProjectImage";
+import PrefixedLink from "@/components/PrefixedLink";
 
 const IMAGES = [
   {
@@ -135,6 +136,13 @@ function ProjectsOverview() {
           </ProjectText>
           <ProjectImage image={IMAGES[3]} reverse />
         </Overview>
+        <div className="flex w-full mx-auto max-w-7xl items-center justify-center mt-16">
+          <div className="h-[1px] w-full bg-foreground/70" />
+          <PrefixedLink href="/products" className="text-lg w-52 font-bold">
+            View more
+          </PrefixedLink>
+          <div className="h-[1px] w-full bg-foreground/70" />
+        </div>
       </div>
     </section>
   );
