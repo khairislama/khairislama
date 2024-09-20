@@ -1,15 +1,26 @@
+import PrefixedLink from "@/components/PrefixedLink";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
-import { ExternalLink } from "lucide-react";
+import { ExternalLink, Link2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 interface Props {
   reverse?: boolean;
   projectNumber: number;
+  viewMore: string;
   children?: React.ReactNode;
+  github?: string;
+  demo?: string;
 }
 
-function ProjectText({ projectNumber, reverse, children }: Props) {
+function ProjectText({
+  projectNumber,
+  reverse,
+  viewMore,
+  children,
+  github,
+  demo,
+}: Props) {
   const translations = useTranslations("ProjectsOverview");
   return (
     <div
@@ -48,12 +59,19 @@ function ProjectText({ projectNumber, reverse, children }: Props) {
           reverse && "flex-row-reverse"
         }`}
       >
-        <Link href="" target="_blank">
-          <GitHubLogoIcon className="w-8 h-8" />
-        </Link>
-        <Link href="" target="_blank">
+        {github && (
+          <Link href={github} target="_blank">
+            <GitHubLogoIcon className="w-8 h-8" />
+          </Link>
+        )}
+        <PrefixedLink href={viewMore}>
           <ExternalLink className="w-8 h-8" />
-        </Link>
+        </PrefixedLink>
+        {demo && (
+          <Link href={demo} target="_blank">
+            <Link2 className="w-8 h-8" />
+          </Link>
+        )}
       </div>
     </div>
   );
