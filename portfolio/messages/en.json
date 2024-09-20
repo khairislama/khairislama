@@ -26,12 +26,15 @@
     "featured-1": "Client Project",
     "featured-2": "Hutchinson Work Project",
     "featured-3": "Client Project",
+    "featured-4": "Personal Project",
     "project-1-title": "Carthabot TN",
     "project-1-description": "CarthaBot educational platform aims to provide an engaging and interactive learning experience for students exploring STEM concepts. As a web engineer, my role involves designing a user-friendly interface, supporting multi-language access, and ensuring seamless interaction with the robot. By leveraging Next.js and custom features, I am creating a modern platform that enhances CarthaBot's educational potential and caters to its specific learning objectives.",
     "project-2-title": "Formulation",
     "project-2-description": "Formulation digitalization project aims to streamline the Hutchinson Group's formulation processes by replacing traditional Excel-based methods with a robust, cloud-ready solution. As the solo backend developer, my role involves designing a complex relational database using NestJS, TypeORM, and PostgreSQL, while collaborating on the frontend with Angular. This project has paved the way for future cloud initiatives within Hutchinson, driving efficiency and innovation across the company.",
     "project-3-title": "Strong cast shop",
-    "project-3-description": "Strong cast e-commerce project aims to establish a robust online platform for selling high quality fishing lines in the USA market. As a web engineer, my role involves crafting a seamless user experience, efficient product management, and adherence to industry best practices. By leveraging Next.js and Shopify technologies, I am poised to create a customized solution that caters to Strong cast specific needs."
+    "project-3-description": "Strong cast e-commerce project aims to establish a robust online platform for selling high quality fishing lines in the USA market. As a web engineer, my role involves crafting a seamless user experience, efficient product management, and adherence to industry best practices. By leveraging Next.js and Shopify technologies, I am poised to create a customized solution that caters to Strong cast specific needs.",
+    "project-4-title": "Robot Playground",
+    "project-4-description": "Robot Playground project aims to explore the possibilities of 3D web development by leveraging Next.js, Three.js, and React Three Fiber to create interactive, immersive experiences. As the developer, my role includes integrating Blender models, animating interactions, and implementing postprocessing effects like Bloom for enhanced visuals. This experimental project showcases modern 3D techniques and demonstrates my ability to push web technology boundaries while delivering a dynamic, real-time user experience directly in the browser."
   },
   "Services": {
     "title": "Services",
