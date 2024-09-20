@@ -6,9 +6,10 @@ import Link from "next/link";
 interface Props {
   reverse?: boolean;
   projectNumber: number;
+  children?: React.ReactNode;
 }
 
-function ProjectText({ projectNumber, reverse }: Props) {
+function ProjectText({ projectNumber, reverse, children }: Props) {
   const translations = useTranslations("ProjectsOverview");
   return (
     <div
@@ -40,16 +41,7 @@ function ProjectText({ projectNumber, reverse }: Props) {
         <p className="text-justify font-rubik text-sm">
           {translations(`project-${projectNumber}-description`)}
         </p>
-        <div className="grid grid-cols-2 w-full mt-4">
-          <div>
-            <p className="text-xl font-semibold">Over 35k</p>
-            <p className="text-sm">Users gained within 6 months of launch</p>
-          </div>
-          <div>
-            <p className="text-xl font-semibold">Over 35k</p>
-            <p className="text-sm">Users gained within 6 months of launch</p>
-          </div>
-        </div>
+        {children}
       </div>
       <div
         className={`flex gap-6 p-2 items-center justify-center md:justify-start mt-4 ${
