@@ -1,19 +1,34 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Overview from "./Overview";
+import ProjectText from "./ProjectText";
+import ProjectImage from "./ProjectImage";
+import PrefixedLink from "@/components/PrefixedLink";
 
 const IMAGES = [
   {
-    src: "/projects/strong-cast-metrix.webp",
+    src: "/projects/carthabot/hero.webp",
+    alt: "Carthabot hero section",
+    width: 1866,
+    height: 912,
+  },
+  {
+    src: "/projects/formulation/recipe.webp",
+    alt: "Formulation recipe page",
+    width: 1920,
+    height: 924,
+  },
+  {
+    src: "/projects/strong-cast/product.webp",
     alt: "strong cast project metrix with A performance",
     width: 1269,
     height: 819,
   },
   {
-    src: "/projects/strong-cast-metrix.webp",
-    alt: "strong cast project metrix with A performance",
-    width: 1269,
-    height: 819,
+    src: "/projects/robot-playground/home.webp",
+    alt: "robot playground personal project",
+    width: 1842,
+    height: 936,
   },
 ];
 
@@ -31,9 +46,103 @@ function ProjectsOverview() {
       />
       <div className="max-w-7xl mx-auto flex flex-col p-10 xl:p-0 text-center">
         <h2 className="text-header">{translations("title")}</h2>
-        <Overview projectNumber={1} image={IMAGES[0]} />
-        <Overview reverse projectNumber={1} image={IMAGES[1]} />
-        <Overview projectNumber={1} image={IMAGES[0]} />
+        <Overview>
+          <ProjectText
+            projectNumber={1}
+            viewMore="/project/1"
+            demo="https://carthabot.vercel.app/"
+          >
+            <div className="grid grid-cols-2 w-full mt-4">
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+            </div>
+          </ProjectText>
+          <ProjectImage image={IMAGES[0]} />
+        </Overview>
+        <Overview reverse>
+          <ProjectText projectNumber={2} reverse viewMore="/project/2">
+            <div className="grid grid-cols-2 w-full mt-4">
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+            </div>
+          </ProjectText>
+          <ProjectImage image={IMAGES[1]} reverse />
+        </Overview>
+        <Overview>
+          <ProjectText
+            projectNumber={3}
+            viewMore="/project/3"
+            demo="https://www.strong-cast.com/"
+          >
+            <div className="grid grid-cols-2 w-full mt-4">
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+            </div>
+          </ProjectText>
+          <ProjectImage image={IMAGES[2]} />
+        </Overview>
+        <Overview reverse>
+          <ProjectText
+            projectNumber={4}
+            reverse
+            viewMore="/project/4"
+            github="https://github.com/khairislama/robot-playground"
+            demo="https://robot-playground-three.vercel.app"
+          >
+            <div className="grid grid-cols-2 w-full mt-4">
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+              <div>
+                <p className="text-xl font-semibold">Over 35k</p>
+                <p className="text-sm">
+                  Users gained within 6 months of launch
+                </p>
+              </div>
+            </div>
+          </ProjectText>
+          <ProjectImage image={IMAGES[3]} reverse />
+        </Overview>
+        <div className="flex w-full mx-auto max-w-7xl items-center justify-center mt-16">
+          <div className="h-[1px] w-full bg-foreground/70" />
+          <PrefixedLink href="/products" className="text-lg w-52 font-bold">
+            View more
+          </PrefixedLink>
+          <div className="h-[1px] w-full bg-foreground/70" />
+        </div>
       </div>
     </section>
   );
