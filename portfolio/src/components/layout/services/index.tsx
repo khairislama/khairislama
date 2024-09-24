@@ -60,7 +60,7 @@ function Services() {
           {Array.from({ length: 4 }).map((_, i) => (
             <div
               key={i}
-              className="w-full bg-[#373646] border-2 border-foreground/5 p-4 flex flex-col items-center justify-center gap-6 sm:p-12 sm:grid sm:grid-cols-4 rounded-xl"
+              className="w-full bg-[#373646] border-2 border-foreground/5 p-4 flex flex-col items-center justify-center gap-6 sm:p-12 sm:grid sm:grid-cols-4 rounded-xl lg:hover:scale-105 duration-300 transition-all ease-in-out"
             >
               <div
                 className={`h-16 w-16 rounded-lg p-[2px] ${cards[i].border}`}
