@@ -3,6 +3,8 @@ import Image from "next/image";
 import SocialIcons from "../navbar/SocialIcons";
 import { Button } from "@/components/ui/button";
 import PrefixedLink from "@/components/PrefixedLink";
+import CardAvatar from "./CardAvatar";
+import { Dot } from "lucide-react";
 
 function ContactCard() {
   const translations = useTranslations("Contact");
@@ -19,9 +21,12 @@ function ContactCard() {
         <h2 className="text-header">{translations("title")}</h2>
         <div className="contact-card my-32">
           <div className="w-full flex flex-col gap-4 text-left">
-            <div className="flex items-center justify-start gap-6">
-              <div className="image">image</div>
-              <div className="image">{translations("available")}</div>
+            <div className="flex flex-col sm:flex-row items-center justify-start gap-6">
+              <CardAvatar />
+              <div className="px-4 py-2 rounded-full bg-foreground/10 flex items-center justify-center gap-2">
+                <Dot className="text-green-500 h-10 w-10" />
+                {translations("available")}
+              </div>
             </div>
             <h4 className="text-lg text-foreground font-semibold">
               {translations("hero")}
