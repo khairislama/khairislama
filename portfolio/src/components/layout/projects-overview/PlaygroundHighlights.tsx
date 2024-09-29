@@ -1,25 +1,21 @@
 import Image from "next/image";
 
-function FormulationHighlights() {
+function PlaygroundHighlights() {
   return (
     <div className="flex flex-col gap-2">
       <div className="grid grid-cols-3 w-full mt-4 gap-1">
         <div>
-          <p className="text-xl font-semibold text-green-500">+3500h</p>
-          <p className="text-xs">
-            Development time invested in this C4 security project
-          </p>
+          <p className="text-xl font-semibold">Educational</p>
+          <p className="text-xs">Learn 3D web development interactively.</p>
         </div>
         <div>
-          <p className="text-xl font-semibold text-green-500">1600+</p>
-          <p className="text-xs">
-            Tests performed ensuring quality and security
-          </p>
+          <p className="text-xl font-semibold">Blender Integration</p>
+          <p className="text-xs">Seamlessly import Blender models.</p>
         </div>
         <div>
-          <p className="text-xl font-semibold text-green-500">€220k</p>
+          <p className="text-xl font-semibold">Visual Effects</p>
           <p className="text-xs">
-            Product cost, including development and research
+            Advanced postprocessing for cinematic scenes.
           </p>
         </div>
       </div>
@@ -27,15 +23,22 @@ function FormulationHighlights() {
         <p className="underline underline-offset-4">Backend Stack: </p>
         <div className="flex items-center gap-1 sm:gap-3 md:gap-1 xl:gap-3">
           <Image
-            src="/skills/nestjs.png"
-            alt="Nest js"
+            src="/skills/nextjs.png"
+            alt="Next js"
             width={20}
             height={20}
             className="w-8"
           />
           <Image
-            src="/skills/typeorm.png"
-            alt="Typeorm"
+            src="/skills/tailwindcss.png"
+            alt="Tailwind css"
+            width={20}
+            height={20}
+            className="w-8"
+          />
+          <Image
+            src="/skills/blender.png"
+            alt="Blender"
             width={20}
             height={20}
             className="w-8"
@@ -55,22 +58,8 @@ function FormulationHighlights() {
             className="w-8"
           />
           <Image
-            src="/skills/postgresql.png"
-            alt="Postgresql"
-            width={20}
-            height={20}
-            className="w-8"
-          />
-          <Image
             src="/skills/git.png"
             alt="Git"
-            width={20}
-            height={20}
-            className="w-8"
-          />
-          <Image
-            src="/skills/azure.png"
-            alt="Azure devops"
             width={20}
             height={20}
             className="w-8"
@@ -81,4 +70,4 @@ function FormulationHighlights() {
   );
 }
 
-export default FormulationHighlights;
+export default PlaygroundHighlights;
