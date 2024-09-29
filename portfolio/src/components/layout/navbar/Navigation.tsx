@@ -9,7 +9,6 @@ function Navigation() {
       <CustomLink href="/about" title={translations("about")} />
       <CustomLink href="/play" title={translations("play")} />
       <CustomLink href="/projects" title={translations("projects")} />
-      <CustomLink href="/contact" title={translations("contact")} />
     </nav>
   );
 }
