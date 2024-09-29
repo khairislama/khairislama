@@ -21,7 +21,27 @@ export default function NavLanguage() {
 
   useEffect(() => {
     const lang = pathname.split("/")[1] || "en";
-    setCurrentLang(lang === "en" ? "English" : "Français");
+    switch (lang) {
+      case "en":
+        setCurrentLang("English");
+        break;
+      case "fr":
+        setCurrentLang("Français");
+        break;
+      case "de":
+        setCurrentLang("Deutsch");
+        break;
+      case "lu":
+        setCurrentLang("lëtzebuergesch");
+        break;
+      case "nl":
+        setCurrentLang("Nederlands");
+        break;
+
+      default:
+        setCurrentLang("English");
+        break;
+    }
   }, [pathname]);
 
   const changeLanguage = (lang: string) => {
@@ -55,6 +75,24 @@ export default function NavLanguage() {
             onClick={() => changeLanguage("fr")}
           >
             FR
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
+            onClick={() => changeLanguage("de")}
+          >
+            DE
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
+            onClick={() => changeLanguage("lu")}
+          >
+            LU
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
+            onClick={() => changeLanguage("nl")}
+          >
+            NL
           </DropdownMenuItem>
         </DropdownMenuGroup>
       </DropdownMenuContent>
