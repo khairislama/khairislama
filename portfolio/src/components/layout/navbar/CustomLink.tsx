@@ -35,7 +35,7 @@ const CustomLink = ({
       href={fullLink}
       className={`${className} relative group hover:text-foreground ${
         isActive && "text-foreground"
-      } ${disabled && "cursor-not-allowed"}`}
+      }`}
     >
       {disabled ? (
         <TooltipProvider>
