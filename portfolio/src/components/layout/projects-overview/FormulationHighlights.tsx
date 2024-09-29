@@ -1,30 +1,29 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 function FormulationHighlights() {
+  const translations = useTranslations("ProjectsOverview");
+
   return (
     <div className="flex flex-col gap-2">
       <div className="grid grid-cols-3 w-full mt-4 gap-1">
         <div>
           <p className="text-xl font-semibold text-green-500">+3500h</p>
-          <p className="text-xs">
-            Development time invested in this C4 security project
-          </p>
+          <p className="text-xs">{translations("formulation-highlight-1")}</p>
         </div>
         <div>
           <p className="text-xl font-semibold text-green-500">1600+</p>
-          <p className="text-xs">
-            Tests performed ensuring quality and security
-          </p>
+          <p className="text-xs">{translations("formulation-highlight-2")}</p>
         </div>
         <div>
           <p className="text-xl font-semibold text-green-500">€220k</p>
-          <p className="text-xs">
-            Product cost, including development and research
-          </p>
+          <p className="text-xs">{translations("formulation-highlight-3")}</p>
         </div>
       </div>
       <div className="flex items-center justify-start gap-1 xl:gap-4 col-span-2">
-        <p className="underline underline-offset-4">Backend Stack: </p>
+        <p className="underline underline-offset-4">
+          {translations("backend-stack")}:{" "}
+        </p>
         <div className="flex items-center gap-1 sm:gap-3 md:gap-1 xl:gap-3">
           <Image
             src="/skills/nestjs.png"
