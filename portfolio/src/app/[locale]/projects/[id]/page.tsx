@@ -1,6 +1,6 @@
 import { Construction } from "lucide-react";
 
-function PlayPage() {
+function SingleProjectPage() {
   return (
     <main className="w-full overflow-hidden h-screen">
       <div className="flex flex-col items-center justify-center h-full">
@@ -14,4 +14,4 @@ function PlayPage() {
   );
 }
 
-export default PlayPage;
+export default SingleProjectPage;
