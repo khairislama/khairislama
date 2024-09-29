@@ -40,7 +40,7 @@ const CustomLink = ({
       {disabled ? (
         <TooltipProvider>
           <Tooltip>
-            <TooltipTrigger>{title}</TooltipTrigger>
+            <TooltipTrigger className="uppercase">{title}</TooltipTrigger>
             <TooltipContent className="bg-foreground flex items-center gap-2">
               <Construction className="h-4 w-4" />
               <p>under construction</p>

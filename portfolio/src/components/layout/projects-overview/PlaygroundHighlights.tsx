@@ -28,7 +28,7 @@ function PlaygroundHighlights() {
       </div>
       <div className="flex items-center justify-start gap-1 xl:gap-4 col-span-2">
         <p className="underline underline-offset-4">
-          {translations("backend-stack")}:{" "}
+          {translations("stack")}:{" "}
         </p>
         <div className="flex items-center gap-1 sm:gap-3 md:gap-1 xl:gap-3">
           <Image
