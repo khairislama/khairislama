@@ -1,0 +1,81 @@
+{
+  "Navbar": {
+    "cv": "Lebenslauf herunterladen",
+    "home": "Startseite",
+    "about": "Über mich",
+    "play": "Spielen",
+    "projects": "Projekte"
+  },
+  "Hero": {
+    "welcome": "Ich bin Khairi",
+    "title": "Mid-Senior Softwareentwickler"
+  },
+  "KnowMe": {
+    "title": "Lernen Sie mich besser kennen",
+    "description": "Absolvent als Full-Stack-Ingenieur mit einem starken Hintergrund in Webentwicklung und einem tiefen Fokus auf Sicherheit. Ich bin leidenschaftlich daran interessiert, meine Fähigkeiten auf herausfordernde Projekte anzuwenden und innovative Lösungen zu liefern. Dieses Portfolio hebt meine vielfältige Arbeit hervor, von eleganten Webdesigns bis hin zu robusten, sicheren Anwendungen.",
+    "call-to-action": "Erfahren Sie mehr über mich"
+  },
+  "Skills": {
+    "title": "Fähigkeiten",
+    "header": "Von Webseiten & Mobile zu Netzwerken und Datenmanagement",
+    "subtitle": "Ich hatte die Möglichkeit, mit verschiedenen Werkzeugen zu arbeiten."
+  },
+  "ProjectsOverview": {
+    "title": "Projekte",
+    "featured-1": "Kundenprojekt",
+    "featured-2": "Hutchinson Projekt",
+    "featured-3": "Kundenprojekt",
+    "featured-4": "Persönliches Projekt",
+    "project-1-title": "Carthabot TN",
+    "project-1-description": "CarthaBot ist eine Bildungsplattform, die ein fesselndes und interaktives Lernerlebnis für Schüler bietet, die sich mit MINT-Themen beschäftigen. Als Webentwickler entwerfe ich eine benutzerfreundliche Schnittstelle, unterstütze den mehrsprachigen Zugang und sorge für eine nahtlose Interaktion mit dem Roboter.",
+    "project-2-title": "Formulierung",
+    "project-2-description": "Das Digitalisierungsprojekt für Formulierungen zielt darauf ab, die Formulierungsprozesse der Hutchinson Group zu optimieren.",
+    "project-3-title": "Strong cast shop",
+    "project-3-description": "Das E-Commerce-Projekt Strong Cast zielt darauf ab, eine robuste Online-Plattform für den Verkauf hochwertiger Angelschnüre auf dem US-Markt zu etablieren.",
+    "project-4-title": "Robot Playground",
+    "project-4-description": "Das Projekt Robot Playground erkundet die Möglichkeiten der 3D-Webentwicklung mit Next.js, Three.js und React Three Fiber, um interaktive, immersive Erlebnisse zu schaffen.",
+    "performance": "Leistung",
+    "stack": "Technologie-Stack",
+    "backend-stack": "Backend-Stack",
+    "structure": "Struktur",
+    "view-more": "Mehr sehen",
+    "formulation-highlight-1": "Entwicklungszeit in dieses C4-Sicherheitsprojekt investiert",
+    "formulation-highlight-2": "Durchgeführte Tests zur Sicherstellung von Qualität und Sicherheit",
+    "formulation-highlight-3": "Produktkosten, einschließlich Entwicklung und Forschung",
+    "playground-highlight-1-title": "Bildung",
+    "playground-highlight-1": "Lernen Sie 3D-Webentwicklung interaktiv.",
+    "playground-highlight-2-title": "Blender-Integration",
+    "playground-highlight-2": "Blender-Modelle nahtlos importieren.",
+    "playground-highlight-3-title": "Visuelle Effekte",
+    "playground-highlight-3": "Fortgeschrittene Post-Processing-Effekte für filmische Szenen."
+  },
+  "Services": {
+    "title": "Dienstleistungen",
+    "service-1": "Webentwicklung",
+    "service-2": "Backend-Lösungen",
+    "service-3": "3D-Web-Apps",
+    "service-4": "API-Design",
+    "service-5": "E-Commerce",
+    "services-title": "Optimierte Weblösungen für jeden Bedarf",
+    "services-subtitle": "Von der Entwicklung bis zur Bereitstellung erstelle ich effiziente, skalierbare Webanwendungen.",
+    "card-1-title": "Webentwicklungs-Profi",
+    "card-1-description": "Hochleistungs-Frontend und responsives Design.",
+    "card-2-title": "Backend-Experte",
+    "card-2-description": "Skalierbare Serverlösungen mit NestJS und Node.",
+    "card-3-title": "E-Commerce-Ersteller",
+    "card-3-description": "Voll ausgestattete Online-Shops mit nahtlosen Integrationen.",
+    "card-4-title": "API-Architekt",
+    "card-4-description": "RESTful- und GraphQL-APIs für alle Plattformen."
+  },
+  "Contact": {
+    "title": "Kontakt",
+    "available": "Verfügbar für Arbeit",
+    "hero": "Schreiben Sie mir oder sagen Sie 👋 in sozialen Netzwerken",
+    "description": "Egal, ob Sie als Entwickler Unterstützung benötigen oder ein Start-up sind, das seine Leistung steigern möchte, ich freue mich darauf, über Ihr Projekt zu sprechen 💜",
+    "call-to-action": "Lassen Sie uns Magie zusammen erschaffen ✨"
+  },
+  "Footer": {
+    "cooked with love in": "mit Liebe gekocht in",
+    "with": "mit"
+  }
+}
