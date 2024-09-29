@@ -4,16 +4,78 @@
     "home": "Accueil",
     "about": "À propos",
     "play": "Jouer",
-    "projects": "Projets",
-    "contact": "Contact"
+    "projects": "Projets"
   },
   "Hero": {
     "welcome": "Je suis Khairi",
     "title": "Développeur logiciel mi-senior"
   },
   "KnowMe": {
-    "title": "Apprenons à mieux me connaître",
-    "description": "Diplômé en tant qu'ingénieur full stack avec une solide expérience en développement web et un fort accent sur la sécurité. Je suis passionné par l'idée de mettre mes compétences en œuvre sur des projets ambitieux et de livrer des solutions innovantes. Ce portfolio présente la diversité de mes réalisations, allant de conceptions web élégantes à des applications robustes et sécurisées. Mon parcours de développeur est animé par le désir de créer des solutions web performantes et impactantes.",
+    "title": "Apprenez à mieux me connaître",
+    "description": "Diplômé ingénieur full-stack avec une solide expérience en développement web et un focus profond sur la sécurité. Je suis passionné par l'application de mes compétences à des projets stimulants et la fourniture de solutions innovantes. Ce portfolio met en avant mon large éventail de travaux, des conceptions web élégantes aux applications robustes et sécurisées. Mon parcours de développeur est guidé par le désir de créer des solutions web performantes et impactantes.",
     "call-to-action": "Découvrez-en plus sur moi"
+  },
+  "Skills": {
+    "title": "Compétences",
+    "header": "Des sites Web et mobiles à la gestion des données et des réseaux",
+    "subtitle": "J'ai eu l'opportunité de travailler avec divers outils."
+  },
+  "ProjectsOverview": {
+    "title": "Projets",
+    "featured-1": "Projet client",
+    "featured-2": "Projet Hutchinson",
+    "featured-3": "Projet client",
+    "featured-4": "Projet personnel",
+    "project-1-title": "Carthabot TN",
+    "project-1-description": "La plateforme éducative CarthaBot vise à offrir une expérience d'apprentissage engageante et interactive pour les étudiants explorant les concepts STEM. En tant qu'ingénieur web, mon rôle consiste à concevoir une interface conviviale, à soutenir l'accès multilingue et à garantir une interaction fluide avec le robot. En tirant parti de Next.js et de fonctionnalités personnalisées, je crée une plateforme moderne qui améliore le potentiel éducatif de CarthaBot.",
+    "project-2-title": "Formulation",
+    "project-2-description": "Le projet de digitalisation des formulations vise à rationaliser les processus de formulation du groupe Hutchinson en remplaçant les méthodes traditionnelles basées sur Excel par une solution robuste et prête pour le cloud. En tant que développeur backend solo, mon rôle est de concevoir une base de données relationnelle complexe en utilisant NestJS, TypeORM et PostgreSQL, tout en collaborant avec l'équipe frontend sur Angular.",
+    "project-3-title": "Strong cast shop",
+    "project-3-description": "Le projet e-commerce Strong Cast vise à établir une plateforme en ligne robuste pour la vente de lignes de pêche de haute qualité sur le marché américain. En tant qu'ingénieur web, mon rôle est de créer une expérience utilisateur fluide et une gestion efficace des produits en tirant parti des technologies Next.js et Shopify.",
+    "project-4-title": "Robot Playground",
+    "project-4-description": "Le projet Robot Playground vise à explorer les possibilités du développement web 3D en utilisant Next.js, Three.js et React Three Fiber pour créer des expériences interactives et immersives.",
+    "performance": "Performance",
+    "stack": "Technologies",
+    "backend-stack": "Technologies backend",
+    "structure": "Structure",
+    "view-more": "Voir plus",
+    "formulation-highlight-1": "Temps de développement investi dans ce projet C4",
+    "formulation-highlight-2": "Tests effectués pour assurer la qualité et la sécurité",
+    "formulation-highlight-3": "Coût du produit, y compris la recherche et le développement",
+    "playground-highlight-1-title": "Éducatif",
+    "playground-highlight-1": "Apprenez le développement web 3D de manière interactive.",
+    "playground-highlight-2-title": "Intégration Blender",
+    "playground-highlight-2": "Importez des modèles Blender en toute transparence.",
+    "playground-highlight-3-title": "Effets visuels",
+    "playground-highlight-3": "Post-traitement avancé pour des scènes cinématiques."
+  },
+  "Services": {
+    "title": "Services",
+    "service-1": "Développement web",
+    "service-2": "Solutions backend",
+    "service-3": "Applications Web 3D",
+    "service-4": "Conception d'API",
+    "service-5": "E-commerce",
+    "services-title": "Solutions Web optimisées pour chaque besoin",
+    "services-subtitle": "Du développement au déploiement, je crée des applications web efficaces et évolutives.",
+    "card-1-title": "Pro du développement web",
+    "card-1-description": "Front-end haute performance et design réactif.",
+    "card-2-title": "Expert backend",
+    "card-2-description": "Solutions côté serveur évolutives avec NestJS et Node.",
+    "card-3-title": "Créateur d'e-commerce",
+    "card-3-description": "Boutiques en ligne complètes avec intégrations transparentes.",
+    "card-4-title": "Architecte d'API",
+    "card-4-description": "APIs RESTful et GraphQL pour toutes les plateformes."
+  },
+  "Contact": {
+    "title": "Contact",
+    "available": "Disponible pour travailler",
+    "hero": "Écrivez-moi ou dites 👋 sur les réseaux sociaux",
+    "description": "Que vous soyez un développeur ayant besoin de soutien ou une startup en phase de démarrage souhaitant augmenter ses performances, j'aimerais discuter de votre projet 💜",
+    "call-to-action": "Créons de la magie ensemble ✨"
+  },
+  "Footer": {
+    "cooked with love in": "cuisiné avec amour à",
+    "with": "avec"
   }
 }
