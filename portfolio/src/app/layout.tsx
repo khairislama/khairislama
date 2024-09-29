@@ -8,6 +8,7 @@ export default function RootLayout({
 
 // TODO: modify Section title
 // TODO: Check images alt
+// TODO: Check all images sizes and if can pass array of optimization
 // TODO: Add metadata
 // TODO: Add robot xml
 // TODO: fix links
