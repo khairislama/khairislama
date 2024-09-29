@@ -91,7 +91,7 @@ function ProjectsOverview() {
         <div className="flex w-full mx-auto max-w-7xl items-center justify-center mt-16">
           <div className="h-[1px] w-full bg-foreground/70" />
           <PrefixedLink href="/products" className="text-lg w-52 font-bold">
-            View more
+            {translations("view-more")}
           </PrefixedLink>
           <div className="h-[1px] w-full bg-foreground/70" />
         </div>

@@ -1,14 +1,21 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 function CarthabotHighlights() {
+  const translations = useTranslations("ProjectsOverview");
+
   return (
     <div className="flex flex-col lg:grid lg:grid-cols-3 w-full mt-4">
       <div className="flex items-center justify-start gap-1 xl:gap-4">
-        <p className="underline underline-offset-4">Performance: </p>
+        <p className="underline underline-offset-4">
+          {translations("performance")}:{" "}
+        </p>
         <p className="text-4xl text-green-500 font-bold">A</p>
       </div>
       <div className="flex items-center justify-start gap-1 xl:gap-4 col-span-2">
-        <p className="underline underline-offset-4">Stack: </p>
+        <p className="underline underline-offset-4">
+          {translations("stack")}:{" "}
+        </p>
         <div className="flex items-center gap-1 sm:gap-3 md:gap-1 xl:gap-3">
           <Image
             src="/skills/nextjs.png"
