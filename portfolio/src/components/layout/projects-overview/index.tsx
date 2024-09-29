@@ -7,6 +7,7 @@ import PrefixedLink from "@/components/PrefixedLink";
 import CarthabotHighlights from "./CarthabotHighlights";
 import FormulationHighlights from "./FormulationHighlights";
 import StrongCastHighlights from "./StrongCastHighlights";
+import PlaygroundHighlights from "./PlaygroundHighlights";
 
 const IMAGES = [
   {
@@ -83,20 +84,7 @@ function ProjectsOverview() {
             github="https://github.com/khairislama/robot-playground"
             demo="https://robot-playground-three.vercel.app"
           >
-            <div className="grid grid-cols-2 w-full mt-4">
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-            </div>
+            <PlaygroundHighlights />
           </ProjectText>
           <ProjectImage image={IMAGES[3]} reverse />
         </Overview>
