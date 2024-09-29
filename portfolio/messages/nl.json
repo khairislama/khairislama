@@ -1,0 +1,81 @@
+{
+  "Navbar": {
+    "cv": "Download CV",
+    "home": "Home",
+    "about": "Over mij",
+    "play": "Spelen",
+    "projects": "Projecten"
+  },
+  "Hero": {
+    "welcome": "Ik ben Khairi",
+    "title": "Mid-Senior softwareontwikkelaar"
+  },
+  "KnowMe": {
+    "title": "Leer mij beter kennen",
+    "description": "Afgestudeerd als full-stack ingenieur met een sterke achtergrond in webontwikkeling en een diepe focus op beveiliging. Ik ben gepassioneerd door het toepassen van mijn vaardigheden op uitdagende projecten en het leveren van innovatieve oplossingen.",
+    "call-to-action": "Ontdek meer over mij"
+  },
+  "Skills": {
+    "title": "Vaardigheden",
+    "header": "Van websites & mobiel tot netwerken en databeheer",
+    "subtitle": "Ik heb de kans gehad om met allerlei tools te werken."
+  },
+  "ProjectsOverview": {
+    "title": "Projecten",
+    "featured-1": "Klantproject",
+    "featured-2": "Hutchinson project",
+    "featured-3": "Klantproject",
+    "featured-4": "Persoonlijk project",
+    "project-1-title": "Carthabot TN",
+    "project-1-description": "CarthaBot educatief platform biedt een boeiende en interactieve leerervaring voor studenten die STEM-concepten verkennen. Als web engineer is mijn rol het ontwerpen van een gebruiksvriendelijke interface en het ondersteunen van meertalige toegang.",
+    "project-2-title": "Formulatie",
+    "project-2-description": "Het formulatie digitaliseringsproject heeft tot doel de formulatieprocessen van de Hutchinson Group te stroomlijnen.",
+    "project-3-title": "Strong cast shop",
+    "project-3-description": "Het e-commerceproject Strong Cast richt zich op het opzetten van een robuust online platform voor de verkoop van hoogwaardige vislijnen op de Amerikaanse markt.",
+    "project-4-title": "Robot Playground",
+    "project-4-description": "Het Robot Playground-project onderzoekt de mogelijkheden van 3D-webontwikkeling met Next.js, Three.js en React Three Fiber.",
+    "performance": "Prestaties",
+    "stack": "Technologie-stack",
+    "backend-stack": "Backend-stack",
+    "structure": "Structuur",
+    "view-more": "Meer zien",
+    "formulation-highlight-1": "Ontwikkeltijd geïnvesteerd in dit C4-beveiligingsproject",
+    "formulation-highlight-2": "Uitgevoerde tests ter waarborging van kwaliteit en veiligheid",
+    "formulation-highlight-3": "Productkosten, inclusief ontwikkeling en onderzoek",
+    "playground-highlight-1-title": "Educatief",
+    "playground-highlight-1": "Leer interactieve 3D-webontwikkeling.",
+    "playground-highlight-2-title": "Blender-integratie",
+    "playground-highlight-2": "Naadloze import van Blender-modellen.",
+    "playground-highlight-3-title": "Visuele effecten",
+    "playground-highlight-3": "Geavanceerde post-processing voor filmische scènes."
+  },
+  "Services": {
+    "title": "Diensten",
+    "service-1": "Webontwikkeling",
+    "service-2": "Backend-oplossingen",
+    "service-3": "3D-webapps",
+    "service-4": "API-ontwerp",
+    "service-5": "E-commerce",
+    "services-title": "Geoptimaliseerde weboplossingen voor elke behoefte",
+    "services-subtitle": "Van ontwikkeling tot implementatie, ik bouw efficiënte, schaalbare webapplicaties.",
+    "card-1-title": "Webontwikkeling Pro",
+    "card-1-description": "High-performance front-end en responsief ontwerp.",
+    "card-2-title": "Backend Expert",
+    "card-2-description": "Schaalbare serveroplossingen met NestJS en Node.",
+    "card-3-title": "E-commerce Bouwer",
+    "card-3-description": "Volwaardige online winkels met naadloze integraties.",
+    "card-4-title": "API Architect",
+    "card-4-description": "RESTful en GraphQL API's voor alle platforms."
+  },
+  "Contact": {
+    "title": "Contact",
+    "available": "Beschikbaar voor werk",
+    "hero": "Stuur me een bericht of zeg 👋 op sociale netwerken",
+    "description": "Of je nu een ontwikkelaar bent die ondersteuning nodig heeft of een startup die zijn prestaties wil verbeteren, ik hoor graag over je project 💜",
+    "call-to-action": "Laten we samen magie creëren ✨"
+  },
+  "Footer": {
+    "cooked with love in": "gemaakt met liefde in",
+    "with": "met"
+  }
+}
