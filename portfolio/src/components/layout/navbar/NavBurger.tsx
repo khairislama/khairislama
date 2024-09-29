@@ -16,7 +16,6 @@ import {
   BookOpenText,
   ChartNoAxesGantt,
   Drum,
-  Headset,
   House,
   Mail,
 } from "lucide-react";
@@ -69,15 +68,6 @@ export default function NavBurger() {
             >
               <Link href="/code" className="h-full w-full flex gap-1">
                 <ChartNoAxesGantt className="h-4 w-4" /> Projects
-              </Link>
-            </DropdownMenuItem>
-            <DropdownMenuItem
-              className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
-              onClick={handleItemClick}
-            >
-              <Link href="/shop" className="h-full w-full flex gap-1">
-                <Headset className="h-4 w-4" />
-                Contact
               </Link>
             </DropdownMenuItem>
           </nav>

@@ -4,6 +4,7 @@ import Overview from "./Overview";
 import ProjectText from "./ProjectText";
 import ProjectImage from "./ProjectImage";
 import PrefixedLink from "@/components/PrefixedLink";
+import CarthabotStack from "./CarthabotStack";
 
 const IMAGES = [
   {
@@ -52,18 +53,14 @@ function ProjectsOverview() {
             viewMore="/project/1"
             demo="https://carthabot.vercel.app/"
           >
-            <div className="grid grid-cols-2 w-full mt-4">
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
+            <div className="flex flex-col lg:grid lg:grid-cols-3 w-full mt-4">
+              <div className="flex items-center justify-start gap-1 xl:gap-4">
+                <p className="underline underline-offset-4">Performance: </p>
+                <p className="text-4xl text-green-500 font-bold">A</p>
               </div>
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
+              <div className="flex items-center justify-start gap-1 xl:gap-4 col-span-2">
+                <p className="underline underline-offset-4">Stack: </p>
+                <CarthabotStack />
               </div>
             </div>
           </ProjectText>
@@ -71,17 +68,23 @@ function ProjectsOverview() {
         </Overview>
         <Overview reverse>
           <ProjectText projectNumber={2} reverse viewMore="/project/2">
-            <div className="grid grid-cols-2 w-full mt-4">
+            <div className="grid grid-cols-3 w-full mt-4 gap-1">
               <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
+                <p className="text-xl font-semibold">+3500h</p>
+                <p className="text-xs">
+                  Development time invested in this C4 security project
                 </p>
               </div>
               <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
+                <p className="text-xl font-semibold">1600+</p>
+                <p className="text-xs">
+                  Tests performed ensuring quality and security
+                </p>
+              </div>
+              <div>
+                <p className="text-xl font-semibold">€220k</p>
+                <p className="text-xs">
+                  Product cost, including development and research
                 </p>
               </div>
             </div>
