@@ -4,6 +4,10 @@ import Overview from "./Overview";
 import ProjectText from "./ProjectText";
 import ProjectImage from "./ProjectImage";
 import PrefixedLink from "@/components/PrefixedLink";
+import CarthabotHighlights from "./CarthabotHighlights";
+import FormulationHighlights from "./FormulationHighlights";
+import StrongCastHighlights from "./StrongCastHighlights";
+import PlaygroundHighlights from "./PlaygroundHighlights";
 
 const IMAGES = [
   {
@@ -49,65 +53,26 @@ function ProjectsOverview() {
         <Overview>
           <ProjectText
             projectNumber={1}
-            viewMore="/project/1"
+            viewMore="/projects/1"
             demo="https://carthabot.vercel.app/"
           >
-            <div className="grid grid-cols-2 w-full mt-4">
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-            </div>
+            <CarthabotHighlights />
           </ProjectText>
           <ProjectImage image={IMAGES[0]} />
         </Overview>
         <Overview reverse>
-          <ProjectText projectNumber={2} reverse viewMore="/project/2">
-            <div className="grid grid-cols-2 w-full mt-4">
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-            </div>
+          <ProjectText projectNumber={2} reverse viewMore="/projects/2">
+            <FormulationHighlights />
           </ProjectText>
           <ProjectImage image={IMAGES[1]} reverse />
         </Overview>
         <Overview>
           <ProjectText
             projectNumber={3}
-            viewMore="/project/3"
+            viewMore="/projects/3"
             demo="https://www.strong-cast.com/"
           >
-            <div className="grid grid-cols-2 w-full mt-4">
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-            </div>
+            <StrongCastHighlights />
           </ProjectText>
           <ProjectImage image={IMAGES[2]} />
         </Overview>
@@ -115,31 +80,18 @@ function ProjectsOverview() {
           <ProjectText
             projectNumber={4}
             reverse
-            viewMore="/project/4"
+            viewMore="/projects/4"
             github="https://github.com/khairislama/robot-playground"
             demo="https://robot-playground-three.vercel.app"
           >
-            <div className="grid grid-cols-2 w-full mt-4">
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-              <div>
-                <p className="text-xl font-semibold">Over 35k</p>
-                <p className="text-sm">
-                  Users gained within 6 months of launch
-                </p>
-              </div>
-            </div>
+            <PlaygroundHighlights />
           </ProjectText>
           <ProjectImage image={IMAGES[3]} reverse />
         </Overview>
         <div className="flex w-full mx-auto max-w-7xl items-center justify-center mt-16">
           <div className="h-[1px] w-full bg-foreground/70" />
           <PrefixedLink href="/products" className="text-lg w-52 font-bold">
-            View more
+            {translations("view-more")}
           </PrefixedLink>
           <div className="h-[1px] w-full bg-foreground/70" />
         </div>
