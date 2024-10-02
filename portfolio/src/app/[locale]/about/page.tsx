@@ -1,4 +1,4 @@
-import { MyJourney, PageHero } from "@/components/layout";
+import { AboutCurrentWork, MyJourney, PageHero } from "@/components/layout";
 import { useTranslations } from "next-intl";
 
 function AboutMePage() {
@@ -10,6 +10,7 @@ function AboutMePage() {
         subtitle={translations("subtitle")}
       />
       <MyJourney />
+      <AboutCurrentWork />
     </main>
   );
 }
