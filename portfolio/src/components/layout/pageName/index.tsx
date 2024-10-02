@@ -4,7 +4,7 @@ function PageHero({ title, subtitle }: { title: string; subtitle: string }) {
       <h1 className="text-4xl lg:text-6xl font-semibold font-syne text-foreground tracking-wider">
         {title}
       </h1>
-      <p className="text-sm tracking-wide font-rubik text-justify mt-3 sm:mt-4">
+      <p className="text-lg tracking-wide font-rubik text-justify mt-3 sm:mt-4">
         {subtitle}
       </p>
       <div className="h-[1px] w-full bg-foreground/70 mt-6" />

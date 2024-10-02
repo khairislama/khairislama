@@ -8,7 +8,7 @@ function MyJourney() {
           <h2 className="text-3xl lg:text-4xl font-semibold font-syne text-foreground tracking-wider">
             My Journey
           </h2>
-          <p className="text-sm tracking-wide font-rubik text-justify">
+          <p className="text-lg tracking-wide font-rubik text-justify">
             I graduated with a full-stack engineering degree, marked by the
             prestigious EUR-ACE label, making it equivalent to a European
             degree. My educational journey culminated in an exciting
