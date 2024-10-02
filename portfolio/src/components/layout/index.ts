@@ -2,6 +2,7 @@ import Footer from "./footer";
 import Hero from "./hero";
 import KnowAboutMe from "./know-about-me";
 import Navbar from "./navbar";
+import PageHero from "./pageName";
 import ProjectsOverview from "./projects-overview";
 import Services from "./services";
 import Skills from "./skills";
@@ -13,6 +14,7 @@ export {
   Hero,
   KnowAboutMe,
   Navbar,
+  PageHero,
   ProjectsOverview,
   Services,
   Skills,
