@@ -32,7 +32,7 @@ export default function NavLanguage() {
         setCurrentLang("Deutsch");
         break;
       case "lu":
-        setCurrentLang("lëtzebuergesch");
+        setCurrentLang("Lëtzebuergesch");
         break;
       case "nl":
         setCurrentLang("Nederlands");
