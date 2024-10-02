@@ -77,5 +77,9 @@
   "Footer": {
     "cooked with love in": "cooked with love in",
     "with": "with"
+  },
+  "About": {
+    "title": "About Me",
+    "subtitle": "I’m a passionate software engineer specializing in web development with a focus on building high-performance, secure web solutions. My experience spans backend development at Hutchinson and freelancing in full-stack platforms using the latest web technologies. I enjoy tackling complex problems and creating user-friendly digital experiences. Always driven by innovation, I’m eager to bring my expertise to impactful projects abroad."
   }
 }
