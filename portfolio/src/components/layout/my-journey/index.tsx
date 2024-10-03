@@ -18,7 +18,7 @@ function MyJourney() {
           <div className="w-80 rounded-t-full overflow-hidden bg-gradient-to-tr from-primary/30 to-secondary/30 backdrop-blur-sm">
             <Image
               src="/khairi-slama-face.webp"
-              alt="khairi slama"
+              alt="khairi slama face"
               width={500}
               height={500}
               className="object-cover w-full h-auto"
@@ -31,7 +31,7 @@ function MyJourney() {
         alt="curvy lines"
         width={1200}
         height={1200}
-        className="hidden lg:block absolute -bottom-[80%] xl:-bottom-[110%] object-cover opacity-30 w-full pointer-events-none"
+        className="hidden lg:block absolute -bottom-[80%] xl:-bottom-[110%] 2xl:-bottom-[170%] object-cover opacity-30 w-full pointer-events-none"
       />
     </section>
   );
