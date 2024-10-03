@@ -17,7 +17,7 @@ function ContactCard() {
         height={288}
         className="absolute object-cover w-full pointer-events-none -top-60 -z-10 brightness-125"
       />
-      <div className="max-w-4xl mx-auto text-center mt-36">
+      <div className="max-w-4xl mx-auto text-center mt-36 p-4 sm:p-6 xl:p-0">
         <h2 className="text-header">{translations("title")}</h2>
         <div className="contact-card my-32">
           <div className="w-full flex flex-col gap-4 text-left">
