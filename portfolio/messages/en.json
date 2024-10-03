@@ -88,6 +88,10 @@
     "current-work": {
       "title": "Engineering Security and Innovation at Hutchinson",
       "description": "I’ve been involved in critical backend development, working with NestJS to build highly secure solutions for the industry. Over 1 year and 7 months, I’ve contributed in a projects, ensuring it meet the highest security standards while maintaining optimal performance. Every project I take on challenges me to improve both the security architecture and the performance of the systems, which is a key part of my role."
+    },
+    "know-me": {
+      "title": "Beyond Code My Passions Outside of Work",
+      "description": "When I’m not working on complex code, you’ll often find me outdoors. I love camping trips, where I can disconnect from the digital world and reconnect with nature. Footing, hiking, and sports keep me active, and my Belgian Malinois is always by my side on these adventures. Whether it’s exploring new trails or spending time in social groups, I believe in balancing my tech-driven life with real-world experiences"
     }
   }
 }
