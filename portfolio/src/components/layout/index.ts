@@ -1,4 +1,5 @@
-import ContactCard from "./contactCard";
+import ContactCard from "./contact-card";
+import ContactWrapper from "./contact-form";
 import AboutCurrentWork from "./current-work";
 import Footer from "./footer";
 import Hero from "./hero";
@@ -12,6 +13,8 @@ import Skills from "./skills";
 import Testimonials from "./testimonials";
 
 export {
+  ContactCard,
+  ContactWrapper,
   Footer,
   AboutCurrentWork,
   Hero,
@@ -23,5 +26,4 @@ export {
   Services,
   Skills,
   Testimonials,
-  ContactCard,
 };
