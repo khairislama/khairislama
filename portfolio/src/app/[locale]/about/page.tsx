@@ -1,5 +1,6 @@
 import {
   AboutCurrentWork,
+  ContactWrapper,
   KnowAboutMe,
   MyJourney,
   PageHero,
@@ -25,6 +26,7 @@ function AboutMePage() {
         height={1600}
         bottomFocused
       />
+      <ContactWrapper />
     </main>
   );
 }
