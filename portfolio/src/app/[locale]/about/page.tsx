@@ -1,4 +1,9 @@
-import { AboutCurrentWork, MyJourney, PageHero } from "@/components/layout";
+import {
+  AboutCurrentWork,
+  KnowAboutMe,
+  MyJourney,
+  PageHero,
+} from "@/components/layout";
 import { useTranslations } from "next-intl";
 
 function AboutMePage() {
@@ -11,6 +16,15 @@ function AboutMePage() {
       />
       <MyJourney />
       <AboutCurrentWork />
+      <KnowAboutMe
+        title={translations("know-me.title")}
+        description={translations("know-me.description")}
+        src="/khairi-slama-eva.webp"
+        alt="Khairi SLAMA with his dog"
+        width={1200}
+        height={1600}
+        bottomFocused
+      />
     </main>
   );
 }
