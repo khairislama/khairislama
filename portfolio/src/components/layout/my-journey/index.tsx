@@ -15,7 +15,15 @@ function MyJourney() {
           </p>
         </div>
         <div className="w-full flex items-center justify-center z-10">
-          <div className="w-72 h-80 lg:w-80 lg:h-96 bg-foreground rounded-t-full"></div>
+          <div className="w-80 rounded-t-full overflow-hidden bg-gradient-to-tr from-primary/30 to-secondary/30 backdrop-blur-sm">
+            <Image
+              src="/khairi-slama-face.webp"
+              alt="khairi slama"
+              width={500}
+              height={500}
+              className="object-cover w-full h-auto"
+            />
+          </div>
         </div>
       </div>
       <Image
