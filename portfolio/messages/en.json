@@ -80,6 +80,14 @@
   },
   "About": {
     "title": "About Me",
-    "subtitle": "I’m a passionate software engineer specializing in web development with a focus on building high-performance, secure web solutions. My experience spans backend development at Hutchinson and freelancing in full-stack platforms using the latest web technologies. I enjoy tackling complex problems and creating user-friendly digital experiences. Always driven by innovation, I’m eager to bring my expertise to impactful projects abroad."
+    "subtitle": "I’m a passionate software engineer specializing in web development with a focus on building high-performance, secure web solutions. My experience spans backend development at Hutchinson and freelancing in full-stack platforms using the latest web technologies. I enjoy tackling complex problems and creating user-friendly digital experiences. Always driven by innovation, I’m eager to bring my expertise to impactful projects abroad.",
+    "my-journey": {
+      "title": "My Journey",
+      "description": "I graduated with a full-stack engineering degree, marked by the prestigious EUR-ACE label, making it equivalent to a European degree. My educational journey culminated in an exciting end-of-study project in Paris, where I had the opportunity to design a comprehensive web platform. This project not only honed my skills in cutting-edge web technologies but also deepened my passion for problem-solving and innovation in the tech world."
+    },
+    "current-work": {
+      "title": "Engineering Security and Innovation at Hutchinson",
+      "description": "I’ve been involved in critical backend development, working with NestJS to build highly secure solutions for the industry. Over 1 year and 7 months, I’ve contributed in a projects, ensuring it meet the highest security standards while maintaining optimal performance. Every project I take on challenges me to improve both the security architecture and the performance of the systems, which is a key part of my role."
+    }
   }
 }

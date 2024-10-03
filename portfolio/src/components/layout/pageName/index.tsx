@@ -1,6 +1,6 @@
 function PageHero({ title, subtitle }: { title: string; subtitle: string }) {
   return (
-    <section className="w-full max-w-7xl mx-auto my-10 md:my-16 lg:my-20 xl:my-24 px-4 xl:px-0">
+    <section className="w-full max-w-7xl mx-auto my-10 md:my-16 lg:my-20 xl:my-24 px-4 sm:px-6 xl:px-0">
       <h1 className="text-4xl lg:text-6xl font-semibold font-syne text-foreground tracking-wider">
         {title}
       </h1>
