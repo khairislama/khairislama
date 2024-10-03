@@ -2,52 +2,52 @@
   "Navbar": {
     "cv": "CV eroflueden",
     "home": "Heem",
-    "about": "Iwwer mech",
+    "about": "Iwwer",
     "play": "Spillen",
     "projects": "Projeten"
   },
   "Hero": {
     "welcome": "Ech sinn de Khairi",
-    "title": "Mid-Senior Softwareentwéckler"
+    "title": "Mëtt-Senior Software Entwéckler"
   },
   "KnowMe": {
-    "title": "Léiert mech besser kennen",
+    "title": "Loosst eis mech besser kennen léieren",
     "description": "Ofgeschloss als Full-Stack Ingenieur mat engem staarke Background an der Webentwécklung a staarkem Fokus op Sécherheet. Ech si passionéiert doriwwer, meng Fäegkeeten op erausfuerderend Projeten unzewenden an innovativ Léisungen ze bidden. Dëse Portfolio beliicht meng breet Palette vu Wierker, vun eleganten Webdesigns bis zu robuste, sécheren Uwendungen. Mäi Wee als Entwéckler gëtt vu mengem Wonsch geleet, performant a beaflosstend Webléisungen ze schafen.",
-    "call-to-action": "Erfuerscht méi iwwer mech"
+    "call-to-action": "Entdeckt méi iwwert mech"
   },
   "Skills": {
     "title": "Fäegkeeten",
-    "header": "Vun Websäiten & Mobilen Apps bis zu Netzwierker a Datenmanagement",
-    "subtitle": "Ech hat d'Geleeënheet mat verschiddenen Tools ze schaffen."
+    "header": "Vun Websäiten a Mobil op Netzwierker a Dateverwaltong",
+    "subtitle": "Ech hat d’Méiglechkeet mat allen Zorte vun Tools ze schaffen."
   },
   "ProjectsOverview": {
     "title": "Projeten",
-    "featured-1": "Clientprojet",
-    "featured-2": "Hutchinson Projet",
-    "featured-3": "Clientprojet",
+    "featured-1": "Client projet",
+    "featured-2": "Hutchinson Aarbechtsprojet",
+    "featured-3": "Client projet",
     "featured-4": "Perséinleche Projet",
     "project-1-title": "Carthabot TN",
-    "project-1-description": "D'Bildungsplattform CarthaBot zielt drop of, eng engagéiert an interaktiv Léiererfahrung fir Schüler ze bidden, déi STEM-Konzepten exploréieren. Als Webingenieur ass meng Roll eng userfrëndlech Interface ze designen, déi méi Sproochekäschten ënnerstëtzt an eng fléissend Interaktioun mam Roboter garantéiert.",
+    "project-1-description": "CarthaBot Educatiounsplattform huet als Zil eng engagéierend an interaktiv Léiererfarung fir Schüler, déi STEM Konzepten entdecken, ze bidden. Als Webingenieur ëmfaasst meng Roll d’Entwécklung vun enger benutzerfrëndlecher Interface, d’Ënnerstëtzung fir Multi-Sprooche Zougank, an d’Sécherstellung vun enger glatter Interaktioun mam Roboter. Mat Next.js an personaliséierten Funktiounen erstelle ech eng modern Plattform, déi d’pädagogesch Potenzial vu CarthaBot verbessert an op seng spezifescht Léierziler ausgeriicht ass.",
     "project-2-title": "Formulatioun",
-    "project-2-description": "D'Formuléierungsdigitaliséierungsprojet huet als Zil, déi traditionell Excel-baséiert Formuléierungsprozesser vun der Hutchinson Group ze optimiséieren an duerch eng robust a cloud-fäerdeg Léisung ze ersetzen. Meng Roll als eenzege Backend Entwéckler ass et, eng komplex relational Datebank mat NestJS, TypeORM an PostgreSQL ze designen, wärend ech mat der Frontend-Team op Angular kollaboréieren.",
+    "project-2-description": "Den Digitaliséierungsprojet fir d’Formuléierung huet als Zil, d’Formuléierungsprozesser vun der Hutchinson Group ze optimiséieren, andeems traditionell Excel-baséiert Methoden duerch eng robust, Cloud-bereet Léisung ersat ginn. Als eleng Bäckerentwickler ass meng Roll d’Design vun enger komplexer relationaler Datebank mat NestJS, TypeORM, a PostgreSQL, wärend ech mam Frontend mat Angular zesummeschaffen. Dëse Projet huet de Wee fir zukünfteg Cloud-Initiativen bei Hutchinson gebaant, Effizienz an Innovatioun uechter d'Firma ze féieren.",
     "project-3-title": "Strong cast shop",
-    "project-3-description": "D'Zil vum Strong Cast E-Commerce Projet ass et, eng robust Online-Plattform fir de Verkaf vu qualitativ héichwäertege Fëschlinnen um US-Maart opzestellen.",
+    "project-3-description": "Den E-Commerce-Projet Strong Cast huet als Zil eng robust Online-Plattform opzebauen, fir qualitativ héichwäerteg Fëschlinn am US-Maart ze verkafen. Als Webingenieur ëmfaasst meng Roll d’Entwécklung vun enger glater Benotzerfarung, effizient Produktverwaltung, an d’Ausriichtung un d’Industrie-Best-Practice. Mat Next.js an Shopify-Technologien schafen ech eng personaliséiert Léisung, déi de spezifeschen Ufuerderungen vu Strong Cast gerecht gëtt.",
     "project-4-title": "Robot Playground",
-    "project-4-description": "D'Robot Playground Projet exploréiert d'Méiglechkeeten vun der 3D Webentwécklung mat Next.js, Three.js an React Three Fiber fir interaktiv an immersiv Erfarungen ze kreéieren.",
+    "project-4-description": "Den Projet Robot Playground huet als Zil d’Méiglechkeete vun 3D Webentwécklung ze entdecken, andeems Next.js, Three.js, a React Three Fiber benotzt ginn, fir interaktiv, immersiv Erfarungen ze schafen. Als Entwéckler ëmfaasst meng Roll d’Integratioun vu Blender-Modeller, d’Animatioun vun Interaktiounen, an d’Implementéierung vu Postprocessing-Effekter wéi Bloom fir verbessert Visuelen. Dësen experimentellen Projet weist modern 3D-Techniken a meng Fäegkeet fir d'Grenzen vun der Webtechnologie ze erweideren, wärend eng dynamesch, Echtzäit-Benotzerfarung direkt am Browser geliwwert gëtt.",
     "performance": "Leeschtung",
-    "stack": "Technologie Stack",
+    "stack": "Stack",
     "backend-stack": "Backend Stack",
     "structure": "Struktur",
-    "view-more": "Méi gesinn",
-    "formulation-highlight-1": "Entwécklungszäit an dëse C4 Sécherheetsprojet investéiert",
-    "formulation-highlight-2": "Tester duerchgefouert fir Qualitéit a Sécherheet ze garantéieren",
-    "formulation-highlight-3": "Produktkäschten, abegraff Fuerschung an Entwécklung",
-    "playground-highlight-1-title": "Bildung",
-    "playground-highlight-1": "Léiert interaktiv 3D Webentwécklung.",
+    "view-more": "Méi kucken",
+    "formulation-highlight-1": "Entwécklungszäit, déi an dëse C4 Sécherheetsprojet investéiert gouf",
+    "formulation-highlight-2": "Tester, déi ausgefouert goufen, fir Qualitéit a Sécherheet ze garantéieren",
+    "formulation-highlight-3": "Produktkäschten, inklusiv Entwécklung an Fuerschung",
+    "playground-highlight-1-title": "Edukativ",
+    "playground-highlight-1": "Léier 3D Webentwécklung interaktiv.",
     "playground-highlight-2-title": "Blender Integratioun",
-    "playground-highlight-2": "Schnelle Import vu Blender Modeller.",
+    "playground-highlight-2": "Blender Modeller nahtlos importéieren.",
     "playground-highlight-3-title": "Visuell Effekter",
-    "playground-highlight-3": "Erweidert Post-Processing fir filmähnlech Szenen."
+    "playground-highlight-3": "Fortgeschratt Postprocessing fir filmähnlech Szenen."
   },
   "Services": {
     "title": "Servicer",
@@ -56,23 +56,23 @@
     "service-3": "3D Web Applikatiounen",
     "service-4": "API Design",
     "service-5": "E-Commerce",
-    "services-title": "Optiméiert Webléisungen fir all Besoin",
-    "services-subtitle": "Vun der Entwécklung bis zur Verëffentlechung, ech entwéckelen effizient a skaléierbar Webapplikatiounen.",
-    "card-1-title": "Webentwécklungsprofi",
-    "card-1-description": "Héichleeschtend Frontend a responsiv Design.",
+    "services-title": "Optimiséiert Weblösungen fir all Nofro",
+    "services-subtitle": "Vun der Entwécklung bis zur Ausféierung bauen ech effizient, skaléierbar Webapplikatiounen.",
+    "card-1-title": "Webentwécklung Pro",
+    "card-1-description": "Héichperformant Frontend a responsiven Design.",
     "card-2-title": "Backend Expert",
-    "card-2-description": "Skaléierbar Serverléisungen mat NestJS a Node.",
-    "card-3-title": "E-Commerce Entwéckler",
-    "card-3-description": "Vollstänneg Online Butteker mat seamless Integratiounen.",
+    "card-2-description": "Skaléierbar Server-Side-Léisungen mat NestJS a Node.",
+    "card-3-title": "E-Commerce Builder",
+    "card-3-description": "Voll funktiounsfäeg Online-Geschäfter mat nahtlosen Integratiounen.",
     "card-4-title": "API Architekt",
-    "card-4-description": "RESTful an GraphQL APIs fir all Plattformen."
+    "card-4-description": "RESTful a GraphQL APIs fir all Plattformen."
   },
   "Contact": {
     "title": "Kontakt",
     "available": "Disponibel fir Aarbecht",
-    "hero": "Schreift mir oder soen 👋 op de soziale Netzwierker",
-    "description": "Egal ob Dir en Entwéckler sidd deen Ënnerstëtzung brauch oder en Start-up sidd, deen seng Performance wëllt verbesseren, ech freeë mech drop iwwer Äre Projet ze schwätzen 💜",
-    "call-to-action": "Loosst eis zesummen Magie schafen ✨"
+    "hero": "Schreif mer eng Zeil oder sot 👋 op de soziale Netzwierker",
+    "description": "Egal ob Dir en Entwéckler sidd, dee Support brauch oder eng Start-Up Firma, déi hir Leeschtung wëll op d’nächst Niveau bréngen, ech géif gär iwwer Äre Projet schwätzen 💜",
+    "call-to-action": "Loosst eis zesumme Magie schafen ✨"
   },
   "Footer": {
     "cooked with love in": "mat Léift gekacht zu",

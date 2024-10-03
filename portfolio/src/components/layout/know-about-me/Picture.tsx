@@ -1,17 +1,31 @@
 import Image from "next/image";
 
-function Picture() {
+interface Props {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+  bottomFocused?: boolean;
+}
+
+function Picture({ src, alt, width, height, bottomFocused }: Props) {
   return (
-    <div className="relative w-full h-[350px] sm:h-[650px]">
-      <div className="w-full rounded-3xl overflow-hidden h-full">
+    <div className="relative w-full h-[450px] sm:h-[650px]">
+      {/* OUTER WRAPPER - handles overall height and responsiveness */}
+      <div className="w-full h-full rounded-3xl overflow-hidden relative">
+        {/* INNER WRAPPER - ensures image scaling and overflow control */}
         <Image
-          src="/khairi-slama-graduation.webp"
-          alt="Khairi SLAMA"
-          width={705}
-          height={969}
-          className="brightness-105 w-full aspect-auto"
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className={`brightness-105 w-full h-full object-cover ${
+            bottomFocused ? "object-bottom" : "object-top"
+          }`}
         />
       </div>
+
+      {/* ADDITIONAL SHAPES */}
       <Image
         src="/shapes/rectangle-horizontal.svg"
         alt="Horizontal rectangle"
