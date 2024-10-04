@@ -39,7 +39,7 @@ const CustomLink = ({
     >
       {disabled ? (
         <TooltipProvider>
-          <Tooltip>
+          <Tooltip delayDuration={0}>
             <TooltipTrigger className="uppercase">{title}</TooltipTrigger>
             <TooltipContent className="bg-foreground flex items-center gap-2">
               <Construction className="h-4 w-4" />
