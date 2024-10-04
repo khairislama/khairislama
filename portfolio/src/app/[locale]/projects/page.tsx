@@ -1,15 +1,15 @@
-import { Construction } from "lucide-react";
+import { PageHero, ProjectsList } from "@/components/layout";
+import { useTranslations } from "next-intl";
 
 function ProjectsPage() {
+  const translations = useTranslations("Projects");
   return (
-    <main className="w-full overflow-hidden h-screen">
-      <div className="flex flex-col items-center justify-center h-full">
-        <h1 className="text-5xl font-bold">Under Construction</h1>
-        <p className="text-lg text-justify font-semibold">
-          This page is still under construction
-        </p>
-        <Construction className="h-24 w-24" />
-      </div>
+    <main className="w-full overflow-hidden mb-24">
+      <PageHero
+        title={translations("title")}
+        subtitle={translations("subtitle")}
+      />
+      <ProjectsList />
     </main>
   );
 }

@@ -7,6 +7,7 @@ import KnowAboutMe from "./know-about-me";
 import MyJourney from "./my-journey";
 import Navbar from "./navbar";
 import PageHero from "./pageName";
+import ProjectsList from "./project-list";
 import ProjectsOverview from "./projects-overview";
 import Services from "./services";
 import Skills from "./skills";
@@ -22,6 +23,7 @@ export {
   MyJourney,
   Navbar,
   PageHero,
+  ProjectsList,
   ProjectsOverview,
   Services,
   Skills,

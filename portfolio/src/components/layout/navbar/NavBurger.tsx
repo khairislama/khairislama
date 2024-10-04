@@ -19,8 +19,12 @@ import {
   House,
   Mail,
 } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 export default function NavBurger() {
+  const pathname = usePathname();
+  const langPrefix = pathname.split("/")[1];
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleItemClick = () => setIsOpen(false);
@@ -42,7 +46,10 @@ export default function NavBurger() {
               className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
               onClick={handleItemClick}
             >
-              <Link href="/" className="h-full w-full flex gap-1">
+              <Link
+                href={`/${langPrefix}/`}
+                className="h-full w-full flex gap-1"
+              >
                 <House className="h-4 w-4" /> Home
               </Link>
             </DropdownMenuItem>
@@ -50,7 +57,10 @@ export default function NavBurger() {
               className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
               onClick={handleItemClick}
             >
-              <Link href="/build" className="h-full w-full flex gap-1">
+              <Link
+                href={`/${langPrefix}/about`}
+                className="h-full w-full flex gap-1"
+              >
                 <BookOpenText className="h-4 w-4" /> About
               </Link>
             </DropdownMenuItem>
@@ -58,7 +68,10 @@ export default function NavBurger() {
               className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
               onClick={handleItemClick}
             >
-              <Link href="/connect" className="h-full w-full flex gap-1">
+              <Link
+                href={`/${langPrefix}/play`}
+                className="h-full w-full flex gap-1"
+              >
                 <Drum className="h-4 w-4" /> Play
               </Link>
             </DropdownMenuItem>
@@ -66,7 +79,10 @@ export default function NavBurger() {
               className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
               onClick={handleItemClick}
             >
-              <Link href="/code" className="h-full w-full flex gap-1">
+              <Link
+                href={`/${langPrefix}/projects`}
+                className="h-full w-full flex gap-1"
+              >
                 <ChartNoAxesGantt className="h-4 w-4" /> Projects
               </Link>
             </DropdownMenuItem>
