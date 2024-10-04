@@ -86,38 +86,6 @@ export default function ContactForm() {
       </div>
       <div className="mb-6">
         <label
-          htmlFor="name"
-          className="block mb-3 font-medium sm:font-semibold sm:text-lg lg:text-xl uppercase"
-        >
-          Name
-        </label>
-        <Input
-          id="name"
-          name="name"
-          type="text"
-          autoComplete="off"
-          required
-          className="w-full sm:h-12 lg:h-14 border-0 border-b-2"
-        />
-      </div>
-      <div className="mb-6">
-        <label
-          htmlFor="name"
-          className="block mb-3 font-medium sm:font-semibold sm:text-lg lg:text-xl uppercase"
-        >
-          subject
-        </label>
-        <Input
-          id="name"
-          name="name"
-          type="text"
-          autoComplete="off"
-          required
-          className="w-full sm:h-12 lg:h-14 border-0 border-b-2"
-        />
-      </div>
-      <div className="mb-6">
-        <label
           htmlFor="message"
           className="block mb-3 font-medium sm:font-semibold sm:text-lg lg:text-xl uppercase"
         >
