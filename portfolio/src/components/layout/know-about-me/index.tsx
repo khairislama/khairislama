@@ -27,7 +27,11 @@ function KnowAboutMe({
   const translations = useTranslations("KnowMe");
   return (
     <section className="relative w-full mt-16">
-      <div className="max-w-7xl mx-auto flex flex-col-reverse lg:grid lg:grid-cols-2 gap-12 lg:gap-24 p-4 sm:p-6 xl:p-0">
+      <div
+        className={`max-w-7xl mx-auto flex lg:grid lg:grid-cols-2 gap-12 lg:gap-24 p-4 sm:p-6 xl:p-0 ${
+          bottomFocused ? "flex-col" : "flex-col-reverse"
+        }`}
+      >
         <div className="my-auto flex flex-col gap-4 lg:gap-14">
           <h2 className="font-syne font-bold text-5xl max-w-md text-balance">
             {title}
@@ -36,7 +40,7 @@ function KnowAboutMe({
           {button && (
             <Button
               size={"lg"}
-              className="h-12 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full sm:w-1/2 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="h-12 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full sm:w-1/2 rounded-3xl transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300"
             >
               <PrefixedLink href="/about">
                 {translations("call-to-action")}
