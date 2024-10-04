@@ -36,7 +36,7 @@ function KnowAboutMe({
           {button && (
             <Button
               size={"lg"}
-              className="h-12 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full sm:w-1/2 rounded-3xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="h-12 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full sm:w-1/2 rounded-3xl transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300"
             >
               <PrefixedLink href="/about">
                 {translations("call-to-action")}
