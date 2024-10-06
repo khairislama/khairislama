@@ -24,6 +24,7 @@ function Hero() {
         width={1330}
         height={288}
         className="absolute object-cover w-full pointer-events-none bottom-[7%] sm:bottom-0 xl:inset-0"
+        sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <Image
         src="/hero/background2.webp"
@@ -31,6 +32,7 @@ function Hero() {
         width={1200}
         height={1200}
         className="hidden lg:block absolute -bottom-[90%] object-cover opacity-30 w-full pointer-events-none"
+        sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
     </section>
   );
