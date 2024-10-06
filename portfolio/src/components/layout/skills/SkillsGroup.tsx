@@ -21,6 +21,7 @@ function SkillsGroup() {
               width={skill.width}
               height={skill.height}
               className="w-10 lg:w-16"
+              sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
             />
           </div>
         ))}
@@ -41,6 +42,7 @@ function SkillsGroup() {
                 width={SKILLS[i].width}
                 height={SKILLS[i].height}
                 className="w-10 lg:w-16"
+                sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
               />
             </div>
           ))}
@@ -59,6 +61,7 @@ function SkillsGroup() {
                 width={SKILLS[i + 7].width}
                 height={SKILLS[i + 7].height}
                 className="w-10 lg:w-16"
+                sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
               />
             </div>
           ))}
@@ -70,6 +73,7 @@ function SkillsGroup() {
         width={388}
         height={451}
         className="absolute top-[80%] w-[70%] pointer-events-none hidden md:block z-0"
+        sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <Image
         src="/skills/world.svg"
@@ -77,6 +81,7 @@ function SkillsGroup() {
         width={1240}
         height={511}
         className="absolute -bottom-44 md:top-[250%] w-full brightness-150"
+        sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
     </div>
   );
