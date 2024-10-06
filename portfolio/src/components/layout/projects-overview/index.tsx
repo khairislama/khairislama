@@ -53,7 +53,7 @@ function ProjectsOverview() {
         <Overview>
           <ProjectText
             projectNumber={1}
-            viewMore="/projects/1"
+            viewMore="/projects/carthabot"
             demo="https://carthabot.vercel.app/"
           >
             <CarthabotHighlights />
@@ -69,7 +69,7 @@ function ProjectsOverview() {
         <Overview>
           <ProjectText
             projectNumber={3}
-            viewMore="/projects/3"
+            viewMore="/projects/strong-cast"
             demo="https://www.strong-cast.com/"
           >
             <StrongCastHighlights />
@@ -80,7 +80,7 @@ function ProjectsOverview() {
           <ProjectText
             projectNumber={4}
             reverse
-            viewMore="/projects/4"
+            viewMore="/projects/robot-playground"
             github="https://github.com/khairislama/robot-playground"
             demo="https://robot-playground-three.vercel.app"
           >
