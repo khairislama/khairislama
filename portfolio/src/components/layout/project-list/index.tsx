@@ -28,7 +28,7 @@ function ProjectsList() {
               followCursor={true}
               className="bg-foreground flex items-center gap-2"
             >
-              <Overview />
+              <Overview image={project.image} />
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
