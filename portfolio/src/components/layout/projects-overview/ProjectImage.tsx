@@ -1,3 +1,4 @@
+import { shimmer, toBase64 } from "@/lib/image";
 import Image from "next/image";
 
 interface Props {
@@ -19,6 +20,7 @@ function ProjectImage({ image, reverse }: Props) {
         width={659}
         height={739}
         className="absolute object-cover w-full pointer-events-none z-0 -right-[30%] -bottom-36"
+        sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <Image
         src="/projects/gradient2.svg"
@@ -26,6 +28,7 @@ function ProjectImage({ image, reverse }: Props) {
         width={678}
         height={760}
         className="absolute object-cover w-full pointer-events-none z-0 -bottom-[30%] -left-[40%]"
+        sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <Image
         src={image.src}
@@ -37,6 +40,8 @@ function ProjectImage({ image, reverse }: Props) {
             ? "md:rounded-bl-3xl md:rounded-tr-3xl"
             : "md:rounded-br-3xl md:rounded-tl-3xl"
         }`}
+        placeholder="blur"
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(200, 35))}`}
       />
     </div>
   );
