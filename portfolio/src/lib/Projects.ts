@@ -1,4 +1,5 @@
 export interface IProject {
+  slang: string;
   name: string;
   type: "public" | "private";
   language: {
@@ -18,6 +19,7 @@ export interface IProject {
 
 export const CURRENT_PROJECTS: IProject[] = [
   {
+    slang: "robot-playground",
     name: "Robot playground",
     type: "public",
     language: { name: "typescript", color: "#FAB432" },
@@ -27,6 +29,27 @@ export const CURRENT_PROJECTS: IProject[] = [
     image: { src: "", alt: "", width: 144, height: 144 },
   },
   {
+    slang: "robot-playground",
+    name: "Robot playground",
+    type: "public",
+    language: { name: "typescript", color: "#FAB432" },
+    updated_at: "Updated on Jul 9",
+    featured: "Featured project",
+    description: "description",
+    image: { src: "", alt: "", width: 144, height: 144 },
+  },
+  {
+    slang: "robot-playground",
+    name: "Robot playground",
+    type: "public",
+    language: { name: "typescript", color: "#FAB432" },
+    updated_at: "Updated on Jul 9",
+    featured: "Featured project",
+    description: "description",
+    image: { src: "", alt: "", width: 144, height: 144 },
+  },
+  {
+    slang: "robot-playground",
     name: "Robot playground",
     type: "public",
     language: { name: "typescript", color: "#FAB432" },
@@ -39,6 +62,7 @@ export const CURRENT_PROJECTS: IProject[] = [
 
 export const WORK_PROJECTS: IProject[] = [
   {
+    slang: "robot-playground",
     name: "Robot playground",
     type: "public",
     language: { name: "typescript", color: "#FAB432" },
@@ -48,6 +72,7 @@ export const WORK_PROJECTS: IProject[] = [
     image: { src: "", alt: "", width: 144, height: 144 },
   },
   {
+    slang: "robot-playground",
     name: "Robot playground",
     type: "public",
     language: { name: "typescript", color: "#FAB432" },
@@ -60,6 +85,7 @@ export const WORK_PROJECTS: IProject[] = [
 
 export const LEARNING_PROJECTS: IProject[] = [
   {
+    slang: "robot-playground",
     name: "Robot playground",
     type: "public",
     language: { name: "typescript", color: "#FAB432" },
@@ -69,6 +95,7 @@ export const LEARNING_PROJECTS: IProject[] = [
     image: { src: "", alt: "", width: 144, height: 144 },
   },
   {
+    slang: "robot-playground",
     name: "Robot playground",
     type: "public",
     language: { name: "typescript", color: "#FAB432" },

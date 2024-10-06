@@ -1,10 +1,13 @@
-import { Button } from "@/components/ui/button";
+import PrefixedLink from "@/components/PrefixedLink";
 import { IProject } from "@/lib/Projects";
 import { ChevronRight } from "lucide-react";
 
 function ProjectItem({ project }: { project: IProject }) {
   return (
-    <div className="w-full flex items-center justify-between border-b-2 border-foreground/70 group my-8">
+    <PrefixedLink
+      href={`/projects/${project.slang}`}
+      className="w-full flex items-center justify-between border-b-2 border-foreground/70 group my-8"
+    >
       <div className="flex flex-col gap-4 mb-5">
         <div className="flex items-center gap-3">
           <h3 className="text-xl md:text-4xl font-bold font-syne md:group-hover:scale-110 md:group-hover:translate-x-8 md:group-hover:translate-y-1 md:group-hover:text-foreground transform duration-300 ease-in-out delay-75">
@@ -26,10 +29,8 @@ function ProjectItem({ project }: { project: IProject }) {
         <p> {project.featured} </p>
         <p> {project.description} </p>
       </div>
-      <Button className="md:hidden" variant={"ghost"}>
-        <ChevronRight className="h-4 w-4 group-hover:scale-150 transform duration-300 ease-in-out" />
-      </Button>
-    </div>
+      <ChevronRight className="h-4 w-4 group-hover:scale-150 transform duration-300 ease-in-out md:hidden" />
+    </PrefixedLink>
   );
 }
 
