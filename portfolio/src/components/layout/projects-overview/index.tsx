@@ -47,6 +47,7 @@ function ProjectsOverview() {
         width={1330}
         height={288}
         className="absolute object-cover w-full pointer-events-none -top-[0%] xl:-top-[15%] 2xl:-top-[35%] 2k:-top-[200%] -z-10 brightness-125"
+        sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <div className="max-w-7xl mx-auto flex flex-col p-4 sm:p-6 xl:p-0 text-center">
         <h2 className="text-header">{translations("title")}</h2>

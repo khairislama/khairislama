@@ -23,6 +23,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/tailwindcss.png"
@@ -30,6 +31,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/nodejs.png"
@@ -37,6 +39,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/typescript.png"
@@ -44,6 +47,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/figma.png"
@@ -51,6 +55,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/git.png"
@@ -58,6 +63,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/firebase.png"
@@ -65,6 +71,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
         </div>
       </div>
