@@ -37,6 +37,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/tailwindcss.png"
@@ -44,6 +45,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/blender.png"
@@ -51,6 +53,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/nodejs.png"
@@ -58,6 +61,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/typescript.png"
@@ -65,6 +69,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/git.png"
@@ -72,6 +77,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
         </div>
       </div>
