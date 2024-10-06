@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${rubik.variable} ${syne.variable} antialiased debug-screens bg-background text-foreground/70`}
       >
