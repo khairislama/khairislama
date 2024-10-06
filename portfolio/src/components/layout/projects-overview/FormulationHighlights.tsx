@@ -31,6 +31,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/typeorm.png"
@@ -38,6 +39,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/nodejs.png"
@@ -45,6 +47,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/typescript.png"
@@ -52,6 +55,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/postgresql.png"
@@ -59,6 +63,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/git.png"
@@ -66,6 +71,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
             src="/skills/azure.png"
@@ -73,6 +79,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
         </div>
       </div>
