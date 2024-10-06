@@ -26,7 +26,12 @@ export const CURRENT_PROJECTS: IProject[] = [
     updated_at: "Updated on Jul 9",
     featured: "Featured project",
     description: "description",
-    image: { src: "", alt: "", width: 144, height: 144 },
+    image: {
+      src: "/projects/strong-cast/metrix.webp",
+      alt: "dsssd",
+      width: 1269,
+      height: 819,
+    },
   },
   {
     slang: "robot-playground",
