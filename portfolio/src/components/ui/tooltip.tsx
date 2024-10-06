@@ -24,7 +24,7 @@ const TooltipContent = React.forwardRef<
 
   const handleMouseMove = (event: MouseEvent) => {
     setPosition({
-      x: event.clientX + window.scrollX, // Adjust for horizontal scroll
+      x: event.clientX, // Adjust for horizontal scroll
       y: event.clientY + window.scrollY, // Adjust for vertical scroll
     });
   };
@@ -53,8 +53,8 @@ const TooltipContent = React.forwardRef<
         ? {
             style: {
               position: "absolute",
-              left: `${position.x - 1200}px`, // Adjust positioning relative to cursor
-              top: `${position.y - 700}px`,
+              left: `${position.x - 700}px`, // Adjust positioning relative to cursor
+              top: `-100px`,
             },
           }
         : {

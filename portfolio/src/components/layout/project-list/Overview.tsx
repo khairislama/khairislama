@@ -11,7 +11,7 @@ function Overview({
   };
 }) {
   return (
-    <div className="h-72 w-96 rounded-xl overflow-hidden hidden md:block">
+    <div className="w-96 rounded-xl overflow-hidden hidden md:block">
       <Image
         src={image.src}
         alt={image.alt}
