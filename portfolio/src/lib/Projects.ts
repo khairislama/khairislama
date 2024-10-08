@@ -1,7 +1,10 @@
 export interface IProject {
+  label: string;
   slang: string;
   name: string;
   type: "public" | "private";
+  github_link?: string;
+  external_link?: string;
   language: {
     name: string;
     color: string;
@@ -17,11 +20,14 @@ export interface IProject {
   };
 }
 
-export const CURRENT_PROJECTS: IProject[] = [
+export const PROJECTS: IProject[] = [
   {
+    label: "current",
     slang: "carthabot",
     name: "Carthabot",
     type: "private",
+    github_link: "https://github.com/khairislama/carthabot",
+    external_link: "https://carthabot.vercel.app/en",
     language: { name: "typescript", color: "#3178C6" },
     updated_at: "Currently working on...",
     featured: "Client project",
@@ -35,6 +41,7 @@ export const CURRENT_PROJECTS: IProject[] = [
     },
   },
   {
+    label: "current",
     slang: "hutchinson-formulation",
     name: "Formulation",
     type: "private",
@@ -51,6 +58,7 @@ export const CURRENT_PROJECTS: IProject[] = [
     },
   },
   {
+    label: "current",
     slang: "fab-619",
     name: "Fab 619 Showcase",
     type: "private",
@@ -65,10 +73,8 @@ export const CURRENT_PROJECTS: IProject[] = [
       height: 819,
     },
   },
-];
-
-export const WORK_PROJECTS: IProject[] = [
   {
+    label: "done",
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
@@ -79,19 +85,7 @@ export const WORK_PROJECTS: IProject[] = [
     image: { src: "", alt: "", width: 144, height: 144 },
   },
   {
-    slang: "robot-playground",
-    name: "Robot playground",
-    type: "public",
-    language: { name: "typescript", color: "#FAB432" },
-    updated_at: "Updated on Jul 9",
-    featured: "Featured project",
-    description: "description",
-    image: { src: "", alt: "", width: 144, height: 144 },
-  },
-];
-
-export const LEARNING_PROJECTS: IProject[] = [
-  {
+    label: "done",
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
@@ -102,6 +96,18 @@ export const LEARNING_PROJECTS: IProject[] = [
     image: { src: "", alt: "", width: 144, height: 144 },
   },
   {
+    label: "tuto",
+    slang: "robot-playground",
+    name: "Robot playground",
+    type: "public",
+    language: { name: "typescript", color: "#FAB432" },
+    updated_at: "Updated on Jul 9",
+    featured: "Featured project",
+    description: "description",
+    image: { src: "", alt: "", width: 144, height: 144 },
+  },
+  {
+    label: "tuto",
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
