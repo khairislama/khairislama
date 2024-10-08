@@ -19,7 +19,7 @@ function ProjectInfo({ project }: { project: IProject }) {
         <div className="flex gap-16 md:flex-col">
           <GithubOneProject github_link={project.github_link} />
 
-          <ExternalOneProject />
+          <ExternalOneProject external_link={project.external_link} />
         </div>
       </div>
     </section>
