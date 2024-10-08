@@ -1,4 +1,5 @@
 export interface IProject {
+  label: string;
   slang: string;
   name: string;
   type: "public" | "private";
@@ -17,8 +18,9 @@ export interface IProject {
   };
 }
 
-export const CURRENT_PROJECTS: IProject[] = [
+export const PROJECTS: IProject[] = [
   {
+    label: "current",
     slang: "carthabot",
     name: "Carthabot",
     type: "private",
@@ -35,6 +37,7 @@ export const CURRENT_PROJECTS: IProject[] = [
     },
   },
   {
+    label: "current",
     slang: "hutchinson-formulation",
     name: "Formulation",
     type: "private",
@@ -51,6 +54,7 @@ export const CURRENT_PROJECTS: IProject[] = [
     },
   },
   {
+    label: "current",
     slang: "fab-619",
     name: "Fab 619 Showcase",
     type: "private",
@@ -65,10 +69,8 @@ export const CURRENT_PROJECTS: IProject[] = [
       height: 819,
     },
   },
-];
-
-export const WORK_PROJECTS: IProject[] = [
   {
+    label: "done",
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
@@ -79,19 +81,7 @@ export const WORK_PROJECTS: IProject[] = [
     image: { src: "", alt: "", width: 144, height: 144 },
   },
   {
-    slang: "robot-playground",
-    name: "Robot playground",
-    type: "public",
-    language: { name: "typescript", color: "#FAB432" },
-    updated_at: "Updated on Jul 9",
-    featured: "Featured project",
-    description: "description",
-    image: { src: "", alt: "", width: 144, height: 144 },
-  },
-];
-
-export const LEARNING_PROJECTS: IProject[] = [
-  {
+    label: "done",
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
@@ -102,6 +92,18 @@ export const LEARNING_PROJECTS: IProject[] = [
     image: { src: "", alt: "", width: 144, height: 144 },
   },
   {
+    label: "tuto",
+    slang: "robot-playground",
+    name: "Robot playground",
+    type: "public",
+    language: { name: "typescript", color: "#FAB432" },
+    updated_at: "Updated on Jul 9",
+    featured: "Featured project",
+    description: "description",
+    image: { src: "", alt: "", width: 144, height: 144 },
+  },
+  {
+    label: "tuto",
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
