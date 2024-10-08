@@ -4,6 +4,7 @@ export interface IProject {
   name: string;
   type: "public" | "private";
   github_link?: string;
+  external_link?: string;
   language: {
     name: string;
     color: string;
@@ -26,6 +27,7 @@ export const PROJECTS: IProject[] = [
     name: "Carthabot",
     type: "private",
     github_link: "https://github.com/khairislama/carthabot",
+    external_link: "https://carthabot.vercel.app/en",
     language: { name: "typescript", color: "#3178C6" },
     updated_at: "Currently working on...",
     featured: "Client project",
