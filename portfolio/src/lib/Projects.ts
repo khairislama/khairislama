@@ -3,6 +3,7 @@ export interface IProject {
   slang: string;
   name: string;
   type: "public" | "private";
+  github_link?: string;
   language: {
     name: string;
     color: string;
@@ -24,6 +25,7 @@ export const PROJECTS: IProject[] = [
     slang: "carthabot",
     name: "Carthabot",
     type: "private",
+    github_link: "https://github.com/khairislama/carthabot",
     language: { name: "typescript", color: "#3178C6" },
     updated_at: "Currently working on...",
     featured: "Client project",
