@@ -1,8 +1,4 @@
-import {
-  CURRENT_PROJECTS,
-  LEARNING_PROJECTS,
-  WORK_PROJECTS,
-} from "@/lib/Projects";
+import { PROJECTS } from "@/lib/Projects";
 import ProjectItem from "./Item";
 import {
   Tooltip,
@@ -18,59 +14,65 @@ function ProjectsList() {
       <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4">
         Open Projects
       </h2>
-      {CURRENT_PROJECTS.map((project, i) => (
-        <TooltipProvider key={i}>
-          <Tooltip delayDuration={0}>
-            <TooltipTrigger className="uppercase w-full flex">
-              <ProjectItem project={project} />
-            </TooltipTrigger>
-            <TooltipContent
-              followCursor={true}
-              className="bg-foreground flex items-center gap-2"
-            >
-              <Overview image={project.image} />
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-      ))}
+      {PROJECTS.filter((project) => project.label === "current").map(
+        (project, i) => (
+          <TooltipProvider key={i}>
+            <Tooltip delayDuration={0}>
+              <TooltipTrigger className="uppercase w-full flex">
+                <ProjectItem project={project} />
+              </TooltipTrigger>
+              <TooltipContent
+                followCursor={true}
+                className="bg-foreground flex items-center gap-2"
+              >
+                <Overview image={project.image} />
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        )
+      )}
 
       <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4">
         Worked on
       </h2>
-      {WORK_PROJECTS.map((project, i) => (
-        <TooltipProvider key={i}>
-          <Tooltip delayDuration={0}>
-            <TooltipTrigger className="uppercase w-full flex">
-              <ProjectItem project={project} />
-            </TooltipTrigger>
-            <TooltipContent
-              followCursor={true}
-              className="bg-foreground flex items-center gap-2"
-            >
-              <Overview image={project.image} />
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-      ))}
+      {PROJECTS.filter((project) => project.label === "done").map(
+        (project, i) => (
+          <TooltipProvider key={i}>
+            <Tooltip delayDuration={0}>
+              <TooltipTrigger className="uppercase w-full flex">
+                <ProjectItem project={project} />
+              </TooltipTrigger>
+              <TooltipContent
+                followCursor={true}
+                className="bg-foreground flex items-center gap-2"
+              >
+                <Overview image={project.image} />
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        )
+      )}
 
       <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4">
         Learning Bucket
       </h2>
-      {LEARNING_PROJECTS.map((project, i) => (
-        <TooltipProvider key={i}>
-          <Tooltip delayDuration={0}>
-            <TooltipTrigger className="uppercase w-full flex">
-              <ProjectItem project={project} />
-            </TooltipTrigger>
-            <TooltipContent
-              followCursor={true}
-              className="bg-foreground flex items-center gap-2"
-            >
-              <Overview image={project.image} />
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-      ))}
+      {PROJECTS.filter((project) => project.label === "tuto").map(
+        (project, i) => (
+          <TooltipProvider key={i}>
+            <Tooltip delayDuration={0}>
+              <TooltipTrigger className="uppercase w-full flex">
+                <ProjectItem project={project} />
+              </TooltipTrigger>
+              <TooltipContent
+                followCursor={true}
+                className="bg-foreground flex items-center gap-2"
+              >
+                <Overview image={project.image} />
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+        )
+      )}
     </section>
   );
 }
