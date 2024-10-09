@@ -24,11 +24,7 @@ export default SingleProjectPage;
 export async function generateStaticParams() {
   const projects = PROJECTS;
 
-  // Explanation: We need to return an array of objects with the id property set to the story id. This will generate a static page for each story.
-  // Example: [{id: "story-1"}, { id: "story2" }, ...]
-  const paths = projects.map((project) => {
-    slang: project.slang;
-  });
-
-  return paths;
+  return projects.map((project) => ({
+    slang: project.slang,
+  }));
 }
