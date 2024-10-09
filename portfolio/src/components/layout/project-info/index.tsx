@@ -5,7 +5,8 @@ import ExternalOneProject from "./External";
 import TagsOneProject from "./Tags";
 import StoryOneProject from "./Story";
 import InfoOneProject from "./Info";
-import ParallelImages from "./parallel";
+import ParallelImages from "./Parallel";
+import ExplorationOneProject from "./Exploration";
 
 function ProjectInfo({ project }: { project: IProject }) {
   return (
@@ -30,6 +31,7 @@ function ProjectInfo({ project }: { project: IProject }) {
       <TagsOneProject />
       <InfoOneProject />
       <ParallelImages project={project} />
+      <ExplorationOneProject />
     </section>
   );
 }
