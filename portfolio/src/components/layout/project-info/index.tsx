@@ -2,6 +2,7 @@ import { IProject } from "@/lib/Projects";
 import Image from "next/image";
 import GithubOneProject from "./Github";
 import ExternalOneProject from "./External";
+import TagsOneProject from "./Tags";
 
 function ProjectInfo({ project }: { project: IProject }) {
   return (
@@ -45,6 +46,7 @@ function ProjectInfo({ project }: { project: IProject }) {
           <InfiniteScroll orientation="bottom" />
         </div> */}
       </div>
+      <TagsOneProject />
       <div className="w-full mx-auto max-w-4xl grid grid-cols-3 gap-24 mt-10 font-syne">
         <div className="flex flex-col items-center justify-center">
           <h4 className="text-foreground text-lg font-semibold">Start date</h4>
