@@ -43,13 +43,11 @@ function GithubOneProject({
             </div>
           )}
         </TooltipTrigger>
-        <TooltipContent className="bg-foreground flex items-center gap-2">
+        <TooltipContent className="hidden bg-foreground md:flex items-center gap-2 text-lg">
           {github_link ? (
-            <p className="hidden md:block text-lg">Github link</p>
+            <p>Github link</p>
           ) : (
-            <p className="hidden md:block text-lg">
-              No github link for this project
-            </p>
+            <p>No github link for this project</p>
           )}
         </TooltipContent>
       </Tooltip>

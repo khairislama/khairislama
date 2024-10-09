@@ -30,13 +30,11 @@ function ExternalOneProject({
             </div>
           )}
         </TooltipTrigger>
-        <TooltipContent className="bg-foreground flex items-center gap-2">
+        <TooltipContent className="hidden bg-foreground md:flex items-center gap-2 text-lg">
           {external_link ? (
-            <p className="hidden md:block text-lg">Demo</p>
+            <p>Demo</p>
           ) : (
-            <p className="hidden md:block text-lg">
-              No Demo available for this project
-            </p>
+            <p>No Demo available for this project</p>
           )}
         </TooltipContent>
       </Tooltip>
