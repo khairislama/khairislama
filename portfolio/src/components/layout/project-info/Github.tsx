@@ -19,7 +19,7 @@ function GithubOneProject({
         <TooltipTrigger className="uppercase w-full flex">
           {github_link ? (
             <Link
-              className="h-20 w-20 bg-foreground/40 rounded-full p-4"
+              className="h-20 w-20 bg-foreground/40 rounded-full p-4 hover:bg-foreground/20 transition duration-300 ease-in-out"
               href={github_link}
             >
               <Image
@@ -43,13 +43,11 @@ function GithubOneProject({
             </div>
           )}
         </TooltipTrigger>
-        <TooltipContent className="bg-foreground flex items-center gap-2">
+        <TooltipContent className="hidden bg-foreground md:flex items-center gap-2 text-lg">
           {github_link ? (
-            <p className="hidden md:block text-lg">Github link</p>
+            <p>Github link</p>
           ) : (
-            <p className="hidden md:block text-lg">
-              No github link for this project
-            </p>
+            <p>No github link for this project</p>
           )}
         </TooltipContent>
       </Tooltip>
