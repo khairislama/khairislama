@@ -26,7 +26,7 @@ function ExplorationOneProject() {
       <div className="w-full max-w-4xl mx-auto">
         <FeaturesOneProject />
       </div>
-      <div className="w-full max-w-6xl mx-auto overflow-hidden rounded-xl relative">
+      <div className="w-full max-w-6xl mx-auto overflow-hidden rounded-xl relative group">
         <Image
           src="/1920-1080.png"
           alt="cool shape"
@@ -35,7 +35,7 @@ function ExplorationOneProject() {
           className=""
           sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-background/30 shadow-[inset_1px_1px_150px_12px_rgba(0,0,0,0.9)]" />
+        <div className="absolute top-0 left-0 w-full h-full bg-background/30 shadow-[inset_1px_1px_150px_12px_rgba(0,0,0,0.9)] group-hover:shadow-[inset_1px_1px_50px_12px_rgba(0,0,0,0.5)] transition duration-500 ease-in-out" />
       </div>
     </div>
   );

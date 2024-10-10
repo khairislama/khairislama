@@ -19,7 +19,7 @@ function GithubOneProject({
         <TooltipTrigger className="uppercase w-full flex">
           {github_link ? (
             <Link
-              className="h-20 w-20 bg-foreground/40 rounded-full p-4"
+              className="h-20 w-20 bg-foreground/40 rounded-full p-4 hover:bg-foreground/20 transition duration-300 ease-in-out"
               href={github_link}
             >
               <Image
