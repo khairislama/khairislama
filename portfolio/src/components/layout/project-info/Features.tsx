@@ -19,7 +19,7 @@ function FeaturesOneProject() {
         autoFill
         pauseOnHover
         direction="left"
-        className="my-10"
+        className="my-4 md:my-10"
         gradient
         gradientColor="#121120"
       >
