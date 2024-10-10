@@ -37,11 +37,11 @@ function RecommendedProjects() {
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mt-10">
         <div className="flex flex-col overflow-hidden relative">
           <Image
-            src="/projects/carthabot/hero.webp"
+            src="/600-650.png"
             alt="cool shape"
-            width={1866}
-            height={912}
-            className="rounded-xl"
+            width={600}
+            height={650}
+            className="rounded-xl w-full"
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <div className="w-full mt-4 ml-2">
@@ -53,11 +53,11 @@ function RecommendedProjects() {
         </div>
         <div className="flex flex-col overflow-hidden">
           <Image
-            src="/projects/carthabot/hero.webp"
+            src="/600-650.png"
             alt="cool shape"
-            width={1866}
-            height={912}
-            className="rounded-xl"
+            width={600}
+            height={650}
+            className="rounded-xl w-full"
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <div className="w-full mt-4 ml-2">
@@ -69,11 +69,11 @@ function RecommendedProjects() {
         </div>
         <div className="hidden md:flex flex-col overflow-hidden">
           <Image
-            src="/projects/carthabot/hero.webp"
+            src="/600-650.png"
             alt="cool shape"
-            width={1866}
-            height={912}
-            className="rounded-xl"
+            width={600}
+            height={650}
+            className="rounded-xl w-full"
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <div className="w-full mt-4 ml-2">
