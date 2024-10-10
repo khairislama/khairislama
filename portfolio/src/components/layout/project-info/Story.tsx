@@ -1,7 +1,7 @@
 function StoryOneProject() {
   return (
     <div className="w-full mx-auto max-w-2xl my-12">
-      <h2 className="text-3xl md:text-4xl font-syne font-semibold tracking-wider">
+      <h2 className="text-3xl md:text-4xl font-syne font-semibold tracking-wider text-foreground/90">
         Project Story
       </h2>
       <p className="text-lg mt-8 font-rubik">

@@ -1,15 +1,37 @@
+import Marquee from "react-fast-marquee";
+
 function FeaturesOneProject() {
-  const list = ["Blender", "Freelance", "solo", "web design", "next.js"];
+  const list = [
+    "Issue discussions",
+    "Markdown support",
+    "Comment reactions",
+    "Social interactions",
+    "User reputation system",
+    "Reference other bugs",
+    "@ Mentions users",
+    "Notifications",
+    "Bug labels",
+  ];
+
   return (
-    <ul className="grid grid-cols-5 gap-10 mt-12 w-full relative">
-      {list.map((item, i) => (
-        <li
-          className="py-2 px-4 h-10 w-32 bg-foreground/40 rounded-full text-center absolute left-[100%] repeat-infinite"
-          key={i}
-        >
-          {item}
-        </li>
-      ))}
+    <ul className="relative">
+      <Marquee
+        autoFill
+        pauseOnHover
+        direction="left"
+        className="my-10"
+        gradient
+        gradientColor="#121120"
+      >
+        {list.map((item, i) => (
+          <li
+            className="py-1 px-4 bg-foreground/40 rounded-full mx-3 text-center text-foreground font-rubik"
+            key={i}
+          >
+            {item}
+          </li>
+        ))}
+      </Marquee>
     </ul>
   );
 }
