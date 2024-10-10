@@ -17,10 +17,10 @@ function ProjectInfo({ project }: { project: IProject }) {
       <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
         <div className="overflow-hidden rounded-xl relative">
           <Image
-            src={project.image.src}
+            src="/1920-1080.png"
             alt={project.image.alt}
-            width={project.image.width}
-            height={project.image.height}
+            width={1920}
+            height={1080}
             className="object-cover w-full"
           />
           <div className="absolute top-0 left-0 w-full h-full bg-background/30 shadow-[inset_1px_1px_150px_12px_rgba(0,0,0,0.9)]" />

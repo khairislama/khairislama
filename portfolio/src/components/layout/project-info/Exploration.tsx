@@ -28,10 +28,10 @@ function ExplorationOneProject() {
       </div>
       <div className="w-full max-w-6xl mx-auto overflow-hidden rounded-xl relative">
         <Image
-          src="/projects/carthabot/hero.webp"
+          src="/1920-1080.png"
           alt="cool shape"
-          width={1866}
-          height={912}
+          width={1920}
+          height={1080}
           className=""
           sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
         />
