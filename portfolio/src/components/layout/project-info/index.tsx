@@ -9,6 +9,7 @@ import ParallelImages from "./Parallel";
 import ExplorationOneProject from "./Exploration";
 import GithubStats from "./GithubStats";
 import Language from "./Language";
+import { Button } from "@/components/ui/button";
 
 function ProjectInfo({ project }: { project: IProject }) {
   return (
@@ -36,10 +37,14 @@ function ProjectInfo({ project }: { project: IProject }) {
       <ExplorationOneProject />
       <GithubStats />
       <Language />
-      {/* <div className="flex">
-        <Button>DEMO</Button>
-        <Button>CODE</Button>
-      </div> */}
+      <div className="w-full mx-auto max-w-xl my-16 flex items-center justify-between">
+        <Button className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground text-2xl">
+          DEMO
+        </Button>
+        <Button className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground text-2xl">
+          CODE
+        </Button>
+      </div>
     </section>
   );
 }
