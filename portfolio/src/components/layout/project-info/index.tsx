@@ -7,6 +7,7 @@ import StoryOneProject from "./Story";
 import InfoOneProject from "./Info";
 import ParallelImages from "./Parallel";
 import ExplorationOneProject from "./Exploration";
+import GithubStats from "./GithubStats";
 
 function ProjectInfo({ project }: { project: IProject }) {
   return (
@@ -32,6 +33,11 @@ function ProjectInfo({ project }: { project: IProject }) {
       <InfoOneProject />
       <ParallelImages project={project} />
       <ExplorationOneProject />
+      <GithubStats />
+      {/* <div className="flex">
+        <Button>DEMO</Button>
+        <Button>CODE</Button>
+      </div> */}
     </section>
   );
 }
