@@ -10,6 +10,7 @@ import PageHero from "./pageName";
 import ProjectInfo from "./project-info";
 import ProjectsList from "./project-list";
 import ProjectsOverview from "./projects-overview";
+import RecommendedProjects from "./recommended";
 import Services from "./services";
 import Skills from "./skills";
 import Testimonials from "./testimonials";
@@ -27,6 +28,7 @@ export {
   ProjectInfo,
   ProjectsList,
   ProjectsOverview,
+  RecommendedProjects,
   Services,
   Skills,
   Testimonials,
