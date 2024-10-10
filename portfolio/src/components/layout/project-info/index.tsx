@@ -8,6 +8,7 @@ import InfoOneProject from "./Info";
 import ParallelImages from "./Parallel";
 import ExplorationOneProject from "./Exploration";
 import GithubStats from "./GithubStats";
+import Language from "./Language";
 
 function ProjectInfo({ project }: { project: IProject }) {
   return (
@@ -34,6 +35,7 @@ function ProjectInfo({ project }: { project: IProject }) {
       <ParallelImages project={project} />
       <ExplorationOneProject />
       <GithubStats />
+      <Language />
       {/* <div className="flex">
         <Button>DEMO</Button>
         <Button>CODE</Button>
