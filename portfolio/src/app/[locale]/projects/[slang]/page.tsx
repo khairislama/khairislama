@@ -1,4 +1,8 @@
-import { PageHero, ProjectInfo } from "@/components/layout";
+import {
+  PageHero,
+  ProjectInfo,
+  RecommendedProjects,
+} from "@/components/layout";
 import { PROJECTS } from "@/lib/Projects";
 import { useTranslations } from "next-intl";
 
@@ -15,6 +19,7 @@ function SingleProjectPage({ params }: { params: { slang: string } }) {
         subtitle={translations("subtitle")}
       />
       <ProjectInfo project={project} />
+      <RecommendedProjects />
     </main>
   );
 }
