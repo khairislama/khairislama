@@ -5,7 +5,7 @@ import { IProject } from "@/lib/Projects";
 
 function StoryOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
-  const projectTranslations = useTranslations(`Project-${project.slang}`);
+  const projectTranslations = useTranslations(`Project-${project.slug}`);
   return (
     <div className="w-full my-12">
       <div className="mx-auto max-w-2xl w-full">
@@ -18,8 +18,8 @@ function StoryOneProject({ project }: { project: IProject }) {
           </p>
         ))}
       </div>
-      <TagsOneProject tags={project.tags} slang={project.slang} />
-      <InfoOneProject slang={project.slang} />
+      <TagsOneProject tags={project.tags} slug={project.slug} />
+      <InfoOneProject slug={project.slug} />
     </div>
   );
 }

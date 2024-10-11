@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 
-function InfoOneProject({ slang }: { slang: string }) {
+function InfoOneProject({ slug }: { slug: string }) {
   const translations = useTranslations(`Projects`);
-  const projectTranslations = useTranslations(`Project-${slang}`);
+  const projectTranslations = useTranslations(`Project-${slug}`);
   return (
     <div className="w-full mx-auto max-w-4xl grid grid-cols-3 gap-4 sm:gap-24 mt-10 font-syne">
       <div className="flex flex-col items-center justify-center text-center sm:text-lg">
