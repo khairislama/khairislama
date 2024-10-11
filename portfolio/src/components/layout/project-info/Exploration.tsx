@@ -19,7 +19,7 @@ function ExplorationOneProject({ project }: { project: IProject }) {
             {projectTranslations("exploration")}
           </p>
         </div>
-        <StatsOneProject />
+        <StatsOneProject project={project} />
       </div>
       <div className="w-full max-w-4xl mx-auto">
         <FeaturesOneProject />
