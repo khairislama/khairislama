@@ -111,7 +111,7 @@
     "role": "Role",
     "exploration": "Exploration",
     "no-performance": "No performance stats",
-    "stats": "Stats",
+    "github-stats": "Github stats",
     "total-star-earned": "Total star earned",
     "total-commits": "Total commits",
     "total-prs": "Total PRs",

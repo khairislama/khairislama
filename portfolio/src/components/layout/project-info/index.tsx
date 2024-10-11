@@ -39,7 +39,7 @@ function ProjectInfo({ project }: { project: IProject }) {
       <StoryOneProject project={project} />
       <ParallelImages />
       <ExplorationOneProject project={project} />
-      <GithubStats />
+      <GithubStats project={project} />
       <Language />
       <div className="w-full mx-auto max-w-xl my-16 flex items-center justify-between">
         <Button className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground/80 text-2xl hover:bg-foreground/20 hover:text-foreground">

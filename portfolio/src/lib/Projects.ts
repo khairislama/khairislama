@@ -15,6 +15,17 @@ export interface IProject {
   } | null;
   github_link?: string;
   external_link?: string;
+  stats: {
+    stars: string;
+    commits: string;
+    prs: string;
+    issues: string;
+    tests: string;
+    technologies: {
+      src: string;
+      alt: string;
+    }[];
+  };
   language: {
     name: string;
     color: string;
@@ -50,6 +61,17 @@ export const PROJECTS: IProject[] = [
     },
     github_link: "https://github.com/khairislama/carthabot",
     external_link: "https://carthabot.vercel.app/en",
+    stats: {
+      stars: "72.6k",
+      commits: "86",
+      prs: "14",
+      issues: "7",
+      tests: "64",
+      technologies: [
+        { src: "/icons/nextjs.png", alt: "next js" },
+        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+      ],
+    },
     language: { name: "typescript", color: "#3178C6" },
     updated_at: "Currently working on...",
     featured: "Client project",
@@ -85,6 +107,17 @@ export const PROJECTS: IProject[] = [
     tags: 2,
     features: 7,
     performance: null,
+    stats: {
+      stars: "72.6k",
+      commits: "86",
+      prs: "14",
+      issues: "7",
+      tests: "64",
+      technologies: [
+        { src: "/icons/nextjs.png", alt: "next js" },
+        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+      ],
+    },
     language: { name: "Nest Js", color: "#E0234E" },
     updated_at: "Currently working on...",
     featured: "Work project",
@@ -120,6 +153,17 @@ export const PROJECTS: IProject[] = [
     tags: 2,
     features: 7,
     performance: null,
+    stats: {
+      stars: "72.6k",
+      commits: "86",
+      prs: "14",
+      issues: "7",
+      tests: "64",
+      technologies: [
+        { src: "/icons/nextjs.png", alt: "next js" },
+        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+      ],
+    },
     language: { name: "typescript", color: "#3178C6" },
     updated_at: "Updated on Aug 4",
     featured: "Client project",
