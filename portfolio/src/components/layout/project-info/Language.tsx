@@ -1,36 +1,18 @@
+import { useTranslations } from "next-intl";
+
 interface Language {
   name: string;
   color: string;
   value: number; // percentage value, should add up to 100%
 }
 
-function Language() {
-  const languages: Language[] = [
-    {
-      name: "Typescript",
-      color: "#0000ff",
-      value: 50,
-    },
-    {
-      name: "css",
-      color: "#e100ff",
-      value: 20,
-    },
-    {
-      name: "Javascript",
-      color: "#ffee00",
-      value: 18,
-    },
-    {
-      name: "Other",
-      color: "#ff0095",
-      value: 12,
-    },
-  ];
+function Language({ languages }: { languages: Language[] }) {
+  const translations = useTranslations(`Projects`);
+
   return (
     <section className="w-full mx-auto max-w-xl my-10">
       <h2 className="text-3xl md:text-4xl font-syne font-semibold tracking-wider md:text-center">
-        Language
+        {translations("language")}
       </h2>
       <div className="w-full h-4 flex mt-6 rounded-full overflow-hidden">
         {languages.map((lang, index) => (

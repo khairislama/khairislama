@@ -21,9 +21,9 @@ function ProjectItem({ project }: { project: IProject }) {
           <div className="flex items-center gap-2">
             <div
               className="w-4 h-4 rounded-full"
-              style={{ backgroundColor: project.language.color }}
+              style={{ backgroundColor: project.languages[0].color }}
             />
-            <p className="capitalize"> {project.language.name} </p>
+            <p className="capitalize"> {project.languages[0].name} </p>
           </div>
           <p>{project.updated_at}</p>
         </div>
