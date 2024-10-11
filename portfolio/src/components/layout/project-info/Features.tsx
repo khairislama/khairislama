@@ -3,12 +3,12 @@ import Marquee from "react-fast-marquee";
 
 function FeaturesOneProject({
   features,
-  slang,
+  slug,
 }: {
   features: number;
-  slang: string;
+  slug: string;
 }) {
-  const translations = useTranslations(`Project-${slang}`);
+  const translations = useTranslations(`Project-${slug}`);
   // const list = [
   //   "Issue discussions",
   //   "Markdown support",

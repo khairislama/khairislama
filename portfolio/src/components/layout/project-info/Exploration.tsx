@@ -6,7 +6,7 @@ import { IProject } from "@/lib/Projects";
 
 function ExplorationOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
-  const projectTranslations = useTranslations(`Project-${project.slang}`);
+  const projectTranslations = useTranslations(`Project-${project.slug}`);
 
   return (
     <div className="flex flex-col gap-6">
@@ -22,7 +22,7 @@ function ExplorationOneProject({ project }: { project: IProject }) {
         <StatsOneProject project={project} />
       </div>
       <div className="w-full max-w-4xl mx-auto">
-        <FeaturesOneProject features={project.features} slang={project.slang} />
+        <FeaturesOneProject features={project.features} slug={project.slug} />
       </div>
       {project.images.length > 1 && (
         <div className="w-full max-w-6xl mx-auto overflow-hidden rounded-xl relative group">
