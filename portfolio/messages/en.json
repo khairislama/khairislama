@@ -121,7 +121,9 @@
     "language": "Language",
     "previous-work": "Previous Work",
     "next-work": "Next Work",
-    "other-projects": "Other Projects"
+    "other-projects": "Other Projects",
+    "performance": "Performance",
+    "structure": "Structure"
   },
   "Project-carthabot": {
     "title": "Project Details - Carthabot",
