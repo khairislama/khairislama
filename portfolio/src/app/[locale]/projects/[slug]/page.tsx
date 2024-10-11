@@ -6,18 +6,17 @@ import {
 } from "@/components/layout";
 import { PROJECTS } from "@/lib/Projects";
 import { useTranslations } from "next-intl";
-import { unstable_setRequestLocale } from "next-intl/server";
 
 export default function SingleProjectPage({
   params,
 }: {
-  params: { slug: string; locale: string };
+  params: { slug: string };
 }) {
-  const { slug, locale } = params;
+  const { slug } = params;
   const translations = useTranslations(`Project-${slug}`);
 
   // Set the locale for static rendering
-  unstable_setRequestLocale(locale);
+  // unstable_setRequestLocale(locale);
 
   const project = PROJECTS.filter((project) => project.slug === slug)[0];
 
@@ -35,10 +34,10 @@ export default function SingleProjectPage({
   );
 }
 
-export async function generateStaticParams() {
-  const projects = PROJECTS;
+// export async function generateStaticParams() {
+//   const projects = PROJECTS;
 
-  return projects.map((project) => ({
-    slug: project.slug,
-  }));
-}
+//   return projects.map((project) => ({
+//     slug: project.slug,
+//   }));
+// }
