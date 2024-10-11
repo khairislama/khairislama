@@ -1,7 +1,9 @@
+import { useTranslations } from "next-intl";
 import Marquee from "react-fast-marquee";
 
-function TagsOneProject() {
-  const list = ["Blender", "Freelance", "solo", "web design", "next.js"];
+function TagsOneProject({ tags, slug }: { tags: number; slug: string }) {
+  const translations = useTranslations(`Project-${slug}`);
+
   return (
     <ul className="w-full max-w-3xl mx-auto relative">
       <Marquee
@@ -12,12 +14,12 @@ function TagsOneProject() {
         gradient
         gradientColor="#121120"
       >
-        {list.map((item, i) => (
+        {Array.from({ length: tags }).map((_, i) => (
           <li
             className="py-1 px-4 bg-foreground/40 rounded-full mx-3 w-32 text-center text-foreground font-rubik"
             key={i}
           >
-            {item}
+            {translations(`tag-${i + 1}`)}
           </li>
         ))}
       </Marquee>

@@ -1,13 +1,12 @@
-import { IProject } from "@/lib/Projects";
 import Image from "next/image";
 
-function ParallelImages({ project }: { project: IProject }) {
+function ParallelImages() {
   return (
     <div className="flex flex-col md:flex-row gap-4 md:gap-8 my-10">
       <div className="w-full overflow-hidden rounded-xl relative group">
         <Image
           src="/600-650.png"
-          alt={project.image.alt}
+          alt=""
           width={600}
           height={650}
           className="object-cover w-full"
@@ -18,7 +17,7 @@ function ParallelImages({ project }: { project: IProject }) {
       <div className="w-full overflow-hidden rounded-xl relative group">
         <Image
           src="/600-650.png"
-          alt={project.image.alt}
+          alt=""
           width={600}
           height={650}
           className="object-cover w-full"

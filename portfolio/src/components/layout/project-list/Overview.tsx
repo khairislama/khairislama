@@ -6,8 +6,6 @@ function Overview({
   image: {
     src: string;
     alt: string;
-    width: number;
-    height: number;
   };
 }) {
   return (
@@ -15,8 +13,8 @@ function Overview({
       <Image
         src={image.src}
         alt={image.alt}
-        width={image.width}
-        height={image.height}
+        width={1920}
+        height={1080}
         className="object-cover w-full"
       />
       <div className="absolute top-0 left-0 w-full h-full bg-background/30 flex items-center justify-center shadow-[inset_1px_1px_150px_12px_rgba(0,0,0,0.9)]">

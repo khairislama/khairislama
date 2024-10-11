@@ -46,7 +46,7 @@ function Language() {
           />
         ))}
       </div>
-      <div className="w-full grid grid-cols-2">
+      <div className="w-full grid grid-cols-2 mt-4">
         {languages.map((lang, index) => (
           <div className="flex items-center gap-2" key={index}>
             <div

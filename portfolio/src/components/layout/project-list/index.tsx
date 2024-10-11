@@ -25,7 +25,7 @@ function ProjectsList() {
                 followCursor={true}
                 className="bg-foreground flex items-center gap-2"
               >
-                <Overview image={project.image} />
+                <Overview image={project.images[0]} />
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -46,7 +46,7 @@ function ProjectsList() {
                 followCursor={true}
                 className="bg-foreground flex items-center gap-2"
               >
-                <Overview image={project.image} />
+                <Overview image={project.images[0]} />
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -67,7 +67,7 @@ function ProjectsList() {
                 followCursor={true}
                 className="bg-foreground flex items-center gap-2"
               >
-                <Overview image={project.image} />
+                <Overview image={project.images[0]} />
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
