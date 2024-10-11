@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 function ProjectItem({ project }: { project: IProject }) {
   return (
     <PrefixedLink
-      href={`/projects/${project.slang}`}
+      href={`/projects/${project.slug}`}
       className="w-full flex items-center justify-between border-b-2 border-foreground/70 group my-4 md:hover:scale-95 transition duration-300 ease-in-out"
     >
       <div className="flex flex-col gap-4 mb-5">
