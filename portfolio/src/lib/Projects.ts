@@ -26,10 +26,11 @@ export interface IProject {
       alt: string;
     }[];
   };
-  language: {
+  languages: {
     name: string;
     color: string;
-  };
+    value: number;
+  }[];
   updated_at: string;
   featured: string;
   description: string;
@@ -72,7 +73,11 @@ export const PROJECTS: IProject[] = [
         { src: "/skills/tailwindcss.png", alt: "tailwind css" },
       ],
     },
-    language: { name: "typescript", color: "#3178C6" },
+    languages: [
+      { name: "Typescript", color: "#3178C6", value: 84.1 },
+      { name: "CSS", color: "#ce7eb8", value: 11.6 },
+      { name: "Javascript", color: "#ffd700", value: 3.4 },
+    ],
     updated_at: "Currently working on...",
     featured: "Client project",
     description:
@@ -118,7 +123,11 @@ export const PROJECTS: IProject[] = [
         { src: "/skills/tailwindcss.png", alt: "tailwind css" },
       ],
     },
-    language: { name: "Nest Js", color: "#E0234E" },
+    languages: [
+      { name: "Nest Js", color: "#E0234E", value: 84.1 },
+      { name: "CSS", color: "#ce7eb8", value: 11.6 },
+      { name: "Javascript", color: "#ffd700", value: 3.4 },
+    ],
     updated_at: "Currently working on...",
     featured: "Work project",
     description:
@@ -164,7 +173,11 @@ export const PROJECTS: IProject[] = [
         { src: "/skills/tailwindcss.png", alt: "tailwind css" },
       ],
     },
-    language: { name: "typescript", color: "#3178C6" },
+    languages: [
+      { name: "Nest Js", color: "#E0234E", value: 84.1 },
+      { name: "CSS", color: "#ce7eb8", value: 11.6 },
+      { name: "Javascript", color: "#ffd700", value: 3.4 },
+    ],
     updated_at: "Updated on Aug 4",
     featured: "Client project",
     description: "Showcase portfolio website for Fab 619.",
