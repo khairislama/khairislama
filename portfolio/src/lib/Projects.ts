@@ -5,6 +5,7 @@ export interface IProject {
   type: "public" | "private";
   stories: number;
   tags: number;
+  performance: boolean;
   github_link?: string;
   external_link?: string;
   language: {
@@ -32,6 +33,7 @@ export const PROJECTS: IProject[] = [
     type: "private",
     stories: 2,
     tags: 7,
+    performance: true,
     github_link: "https://github.com/khairislama/carthabot",
     external_link: "https://carthabot.vercel.app/en",
     language: { name: "typescript", color: "#3178C6" },
@@ -67,6 +69,7 @@ export const PROJECTS: IProject[] = [
     type: "private",
     stories: 0,
     tags: 2,
+    performance: false,
     language: { name: "Nest Js", color: "#E0234E" },
     updated_at: "Currently working on...",
     featured: "Work project",
@@ -100,6 +103,7 @@ export const PROJECTS: IProject[] = [
     type: "private",
     stories: 0,
     tags: 2,
+    performance: false,
     language: { name: "typescript", color: "#3178C6" },
     updated_at: "Updated on Aug 4",
     featured: "Client project",
