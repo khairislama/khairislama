@@ -5,6 +5,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { ExternalLink, Slash } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 function ExternalOneProject({
@@ -12,6 +13,8 @@ function ExternalOneProject({
 }: {
   external_link: string | undefined;
 }) {
+  const translations = useTranslations(`Projects`);
+
   return (
     <TooltipProvider>
       <Tooltip delayDuration={0}>
@@ -32,9 +35,9 @@ function ExternalOneProject({
         </TooltipTrigger>
         <TooltipContent className="hidden bg-foreground md:flex items-center gap-2 text-lg">
           {external_link ? (
-            <p>Demo</p>
+            <p> {translations("demo")} </p>
           ) : (
-            <p>No Demo available for this project</p>
+            <p>{translations("no-demo")}</p>
           )}
         </TooltipContent>
       </Tooltip>
