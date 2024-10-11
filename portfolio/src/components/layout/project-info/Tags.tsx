@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
 import Marquee from "react-fast-marquee";
 
-function TagsOneProject({ tags, slang }: { tags: number; slang: string }) {
-  const translations = useTranslations(`Project-${slang}`);
+function TagsOneProject({ tags, slug }: { tags: number; slug: string }) {
+  const translations = useTranslations(`Project-${slug}`);
 
   return (
     <ul className="w-full max-w-3xl mx-auto relative">
