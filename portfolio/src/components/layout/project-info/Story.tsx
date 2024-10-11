@@ -2,7 +2,6 @@ import { useTranslations } from "next-intl";
 import TagsOneProject from "./Tags";
 import InfoOneProject from "./Info";
 import { IProject } from "@/lib/Projects";
-import { Suspense } from "react";
 
 function StoryOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
@@ -19,9 +18,7 @@ function StoryOneProject({ project }: { project: IProject }) {
           </p>
         ))}
       </div>
-      <Suspense fallback={<h1 className="text-5xl text-red-500">Hello</h1>}>
-        <TagsOneProject tags={project.tags} slang={project.slang} />
-      </Suspense>
+      <TagsOneProject tags={project.tags} slang={project.slang} />
       <InfoOneProject slang={project.slang} />
     </div>
   );
