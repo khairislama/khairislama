@@ -3,6 +3,7 @@ export interface IProject {
   slang: string;
   name: string;
   type: "public" | "private";
+  stories: number;
   github_link?: string;
   external_link?: string;
   language: {
@@ -26,6 +27,7 @@ export const PROJECTS: IProject[] = [
     slang: "carthabot",
     name: "Carthabot",
     type: "private",
+    stories: 2,
     github_link: "https://github.com/khairislama/carthabot",
     external_link: "https://carthabot.vercel.app/en",
     language: { name: "typescript", color: "#3178C6" },
@@ -45,6 +47,7 @@ export const PROJECTS: IProject[] = [
     slang: "hutchinson-formulation",
     name: "Formulation",
     type: "private",
+    stories: 0,
     language: { name: "Nest Js", color: "#E0234E" },
     updated_at: "Currently working on...",
     featured: "Work project",
@@ -62,6 +65,7 @@ export const PROJECTS: IProject[] = [
     slang: "fab-619",
     name: "Fab 619 Showcase",
     type: "private",
+    stories: 0,
     language: { name: "typescript", color: "#3178C6" },
     updated_at: "Updated on Aug 4",
     featured: "Client project",
@@ -78,6 +82,7 @@ export const PROJECTS: IProject[] = [
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
+    stories: 0,
     language: { name: "typescript", color: "#FAB432" },
     updated_at: "Updated on Jul 9",
     featured: "Featured project",
@@ -89,6 +94,7 @@ export const PROJECTS: IProject[] = [
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
+    stories: 0,
     language: { name: "typescript", color: "#FAB432" },
     updated_at: "Updated on Jul 9",
     featured: "Featured project",
@@ -100,6 +106,7 @@ export const PROJECTS: IProject[] = [
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
+    stories: 0,
     language: { name: "typescript", color: "#FAB432" },
     updated_at: "Updated on Jul 9",
     featured: "Featured project",
@@ -111,6 +118,7 @@ export const PROJECTS: IProject[] = [
     slang: "robot-playground",
     name: "Robot playground",
     type: "public",
+    stories: 0,
     language: { name: "typescript", color: "#FAB432" },
     updated_at: "Updated on Jul 9",
     featured: "Featured project",
