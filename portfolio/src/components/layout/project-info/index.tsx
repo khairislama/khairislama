@@ -2,9 +2,7 @@ import { IProject } from "@/lib/Projects";
 import Image from "next/image";
 import GithubOneProject from "./Github";
 import ExternalOneProject from "./External";
-import TagsOneProject from "./Tags";
 import StoryOneProject from "./Story";
-import InfoOneProject from "./Info";
 import ParallelImages from "./Parallel";
 import ExplorationOneProject from "./Exploration";
 import GithubStats from "./GithubStats";
@@ -32,9 +30,7 @@ function ProjectInfo({ project }: { project: IProject }) {
           <ExternalOneProject external_link={project.external_link} />
         </div>
       </div>
-      <StoryOneProject stories={project.stories} slang={project.slang} />
-      <TagsOneProject />
-      <InfoOneProject />
+      <StoryOneProject project={project} />
       <ParallelImages project={project} />
       <ExplorationOneProject />
       <GithubStats />
