@@ -12,6 +12,8 @@ import Language from "./Language";
 import { Button } from "@/components/ui/button";
 
 function ProjectInfo({ project }: { project: IProject }) {
+  // const translations = useTranslations(`Project-${project.slang}`);
+
   return (
     <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 xl:px-0">
       <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
@@ -30,7 +32,7 @@ function ProjectInfo({ project }: { project: IProject }) {
           <ExternalOneProject external_link={project.external_link} />
         </div>
       </div>
-      <StoryOneProject />
+      <StoryOneProject stories={project.stories} slang={project.slang} />
       <TagsOneProject />
       <InfoOneProject />
       <ParallelImages project={project} />

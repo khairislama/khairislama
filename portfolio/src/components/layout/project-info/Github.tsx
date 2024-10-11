@@ -5,6 +5,7 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import { Slash } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,6 +14,7 @@ function GithubOneProject({
 }: {
   github_link: string | undefined;
 }) {
+  const translations = useTranslations(`Projects`);
   return (
     <TooltipProvider>
       <Tooltip delayDuration={0}>
@@ -45,9 +47,9 @@ function GithubOneProject({
         </TooltipTrigger>
         <TooltipContent className="hidden bg-foreground md:flex items-center gap-2 text-lg">
           {github_link ? (
-            <p>Github link</p>
+            <p> {translations("github-link")} </p>
           ) : (
-            <p>No github link for this project</p>
+            <p> {translations("no-github-link")} </p>
           )}
         </TooltipContent>
       </Tooltip>
