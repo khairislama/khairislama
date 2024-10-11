@@ -8,6 +8,7 @@ import ExplorationOneProject from "./Exploration";
 import GithubStats from "./GithubStats";
 import Language from "./Language";
 import { Button } from "@/components/ui/button";
+import { shimmer, toBase64 } from "@/lib/image";
 
 function ProjectInfo({ project }: { project: IProject }) {
   // const translations = useTranslations(`Project-${project.slang}`);
@@ -17,11 +18,16 @@ function ProjectInfo({ project }: { project: IProject }) {
       <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
         <div className="overflow-hidden rounded-xl relative group">
           <Image
-            src="/1920-1080.png"
-            alt={project.image.alt}
+            src={project.images[0].src}
+            alt={project.images[0].alt}
             width={1920}
             height={1080}
             className="object-cover w-full"
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            placeholder="blur"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(1920, 1080)
+            )}`}
           />
           <div className="absolute top-0 left-0 w-full h-full bg-background/30 shadow-[inset_1px_1px_150px_12px_rgba(0,0,0,0.9)] group-hover:shadow-[inset_1px_1px_50px_12px_rgba(0,0,0,0.5)] transition duration-500 ease-in-out" />
         </div>
@@ -31,8 +37,8 @@ function ProjectInfo({ project }: { project: IProject }) {
         </div>
       </div>
       <StoryOneProject project={project} />
-      <ParallelImages project={project} />
-      <ExplorationOneProject />
+      <ParallelImages />
+      <ExplorationOneProject project={project} />
       <GithubStats />
       <Language />
       <div className="w-full mx-auto max-w-xl my-16 flex items-center justify-between">

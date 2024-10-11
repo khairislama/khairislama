@@ -14,12 +14,14 @@ export interface IProject {
   updated_at: string;
   featured: string;
   description: string;
-  image: {
+  images: {
     src: string;
     alt: string;
-    width: number;
-    height: number;
-  };
+  }[];
+  vertical_images: {
+    src: string;
+    alt: string;
+  }[];
 }
 
 export const PROJECTS: IProject[] = [
@@ -37,12 +39,26 @@ export const PROJECTS: IProject[] = [
     featured: "Client project",
     description:
       "Interactive multi-language STEM learning platform with robots.",
-    image: {
-      src: "/projects/carthabot/hero.webp",
-      alt: "carthabot hero",
-      width: 1866,
-      height: 912,
-    },
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
   },
   {
     label: "current",
@@ -56,12 +72,26 @@ export const PROJECTS: IProject[] = [
     featured: "Work project",
     description:
       "Cloud-based formulation solution using NestJS and PostgreSQL.",
-    image: {
-      src: "/projects/formulation/recipe.webp",
-      alt: "formulation project",
-      width: 1920,
-      height: 924,
-    },
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
   },
   {
     label: "current",
@@ -74,11 +104,25 @@ export const PROJECTS: IProject[] = [
     updated_at: "Updated on Aug 4",
     featured: "Client project",
     description: "Showcase portfolio website for Fab 619.",
-    image: {
-      src: "/projects/fab619/maintenance.webp",
-      alt: "Strong cast",
-      width: 1269,
-      height: 819,
-    },
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
   },
 ];
