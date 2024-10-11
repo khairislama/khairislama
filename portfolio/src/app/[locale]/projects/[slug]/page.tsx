@@ -1,3 +1,4 @@
+import NotFound from "@/app/not-found";
 import {
   PageHero,
   ProjectInfo,
@@ -5,12 +6,22 @@ import {
 } from "@/components/layout";
 import { PROJECTS } from "@/lib/Projects";
 import { useTranslations } from "next-intl";
+import { unstable_setRequestLocale } from "next-intl/server";
 
-function SingleProjectPage({ params }: { params: { slang: string } }) {
-  const slang = params.slang;
-  const translations = useTranslations(`Project-${slang}`);
+export default function SingleProjectPage({
+  params,
+}: {
+  params: { slug: string; locale: string };
+}) {
+  const { slug, locale } = params;
+  const translations = useTranslations(`Project-${slug}`);
 
-  const project = PROJECTS.filter((project) => project.slang === slang)[0];
+  // Set the locale for static rendering
+  unstable_setRequestLocale(locale);
+
+  const project = PROJECTS.filter((project) => project.slug === slug)[0];
+
+  if (!project) return <NotFound />;
 
   return (
     <main className="w-full overflow-hidden mb-24">
@@ -24,12 +35,10 @@ function SingleProjectPage({ params }: { params: { slang: string } }) {
   );
 }
 
-export default SingleProjectPage;
-
 export async function generateStaticParams() {
   const projects = PROJECTS;
 
   return projects.map((project) => ({
-    slang: project.slang,
+    slug: project.slug,
   }));
 }

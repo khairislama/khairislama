@@ -1,6 +1,6 @@
 export interface IProject {
   label: string;
-  slang: string;
+  slug: string;
   name: string;
   type: "public" | "private";
   stories: number;
@@ -46,7 +46,7 @@ export interface IProject {
 export const PROJECTS: IProject[] = [
   {
     label: "current",
-    slang: "carthabot",
+    slug: "carthabot",
     name: "Carthabot",
     type: "private",
     stories: 2,
@@ -100,7 +100,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     label: "current",
-    slang: "hutchinson-formulation",
+    slug: "hutchinson-formulation",
     name: "Formulation",
     type: "private",
     stories: 0,
@@ -146,7 +146,7 @@ export const PROJECTS: IProject[] = [
   },
   {
     label: "current",
-    slang: "fab-619",
+    slug: "fab-619",
     name: "Fab 619 Showcase",
     type: "private",
     stories: 0,
