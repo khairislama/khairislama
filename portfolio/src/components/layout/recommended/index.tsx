@@ -1,6 +1,9 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 function RecommendedProjects() {
+  const translations = useTranslations(`Projects`);
+
   return (
     <div className="flex flex-col w-full max-w-7xl mx-auto px-4 sm:px-6 xl:px-0">
       <div className="flex w-full max-w-7xl mx-auto items-center justify-between gap-3">
@@ -14,12 +17,12 @@ function RecommendedProjects() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <p className="font-semibold font-rubik text-sm md:text-lg text-foreground/90 uppercase">
-            Previous work
+            {translations("previous-work")}
           </p>
         </div>
         <div className="flex items-start gap-2 md:gap-4">
           <p className="font-semibold font-rubik text-sm md:text-lg text-foreground/90 uppercase">
-            Next work
+            {translations("next-work")}
           </p>
           <Image
             src="/shapes/arrow-right.svg"
@@ -32,7 +35,7 @@ function RecommendedProjects() {
         </div>
       </div>
       <h2 className="text-3xl md:text-4xl font-syne font-semibold tracking-wider text-center mt-4">
-        Other Projects
+        {translations("other-projects")}
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mt-10">
         <div className="flex flex-col overflow-hidden relative">
