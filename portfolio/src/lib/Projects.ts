@@ -5,6 +5,7 @@ export interface IProject {
   type: "public" | "private";
   stories: number;
   tags: number;
+  features: number;
   performance: {
     lcp: string;
     structure: string;
@@ -39,6 +40,7 @@ export const PROJECTS: IProject[] = [
     type: "private",
     stories: 2,
     tags: 7,
+    features: 6,
     performance: {
       lcp: "1.0s",
       structure: "100%",
@@ -81,6 +83,7 @@ export const PROJECTS: IProject[] = [
     type: "private",
     stories: 0,
     tags: 2,
+    features: 7,
     performance: null,
     language: { name: "Nest Js", color: "#E0234E" },
     updated_at: "Currently working on...",
@@ -115,6 +118,7 @@ export const PROJECTS: IProject[] = [
     type: "private",
     stories: 0,
     tags: 2,
+    features: 7,
     performance: null,
     language: { name: "typescript", color: "#3178C6" },
     updated_at: "Updated on Aug 4",
