@@ -18,10 +18,23 @@ export default function SingleProjectPage({
   // Set the locale for static rendering
   // unstable_setRequestLocale(locale);
 
-  const project = PROJECTS.filter((project) => project.slug === slug)[0];
+  /// Find the index of the project
+  const projectIndex = PROJECTS.findIndex((project) => project.slug === slug);
 
-  if (!project) return <NotFound />;
+  // Handle case where project is not found
+  if (projectIndex === -1) return <NotFound />;
 
+  // Get the previous project index (wrap around to the last project if at the first project)
+  const previousIndex =
+    projectIndex - 1 >= 0 ? projectIndex - 1 : PROJECTS.length - 1;
+  const previousProjectSlug = PROJECTS[previousIndex].slug;
+
+  // Get the next project index (wrap around to the first project if at the last project)
+  const nextIndex = projectIndex + 1 >= PROJECTS.length ? 0 : projectIndex + 1;
+  const nextProjectSlug = PROJECTS[nextIndex].slug;
+
+  // Retrieve the project using the index
+  const project = PROJECTS[projectIndex];
   return (
     <main className="w-full overflow-hidden mb-24">
       <PageHero
@@ -29,7 +42,11 @@ export default function SingleProjectPage({
         subtitle={translations("subtitle")}
       />
       <ProjectInfo project={project} />
-      <RecommendedProjects />
+      <RecommendedProjects
+        projectIndex={projectIndex}
+        previousProjectSlug={previousProjectSlug}
+        nextProjectSlug={nextProjectSlug}
+      />
     </main>
   );
 }
