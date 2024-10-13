@@ -16,7 +16,7 @@ function TagsOneProject({ tags, slug }: { tags: number; slug: string }) {
       >
         {Array.from({ length: tags }).map((_, i) => (
           <li
-            className="py-1 px-4 bg-foreground/40 rounded-full mx-3 w-32 text-center text-foreground font-rubik"
+            className="py-1 px-4 bg-foreground/40 rounded-full mx-3 text-center text-foreground font-rubik"
             key={i}
           >
             {translations(`tag-${i + 1}`)}

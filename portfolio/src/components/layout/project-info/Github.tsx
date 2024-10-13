@@ -9,11 +9,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
-function GithubOneProject({
-  github_link,
-}: {
-  github_link: string | undefined;
-}) {
+function GithubOneProject({ github_link }: { github_link: string | null }) {
   const translations = useTranslations(`Projects`);
   return (
     <TooltipProvider>
