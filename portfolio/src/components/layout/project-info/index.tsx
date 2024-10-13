@@ -9,13 +9,15 @@ import GithubStats from "./GithubStats";
 import Language from "./Language";
 import { Button } from "@/components/ui/button";
 import { shimmer, toBase64 } from "@/lib/image";
+import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 function ProjectInfo({ project }: { project: IProject }) {
-  // const translations = useTranslations(`Project-${project.slang}`);
+  const translations = useTranslations(`Projects`);
 
   return (
     <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 xl:px-0">
-      <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
+      <div className="flex flex-col-reverse md:flex-row gap-8 items-center justify-between">
         <div className="overflow-hidden rounded-xl relative group">
           <Image
             src={project.images[0].src}
@@ -37,17 +39,35 @@ function ProjectInfo({ project }: { project: IProject }) {
         </div>
       </div>
       <StoryOneProject project={project} />
-      <ParallelImages />
+      <ParallelImages project={project} />
       <ExplorationOneProject project={project} />
       <GithubStats project={project} />
-      <Language />
+      <Language languages={project.languages} />
       <div className="w-full mx-auto max-w-xl my-16 flex items-center justify-between">
-        <Button className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground/80 text-2xl hover:bg-foreground/20 hover:text-foreground">
-          DEMO
-        </Button>
-        <Button className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground/80 text-2xl hover:bg-foreground/20 hover:text-foreground">
-          CODE
-        </Button>
+        {project?.external_link ? (
+          <Link
+            href={project.external_link}
+            className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground/80 text-2xl hover:bg-foreground/20 hover:text-foreground uppercase flex items-center justify-center font-semibold"
+          >
+            {translations("demo")}
+          </Link>
+        ) : (
+          <Button className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground/80 text-2xl hover:bg-foreground/20 hover:text-foreground uppercase cursor-not-allowed">
+            {translations("demo")}
+          </Button>
+        )}
+        {project?.github_link ? (
+          <Link
+            href={project.github_link}
+            className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground/80 text-2xl hover:bg-foreground/20 hover:text-foreground uppercase flex items-center justify-center font-semibold"
+          >
+            {translations("code")}
+          </Link>
+        ) : (
+          <Button className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground/80 text-2xl hover:bg-foreground/20 hover:text-foreground uppercase cursor-not-allowed">
+            {translations("code")}
+          </Button>
+        )}
       </div>
     </section>
   );
