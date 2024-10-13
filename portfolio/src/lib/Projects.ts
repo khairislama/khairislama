@@ -1,3 +1,8 @@
+export interface IImage {
+  src: string;
+  alt: string;
+}
+
 export interface IProject {
   label: string;
   slug: string;
@@ -21,10 +26,7 @@ export interface IProject {
     prs: string;
     issues: string;
     tests: string;
-    technologies: {
-      src: string;
-      alt: string;
-    }[];
+    technologies: IImage[];
   };
   languages: {
     name: string;
@@ -34,14 +36,8 @@ export interface IProject {
   updated_at: string;
   featured: string;
   description: string;
-  images: {
-    src: string;
-    alt: string;
-  }[];
-  vertical_images: {
-    src: string;
-    alt: string;
-  }[];
+  images: IImage[];
+  vertical_images: IImage[];
 }
 
 export const PROJECTS: IProject[] = [
@@ -450,22 +446,22 @@ export const PROJECTS: IProject[] = [
       "Wassalli is a digital platform designed to streamline package delivery between France and North Africa.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/wassalli/image-1.webp",
+        alt: "a how to use section",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/wassalli/image-2.webp",
+        alt: "the faq page of the site",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/wassalli/image-vertical-1.webp",
+        alt: "Contact us form",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/wassalli/image-vertical-2.webp",
+        alt: "GTmetrix grade",
       },
     ],
   },

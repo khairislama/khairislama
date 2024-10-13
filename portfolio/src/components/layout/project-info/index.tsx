@@ -39,7 +39,7 @@ function ProjectInfo({ project }: { project: IProject }) {
         </div>
       </div>
       <StoryOneProject project={project} />
-      <ParallelImages />
+      <ParallelImages project={project} />
       <ExplorationOneProject project={project} />
       <GithubStats project={project} />
       <Language languages={project.languages} />
