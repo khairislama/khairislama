@@ -17,7 +17,7 @@ function ProjectInfo({ project }: { project: IProject }) {
 
   return (
     <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 xl:px-0">
-      <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
+      <div className="flex flex-col-reverse md:flex-row gap-8 items-center justify-between">
         <div className="overflow-hidden rounded-xl relative group">
           <Image
             src={project.images[0].src}
