@@ -11,7 +11,7 @@ import Link from "next/link";
 function ExternalOneProject({
   external_link,
 }: {
-  external_link: string | undefined;
+  external_link: string | null;
 }) {
   const translations = useTranslations(`Projects`);
 
