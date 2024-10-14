@@ -29,7 +29,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} suppressHydrationWarning>
       <body
-        className={`${rubik.variable} ${syne.variable} antialiased  bg-background text-foreground/70`}
+        className={`${rubik.variable} ${syne.variable} antialiased debug-screens bg-background text-foreground/70`}
       >
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider

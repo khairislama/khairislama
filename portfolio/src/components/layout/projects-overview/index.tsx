@@ -11,16 +11,16 @@ import PlaygroundHighlights from "./PlaygroundHighlights";
 
 const IMAGES = [
   {
-    src: "/projects/carthabot/hero.webp",
-    alt: "Carthabot hero section",
-    width: 1866,
-    height: 912,
+    src: "/projects/carthabot/image-1.webp",
+    alt: "Carthabot project",
+    width: 1920,
+    height: 1080,
   },
   {
-    src: "/projects/formulation/recipe.webp",
+    src: "/projects/formulation/image-1.webp",
     alt: "Formulation recipe page",
     width: 1920,
-    height: 924,
+    height: 1080,
   },
   {
     src: "/projects/strong-cast/product.webp",
@@ -49,7 +49,7 @@ function ProjectsOverview() {
         alt="eclipse"
         width={1330}
         height={288}
-        className="absolute object-cover w-full pointer-events-none -top-[0%] xl:-top-[15%] 2xl:-top-[35%] 2k:-top-[200%] -z-10 brightness-125"
+        className="absolute object-cover w-full pointer-events-none -top-8 sm:-top-16 lg:-top-24 xl:-top-[12%] 2xl:-top-[15%] -z-10 brightness-125"
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <div className="max-w-7xl mx-auto flex flex-col p-4 sm:p-6 xl:p-0 text-center">
