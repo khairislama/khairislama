@@ -1,6 +1,8 @@
 import { shimmer, toBase64 } from "@/lib/image";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 interface Props {
   src: string;
   alt: string;

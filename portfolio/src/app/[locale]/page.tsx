@@ -13,22 +13,23 @@ export const runtime = "edge";
 export const metadata: Metadata = {
   title: "Khairi Slama | Full-Stack Engineer | Web Development Portfolio",
   description:
-    "Explore Khairi Slama's portfolio showcasing skills in web development, security, 3D Blender, and performance optimization. Available for freelance and full-time opportunities in Luxembourg and France.",
+    "Explore Khairi Slama's web development portfolio, with a focus on security, 3D web, and performance optimization. Available for opportunities in Luxembourg and France.",
   keywords:
-    "Khairi Slama, Full-Stack Engineer, Web Development, Next.js, Tailwind, Freelance, Luxembourg, France, Security, Performance, 3D Blender, Portfolio, Tunisian Engineer, Innovative Web Solutions, Job Seeking, Security Focus, High-Performance Applications",
+    "Khairi Slama, Full-Stack Engineer, Web Development, Next.js, Tailwind, Freelance, Luxembourg, France, Security, 3D Blender, Tunisian Engineer, Performance, Web Solutions",
   openGraph: {
     title: "Khairi Slama | Full-Stack Engineer",
     description:
-      "Showcasing projects, skills, and services for web development.",
-    url: "https://khairislama.vercel.app",
-    images: [
-      {
-        url: "/icons/og-image.svg",
-        width: 200,
-        height: 200,
-        alt: "Khairi Slama Portfolio",
-      },
-    ],
+      "Showcasing Khairi's web development projects, security-focused solutions, and 3D web experiences.",
+    url: "https://khairislama.vercel.app", // Ensure the domain is accurate
+    // images: [
+    //   {
+    //     url: "https://khairislama.vercel.app/icons/og-image.svg", // Full URL for better sharing
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Khairi Slama Portfolio",
+    //   },
+    // ],
+    siteName: "Khairi Slama Portfolio",
   },
 };
 
