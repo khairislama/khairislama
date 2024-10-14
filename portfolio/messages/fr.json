@@ -77,5 +77,56 @@
   "Footer": {
     "cooked with love in": "cuisiné avec amour à",
     "with": "avec"
+  },
+  "About": {
+    "title": "À propos de moi",
+    "subtitle": "Je suis un ingénieur logiciel passionné, spécialisé dans le développement web avec un focus sur la création de solutions web performantes et sécurisées. Mon expérience couvre le développement backend chez Hutchinson ainsi que des missions freelance sur des plateformes full-stack utilisant les dernières technologies web. J'aime relever des défis complexes et créer des expériences numériques intuitives. Toujours guidé par l'innovation, je suis prêt à apporter mon expertise à des projets d'envergure à l'étranger.",
+    "my-journey": {
+      "title": "Mon parcours",
+      "description": "J'ai obtenu un diplôme d'ingénieur full-stack, reconnu par le prestigieux label EUR-ACE, l'équivalent d'un diplôme européen. Mon parcours académique s'est achevé avec un projet de fin d'études passionnant à Paris, où j'ai eu l'opportunité de concevoir une plateforme web complète. Ce projet a non seulement affiné mes compétences en technologies web de pointe, mais a également renforcé ma passion pour la résolution de problèmes et l'innovation dans le domaine de la tech."
+    },
+    "current-work": {
+      "title": "Ingénierie de la sécurité et innovation chez Hutchinson",
+      "description": "J'ai été impliqué dans des projets critiques de développement backend, utilisant NestJS pour créer des solutions hautement sécurisées pour l'industrie. Durant plus d'un an et sept mois, j'ai contribué à des projets en veillant à ce qu'ils respectent les normes de sécurité les plus strictes tout en maintenant des performances optimales. Chaque projet me pousse à améliorer à la fois l'architecture de sécurité et la performance des systèmes, un aspect essentiel de mon rôle."
+    },
+    "know-me": {
+      "title": "Au-delà du code - Mes passions en dehors du travail",
+      "description": "Lorsque je ne travaille pas sur des codes complexes, vous me trouverez souvent en plein air. J'adore les escapades en camping, qui me permettent de déconnecter du monde numérique et de me reconnecter à la nature. Le footing, la randonnée et le sport me maintiennent actif, avec mon Malinois belge toujours à mes côtés lors de ces aventures. Que ce soit pour explorer de nouveaux sentiers ou passer du temps en groupe, je crois en l'équilibre entre ma vie technologique et des expériences réelles"
+    },
+    "contact": {
+      "title": "Contactez-nous"
+    }
+  },
+  "Projects": {
+    "title": "Mes projets",
+    "subtitle": "Au fil de ma carrière, j'ai réalisé une gamme diversifiée de projets qui démontrent ma capacité à allier technologies de pointe et solutions sécurisées et pratiques. Des plateformes full-stack développées avec Next.js aux intégrations 3D avec Blender, chaque projet reflète mon souci de la performance, de la sécurité et de l'innovation. Je suis constamment à la recherche de nouvelles façons de repousser les limites du développement web, en créant des expériences numériques percutantes. Voici un aperçu de certains de mes travaux les plus notables.",
+    "github-link": "Lien Github",
+    "no-github-link": "Pas de lien Github pour ce projet",
+    "demo": "Demo",
+    "no-demo": "Pas de démo disponible pour ce projet",
+    "code": "Code",
+    "project-story": "Histoire du projet",
+    "start-date": "Date de début",
+    "client": "Client",
+    "role": "Rôle",
+    "exploration": "Exploration",
+    "no-performance": "Pas de statistiques de performance",
+    "github-stats": "Statistiques Github",
+    "total-star-earned": "Total star earned",
+    "total-commits": "Total commits",
+    "total-prs": "Total PRs",
+    "total-issues": "Total des problèmes",
+    "total-tests": "Total tests",
+    "technologies": "Technologies",
+    "language": "Language",
+    "previous-work": "Travaux antérieurs",
+    "next-work": "Travaux suivants",
+    "other-projects": "Autres projets",
+    "performance": "Performance",
+    "structure": "Structure",
+    "open-projects": "Projets ouverts",
+    "worked-on": "Travaillé",
+    "tutorial-projects": "Projets tutoriels",
+    "click-for-details": "cliquez pour plus d'informations"
   }
 }
