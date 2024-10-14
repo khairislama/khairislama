@@ -74,28 +74,28 @@ export const PROJECTS: IProject[] = [
       "Interactive multi-language STEM learning platform with robots.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/carthabot/image-1.webp",
+        alt: "a programming block of the website",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/carthabot/image-2.webp",
+        alt: "some of the ui design",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/carthabot/image-vertical-1.webp",
+        alt: "hero of home page",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/carthabot/image-vertical-2.webp",
+        alt: "pillar of services",
       },
     ],
   },
   {
     label: "current",
-    slug: "hutchinson-formulation",
+    slug: "formulation",
     name: "Formulation",
     type: "private",
     stories: 2,
@@ -111,7 +111,7 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nestjs.png", alt: "nest js" },
+        { src: "/skills/nestjs.png", alt: "nest js" },
         { src: "/skills/typeorm.png", alt: "typeorm" },
         { src: "/skills/postgresql.png", alt: "postgresql" },
       ],
@@ -126,22 +126,22 @@ export const PROJECTS: IProject[] = [
       "Cloud-based formulation solution using NestJS and PostgreSQL.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/formulation/image-1.webp",
+        alt: "Dashboard of formulation platform",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/formulation/image-2.webp",
+        alt: "the recipe page",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/formulation/image-vertical-1.webp",
+        alt: "input output management",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/formulation/image-vertical-2.webp",
+        alt: "History feature",
       },
     ],
   },
