@@ -9,7 +9,7 @@ import { Dot } from "lucide-react";
 function ContactCard() {
   const translations = useTranslations("Contact");
   return (
-    <section className="relative w-full">
+    <section aria-labelledby="contact-card" className="relative w-full">
       <Image
         src="/shapes/eclipse-tiny.svg"
         alt="eclipse"
@@ -19,7 +19,9 @@ function ContactCard() {
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <div className="max-w-4xl mx-auto text-center mt-36 p-4 sm:p-6 xl:p-0">
-        <h2 className="text-header">{translations("title")}</h2>
+        <h2 id="contact-card" className="text-header">
+          {translations("title")}
+        </h2>
         <div className="contact-card my-32">
           <div className="w-full flex flex-col gap-4 text-left">
             <div className="flex flex-col sm:flex-row items-center justify-start gap-6">

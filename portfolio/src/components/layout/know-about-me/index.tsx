@@ -26,14 +26,17 @@ function KnowAboutMe({
 }: Props) {
   const translations = useTranslations("KnowMe");
   return (
-    <section className="relative w-full mt-16">
+    <section aria-labelledby="about-me" className="relative w-full mt-16">
       <div
         className={`max-w-7xl mx-auto flex lg:grid lg:grid-cols-2 gap-12 lg:gap-24 p-4 sm:p-6 xl:p-0 ${
           bottomFocused ? "flex-col" : "flex-col-reverse"
         }`}
       >
         <div className="my-auto flex flex-col gap-4 lg:gap-14">
-          <h2 className="font-syne font-bold text-5xl max-w-md text-balance">
+          <h2
+            id="about-me"
+            className="font-syne font-bold text-5xl max-w-md text-balance"
+          >
             {title}
           </h2>
           <p className="font-rubik text-justify">{description}</p>

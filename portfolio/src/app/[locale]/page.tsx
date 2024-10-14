@@ -6,7 +6,30 @@ import {
   Skills,
 } from "@/components/layout";
 import Services from "@/components/layout/services";
+import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+
+export const metadata: Metadata = {
+  title: "Khairi Slama | Full-Stack Engineer | Web Development Portfolio",
+  description:
+    "Explore Khairi Slama's portfolio showcasing skills in web development, security, 3D Blender, and performance optimization. Available for freelance and full-time opportunities in Luxembourg and France.",
+  keywords:
+    "Khairi Slama, Full-Stack Engineer, Web Development, Next.js, Tailwind, Freelance, Luxembourg, France, Security, Performance, 3D Blender, Portfolio, Tunisian Engineer, Innovative Web Solutions, Job Seeking, Security Focus, High-Performance Applications",
+  openGraph: {
+    title: "Khairi Slama | Full-Stack Engineer",
+    description:
+      "Showcasing projects, skills, and services for web development.",
+    url: "https://khairislama.vercel.app",
+    // images: [
+    //   {
+    //     url: "/images/og-image.jpg",
+    //     width: 1200,
+    //     height: 630,
+    //     alt: "Khairi Slama Portfolio",
+    //   },
+    // ],
+  },
+};
 
 export default function Home() {
   const translations = useTranslations("");

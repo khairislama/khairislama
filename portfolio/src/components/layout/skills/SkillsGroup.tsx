@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function SkillsGroup() {
   return (
-    <div className="relative mx-auto mt-16 flex flex-col items-center justify-center mb-44 md:mb-[72%]">
+    <article className="relative mx-auto mt-16 flex flex-col items-center justify-center mb-44 md:mb-[72%]">
       {/* Grid layout for screens smaller than md */}
       <div className="grid grid-cols-3 auto-rows-auto gap-4 lg:gap-8 md:hidden">
         {SKILLS.map((skill, i) => (
@@ -83,7 +83,7 @@ function SkillsGroup() {
         className="absolute -bottom-44 md:top-[250%] w-full brightness-150"
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
-    </div>
+    </article>
   );
 }
 
