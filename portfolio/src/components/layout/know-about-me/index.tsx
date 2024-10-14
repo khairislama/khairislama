@@ -3,6 +3,8 @@ import { useTranslations } from "next-intl";
 import Picture from "./Picture";
 import PrefixedLink from "@/components/PrefixedLink";
 
+export const runtime = "edge";
+
 interface Props {
   title: string;
   description: string;

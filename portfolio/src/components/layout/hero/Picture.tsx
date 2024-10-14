@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+export const runtime = "edge";
+
 function Picture() {
   return (
     <div className="relative w-48 h-48">

@@ -9,6 +9,7 @@ import Services from "@/components/layout/services";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
 export const metadata: Metadata = {
   title: "Khairi Slama | Full-Stack Engineer | Web Development Portfolio",
   description:
@@ -20,14 +21,14 @@ export const metadata: Metadata = {
     description:
       "Showcasing projects, skills, and services for web development.",
     url: "https://khairislama.vercel.app",
-    // images: [
-    //   {
-    //     url: "/images/og-image.jpg",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "Khairi Slama Portfolio",
-    //   },
-    // ],
+    images: [
+      {
+        url: "/icons/og-image.svg",
+        width: 200,
+        height: 200,
+        alt: "Khairi Slama Portfolio",
+      },
+    ],
   },
 };
 
