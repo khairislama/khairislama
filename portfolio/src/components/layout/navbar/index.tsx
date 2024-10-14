@@ -6,6 +6,8 @@ import Navigation from "./Navigation";
 import SocialIcons from "./SocialIcons";
 import { MoonIcon } from "@/components/MoonIcon";
 
+export const runtime = "edge";
+
 function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full drop-shadow-xl bg-background/70 hover:bg-background backdrop-blur-sm focus-within:bg-background transition-all ease-in-out duration-300 font-rubik">

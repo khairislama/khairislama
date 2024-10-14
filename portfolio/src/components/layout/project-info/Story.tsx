@@ -3,24 +3,31 @@ import TagsOneProject from "./Tags";
 import InfoOneProject from "./Info";
 import { IProject } from "@/lib/Projects";
 
+export const runtime = "edge";
+
 function StoryOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
   const projectTranslations = useTranslations(`Project-${project.slug}`);
   return (
-    <div className="w-full my-12">
+    <section aria-labelledby="project-story" className="w-full my-12">
       <div className="mx-auto max-w-2xl w-full">
-        <h2 className="text-3xl md:text-4xl font-syne font-semibold tracking-wider text-foreground/90">
+        <h2
+          id="project-story"
+          className="text-3xl md:text-4xl font-syne font-semibold tracking-wider text-foreground/90"
+        >
           {translations("project-story")}
         </h2>
-        {Array.from({ length: project.stories }).map((_, i) => (
-          <p key={i} className="text-lg mt-8 font-rubik">
-            {projectTranslations(`story-${i + 1}`)}
-          </p>
-        ))}
+        <article className="w-full">
+          {Array.from({ length: project.stories }).map((_, i) => (
+            <p key={i} className="text-lg mt-8 font-rubik">
+              {projectTranslations(`story-${i + 1}`)}
+            </p>
+          ))}
+        </article>
       </div>
       <TagsOneProject tags={project.tags} slug={project.slug} />
       <InfoOneProject slug={project.slug} />
-    </div>
+    </section>
   );
 }
 

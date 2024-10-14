@@ -4,6 +4,8 @@ import { ExternalLink, Link2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
+export const runtime = "edge";
+
 interface Props {
   reverse?: boolean;
   projectNumber: number;

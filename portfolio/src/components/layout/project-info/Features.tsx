@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import Marquee from "react-fast-marquee";
 
+export const runtime = "edge";
+
 function FeaturesOneProject({
   features,
   slug,
@@ -9,17 +11,6 @@ function FeaturesOneProject({
   slug: string;
 }) {
   const translations = useTranslations(`Project-${slug}`);
-  // const list = [
-  //   "Issue discussions",
-  //   "Markdown support",
-  //   "Comment reactions",
-  //   "Social interactions",
-  //   "User reputation system",
-  //   "Reference other bugs",
-  //   "@ Mentions users",
-  //   "Notifications",
-  //   "Bug labels",
-  // ];
 
   return (
     <ul className="relative">

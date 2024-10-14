@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import Marquee from "react-fast-marquee";
 
+export const runtime = "edge";
+
 function TagsOneProject({ tags, slug }: { tags: number; slug: string }) {
   const translations = useTranslations(`Project-${slug}`);
 

@@ -5,7 +5,48 @@ import {
   RecommendedProjects,
 } from "@/components/layout";
 import { PROJECTS } from "@/lib/Projects";
+import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+
+export const runtime = "edge";
+
+// Dynamic metadata generation based on the project slug
+export function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Metadata {
+  const { slug } = params;
+  const project = PROJECTS.find((p) => p.slug === slug);
+
+  if (!project) {
+    return {
+      title: "Project Not Found",
+      description: "The project you're looking for does not exist.",
+    };
+  }
+
+  return {
+    title: `${project.name} | Khairi Slama's Web Development Projects`,
+    description: project.description,
+    keywords: `${project.name}, Web Development, ${project.languages
+      .map((tech) => tech.name)
+      .join(", ")}`,
+    openGraph: {
+      title: `${project.name} | Web Development Project`,
+      description: project.description,
+      url: `https://khairislama.vercel.app/projects/${project.slug}`, // Update the base URL accordingly
+      images: [
+        {
+          url: `https://khairislama.vercel.app${project.images[0]?.src}`, // Use the first image from the project
+          width: 1200,
+          height: 630,
+          alt: project.images[0]?.alt || `${project.name} project image`,
+        },
+      ],
+    },
+  };
+}
 
 export default function SingleProjectPage({
   params,

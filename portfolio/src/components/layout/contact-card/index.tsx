@@ -6,20 +6,24 @@ import PrefixedLink from "@/components/PrefixedLink";
 import CardAvatar from "./CardAvatar";
 import { Dot } from "lucide-react";
 
+export const runtime = "edge";
+
 function ContactCard() {
   const translations = useTranslations("Contact");
   return (
-    <section className="relative w-full">
+    <section aria-labelledby="contact-card" className="relative w-full">
       <Image
         src="/shapes/eclipse-tiny.svg"
         alt="eclipse"
         width={1330}
         height={288}
-        className="absolute object-cover w-full pointer-events-none -top-60 -z-10 brightness-125"
+        className="absolute object-cover w-full pointer-events-none -top-10 sm:-top-24 xl:-top-[45%] 2xl:-top-[70%] -z-10 brightness-125"
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <div className="max-w-4xl mx-auto text-center mt-36 p-4 sm:p-6 xl:p-0">
-        <h2 className="text-header">{translations("title")}</h2>
+        <h2 id="contact-card" className="text-header">
+          {translations("title")}
+        </h2>
         <div className="contact-card my-32">
           <div className="w-full flex flex-col gap-4 text-left">
             <div className="flex flex-col sm:flex-row items-center justify-start gap-6">

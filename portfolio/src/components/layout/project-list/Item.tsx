@@ -2,6 +2,8 @@ import PrefixedLink from "@/components/PrefixedLink";
 import { IProject } from "@/lib/Projects";
 import { ChevronRight } from "lucide-react";
 
+export const runtime = "edge";
+
 function ProjectItem({ project }: { project: IProject }) {
   return (
     <PrefixedLink

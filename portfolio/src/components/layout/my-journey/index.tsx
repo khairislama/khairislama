@@ -1,13 +1,19 @@
+import { shimmer, toBase64 } from "@/lib/image";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+
+export const runtime = "edge";
 
 function MyJourney() {
   const translations = useTranslations("About.my-journey");
   return (
-    <section className="relative w-full my-6">
+    <section aria-labelledby="journey" className="relative w-full my-6">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between w-full gap-8 z-10 px-4 sm:px-6 xl:px-0">
         <div className="flex flex-col gap-4 md:max-w-md lg:max-w-xl xl:max-w-3xl z-10">
-          <h2 className="text-3xl lg:text-4xl font-semibold font-syne text-foreground tracking-wider">
+          <h2
+            id="journey"
+            className="text-3xl lg:text-4xl font-semibold font-syne text-foreground tracking-wider"
+          >
             {translations("title")}
           </h2>
           <p className="text-lg tracking-wide font-rubik text-justify">
@@ -21,7 +27,13 @@ function MyJourney() {
               alt="khairi slama face"
               width={500}
               height={500}
+              priority
               className="object-cover w-full h-auto"
+              sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(500, 500)
+              )}`}
             />
           </div>
         </div>
@@ -32,6 +44,7 @@ function MyJourney() {
         width={1200}
         height={1200}
         className="hidden lg:block absolute -bottom-[80%] xl:-bottom-[110%] 2xl:-bottom-[170%] object-cover opacity-30 w-full pointer-events-none"
+        sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
     </section>
   );

@@ -3,6 +3,8 @@ import { PROJECTS } from "@/lib/Projects";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 function getRandomProjects(excludeIndex: number, count: number) {
   const filteredProjects = PROJECTS.filter(
     (_, index) => index !== excludeIndex
@@ -64,11 +66,13 @@ function RecommendedProjects({
         {translations("other-projects")}
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mt-10">
-        {randomProjects.map((project) => (
+        {randomProjects.map((project, index) => (
           <CustomLink
             key={project.slug}
             href={`/projects/${project.slug}`}
-            className="flex flex-col overflow-hidden relative"
+            className={`flex flex-col overflow-hidden relative ${
+              index === randomProjects.length - 1 ? "hidden md:block" : ""
+            }`}
           >
             <Image
               src={project.vertical_images[0].src}
@@ -82,7 +86,9 @@ function RecommendedProjects({
               <h3 className="font-semibold font-syne text-foreground/90">
                 {project.name}
               </h3>
-              <p className="">Branding</p>
+              <p className="text-xs sm:text-sm md:text-base">
+                {project.description}
+              </p>
             </div>
           </CustomLink>
         ))}

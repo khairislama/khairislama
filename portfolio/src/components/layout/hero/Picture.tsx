@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+export const runtime = "edge";
+
 function Picture() {
   return (
     <div className="relative w-48 h-48">
@@ -30,7 +32,7 @@ function Picture() {
       <div className="absolute z-40 inset-0 m-auto h-32 w-32 rounded-full border-2 border-border overlay-hidden">
         <Image
           src="/avatars/Avatar-1.png"
-          alt="eclipse"
+          alt="avatar 1"
           width={358}
           height={289}
           className="h-full w-full object-cover rounded-full"

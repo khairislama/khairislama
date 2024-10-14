@@ -1,9 +1,11 @@
 import { SKILLS } from "@/lib/Skills";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 function SkillsGroup() {
   return (
-    <div className="relative mx-auto mt-16 flex flex-col items-center justify-center mb-44 md:mb-[72%]">
+    <article className="relative mx-auto mt-16 flex flex-col items-center justify-center mb-44 md:mb-[72%]">
       {/* Grid layout for screens smaller than md */}
       <div className="grid grid-cols-3 auto-rows-auto gap-4 lg:gap-8 md:hidden">
         {SKILLS.map((skill, i) => (
@@ -16,7 +18,7 @@ function SkillsGroup() {
             }`}
           >
             <Image
-              src={`/skills/${skill.name}.png`}
+              src={`/skills/${skill.name}.webp`}
               alt={skill.name}
               width={skill.width}
               height={skill.height}
@@ -37,7 +39,7 @@ function SkillsGroup() {
               className="w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center lg:hover:scale-125 duration-300 transition-all ease-in-out"
             >
               <Image
-                src={`/skills/${SKILLS[i].name}.png`}
+                src={`/skills/${SKILLS[i].name}.webp`}
                 alt={SKILLS[i].name}
                 width={SKILLS[i].width}
                 height={SKILLS[i].height}
@@ -56,7 +58,7 @@ function SkillsGroup() {
               className="relative w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center lg:hover:scale-125 duration-300 transition-all ease-in-out"
             >
               <Image
-                src={`/skills/${SKILLS[i + 7].name}.png`}
+                src={`/skills/${SKILLS[i + 7].name}.webp`}
                 alt={SKILLS[i + 7].name}
                 width={SKILLS[i + 7].width}
                 height={SKILLS[i + 7].height}
@@ -83,7 +85,7 @@ function SkillsGroup() {
         className="absolute -bottom-44 md:top-[250%] w-full brightness-150"
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
-    </div>
+    </article>
   );
 }
 

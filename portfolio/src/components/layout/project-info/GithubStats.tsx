@@ -2,12 +2,20 @@ import { IProject } from "@/lib/Projects";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 function GithubStats({ project }: { project: IProject }) {
   const { stats } = project;
   const translations = useTranslations(`Projects`);
   return (
-    <section className="w-full mx-auto max-w-4xl my-10">
-      <h2 className="text-3xl md:text-4xl font-syne font-semibold tracking-wider md:text-center">
+    <section
+      aria-labelledby="github-stats"
+      className="w-full mx-auto max-w-4xl my-10"
+    >
+      <h2
+        id="github-stats"
+        className="text-3xl md:text-4xl font-syne font-semibold tracking-wider md:text-center"
+      >
         {translations("github-stats")}
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 md:mt-10">

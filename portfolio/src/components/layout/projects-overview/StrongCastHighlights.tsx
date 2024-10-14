@@ -1,6 +1,8 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 function StrongCastHighlights() {
   const translations = useTranslations("ProjectsOverview");
 
@@ -39,7 +41,7 @@ function StrongCastHighlights() {
         </p>
         <div className="flex items-center gap-1 sm:gap-3 md:gap-1 xl:gap-3">
           <Image
-            src="/skills/nextjs.png"
+            src="/skills/nextjs.webp"
             alt="Next js"
             width={20}
             height={20}
@@ -47,7 +49,7 @@ function StrongCastHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/tailwindcss.png"
+            src="/skills/tailwindcss.webp"
             alt="Tailwind css"
             width={20}
             height={20}
@@ -55,7 +57,7 @@ function StrongCastHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/shopify.png"
+            src="/skills/shopify.webp"
             alt="Shopify"
             width={20}
             height={20}
@@ -63,7 +65,7 @@ function StrongCastHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/nodejs.png"
+            src="/skills/nodejs.webp"
             alt="Node js"
             width={20}
             height={20}
@@ -71,7 +73,7 @@ function StrongCastHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/typescript.png"
+            src="/skills/typescript.webp"
             alt="Typescript"
             width={20}
             height={20}
@@ -79,7 +81,7 @@ function StrongCastHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/figma.png"
+            src="/skills/figma.webp"
             alt="Figma"
             width={20}
             height={20}
@@ -87,7 +89,7 @@ function StrongCastHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/git.png"
+            src="/skills/git.webp"
             alt="Git"
             width={20}
             height={20}

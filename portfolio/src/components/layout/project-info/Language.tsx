@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
+
 interface Language {
   name: string;
   color: string;
@@ -10,8 +12,14 @@ function Language({ languages }: { languages: Language[] }) {
   const translations = useTranslations(`Projects`);
 
   return (
-    <section className="w-full mx-auto max-w-xl my-10">
-      <h2 className="text-3xl md:text-4xl font-syne font-semibold tracking-wider md:text-center">
+    <section
+      aria-labelledby="languages"
+      className="w-full mx-auto max-w-xl my-10"
+    >
+      <h2
+        id="languages"
+        className="text-3xl md:text-4xl font-syne font-semibold tracking-wider md:text-center"
+      >
         {translations("language")}
       </h2>
       <div className="w-full h-4 flex mt-6 rounded-full overflow-hidden">
