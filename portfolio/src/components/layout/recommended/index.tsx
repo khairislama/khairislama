@@ -84,7 +84,9 @@ function RecommendedProjects({
               <h3 className="font-semibold font-syne text-foreground/90">
                 {project.name}
               </h3>
-              <p className="">Branding</p>
+              <p className="text-xs sm:text-sm md:text-base">
+                {project.description}
+              </p>
             </div>
           </CustomLink>
         ))}

@@ -15,7 +15,6 @@ import {
   AlignJustify,
   BookOpenText,
   ChartNoAxesGantt,
-  Drum,
   House,
   Mail,
 } from "lucide-react";
@@ -64,7 +63,7 @@ export default function NavBurger() {
                 <BookOpenText className="h-4 w-4" /> About
               </Link>
             </DropdownMenuItem>
-            <DropdownMenuItem
+            {/* <DropdownMenuItem
               className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
               onClick={handleItemClick}
             >
@@ -74,7 +73,7 @@ export default function NavBurger() {
               >
                 <Drum className="h-4 w-4" /> Play
               </Link>
-            </DropdownMenuItem>
+            </DropdownMenuItem> */}
             <DropdownMenuItem
               className="hover:bg-primary hover:text-primary-foreground transition duration-200 ease-out"
               onClick={handleItemClick}

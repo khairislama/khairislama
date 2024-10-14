@@ -8,9 +8,12 @@ function Hero() {
   const translations = useTranslations("Hero");
 
   return (
-    <section className="relative w-full font-syne">
+    <section aria-labelledby="welcome" className="relative w-full font-syne">
       <div className="flex flex-col items-center justify-between max-w-3xl mx-auto mt-10 md:mt-14 lg:mt-16 pb-16 z-20">
-        <h1 className="text-3xl"> {translations("welcome")} </h1>
+        <h1 id="welcome" className="text-3xl">
+          {" "}
+          {translations("welcome")}{" "}
+        </h1>
         <Picture />
         <AnimatedText
           text={translations("title")}
