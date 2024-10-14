@@ -384,7 +384,7 @@
   "Project-threejs-tuto": {
     "title": "Project Details - Three JS Tuto",
     "subtitle": "A tutorial project built with Vite and Three.js to explore 3D web development, featuring a rotating sphere with dynamic lighting and smooth scroll animations.",
-    "story-1": "ThreeJs Tuto was created as a personal learning project to dive into 3D web development using Three.js and Vite. The goal was to experiment with 3D model rendering, lighting effects, and animations while familiarizing myself with Vite’s fast build process. This simple yet elegant project showcases a rotating, lit sphere with smooth scroll animations, providing a solid foundation for understanding interactive 3D graphics on the web",
+    "story-1": "ThreeJs Tuto was created as a personal learning project to dive into 3D web development using Three.js and Vite. The goal was to experiment with 3D model rendering, lighting effects, and animations while familiarizing myself with Vite’s fast build process. This simple yet elegant project showcases a rotating, lit sphere with smooth scroll animations, providing a solid foundation for understanding interactive 3D graphics on the web.",
     "tag-1": "threejs",
     "tag-2": "vite",
     "tag-3": "3d-animation",
@@ -402,5 +402,26 @@
     "feature-3": "Smooth scroll animations powered by GSAP",
     "feature-4": "Responsive design for seamless adaptation to different screen sizes",
     "feature-5": "Fast build process with Vite for optimized performance"
+  },
+  "Project-anime-world": {
+    "title": "Project Details - Anime World",
+    "subtitle": "A modern Next.js 14.2.3 project to explore popular anime with smooth Framer Motion animations and infinite scrolling using react-intersection-observer.",
+    "story-1": "Anime World is a personal tutorial project designed to refresh my Next.js skills and enhance best practices, while also integrating features like infinite scroll and smooth animations. Using Next.js 14.2.3, Framer Motion, and react-intersection-observer, I focused on creating a high-performance, visually appealing app that showcases a list of popular anime. The project serves as a practical way to sharpen my expertise in server-side rendering, client-side interactivity, and responsive design.",
+    "tag-1": "nextjs14",
+    "tag-2": "infinite-scroll",
+    "tag-3": "framer-motion",
+    "tag-4": "react-intersection-observer",
+    "tag-5": "anime-listing",
+    "tag-6": "server-actions",
+    "tag-7": "responsive-design",
+    "start-date": "26 May 2024",
+    "client": "Self",
+    "role": "Developer",
+    "exploration": "This project allowed me to explore Next.js 14.2.3’s new features while integrating infinite scroll and animations with Framer Motion. It reinforced best practices in handling server-side actions and dynamically loading content. Additionally, working with react-intersection-observer helped improve my understanding of lazy loading and in-view detection for efficient performance.",
+    "feature-1": "Server Actions to efficiently fetch and render anime data",
+    "feature-2": "Framer Motion for smooth animations and transitions",
+    "feature-3": "Infinite scroll using react-intersection-observer",
+    "feature-4": "Fully responsive design for mobile and desktop",
+    "feature-5": "Optimized performance with Next.js 14.2.3 features"
   }
 }

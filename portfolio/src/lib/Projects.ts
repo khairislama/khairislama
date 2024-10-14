@@ -682,4 +682,56 @@ export const PROJECTS: IProject[] = [
       },
     ],
   },
+  {
+    label: "tuto",
+    slug: "anime-world",
+    name: "Anime World",
+    type: "public",
+    stories: 1,
+    tags: 7,
+    features: 5,
+    performance: null,
+    github_link: "https://github.com/khairislama/anime-world",
+    external_link: "https://anime-world-nine.vercel.app",
+    stats: {
+      stars: "2",
+      commits: "20",
+      prs: "5",
+      issues: "-",
+      tests: "-",
+      technologies: [
+        { src: "/icons/nextjs.png", alt: "next js" },
+        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+      ],
+    },
+    languages: [
+      { name: "Typescript", color: "#3178C6", value: 94.6 },
+      { name: "CSS", color: "#ce7eb8", value: 4.4 },
+      { name: "Javascript", color: "#ffd700", value: 1.0 },
+    ],
+    updated_at: "Updated on Jun 6",
+    featured: "Self",
+    description:
+      "A tutorial project for smooth Framer Motion animations and infinite scrolling.",
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
+  },
 ];
