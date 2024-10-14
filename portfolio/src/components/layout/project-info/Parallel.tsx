@@ -1,5 +1,8 @@
+import { shimmer, toBase64 } from "@/lib/image";
 import { IProject } from "@/lib/Projects";
 import Image from "next/image";
+
+export const runtime = "edge";
 
 function ParallelImages({ project }: { project: IProject }) {
   return (
@@ -11,6 +14,11 @@ function ParallelImages({ project }: { project: IProject }) {
           width={600}
           height={650}
           className="object-cover w-full"
+          sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+          placeholder="blur"
+          blurDataURL={`data:image/svg+xml;base64,${toBase64(
+            shimmer(600, 650)
+          )}`}
         />
         <div className="absolute top-0 left-0 w-full h-full bg-background/30 shadow-[inset_1px_1px_50px_12px_rgba(0,0,0,0.9)] group-hover:shadow-[inset_1px_1px_20px_12px_rgba(0,0,0,0.5)] transition duration-500 ease-in-out" />
       </div>
@@ -22,6 +30,11 @@ function ParallelImages({ project }: { project: IProject }) {
           width={600}
           height={650}
           className="object-cover w-full"
+          sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+          placeholder="blur"
+          blurDataURL={`data:image/svg+xml;base64,${toBase64(
+            shimmer(600, 650)
+          )}`}
         />
         <div className="absolute top-0 left-0 w-full h-full bg-background/30 shadow-[inset_1px_1px_50px_12px_rgba(0,0,0,0.9)] group-hover:shadow-[inset_1px_1px_20px_12px_rgba(0,0,0,0.5)] transition duration-500 ease-in-out" />
       </div>

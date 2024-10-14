@@ -4,13 +4,18 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import AnimatedText from "@/components/AnimatedText";
 
+export const runtime = "edge";
+
 function Hero() {
   const translations = useTranslations("Hero");
 
   return (
-    <section className="relative w-full font-syne">
+    <section aria-labelledby="welcome" className="relative w-full font-syne">
       <div className="flex flex-col items-center justify-between max-w-3xl mx-auto mt-10 md:mt-14 lg:mt-16 pb-16 z-20">
-        <h1 className="text-3xl"> {translations("welcome")} </h1>
+        <h1 id="welcome" className="text-3xl">
+          {" "}
+          {translations("welcome")}{" "}
+        </h1>
         <Picture />
         <AnimatedText
           text={translations("title")}
@@ -23,7 +28,7 @@ function Hero() {
         alt="eclipse"
         width={1330}
         height={288}
-        className="absolute object-cover w-full pointer-events-none bottom-[7%] sm:bottom-0 xl:inset-0"
+        className="absolute object-cover w-full pointer-events-none bottom-[7%] sm:bottom-0 md:-bottom-24 xl:inset-32"
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <Image

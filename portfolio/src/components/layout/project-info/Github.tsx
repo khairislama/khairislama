@@ -9,6 +9,8 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
+export const runtime = "edge";
+
 function GithubOneProject({ github_link }: { github_link: string | null }) {
   const translations = useTranslations(`Projects`);
   return (
@@ -19,6 +21,7 @@ function GithubOneProject({ github_link }: { github_link: string | null }) {
             <Link
               className="h-20 w-20 bg-foreground/40 rounded-full p-4 hover:bg-foreground/20 transition duration-300 ease-in-out"
               href={github_link}
+              target="_blank"
             >
               <Image
                 src="/icons/social/github.svg"
