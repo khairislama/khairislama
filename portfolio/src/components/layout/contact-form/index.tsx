@@ -10,7 +10,7 @@ function ContactWrapper() {
     >
       <h2
         id="contact-form"
-        className="text-4xl md:text-5xl lg:text-7xl font-semibold font-syne text-foreground tracking-wider mt-8 md:mt-16"
+        className="text-4xl md:text-5xl font-semibold font-syne text-foreground tracking-wider mt-8 md:mt-16"
       >
         {translations("title")}
       </h2>
