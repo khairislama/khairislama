@@ -1,6 +1,8 @@
 import { shimmer, toBase64 } from "@/lib/image";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 interface Props {
   reverse?: boolean;
   image: {
@@ -41,7 +43,9 @@ function ProjectImage({ image, reverse }: Props) {
             : "md:rounded-br-3xl md:rounded-tl-3xl"
         }`}
         placeholder="blur"
-        blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(200, 35))}`}
+        blurDataURL={`data:image/svg+xml;base64,${toBase64(
+          shimmer(image.width, image.height)
+        )}`}
       />
     </div>
   );

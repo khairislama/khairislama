@@ -1,6 +1,8 @@
 import { IProject } from "@/lib/Projects";
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
+
 function StatsOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
 
@@ -43,15 +45,15 @@ function StatsOneProject({ project }: { project: IProject }) {
         </div>
       ) : (
         <div className="relative z-20 hidden md:flex items-center justify-center h-full">
-          <span className="text-5xl xl:text-7xl font-syne text-center font-bold uppercase">
+          <p className="text-5xl xl:text-7xl font-syne text-center font-bold uppercase">
             {translations("no-performance")
               .split(" ")
-              .map((word) => (
-                <>
+              .map((word, i) => (
+                <span key={i}>
                   {word} <br />
-                </>
+                </span>
               ))}
-          </span>
+          </p>
         </div>
       )}
     </div>

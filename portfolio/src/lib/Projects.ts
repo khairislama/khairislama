@@ -59,8 +59,8 @@ export const PROJECTS: IProject[] = [
       issues: "1",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -74,28 +74,28 @@ export const PROJECTS: IProject[] = [
       "Interactive multi-language STEM learning platform with robots.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/carthabot/image-1.webp",
+        alt: "a programming block of the website",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/carthabot/image-2.webp",
+        alt: "some of the ui design",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/carthabot/image-vertical-1.webp",
+        alt: "hero of home page",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/carthabot/image-vertical-2.webp",
+        alt: "pillar of services",
       },
     ],
   },
   {
     label: "current",
-    slug: "hutchinson-formulation",
+    slug: "formulation",
     name: "Formulation",
     type: "private",
     stories: 2,
@@ -111,9 +111,9 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nestjs.png", alt: "nest js" },
+        { src: "/skills/nestjs.webp", alt: "nest js" },
         { src: "/skills/typeorm.png", alt: "typeorm" },
-        { src: "/skills/postgresql.png", alt: "postgresql" },
+        { src: "/skills/postgresql.webp", alt: "postgresql" },
       ],
     },
     languages: [
@@ -126,22 +126,22 @@ export const PROJECTS: IProject[] = [
       "Cloud-based formulation solution using NestJS and PostgreSQL.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/formulation/image-1.webp",
+        alt: "Dashboard of formulation platform",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/formulation/image-2.webp",
+        alt: "the recipe page",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/formulation/image-vertical-1.webp",
+        alt: "input output management",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/formulation/image-vertical-2.webp",
+        alt: "History feature",
       },
     ],
   },
@@ -163,8 +163,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -177,22 +177,14 @@ export const PROJECTS: IProject[] = [
     description: "Showcase portfolio website for Fab 619.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/fab619/image-1.webp",
+        alt: "Maintenance page",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
-      },
-      {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/fab619/image-vertical-1.webp",
+        alt: "Maintenance page",
       },
     ],
   },
@@ -214,8 +206,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -272,8 +264,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -322,8 +314,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -373,8 +365,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -431,8 +423,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "24",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -462,6 +454,275 @@ export const PROJECTS: IProject[] = [
       {
         src: "/projects/wassalli/image-vertical-2.webp",
         alt: "GTmetrix grade",
+      },
+    ],
+  },
+  {
+    label: "done",
+    slug: "slk-consulting",
+    name: "Slk Consulting FR",
+    type: "private",
+    stories: 2,
+    tags: 7,
+    features: 5,
+    performance: null,
+    github_link: null,
+    external_link: "https://slkconsulting.fr/index.html",
+    stats: {
+      stars: "-",
+      commits: "2",
+      prs: "1",
+      issues: "-",
+      tests: "-",
+      technologies: [
+        { src: "/skills/html.svg", alt: "Html" },
+        { src: "/skills/css.svg", alt: "Css" },
+        { src: "/skills/javascript.svg", alt: "Javascript" },
+      ],
+    },
+    languages: [
+      { name: "CSS", color: "#ce7eb8", value: 62.8 },
+      { name: "Javascript", color: "#ffd700", value: 17.9 },
+      { name: "Php", color: "#b0b3d6", value: 12.9 },
+      { name: "Html", color: "#e34c26", value: 6.4 },
+    ],
+    updated_at: "Updated on Sep 17, 2022",
+    featured: "Internship",
+    description:
+      "A showcase website for SLK Consulting, designed with HTML, CSS, and JavaScript.",
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
+  },
+  {
+    label: "done",
+    slug: "dilab",
+    name: "Dilab FR",
+    type: "private",
+    stories: 2,
+    tags: 7,
+    features: 5,
+    performance: null,
+    github_link: null,
+    external_link: "https://slkconsulting.fr/index.html",
+    stats: {
+      stars: "-",
+      commits: "2",
+      prs: "1",
+      issues: "-",
+      tests: "-",
+      technologies: [
+        { src: "/skills/html.svg", alt: "Html" },
+        { src: "/skills/css.svg", alt: "Css" },
+        { src: "/skills/javascript.svg", alt: "Javascript" },
+      ],
+    },
+    languages: [
+      { name: "CSS", color: "#ce7eb8", value: 55.5 },
+      { name: "Php", color: "#b0b3d6", value: 21.3 },
+      { name: "Javascript", color: "#ffd700", value: 19.9 },
+      { name: "Html", color: "#e34c26", value: 3.3 },
+    ],
+    updated_at: "Updated on Sep 17, 2022",
+    featured: "Internship",
+    description:
+      "A showcase website for Dilab, designed with HTML, CSS, and JavaScript.",
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
+  },
+  {
+    label: "current",
+    slug: "khairislama",
+    name: "Khairi SLAMA",
+    type: "public",
+    stories: 3,
+    tags: 10,
+    features: 5,
+    performance: {
+      performance: "97%",
+      structure: "91%",
+      lcp: "1.2s",
+      tbt: "0ms",
+      cls: "0",
+    },
+    github_link: "https://github.com/khairislama/khairislama",
+    external_link: "/",
+    stats: {
+      stars: "2",
+      commits: "183",
+      prs: "28",
+      issues: "0",
+      tests: "0",
+      technologies: [
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
+      ],
+    },
+    languages: [
+      { name: "Typescript", color: "#3178C6", value: 98.3 },
+      { name: "CSS", color: "#ce7eb8", value: 1.5 },
+      { name: "Javascript", color: "#ffd700", value: 0.2 },
+    ],
+    updated_at: "Currently working on...",
+    featured: "Self",
+    description: "A personal portfolio built with Next.js and Tailwind CSS.",
+    images: [
+      {
+        src: "/projects/khairislama/image-1.webp",
+        alt: "hero screenshot",
+      },
+      {
+        src: "/projects/khairislama/image-2.webp",
+        alt: "performance",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/projects/khairislama/image-vertical-1.webp",
+        alt: "about me page overview",
+      },
+      {
+        src: "/projects/khairislama/image-vertical-2.webp",
+        alt: "projects list",
+      },
+    ],
+  },
+  {
+    label: "tuto",
+    slug: "threejs-tuto",
+    name: "Three JS Tuto",
+    type: "public",
+    stories: 1,
+    tags: 8,
+    features: 5,
+    performance: null,
+    github_link: "https://github.com/khairislama/threeJs-tuto",
+    external_link: "https://three-js-tuto.vercel.app",
+    stats: {
+      stars: "-",
+      commits: "8",
+      prs: "3",
+      issues: "-",
+      tests: "-",
+      technologies: [
+        { src: "/icons/vitejs.webp", alt: "vite js" },
+        { src: "/skills/threejs.png", alt: "three js" },
+      ],
+    },
+    languages: [
+      { name: "Javascript", color: "#ffd700", value: 61.9 },
+      { name: "Html", color: "#e34c26", value: 22.6 },
+      { name: "CSS", color: "#ce7eb8", value: 15.5 },
+    ],
+    updated_at: "Updated on Jun 6",
+    featured: "Self",
+    description:
+      "A tutorial project built with Vite and Three.js to explore 3D web development.",
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
+  },
+  {
+    label: "tuto",
+    slug: "anime-world",
+    name: "Anime World",
+    type: "public",
+    stories: 1,
+    tags: 7,
+    features: 5,
+    performance: null,
+    github_link: "https://github.com/khairislama/anime-world",
+    external_link: "https://anime-world-nine.vercel.app",
+    stats: {
+      stars: "2",
+      commits: "20",
+      prs: "5",
+      issues: "-",
+      tests: "-",
+      technologies: [
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
+      ],
+    },
+    languages: [
+      { name: "Typescript", color: "#3178C6", value: 94.6 },
+      { name: "CSS", color: "#ce7eb8", value: 4.4 },
+      { name: "Javascript", color: "#ffd700", value: 1.0 },
+    ],
+    updated_at: "Updated on Jun 6",
+    featured: "Self",
+    description:
+      "A tutorial project for smooth Framer Motion animations and infinite scrolling.",
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
       },
     ],
   },
