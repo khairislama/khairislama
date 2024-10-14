@@ -24,7 +24,7 @@ function ExplorationOneProject({ project }: { project: IProject }) {
       <div className="w-full max-w-4xl mx-auto">
         <FeaturesOneProject features={project.features} slug={project.slug} />
       </div>
-      {project.images.length > 1 && (
+      {project.images.length === 2 && (
         <div className="w-full max-w-6xl mx-auto overflow-hidden rounded-xl relative group">
           <Image
             src={project.images[1].src}
