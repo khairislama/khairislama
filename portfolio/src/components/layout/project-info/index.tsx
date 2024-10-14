@@ -12,18 +12,27 @@ import { shimmer, toBase64 } from "@/lib/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
+export const runtime = "edge";
+
 function ProjectInfo({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 xl:px-0">
+    <section
+      aria-labelledby="project-information"
+      className="w-full max-w-7xl mx-auto px-4 sm:px-6 xl:px-0"
+    >
       <div className="flex flex-col-reverse md:flex-row gap-8 items-center justify-between">
+        <h2 id="project-information" className="sr-only">
+          Project information
+        </h2>
         <div className="overflow-hidden rounded-xl relative group">
           <Image
             src={project.images[0].src}
             alt={project.images[0].alt}
             width={1920}
             height={1080}
+            priority
             className="object-cover w-full"
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
             placeholder="blur"

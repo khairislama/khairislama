@@ -1,6 +1,8 @@
 import { IProject } from "@/lib/Projects";
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
+
 function StatsOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
 

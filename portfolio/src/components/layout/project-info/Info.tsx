@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
+
 function InfoOneProject({ slug }: { slug: string }) {
   const translations = useTranslations(`Projects`);
   const projectTranslations = useTranslations(`Project-${slug}`);
