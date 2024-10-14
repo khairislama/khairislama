@@ -59,8 +59,8 @@ export const PROJECTS: IProject[] = [
       issues: "1",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -111,9 +111,9 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/skills/nestjs.png", alt: "nest js" },
+        { src: "/skills/nestjs.webp", alt: "nest js" },
         { src: "/skills/typeorm.png", alt: "typeorm" },
-        { src: "/skills/postgresql.png", alt: "postgresql" },
+        { src: "/skills/postgresql.webp", alt: "postgresql" },
       ],
     },
     languages: [
@@ -163,8 +163,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -206,8 +206,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -264,8 +264,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -314,8 +314,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -365,8 +365,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -423,8 +423,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "24",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -589,8 +589,8 @@ export const PROJECTS: IProject[] = [
       issues: "0",
       tests: "0",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [
@@ -692,8 +692,8 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/nextjs.png", alt: "next js" },
-        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+        { src: "/skills/nextjs.webp", alt: "next js" },
+        { src: "/skills/tailwindcss.webp", alt: "tailwind css" },
       ],
     },
     languages: [

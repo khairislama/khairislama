@@ -34,7 +34,7 @@ function PlaygroundHighlights() {
         </p>
         <div className="flex items-center gap-1 sm:gap-3 md:gap-1 xl:gap-3">
           <Image
-            src="/skills/nextjs.png"
+            src="/skills/nextjs.webp"
             alt="Next js"
             width={20}
             height={20}
@@ -42,7 +42,7 @@ function PlaygroundHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/tailwindcss.png"
+            src="/skills/tailwindcss.webp"
             alt="Tailwind css"
             width={20}
             height={20}
@@ -50,7 +50,7 @@ function PlaygroundHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/blender.png"
+            src="/skills/blender.webp"
             alt="Blender"
             width={20}
             height={20}
@@ -58,7 +58,7 @@ function PlaygroundHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/nodejs.png"
+            src="/skills/nodejs.webp"
             alt="Node js"
             width={20}
             height={20}
@@ -66,7 +66,7 @@ function PlaygroundHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/typescript.png"
+            src="/skills/typescript.webp"
             alt="Typescript"
             width={20}
             height={20}
@@ -74,7 +74,7 @@ function PlaygroundHighlights() {
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           />
           <Image
-            src="/skills/git.png"
+            src="/skills/git.webp"
             alt="Git"
             width={20}
             height={20}
