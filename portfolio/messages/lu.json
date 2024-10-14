@@ -77,5 +77,56 @@
   "Footer": {
     "cooked with love in": "mat Léift gekacht zu",
     "with": "mat"
+  },
+  "About": {
+    "title": "Iwwer mech",
+    "subtitle": "Ech sinn e passionéierte Softwareingenieur spezialiséiert op Webentwécklung mat engem Fokus op héich performant, sécher Webléisungen ze bauen. Meng Erfahrung spant d'Backend Entwécklung bei Hutchinson a freelancing a Full-Stack Plattformen déi lescht Webtechnologien benotzen. Ech genéissen komplex Probleemer unzegoen an userfrëndlech digital Erfahrungen ze kreéieren. Ëmmer vun Innovatioun gedriwwen, sinn ech gäeren meng Expertise op Impakt Projeten am Ausland ze bréngen.",
+    "my-journey": {
+      "title": "Meng Rees",
+      "description": "Ech Diplom mat engem Full-Stack Ingenieur Ofschloss, markéiert vun der prestigiéist EUR-ACE Label, mécht et gläichwäerteg zu engem europäesche Grad. Meng pädagogesch Rees huet zu Paräis e spannenden Enn-vun-Studieprojet kulminéiert, wou ech d'Geleeënheet hat eng ëmfaassend Webplattform ze designen. Dëse Projet huet net nëmmen meng Fäegkeeten a modernste Webtechnologien erweidert, awer och meng Leidenschaft fir Problemléisung an Innovatioun an der Tech Welt verdéift."
+    },
+    "current-work": {
+      "title": "Engineering Sécherheet an Innovatioun um Hutchinson",
+      "description": "Ech war an der kritescher Backend Entwécklung involvéiert, a schaffe mat NestJS fir héich sécher Léisunge fir d'Industrie ze bauen. Iwwer 1 Joer a 7 Méint hunn ech un engem Projet bäigedroen, fir sécher ze stellen datt et den héchste Sécherheetsnormen entsprécht, wärend optimal Leeschtung behalen. All Projet deen ech unhuelen fuerdert mech fir d'Sécherheetsarchitektur an d'Performance vun de Systemer ze verbesseren, wat e Schlësseldeel vu menger Roll ass."
+    },
+    "know-me": {
+      "title": "Iwwert Code Meng Passiounen ausserhalb vun der Aarbecht",
+      "description": "Wann ech net um komplexe Code schaffen, fannt Dir mech dacks dobaussen. Ech hu gär Campingreesen, wou ech vun der digitaler Welt trennen an erëm mat der Natur konnektéieren. Fouss, Spazéieren, a Sport halen mech aktiv, a meng belsch Malinois ass ëmmer vu menger Säit op dësen Aventuren. Egal ob et nei Trëppelweeër entdecken oder Zäit a soziale Gruppen verbréngen, ech gleewen un d'Balance vun mengem tech-driven Liewen mat real-Welterfarungen."
+    },
+    "contact": {
+      "title": "Kontaktéiert eis"
+    }
+  },
+  "Projects": {
+    "title": "Meng Projeten",
+    "subtitle": "Während menger Carrière hunn ech eng divers Palette vu Projete gebaut, déi meng Fäegkeet weisen, modernste Technologien mat prakteschen, séchere Léisungen ze vermëschen. Vun Full-Stack Plattformen entwéckelt mat Next.js bis 3D Integratiounen mat Blender, reflektéiert all Projet mäi Fokus op Leeschtung, Sécherheet an Innovatioun. Ech entdecken ëmmer nei Weeër fir d'Grenze vun der Webentwécklung ze drécken, beaflosst digital Erfarungen ze kreéieren. Hei ass e Bléck op e puer vu menge bemierkenswäertsten Aarbechten.",
+    "github-link": "Github link",
+    "no-github-link": "Kee Github Link fir dëse Projet",
+    "demo": "Demo",
+    "no-demo": "Keng Demo verfügbar fir dëse Projet",
+    "code": "Code",
+    "project-story": "Projet Geschicht",
+    "start-date": "Start Datum",
+    "client": "Client",
+    "role": "Roll",
+    "exploration": "Exploratioun",
+    "no-performance": "Keng Leeschtung Statistiken",
+    "github-stats": "Github Statistiken",
+    "total-star-earned": "Ganzen Stär verdéngt",
+    "total-commits": "Total commits",
+    "total-prs": "Total PRs",
+    "total-issues": "Total Problemer",
+    "total-tests": "Total Tester",
+    "technologies": "Technologien",
+    "language": "Sprooch",
+    "previous-work": "Virdrun Aarbecht",
+    "next-work": "Nächst Aarbecht",
+    "other-projects": "Aner Projeten",
+    "performance": "Leeschtung",
+    "structure": "Struktur",
+    "open-projects": "Open Projeten",
+    "worked-on": "Geschafft op",
+    "tutorial-projects": "Tutorial Projeten",
+    "click-for-details": "klickt fir Detailer"
   }
 }

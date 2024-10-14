@@ -77,5 +77,56 @@
   "Footer": {
     "cooked with love in": "mit Liebe gekocht in",
     "with": "mit"
+  },
+  "About": {
+    "title": "Über mich",
+    "subtitle": "Ich bin ein leidenschaftlicher Software-Ingenieur, spezialisiert auf Webentwicklung mit einem Fokus auf leistungsstarke und sichere Weblösungen. Meine Erfahrung reicht von der Backend-Entwicklung bei Hutchinson bis hin zu freiberuflichen Projekten auf Full-Stack-Plattformen mit den neuesten Webtechnologien. Ich liebe es, komplexe Probleme zu lösen und benutzerfreundliche digitale Erlebnisse zu schaffen. Immer von Innovation getrieben, freue ich mich darauf, mein Fachwissen in bedeutende Projekte im Ausland einzubringen.",
+    "my-journey": {
+      "title": "Mein Werdegang",
+      "description": "Ich habe einen Full-Stack-Ingenieurabschluss erworben, ausgezeichnet mit dem renommierten EUR-ACE-Label, was ihn einem europäischen Abschluss gleichstellt. Mein Bildungsweg gipfelte in einem aufregenden Abschlussprojekt in Paris, bei dem ich die Gelegenheit hatte, eine umfassende Webplattform zu entwerfen. Dieses Projekt schärfte nicht nur meine Fähigkeiten in modernen Webtechnologien, sondern vertiefte auch meine Leidenschaft für Problemlösung und Innovation im Technologiebereich."
+    },
+    "current-work": {
+      "title": "Sicherheits-Engineering und Innovation bei Hutchinson",
+      "description": "Ich war in kritische Backend-Entwicklungsprojekte eingebunden und habe mit NestJS hochsichere Lösungen für die Industrie entwickelt. Über ein Jahr und sieben Monate habe ich an Projekten gearbeitet, die höchsten Sicherheitsstandards entsprechen und gleichzeitig optimale Leistung bieten. Jedes Projekt fordert mich heraus, sowohl die Sicherheitsarchitektur als auch die Systemleistung zu verbessern, was ein zentraler Bestandteil meiner Rolle ist."
+    },
+    "know-me": {
+      "title": "Jenseits des Codes – Meine Leidenschaften außerhalb der Arbeit",
+      "description": "Wenn ich nicht an komplexem Code arbeite, findet man mich oft draußen. Ich liebe Campingausflüge, bei denen ich vom digitalen Leben abschalten und mich mit der Natur verbinden kann. Joggen, Wandern und Sport halten mich aktiv, und mein Belgischer Malinois begleitet mich stets auf diesen Abenteuern. Ob beim Erkunden neuer Wege oder beim Zusammensein in sozialen Gruppen, ich glaube an die Balance zwischen meinem technikgetriebenen Leben und echten Erlebnissen."
+    },
+    "contact": {
+      "title": "Kontaktieren Sie uns"
+    }
+  },
+  "Projects": {
+    "title": "Meine Projekte",
+    "subtitle": "Im Laufe meiner Karriere habe ich eine vielfältige Palette von Projekten realisiert, die meine Fähigkeit zeigen, Spitzentechnologien mit praktischen, sicheren Lösungen zu verbinden. Von Full-Stack-Plattformen, die mit Next.js entwickelt wurden, bis hin zu 3D-Integrationen mit Blender – jedes Projekt spiegelt mein Streben nach Leistung, Sicherheit und Innovation wider. Ich erforsche stets neue Wege, um die Grenzen der Webentwicklung zu erweitern und beeindruckende digitale Erlebnisse zu schaffen. Hier ist ein Blick auf einige meiner bemerkenswertesten Arbeiten.",
+    "github-link": "Github-Link",
+    "no-github-link": "Kein Github-Link für dieses Projekt",
+    "demo": "Demo",
+    "no-demo": "Keine Demo für dieses Projekt verfügbar",
+    "code": "Code",
+    "project-story": "Projekt Geschichte",
+    "start-date": "Datum des Beginns",
+    "client": "Kunde",
+    "role": "Rolle",
+    "exploration": "Erkundung",
+    "no-performance": "Keine Leistungsstatistiken",
+    "github-stats": "Github Statistiken",
+    "total-star-earned": "Verdienter Gesamtstern",
+    "total-commits": "Total commits",
+    "total-prs": "Total PRs",
+    "total-issues": "Total Ausgabe",
+    "total-tests": "Total tests",
+    "technologies": "Technologien",
+    "language": "Sprache",
+    "previous-work": "Frühere Arbeiten",
+    "next-work": "Nächste Arbeit",
+    "other-projects": "Andere Projekte",
+    "performance": "Leistung",
+    "structure": "Struktur",
+    "open-projects": "Offene Projekte",
+    "worked-on": "Bearbeitet",
+    "tutorial-projects": "Tutorial Projekte",
+    "click-for-details": "Klicken Sie für Details"
   }
 }

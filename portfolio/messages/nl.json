@@ -77,5 +77,56 @@
   "Footer": {
     "cooked with love in": "met liefde gekookt in",
     "with": "met"
+  },
+  "About": {
+    "title": "Over mij",
+    "subtitle": "Ik ben een gepassioneerde software engineer gespecialiseerd in webontwikkeling met een focus op het bouwen van high-performance, veilige weboplossingen. Mijn ervaring omvat backend development bij Hutchinson en freelancen in full-stack platforms met de nieuwste webtechnologieën. Ik geniet ervan om complexe problemen aan te pakken en gebruiksvriendelijke digitale ervaringen te creëren. Ik ben altijd gedreven door innovatie en sta te popelen om mijn expertise in te zetten voor impactvolle projecten in het buitenland.",
+    "my-journey": {
+      "title": "Mijn reis",
+      "description": "Ik ben afgestudeerd met een full-stack ingenieursdiploma met het prestigieuze EUR-ACE label, waardoor het gelijkwaardig is aan een Europees diploma. Mijn opleidingstraject culmineerde in een spannend afstudeerproject in Parijs, waar ik de kans kreeg om een uitgebreid webplatform te ontwerpen. Dit project scherpte niet alleen mijn vaardigheden in geavanceerde webtechnologieën aan, maar verdiepte ook mijn passie voor probleemoplossing en innovatie in de technische wereld."
+    },
+    "current-work": {
+      "title": "Engineering van veiligheid en innovatie bij Hutchinson",
+      "description": "Ik ben betrokken geweest bij kritieke backend-ontwikkeling en heb met NestJS gewerkt aan zeer veilige oplossingen voor de industrie. In 1 jaar en 7 maanden heb ik bijgedragen aan een project, waarbij ik ervoor heb gezorgd dat het voldoet aan de hoogste beveiligingsstandaarden met behoud van optimale prestaties. Elk project dat ik aanneem, daagt me uit om zowel de beveiligingsarchitectuur als de prestaties van de systemen te verbeteren, wat een belangrijk onderdeel van mijn rol is."
+    },
+    "know-me": {
+      "title": "Verder dan Code Mijn passies buiten het werk",
+      "description": "Als ik niet aan complexe code werk, vind je me vaak buiten. Ik hou van kamperen, waar ik me kan losmaken van de digitale wereld en weer contact kan maken met de natuur. Wandelen, hiken en sporten houden me actief en mijn Belgische Mechelaar staat altijd aan mijn zijde op deze avonturen. Of het nu gaat om het verkennen van nieuwe paden of het doorbrengen van tijd in sociale groepen, ik geloof in het balanceren van mijn door technologie gedreven leven met echte ervaringen."
+    },
+    "contact": {
+      "title": "Neem contact met ons op"
+    }
+  },
+  "Projects": {
+    "title": "Mijn projecten",
+    "subtitle": "Gedurende mijn carrière heb ik een verscheidenheid aan projecten gebouwd die laten zien dat ik in staat ben om geavanceerde technologieën te combineren met praktische, veilige oplossingen. Van full-stack platforms ontwikkeld met Next.js tot 3D-integraties met Blender, elk project weerspiegelt mijn focus op prestaties, veiligheid en innovatie. Ik ben altijd op zoek naar nieuwe manieren om de grenzen van webontwikkeling te verleggen en impactvolle digitale ervaringen te creëren. Hier is een blik op mijn meest opmerkelijke werk.",
+    "github-link": "Github-Link",
+    "no-github-link": "Geen demo beschikbaar voor dit project",
+    "demo": "Demo",
+    "no-demo": "No Demo available for this project",
+    "code": "Code",
+    "project-story": "Projectverhaal",
+    "start-date": "Startdatum",
+    "client": "Klant",
+    "role": "Rol",
+    "exploration": "Verkenning",
+    "no-performance": "Geen prestatiestatistieken",
+    "github-stats": "Github-statistieken",
+    "total-star-earned": "Totaal aantal verdiende sterren",
+    "total-commits": "Totaal commits",
+    "total-prs": "Totaal PRs",
+    "total-issues": "Totaal Issues",
+    "total-tests": "Totaal testen",
+    "technologies": "Technologieën",
+    "language": "Taal",
+    "previous-work": "Vorig werk",
+    "next-work": "Volgende werk",
+    "other-projects": "Andere projecten",
+    "performance": "Prestaties",
+    "structure": "Structuur",
+    "open-projects": "Open projecten",
+    "worked-on": "Gewerkt aan",
+    "tutorial-projects": "leerprojecten",
+    "click-for-details": "klik voor details"
   }
 }
