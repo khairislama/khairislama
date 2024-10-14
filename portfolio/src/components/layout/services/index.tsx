@@ -28,7 +28,7 @@ const cards = [
 function Services() {
   const translations = useTranslations("Services");
   return (
-    <section className="relative w-full">
+    <section aria-labelledby="services" className="relative w-full">
       <Image
         src="/shapes/eclipse-tiny.svg"
         alt="eclipse"
@@ -38,7 +38,9 @@ function Services() {
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <div className="max-w-4xl mx-auto flex flex-col p-4 sm:p-6 xl:p-0 text-center">
-        <h2 className="text-header">{translations("title")}</h2>
+        <h2 id="services" className="text-header">
+          {translations("title")}
+        </h2>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 mt-12">
           {Array.from({ length: 5 }).map((_, i) => (
             <div
@@ -57,7 +59,7 @@ function Services() {
         <p className="text-lg mt-2 text-foreground/40">
           {translations("services-subtitle")}
         </p>
-        <div className="w-full max-w-xl mx-auto flex flex-col mt-16 gap-3">
+        <article className="w-full max-w-xl mx-auto flex flex-col mt-16 gap-3">
           {Array.from({ length: 4 }).map((_, i) => (
             <div
               key={i}
@@ -84,7 +86,7 @@ function Services() {
               </div>
             </div>
           ))}
-        </div>
+        </article>
       </div>
     </section>
   );
