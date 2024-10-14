@@ -23,6 +23,7 @@ function ExternalOneProject({
             <Link
               className="h-20 w-20 bg-foreground/40 rounded-full p-4 hover:bg-foreground/20 transition duration-300 ease-in-out"
               href={external_link}
+              target="_blank"
             >
               <ExternalLink className="w-full h-auto" />
             </Link>
