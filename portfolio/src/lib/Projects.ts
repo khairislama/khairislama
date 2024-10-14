@@ -630,4 +630,56 @@ export const PROJECTS: IProject[] = [
       },
     ],
   },
+  {
+    label: "tuto",
+    slug: "threejs-tuto",
+    name: "Three JS Tuto",
+    type: "public",
+    stories: 1,
+    tags: 8,
+    features: 5,
+    performance: null,
+    github_link: "https://github.com/khairislama/threeJs-tuto",
+    external_link: "https://three-js-tuto.vercel.app",
+    stats: {
+      stars: "-",
+      commits: "8",
+      prs: "3",
+      issues: "-",
+      tests: "-",
+      technologies: [
+        { src: "/icons/vitejs.webp", alt: "vite js" },
+        { src: "/skills/threejs.png", alt: "three js" },
+      ],
+    },
+    languages: [
+      { name: "Javascript", color: "#ffd700", value: 61.9 },
+      { name: "Html", color: "#e34c26", value: 22.6 },
+      { name: "CSS", color: "#ce7eb8", value: 15.5 },
+    ],
+    updated_at: "Updated on Jun 6",
+    featured: "Self",
+    description:
+      "A tutorial project built with Vite and Three.js to explore 3D web development.",
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
+  },
 ];

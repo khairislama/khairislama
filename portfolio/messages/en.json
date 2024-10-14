@@ -380,5 +380,27 @@
     "feature-3": "Optimized for performance and SEO using Next.js capabilities",
     "feature-4": "Animations and interactive elements, including tooltip previews",
     "feature-5": "Clean, modern, and fast user interface built with Tailwind CSS"
+  },
+  "Project-threejs-tuto": {
+    "title": "Project Details - Three JS Tuto",
+    "subtitle": "A tutorial project built with Vite and Three.js to explore 3D web development, featuring a rotating sphere with dynamic lighting and smooth scroll animations.",
+    "story-1": "ThreeJs Tuto was created as a personal learning project to dive into 3D web development using Three.js and Vite. The goal was to experiment with 3D model rendering, lighting effects, and animations while familiarizing myself with Vite’s fast build process. This simple yet elegant project showcases a rotating, lit sphere with smooth scroll animations, providing a solid foundation for understanding interactive 3D graphics on the web",
+    "tag-1": "threejs",
+    "tag-2": "vite",
+    "tag-3": "3d-animation",
+    "tag-4": "threejs-learning",
+    "tag-5": "orbitcontrols",
+    "tag-6": "webgl",
+    "tag-7": "interactive-3d",
+    "tag-8": "gsap",
+    "start-date": "2 Jun 2024",
+    "client": "Self",
+    "role": "Developer",
+    "exploration": "This project allowed me to explore the fundamentals of Three.js for rendering 3D graphics while using Vite for faster build times. I gained experience in creating smooth animations, dynamic lighting effects, and interactive camera movements. The project served as a hands-on learning tool, enhancing my understanding of WebGL and interactive 3D graphics in a web context.",
+    "feature-1": "3D Sphere with dynamic lighting and smooth rotation",
+    "feature-2": "Interactive camera controls using OrbitControls",
+    "feature-3": "Smooth scroll animations powered by GSAP",
+    "feature-4": "Responsive design for seamless adaptation to different screen sizes",
+    "feature-5": "Fast build process with Vite for optimized performance"
   }
 }
