@@ -177,22 +177,14 @@ export const PROJECTS: IProject[] = [
     description: "Showcase portfolio website for Fab 619.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/fab619/image-1.webp",
+        alt: "Maintenance page",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
-      },
-      {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/fab619/image-vertical-1.webp",
+        alt: "Maintenance page",
       },
     ],
   },
@@ -611,22 +603,22 @@ export const PROJECTS: IProject[] = [
     description: "A personal portfolio built with Next.js and Tailwind CSS.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/khairislama/image-1.webp",
+        alt: "hero screenshot",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/khairislama/image-2.webp",
+        alt: "performance",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/khairislama/image-vertical-1.webp",
+        alt: "about me page overview",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/khairislama/image-vertical-2.webp",
+        alt: "projects list",
       },
     ],
   },
