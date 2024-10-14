@@ -1,12 +1,21 @@
+import { shimmer, toBase64 } from "@/lib/image";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+
+export const runtime = "edge";
 
 function AboutCurrentWork() {
   const translations = useTranslations("About.current-work");
   return (
-    <section className="relative w-full px-4 sm:px-6 xl:px-0 my-20 md:my-32">
+    <section
+      aria-labelledby="current-work"
+      className="relative w-full px-4 sm:px-6 xl:px-0 my-20 md:my-32"
+    >
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 w-full gap-4 md:gap-y-20 relative">
-        <h2 className="text-4xl md:text-5xl lg:text-7xl font-semibold font-syne text-foreground tracking-wider md:col-span-3 z-10">
+        <h2
+          id="current-work"
+          className="text-4xl md:text-5xl lg:text-7xl font-semibold font-syne text-foreground tracking-wider md:col-span-3 z-10"
+        >
           {translations("title")}
         </h2>
         <p className="font-rubik text-lg md:col-span-3 lg:mt-8 text-justify md:text-left lg:text-xl z-10">
@@ -20,6 +29,11 @@ function AboutCurrentWork() {
               width={960}
               height={1280}
               className="object-cover w-full h-full"
+              sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(960, 1280)
+              )}`}
             />
           </div>
           <Image
@@ -37,7 +51,12 @@ function AboutCurrentWork() {
               alt="khairi slama in suite"
               width={5892}
               height={3808}
+              sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
               className="object-cover w-full h-full"
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(5892, 3808)
+              )}`}
             />
           </div>
           <Image
