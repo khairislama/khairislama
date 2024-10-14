@@ -14,7 +14,7 @@ function Footer() {
           <h4 className="text-xs flex items-center justify-center gap-2">
             <span> {translations("cooked with love in")} </span>
             <Image
-              src="/icons/tunisia.png"
+              src="/icons/tunisia.webp"
               alt="Tunisia"
               width={64}
               height={43}
@@ -30,7 +30,7 @@ function Footer() {
             />
             <span>&</span>{" "}
             <Image
-              src="/icons/nextjs.png"
+              src="/skills/nextjs.webp"
               alt="Next JS"
               width={62}
               height={62}

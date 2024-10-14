@@ -18,7 +18,7 @@ function SkillsGroup() {
             }`}
           >
             <Image
-              src={`/skills/${skill.name}.png`}
+              src={`/skills/${skill.name}.webp`}
               alt={skill.name}
               width={skill.width}
               height={skill.height}
@@ -39,7 +39,7 @@ function SkillsGroup() {
               className="w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center lg:hover:scale-125 duration-300 transition-all ease-in-out"
             >
               <Image
-                src={`/skills/${SKILLS[i].name}.png`}
+                src={`/skills/${SKILLS[i].name}.webp`}
                 alt={SKILLS[i].name}
                 width={SKILLS[i].width}
                 height={SKILLS[i].height}
@@ -58,7 +58,7 @@ function SkillsGroup() {
               className="relative w-20 h-20 lg:w-28 lg:h-28 bg-foreground/10 drop-shadow-md rounded-full flex items-center justify-center lg:hover:scale-125 duration-300 transition-all ease-in-out"
             >
               <Image
-                src={`/skills/${SKILLS[i + 7].name}.png`}
+                src={`/skills/${SKILLS[i + 7].name}.webp`}
                 alt={SKILLS[i + 7].name}
                 width={SKILLS[i + 7].width}
                 height={SKILLS[i + 7].height}
