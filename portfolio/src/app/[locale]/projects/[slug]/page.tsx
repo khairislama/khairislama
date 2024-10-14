@@ -91,11 +91,3 @@ export default function SingleProjectPage({
     </main>
   );
 }
-
-// export async function generateStaticParams() {
-//   const projects = PROJECTS;
-
-//   return projects.map((project) => ({
-//     slug: project.slug,
-//   }));
-// }
