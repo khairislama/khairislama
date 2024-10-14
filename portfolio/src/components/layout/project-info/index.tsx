@@ -39,7 +39,9 @@ function ProjectInfo({ project }: { project: IProject }) {
         </div>
       </div>
       <StoryOneProject project={project} />
-      <ParallelImages project={project} />
+      {project.vertical_images.length === 2 && (
+        <ParallelImages project={project} />
+      )}
       <ExplorationOneProject project={project} />
       <GithubStats project={project} />
       <Language languages={project.languages} />
