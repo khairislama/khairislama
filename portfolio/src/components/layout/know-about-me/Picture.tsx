@@ -15,20 +15,34 @@ function Picture({ src, alt, width, height, bottomFocused }: Props) {
       {/* OUTER WRAPPER - handles overall height and responsiveness */}
       <div className="w-full h-full rounded-3xl overflow-hidden relative">
         {/* INNER WRAPPER - ensures image scaling and overflow control */}
-        <Image
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-          className={`brightness-105 w-full h-full object-cover ${
-            bottomFocused ? "object-bottom" : "object-top"
-          }`}
-          sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
-          placeholder="blur"
-          blurDataURL={`data:image/svg+xml;base64,${toBase64(
-            shimmer(width, height)
-          )}`}
-        />
+        {bottomFocused ? (
+          <Image
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            className={`brightness-105 w-full h-full object-cover object-bottom`}
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            placeholder="blur"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(width, height)
+            )}`}
+          />
+        ) : (
+          <Image
+            src={src}
+            alt={alt}
+            width={width}
+            height={height}
+            className={`brightness-105 w-full h-full object-cover object-top`}
+            priority
+            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            placeholder="blur"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(width, height)
+            )}`}
+          />
+        )}
       </div>
 
       {/* ADDITIONAL SHAPES */}
