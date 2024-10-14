@@ -64,11 +64,13 @@ function RecommendedProjects({
         {translations("other-projects")}
       </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-5 mt-10">
-        {randomProjects.map((project) => (
+        {randomProjects.map((project, index) => (
           <CustomLink
             key={project.slug}
             href={`/projects/${project.slug}`}
-            className="flex flex-col overflow-hidden relative"
+            className={`flex flex-col overflow-hidden relative ${
+              index === randomProjects.length - 1 ? "hidden md:block" : ""
+            }`}
           >
             <Image
               src={project.vertical_images[0].src}
