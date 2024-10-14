@@ -9,6 +9,8 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
+export const runtime = "edge";
+
 function GithubOneProject({ github_link }: { github_link: string | null }) {
   const translations = useTranslations(`Projects`);
   return (
