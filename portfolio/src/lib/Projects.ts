@@ -465,4 +465,169 @@ export const PROJECTS: IProject[] = [
       },
     ],
   },
+  {
+    label: "done",
+    slug: "slk-consulting",
+    name: "Slk Consulting FR",
+    type: "private",
+    stories: 2,
+    tags: 7,
+    features: 5,
+    performance: null,
+    github_link: null,
+    external_link: "https://slkconsulting.fr/index.html",
+    stats: {
+      stars: "-",
+      commits: "2",
+      prs: "1",
+      issues: "-",
+      tests: "-",
+      technologies: [
+        { src: "/skills/html.svg", alt: "Html" },
+        { src: "/skills/css.svg", alt: "Css" },
+        { src: "/skills/javascript.svg", alt: "Javascript" },
+      ],
+    },
+    languages: [
+      { name: "CSS", color: "#ce7eb8", value: 62.8 },
+      { name: "Javascript", color: "#ffd700", value: 17.9 },
+      { name: "Php", color: "#b0b3d6", value: 12.9 },
+      { name: "Html", color: "#e34c26", value: 6.4 },
+    ],
+    updated_at: "Updated on Sep 17, 2022",
+    featured: "Internship",
+    description:
+      "A showcase website for SLK Consulting, designed with HTML, CSS, and JavaScript.",
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
+  },
+  {
+    label: "done",
+    slug: "dilab",
+    name: "Dilab FR",
+    type: "private",
+    stories: 2,
+    tags: 7,
+    features: 5,
+    performance: null,
+    github_link: null,
+    external_link: "https://slkconsulting.fr/index.html",
+    stats: {
+      stars: "-",
+      commits: "2",
+      prs: "1",
+      issues: "-",
+      tests: "-",
+      technologies: [
+        { src: "/skills/html.svg", alt: "Html" },
+        { src: "/skills/css.svg", alt: "Css" },
+        { src: "/skills/javascript.svg", alt: "Javascript" },
+      ],
+    },
+    languages: [
+      { name: "CSS", color: "#ce7eb8", value: 55.5 },
+      { name: "Php", color: "#b0b3d6", value: 21.3 },
+      { name: "Javascript", color: "#ffd700", value: 19.9 },
+      { name: "Html", color: "#e34c26", value: 3.3 },
+    ],
+    updated_at: "Updated on Sep 17, 2022",
+    featured: "Internship",
+    description:
+      "A showcase website for Dilab, designed with HTML, CSS, and JavaScript.",
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
+  },
+  {
+    label: "current",
+    slug: "khairislama",
+    name: "Khairi SLAMA",
+    type: "public",
+    stories: 3,
+    tags: 10,
+    features: 5,
+    performance: {
+      performance: "97%",
+      structure: "91%",
+      lcp: "1.2s",
+      tbt: "0ms",
+      cls: "0",
+    },
+    github_link: "https://github.com/khairislama/khairislama",
+    external_link: "/",
+    stats: {
+      stars: "2",
+      commits: "183",
+      prs: "28",
+      issues: "0",
+      tests: "0",
+      technologies: [
+        { src: "/icons/nextjs.png", alt: "next js" },
+        { src: "/skills/tailwindcss.png", alt: "tailwind css" },
+      ],
+    },
+    languages: [
+      { name: "Typescript", color: "#3178C6", value: 98.3 },
+      { name: "CSS", color: "#ce7eb8", value: 1.5 },
+      { name: "Javascript", color: "#ffd700", value: 0.2 },
+    ],
+    updated_at: "Currently working on...",
+    featured: "Self",
+    description: "A personal portfolio built with Next.js and Tailwind CSS.",
+    images: [
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+      {
+        src: "/1920-1080.png",
+        alt: "blank image",
+      },
+    ],
+    vertical_images: [
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+      {
+        src: "/600-650.png",
+        alt: "blank image",
+      },
+    ],
+  },
 ];
