@@ -6,6 +6,8 @@ import PrefixedLink from "@/components/PrefixedLink";
 import CardAvatar from "./CardAvatar";
 import { Dot } from "lucide-react";
 
+export const runtime = "edge";
+
 function ContactCard() {
   const translations = useTranslations("Contact");
   return (

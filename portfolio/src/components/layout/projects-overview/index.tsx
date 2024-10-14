@@ -9,6 +9,8 @@ import FormulationHighlights from "./FormulationHighlights";
 import StrongCastHighlights from "./StrongCastHighlights";
 import PlaygroundHighlights from "./PlaygroundHighlights";
 
+export const runtime = "edge";
+
 const IMAGES = [
   {
     src: "/projects/carthabot/image-1.webp",

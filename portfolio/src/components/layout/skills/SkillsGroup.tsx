@@ -1,6 +1,8 @@
 import { SKILLS } from "@/lib/Skills";
 import Image from "next/image";
 
+export const runtime = "edge";
+
 function SkillsGroup() {
   return (
     <article className="relative mx-auto mt-16 flex flex-col items-center justify-center mb-44 md:mb-[72%]">

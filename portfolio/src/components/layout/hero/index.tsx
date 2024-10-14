@@ -4,6 +4,8 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import AnimatedText from "@/components/AnimatedText";
 
+export const runtime = "edge";
+
 function Hero() {
   const translations = useTranslations("Hero");
 

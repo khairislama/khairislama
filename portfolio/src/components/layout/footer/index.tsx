@@ -2,6 +2,8 @@ import Image from "next/image";
 import Circle from "./Circle";
 import { useTranslations } from "next-intl";
 
+export const runtime = "edge";
+
 function Footer() {
   const translations = useTranslations("Footer");
   return (
