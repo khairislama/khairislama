@@ -26,7 +26,7 @@ function Hero() {
         alt="eclipse"
         width={1330}
         height={288}
-        className="absolute object-cover w-full pointer-events-none bottom-[7%] sm:bottom-0 xl:inset-0"
+        className="absolute object-cover w-full pointer-events-none bottom-[7%] sm:bottom-0 md:-bottom-24 xl:inset-32"
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <Image
