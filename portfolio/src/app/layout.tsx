@@ -6,6 +6,7 @@ export default function RootLayout({
   return children;
 }
 
+// TODO: The SEO image
 // TODO: Handle 2k responsiveness
 // TODO: modify Section title
 // TODO: Check images alt

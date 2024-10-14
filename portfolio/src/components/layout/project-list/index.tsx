@@ -7,12 +7,22 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Overview from "./Overview";
+import { useTranslations } from "next-intl";
+
+export const runtime = "edge";
 
 function ProjectsList() {
+  const translations = useTranslations("Projects");
   return (
-    <section className="w-full max-w-7xl mx-auto my-10 font-rubik text-sm px-4 sm:px-6 xl:px-0 relative">
-      <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4">
-        Open Projects
+    <section
+      aria-labelledby="projects-list"
+      className="w-full max-w-7xl mx-auto my-10 font-rubik text-sm px-4 sm:px-6 xl:px-0 relative"
+    >
+      <h2
+        id="projects-list"
+        className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4"
+      >
+        {translations("open-projects")}
       </h2>
       {PROJECTS.filter((project) => project.label === "current").map(
         (project, i) => (
@@ -33,7 +43,7 @@ function ProjectsList() {
       )}
 
       <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4">
-        Worked on
+        {translations("worked-on")}
       </h2>
       {PROJECTS.filter((project) => project.label === "done").map(
         (project, i) => (
@@ -54,7 +64,7 @@ function ProjectsList() {
       )}
 
       <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4">
-        Learning Bucket
+        {translations("tutorial-projects")}
       </h2>
       {PROJECTS.filter((project) => project.label === "tuto").map(
         (project, i) => (

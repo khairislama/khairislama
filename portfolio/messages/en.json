@@ -123,7 +123,11 @@
     "next-work": "Next Work",
     "other-projects": "Other Projects",
     "performance": "Performance",
-    "structure": "Structure"
+    "structure": "Structure",
+    "open-projects": "Open Projects",
+    "worked-on": "Worked On",
+    "tutorial-projects": "Tutorial Bucket",
+    "click-for-details": "click for details"
   },
   "Project-carthabot": {
     "title": "Project Details - Carthabot",
