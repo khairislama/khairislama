@@ -14,7 +14,7 @@ function Overview({
 }) {
   const translations = useTranslations("Projects");
   return (
-    <div className="w-96 rounded-xl overflow-hidden hidden md:block">
+    <div className="w-96 rounded-xl overflow-hidden">
       <Image
         src={image.src}
         alt={image.alt}
