@@ -411,22 +411,22 @@ export const PROJECTS: IProject[] = [
       "An experimental 3D web project using Next.js, Three.js, React Three Fiber, and postprocessing.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/robot-playground/image-1.webp",
+        alt: "The robot is smiling at the camera",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/robot-playground/image-2.webp",
+        alt: "A robot manifesting some sort of skills and is choosing one.",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/robot-playground/image-vertical-1.webp",
+        alt: "The robot is smiling at the camera with closed eyes",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/robot-playground/image-vertical-2.webp",
+        alt: "Our robot have chosen one skill from the list of skills available",
       },
     ],
   },
