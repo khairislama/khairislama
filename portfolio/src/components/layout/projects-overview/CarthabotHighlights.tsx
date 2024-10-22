@@ -7,7 +7,7 @@ function CarthabotHighlights() {
   const translations = useTranslations("ProjectsOverview");
 
   return (
-    <div className="flex flex-col lg:grid lg:grid-cols-3 w-full mt-4">
+    <div className="flex flex-col lg:grid lg:grid-cols-3 w-full mt-2">
       <div className="flex items-center justify-start gap-1 xl:gap-4">
         <p className="underline underline-offset-4">
           {translations("performance")}:{" "}
@@ -25,7 +25,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/tailwindcss.webp"
@@ -33,7 +33,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/nodejs.webp"
@@ -41,7 +41,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/typescript.webp"
@@ -49,7 +49,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/figma.webp"
@@ -57,7 +57,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/git.webp"
@@ -65,7 +65,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/firebase.webp"
@@ -73,7 +73,7 @@ function CarthabotHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
         </div>
       </div>

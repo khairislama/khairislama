@@ -1,6 +1,7 @@
 export interface IImage {
   src: string;
   alt: string;
+  blur?: boolean;
 }
 
 export interface IProject {
@@ -40,6 +41,50 @@ export interface IProject {
   vertical_images: IImage[];
 }
 
+export const BOOKMARKED_PROJECTS: Partial<IProject>[] = [
+  {
+    slug: "carthabot",
+    external_link: "https://carthabot.vercel.app/",
+    images: [
+      {
+        src: "/projects/carthabot/image-1.webp",
+        alt: "a programming block of the website",
+      },
+    ],
+  },
+  {
+    slug: "formulation",
+    images: [
+      {
+        src: "/projects/formulation/image-1.webp",
+        alt: "Dashboard of formulation platform",
+        blur: true,
+      },
+    ],
+  },
+  {
+    slug: "strong-cast",
+    github_link: "https://github.com/khairislama/strong-cast",
+    external_link: "https://www.strong-cast.com",
+    images: [
+      {
+        src: "/projects/strong-cast/image-1.webp",
+        alt: "Presenting the hero section of strong cast",
+      },
+    ],
+  },
+  {
+    slug: "wassalli",
+    external_link: "https://wassalli.vercel.app",
+    images: [
+      {
+        src: "/projects/wassalli/image-1.webp",
+        alt: "a how to use section",
+      },
+    ],
+  },
+];
+
 export const PROJECTS: IProject[] = [
   {
     label: "current",
@@ -50,8 +95,8 @@ export const PROJECTS: IProject[] = [
     tags: 7,
     features: 6,
     performance: null,
-    github_link: "https://github.com/khairislama/carthabot",
-    external_link: "https://carthabot.vercel.app/en",
+    github_link: null,
+    external_link: "https://carthabot.vercel.app/",
     stats: {
       stars: "-",
       commits: "126",
@@ -128,20 +173,24 @@ export const PROJECTS: IProject[] = [
       {
         src: "/projects/formulation/image-1.webp",
         alt: "Dashboard of formulation platform",
+        blur: true,
       },
       {
         src: "/projects/formulation/image-2.webp",
         alt: "the recipe page",
+        blur: true,
       },
     ],
     vertical_images: [
       {
         src: "/projects/formulation/image-vertical-1.webp",
         alt: "input output management",
+        blur: true,
       },
       {
         src: "/projects/formulation/image-vertical-2.webp",
         alt: "History feature",
+        blur: true,
       },
     ],
   },
@@ -155,7 +204,7 @@ export const PROJECTS: IProject[] = [
     features: 6,
     performance: null,
     github_link: null,
-    external_link: "fab619.tn",
+    external_link: "https://www.fab619.tn",
     stats: {
       stars: "-",
       commits: "5",
@@ -221,22 +270,14 @@ export const PROJECTS: IProject[] = [
       "A basic Next.js project to test internationalization using the next-intl package.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/next-intl/image-1.webp",
+        alt: "next internationalization cover",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
-      },
-      {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/next-intl/image-vertical-1.webp",
+        alt: "next internationalization",
       },
     ],
   },
@@ -255,7 +296,7 @@ export const PROJECTS: IProject[] = [
       tbt: "65ms",
       cls: "0",
     },
-    github_link: "https://github.com/khairislama/strong-cast",
+    github_link: null,
     external_link: "https://www.strong-cast.com",
     stats: {
       stars: "-",
@@ -277,22 +318,22 @@ export const PROJECTS: IProject[] = [
     description: "An e-commerce platform for selling casts.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/strong-cast/image-1.webp",
+        alt: "Presenting the hero section of strong cast",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/strong-cast/image-2.webp",
+        alt: "Showcasing the products page and filter feature",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/strong-cast/image-vertical-1.webp",
+        alt: "The contact us section",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/strong-cast/image-vertical-2.webp",
+        alt: "Cart information and pre-checkout",
       },
     ],
   },
@@ -308,7 +349,7 @@ export const PROJECTS: IProject[] = [
     github_link: "https://github.com/khairislama/phoenix-garage",
     external_link: "https://phoenix-garage.vercel.app",
     stats: {
-      stars: "-",
+      stars: "2",
       commits: "20",
       prs: "7",
       issues: "-",
@@ -328,22 +369,18 @@ export const PROJECTS: IProject[] = [
     description: "Next.js project showcasing interactive 3D blender models.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/phoenix-garage/image-1.webp",
+        alt: "The phoenix garage welcoming page",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/phoenix-garage/image-vertical-1.webp",
+        alt: "Phoenix garage landing",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/phoenix-garage/image-vertical-2.webp",
+        alt: "Phoenix garage active page",
       },
     ],
   },
@@ -380,22 +417,22 @@ export const PROJECTS: IProject[] = [
       "An experimental 3D web project using Next.js, Three.js, React Three Fiber, and postprocessing.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/robot-playground/image-1.webp",
+        alt: "The robot is smiling at the camera",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/robot-playground/image-2.webp",
+        alt: "A robot manifesting some sort of skills and is choosing one.",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/robot-playground/image-vertical-1.webp",
+        alt: "The robot is smiling at the camera with closed eyes",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/robot-playground/image-vertical-2.webp",
+        alt: "Our robot have chosen one skill from the list of skills available",
       },
     ],
   },
@@ -492,22 +529,22 @@ export const PROJECTS: IProject[] = [
       "A showcase website for SLK Consulting, designed with HTML, CSS, and JavaScript.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/slk-consulting/image-1.webp",
+        alt: "Services section for slk consulting website",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/slk-consulting/image-2.webp",
+        alt: "slk consulting presentation",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/slk-consulting/image-vertical-1.webp",
+        alt: "slk consulting landing page",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/slk-consulting/image-vertical-2.webp",
+        alt: "slk consulting services presentation",
       },
     ],
   },
@@ -546,22 +583,18 @@ export const PROJECTS: IProject[] = [
       "A showcase website for Dilab, designed with HTML, CSS, and JavaScript.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/dilab/image-1.webp",
+        alt: "the landing page of dilab",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/dilab/image-vertical-1.webp",
+        alt: "mobile vue of dilab",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/dilab/image-vertical-2.webp",
+        alt: "mobile vue of hero section",
       },
     ],
   },
@@ -574,10 +607,10 @@ export const PROJECTS: IProject[] = [
     tags: 10,
     features: 5,
     performance: {
-      performance: "97%",
-      structure: "91%",
-      lcp: "1.2s",
-      tbt: "0ms",
+      performance: "100%",
+      structure: "94%",
+      lcp: "652ms",
+      tbt: "7ms",
       cls: "0",
     },
     github_link: "https://github.com/khairislama/khairislama",
@@ -640,7 +673,7 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/vitejs.webp", alt: "vite js" },
+        { src: "/skills/vitejs.webp", alt: "vite js" },
         { src: "/skills/threejs.png", alt: "three js" },
       ],
     },
@@ -655,22 +688,18 @@ export const PROJECTS: IProject[] = [
       "A tutorial project built with Vite and Three.js to explore 3D web development.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/threejs-tuto/image-1.webp",
+        alt: "hero screenshot",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/threejs-tuto/image-vertical-1.webp",
+        alt: "a spinning ball",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/threejs-tuto/image-vertical-2.webp",
+        alt: "a spinning ball",
       },
     ],
   },
@@ -707,22 +736,22 @@ export const PROJECTS: IProject[] = [
       "A tutorial project for smooth Framer Motion animations and infinite scrolling.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/anime-world/image-1.webp",
+        alt: "the landing page of anime-world",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/anime-world/image-2.webp",
+        alt: "The list of anime loading one by one on pc view",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/anime-world/image-vertical-1.webp",
+        alt: "the list of anime in 3x3 grid for mobile vue",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/anime-world/image-vertical-2.webp",
+        alt: "light mod on pc view a 4x4 grid",
       },
     ],
   },

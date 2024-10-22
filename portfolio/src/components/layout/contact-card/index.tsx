@@ -47,7 +47,7 @@ function ContactCard() {
                 size={"lg"}
                 className="bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
               >
-                <PrefixedLink href="/contact">
+                <PrefixedLink href="/about#contact-form">
                   {translations("call-to-action")}
                 </PrefixedLink>
               </Button>

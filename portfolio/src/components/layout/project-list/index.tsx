@@ -33,7 +33,7 @@ function ProjectsList() {
               </TooltipTrigger>
               <TooltipContent
                 followCursor={true}
-                className="bg-foreground flex items-center gap-2"
+                className="bg-foreground items-center gap-2 hidden md:flex"
               >
                 <Overview image={project.images[0]} />
               </TooltipContent>
@@ -54,7 +54,7 @@ function ProjectsList() {
               </TooltipTrigger>
               <TooltipContent
                 followCursor={true}
-                className="bg-foreground flex items-center gap-2"
+                className="bg-foreground items-center gap-2 hidden md:flex"
               >
                 <Overview image={project.images[0]} />
               </TooltipContent>
@@ -75,7 +75,7 @@ function ProjectsList() {
               </TooltipTrigger>
               <TooltipContent
                 followCursor={true}
-                className="bg-foreground flex items-center gap-2"
+                className="bg-foreground items-center gap-2 hidden md:flex"
               >
                 <Overview image={project.images[0]} />
               </TooltipContent>

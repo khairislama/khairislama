@@ -6,10 +6,9 @@ export const runtime = "edge";
 interface Props {
   reverse?: boolean;
   image: {
-    width: number;
-    height: number;
     src: string;
     alt: string;
+    blur?: boolean;
   };
 }
 
@@ -35,16 +34,16 @@ function ProjectImage({ image, reverse }: Props) {
       <Image
         src={image.src}
         alt={image.alt}
-        width={image.width}
-        height={image.height}
+        width={1920}
+        height={1080}
         className={`relative z-10 h-full object-cover ${
           reverse
             ? "md:rounded-bl-3xl md:rounded-tr-3xl"
             : "md:rounded-br-3xl md:rounded-tl-3xl"
-        }`}
+        } ${image?.blur && "blur-sm"}`}
         placeholder="blur"
         blurDataURL={`data:image/svg+xml;base64,${toBase64(
-          shimmer(image.width, image.height)
+          shimmer(1920, 1080)
         )}`}
       />
     </div>

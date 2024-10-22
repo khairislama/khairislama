@@ -3,29 +3,33 @@ import Image from "next/image";
 
 export const runtime = "edge";
 
-function PlaygroundHighlights() {
+function WassalliHighlights() {
   const translations = useTranslations("ProjectsOverview");
-
   return (
     <div className="flex flex-col gap-2">
-      <div className="grid grid-cols-3 w-full mt-4 gap-1">
-        <div>
-          <p className="text-xl font-semibold">
-            {translations("playground-highlight-1-title")}
-          </p>
-          <p className="text-xs">{translations("playground-highlight-1")}</p>
+      <div className="grid grid-cols-3 sm:grid-cols-10 md:grid-cols-3 lg:grid-cols-10 w-full mt-2 gap-3">
+        <p className="text-5xl text-green-500 font-bold text-center self-center">
+          A
+        </p>
+        <div className="sm:col-span-2 md:col-span-1 lg:col-span-2">
+          <p className="text-sm xl:text-base">{translations("performance")}</p>
+          <p className="text-2xl font-semibold text-green-500">96%</p>
+        </div>
+        <div className="sm:col-span-2 md:col-span-1 lg:col-span-2">
+          <p className="text-sm xl:text-base">{translations("structure")}</p>
+          <p className="text-2xl font-semibold text-green-500">98%</p>
+        </div>
+        <div className="sm:col-span-2 md:col-span-1 lg:col-span-2">
+          <p className="text-sm xl:text-base">LCP</p>
+          <p className="text-2xl font-semibold text-green-500">621ms</p>
+        </div>
+        <div className="sm:col-span-2 md:col-span-1 lg:col-span-2">
+          <p className="text-sm xl:text-base">TBT</p>
+          <p className="text-2xl font-semibold text-green-500">0</p>
         </div>
         <div>
-          <p className="text-xl font-semibold">
-            {translations("playground-highlight-2-title")}
-          </p>
-          <p className="text-xs">{translations("playground-highlight-2")}</p>
-        </div>
-        <div>
-          <p className="text-xl font-semibold">
-            {translations("playground-highlight-3-title")}
-          </p>
-          <p className="text-xs">{translations("playground-highlight-3")}</p>
+          <p className="text-sm xl:text-base">CLS</p>
+          <p className="text-2xl font-semibold text-green-500">0.12</p>
         </div>
       </div>
       <div className="flex items-center justify-start gap-1 xl:gap-4 col-span-2">
@@ -39,7 +43,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/tailwindcss.webp"
@@ -47,15 +51,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
-          />
-          <Image
-            src="/skills/blender.webp"
-            alt="Blender"
-            width={20}
-            height={20}
-            className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/nodejs.webp"
@@ -63,7 +59,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/typescript.webp"
@@ -71,7 +67,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/git.webp"
@@ -79,7 +75,7 @@ function PlaygroundHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
         </div>
       </div>
@@ -87,4 +83,4 @@ function PlaygroundHighlights() {
   );
 }
 
-export default PlaygroundHighlights;
+export default WassalliHighlights;
