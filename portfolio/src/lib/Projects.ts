@@ -40,6 +40,49 @@ export interface IProject {
   vertical_images: IImage[];
 }
 
+export const BOOKMARKED_PROJECTS: Partial<IProject>[] = [
+  {
+    slug: "carthabot",
+    external_link: "https://carthabot.vercel.app/",
+    images: [
+      {
+        src: "/projects/carthabot/image-1.webp",
+        alt: "a programming block of the website",
+      },
+    ],
+  },
+  {
+    slug: "formulation",
+    images: [
+      {
+        src: "/projects/formulation/image-1.webp",
+        alt: "Dashboard of formulation platform",
+      },
+    ],
+  },
+  {
+    slug: "strong-cast",
+    github_link: "https://github.com/khairislama/strong-cast",
+    external_link: "https://www.strong-cast.com",
+    images: [
+      {
+        src: "/projects/strong-cast/image-1.webp",
+        alt: "Presenting the hero section of strong cast",
+      },
+    ],
+  },
+  {
+    slug: "wassalli",
+    external_link: "https://wassalli.vercel.app",
+    images: [
+      {
+        src: "/projects/wassalli/image-1.webp",
+        alt: "a how to use section",
+      },
+    ],
+  },
+];
+
 export const PROJECTS: IProject[] = [
   {
     label: "current",
@@ -277,22 +320,22 @@ export const PROJECTS: IProject[] = [
     description: "An e-commerce platform for selling casts.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/strong-cast/image-1.webp",
+        alt: "Presenting the hero section of strong cast",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/strong-cast/image-2.webp",
+        alt: "Showcasing the products page and filter feature",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/strong-cast/image-vertical-1.webp",
+        alt: "The contact us section",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/strong-cast/image-vertical-2.webp",
+        alt: "Cart information and pre-checkout",
       },
     ],
   },
