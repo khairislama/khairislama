@@ -671,7 +671,7 @@ export const PROJECTS: IProject[] = [
       issues: "-",
       tests: "-",
       technologies: [
-        { src: "/icons/vitejs.webp", alt: "vite js" },
+        { src: "/skills/vitejs.webp", alt: "vite js" },
         { src: "/skills/threejs.png", alt: "three js" },
       ],
     },
@@ -693,11 +693,11 @@ export const PROJECTS: IProject[] = [
     vertical_images: [
       {
         src: "/projects/threejs-tuto/image-vertical-1.webp",
-        alt: "about me page overview",
+        alt: "a spinning ball",
       },
       {
         src: "/projects/threejs-tuto/image-vertical-2.webp",
-        alt: "projects list",
+        alt: "a spinning ball",
       },
     ],
   },
@@ -734,22 +734,22 @@ export const PROJECTS: IProject[] = [
       "A tutorial project for smooth Framer Motion animations and infinite scrolling.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/anime-world/image-1.webp",
+        alt: "the landing page of anime-world",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/anime-world/image-2.webp",
+        alt: "The list of anime loading one by one on pc view",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/anime-world/image-vertical-1.webp",
+        alt: "the list of anime in 3x3 grid for mobile vue",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/anime-world/image-vertical-2.webp",
+        alt: "light mod on pc view a 4x4 grid",
       },
     ],
   },
