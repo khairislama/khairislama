@@ -8,6 +8,7 @@ interface Props {
   image: {
     src: string;
     alt: string;
+    blur?: boolean;
   };
 }
 
@@ -39,7 +40,7 @@ function ProjectImage({ image, reverse }: Props) {
           reverse
             ? "md:rounded-bl-3xl md:rounded-tr-3xl"
             : "md:rounded-br-3xl md:rounded-tl-3xl"
-        }`}
+        } ${image?.blur && "blur-sm"}`}
         placeholder="blur"
         blurDataURL={`data:image/svg+xml;base64,${toBase64(
           shimmer(1920, 1080)
