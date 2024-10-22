@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { shimmer, toBase64 } from "@/lib/image";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import { cn } from "@/lib/utils";
 
 export const runtime = "edge";
 
@@ -33,7 +34,10 @@ function ProjectInfo({ project }: { project: IProject }) {
             width={1920}
             height={1080}
             priority
-            className="object-cover w-full"
+            className={cn(
+              "object-cover w-full",
+              project.images[0]?.blur && "blur-sm"
+            )}
             sizes="100vw"
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(

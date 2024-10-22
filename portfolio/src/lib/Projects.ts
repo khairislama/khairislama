@@ -1,6 +1,7 @@
 export interface IImage {
   src: string;
   alt: string;
+  blur?: boolean;
 }
 
 export interface IProject {
@@ -57,6 +58,7 @@ export const BOOKMARKED_PROJECTS: Partial<IProject>[] = [
       {
         src: "/projects/formulation/image-1.webp",
         alt: "Dashboard of formulation platform",
+        blur: true,
       },
     ],
   },
@@ -171,20 +173,24 @@ export const PROJECTS: IProject[] = [
       {
         src: "/projects/formulation/image-1.webp",
         alt: "Dashboard of formulation platform",
+        blur: true,
       },
       {
         src: "/projects/formulation/image-2.webp",
         alt: "the recipe page",
+        blur: true,
       },
     ],
     vertical_images: [
       {
         src: "/projects/formulation/image-vertical-1.webp",
         alt: "input output management",
+        blur: true,
       },
       {
         src: "/projects/formulation/image-vertical-2.webp",
         alt: "History feature",
+        blur: true,
       },
     ],
   },
