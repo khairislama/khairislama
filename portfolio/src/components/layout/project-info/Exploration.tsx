@@ -4,6 +4,7 @@ import StatsOneProject from "./Stats";
 import { useTranslations } from "next-intl";
 import { IProject } from "@/lib/Projects";
 import { shimmer, toBase64 } from "@/lib/image";
+import { cn } from "@/lib/utils";
 
 export const runtime = "edge";
 
@@ -37,7 +38,10 @@ function ExplorationOneProject({ project }: { project: IProject }) {
             alt={project.images[1].alt}
             width={1920}
             height={1080}
-            className=""
+            className={cn(
+              "object-cover w-full",
+              project.images[1]?.blur && "blur-sm"
+            )}
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(
