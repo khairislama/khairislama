@@ -107,7 +107,7 @@
     "client": "Client",
     "role": "Rôle",
     "exploration": "Exploration",
-    "no-performance": "Pas de statistiques de performance",
+    "no-performance": "Pas de stats perf",
     "github-stats": "Statistiques Github",
     "total-star-earned": "Total star earned",
     "total-commits": "Total commits",
