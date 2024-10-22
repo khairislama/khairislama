@@ -1,4 +1,11 @@
 import PrefixedLink from "@/components/PrefixedLink";
+import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { ExternalLink, Link2 } from "lucide-react";
 import { useTranslations } from "next-intl";
@@ -26,7 +33,7 @@ function ProjectText({
   const translations = useTranslations("ProjectsOverview");
   return (
     <div
-      className={`flex flex-col gap-1 mt-10 xl:mt-28 md:text-start md:w-[calc(50%+4rem)] ${
+      className={`flex flex-col gap-1 xl:mt-28 md:text-start md:w-[calc(50%+4rem)] ${
         reverse ? "md:-ml-6" : "md:-mr-6"
       }`}
     >
@@ -47,31 +54,52 @@ function ProjectText({
         {translations(`project-${projectNumber}-title`)}{" "}
       </h3>
       <div
-        className={`p-4 bg-primary/10 backdrop-blur-2xl rounded-xl mt-8 relative z-20 ${
+        className={`p-4 bg-primary/10 backdrop-blur-2xl rounded-xl mt-2 relative z-20 ${
           reverse ? "md:pl-10" : "md:pr-20"
         }`}
       >
-        <p className="text-justify font-rubik text-sm">
+        <p className="text-justify font-rubik">
           {translations(`project-${projectNumber}-description`)}
         </p>
         {children}
       </div>
       <div
-        className={`flex gap-6 p-2 items-center justify-center md:justify-start mt-4 ${
+        className={`flex gap-6 p-2 items-center justify-center md:justify-start md:group-hover:translate-y-4 duration-300 ease-in-out transition-all z-20 ${
           reverse && "flex-row-reverse"
         }`}
       >
         {github && (
           <Link href={github} target="_blank">
-            <GitHubLogoIcon className="w-8 h-8" />
+            <TooltipProvider>
+              <Tooltip delayDuration={0}>
+                <TooltipTrigger className="uppercase">
+                  <GitHubLogoIcon className="w-8 h-8" />
+                </TooltipTrigger>
+                <TooltipContent className="bg-foreground flex items-center gap-2">
+                  {translations(`github-link`)}
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </Link>
         )}
         <PrefixedLink href={viewMore}>
-          <ExternalLink className="w-8 h-8" />
+          <Button variant={"ghost"}>
+            <ExternalLink className="w-8 h-8 mr-4" />{" "}
+            {translations(`read-more`)}{" "}
+          </Button>
         </PrefixedLink>
         {demo && (
           <Link href={demo} target="_blank">
-            <Link2 className="w-8 h-8" />
+            <TooltipProvider>
+              <Tooltip delayDuration={0}>
+                <TooltipTrigger className="uppercase">
+                  <Link2 className="w-8 h-8" />
+                </TooltipTrigger>
+                <TooltipContent className="bg-foreground flex items-center gap-2">
+                  {translations(`demo-link`)}
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </Link>
         )}
       </div>

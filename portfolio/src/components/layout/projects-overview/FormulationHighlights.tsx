@@ -7,19 +7,19 @@ function FormulationHighlights() {
   const translations = useTranslations("ProjectsOverview");
 
   return (
-    <div className="flex flex-col gap-2">
-      <div className="grid grid-cols-3 w-full mt-4 gap-1">
+    <div className="flex flex-col gap-5">
+      <div className="grid grid-cols-3 w-full mt-2 gap-4">
         <div>
-          <p className="text-xl font-semibold text-green-500">+3500h</p>
-          <p className="text-xs">{translations("formulation-highlight-1")}</p>
+          <p className="text-2xl font-semibold text-green-400">+3500h</p>
+          <p className="text-sm">{translations("formulation-highlight-1")}</p>
         </div>
         <div>
-          <p className="text-xl font-semibold text-green-500">1600+</p>
-          <p className="text-xs">{translations("formulation-highlight-2")}</p>
+          <p className="text-2xl font-semibold text-green-400">1600+</p>
+          <p className="text-sm">{translations("formulation-highlight-2")}</p>
         </div>
         <div>
-          <p className="text-xl font-semibold text-green-500">€220k</p>
-          <p className="text-xs">{translations("formulation-highlight-3")}</p>
+          <p className="text-2xl font-semibold text-green-400">€220k</p>
+          <p className="text-sm">{translations("formulation-highlight-3")}</p>
         </div>
       </div>
       <div className="flex items-center justify-start gap-1 xl:gap-4 col-span-2">
@@ -33,7 +33,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/typeorm.png"
@@ -41,7 +41,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/nodejs.webp"
@@ -49,7 +49,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/typescript.webp"
@@ -57,7 +57,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/postgresql.webp"
@@ -65,7 +65,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/git.webp"
@@ -73,7 +73,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
           <Image
             src="/skills/azure.webp"
@@ -81,7 +81,7 @@ function FormulationHighlights() {
             width={20}
             height={20}
             className="w-8"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="30vw"
           />
         </div>
       </div>

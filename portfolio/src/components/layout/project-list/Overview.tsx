@@ -1,4 +1,5 @@
 import { shimmer, toBase64 } from "@/lib/image";
+import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -10,17 +11,18 @@ function Overview({
   image: {
     src: string;
     alt: string;
+    blur?: boolean;
   };
 }) {
   const translations = useTranslations("Projects");
   return (
-    <div className="w-96 rounded-xl overflow-hidden hidden md:block">
+    <div className="w-96 rounded-xl overflow-hidden">
       <Image
         src={image.src}
         alt={image.alt}
         width={1920}
         height={1080}
-        className="object-cover w-full"
+        className={cn("object-cover w-full", image?.blur && "blur-sm")}
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
         placeholder="blur"
         blurDataURL={`data:image/svg+xml;base64,${toBase64(

@@ -1,5 +1,6 @@
 import CustomLink from "@/components/CustomLink";
 import { PROJECTS } from "@/lib/Projects";
+import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
@@ -79,7 +80,10 @@ function RecommendedProjects({
               alt={project.name}
               width={600}
               height={650}
-              className="rounded-xl w-full"
+              className={cn(
+                "rounded-xl w-full",
+                project.vertical_images[0]?.blur && "blur-sm"
+              )}
               sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
             />
             <div className="w-full mt-4 ml-2">
