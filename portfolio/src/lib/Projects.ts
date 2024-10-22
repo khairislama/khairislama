@@ -577,22 +577,18 @@ export const PROJECTS: IProject[] = [
       "A showcase website for Dilab, designed with HTML, CSS, and JavaScript.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/dilab/image-1.webp",
+        alt: "the landing page of dilab",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/dilab/image-vertical-1.webp",
+        alt: "mobile vue of dilab",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/dilab/image-vertical-2.webp",
+        alt: "mobile vue of hero section",
       },
     ],
   },
