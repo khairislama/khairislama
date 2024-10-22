@@ -686,22 +686,18 @@ export const PROJECTS: IProject[] = [
       "A tutorial project built with Vite and Three.js to explore 3D web development.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/threejs-tuto/image-1.webp",
+        alt: "hero screenshot",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/threejs-tuto/image-vertical-1.webp",
+        alt: "about me page overview",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/threejs-tuto/image-vertical-2.webp",
+        alt: "projects list",
       },
     ],
   },
