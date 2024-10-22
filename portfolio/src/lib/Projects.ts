@@ -523,22 +523,22 @@ export const PROJECTS: IProject[] = [
       "A showcase website for SLK Consulting, designed with HTML, CSS, and JavaScript.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/slk-consulting/image-1.webp",
+        alt: "Services section for slk consulting website",
       },
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/slk-consulting/image-2.webp",
+        alt: "slk consulting presentation",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/slk-consulting/image-vertical-1.webp",
+        alt: "slk consulting landing page",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/slk-consulting/image-vertical-2.webp",
+        alt: "slk consulting services presentation",
       },
     ],
   },
@@ -605,10 +605,10 @@ export const PROJECTS: IProject[] = [
     tags: 10,
     features: 5,
     performance: {
-      performance: "97%",
-      structure: "91%",
-      lcp: "1.2s",
-      tbt: "0ms",
+      performance: "100%",
+      structure: "94%",
+      lcp: "652ms",
+      tbt: "7ms",
       cls: "0",
     },
     github_link: "https://github.com/khairislama/khairislama",
