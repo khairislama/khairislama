@@ -93,8 +93,8 @@ export const PROJECTS: IProject[] = [
     tags: 7,
     features: 6,
     performance: null,
-    github_link: "https://github.com/khairislama/carthabot",
-    external_link: "https://carthabot.vercel.app/en",
+    github_link: null,
+    external_link: "https://carthabot.vercel.app/",
     stats: {
       stars: "-",
       commits: "126",
@@ -198,7 +198,7 @@ export const PROJECTS: IProject[] = [
     features: 6,
     performance: null,
     github_link: null,
-    external_link: "fab619.tn",
+    external_link: "https://www.fab619.tn",
     stats: {
       stars: "-",
       commits: "5",
@@ -264,22 +264,14 @@ export const PROJECTS: IProject[] = [
       "A basic Next.js project to test internationalization using the next-intl package.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/next-intl/image-1.webp",
+        alt: "next internationalization cover",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
-      },
-      {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/next-intl/image-vertical-1.webp",
+        alt: "next internationalization",
       },
     ],
   },
@@ -298,7 +290,7 @@ export const PROJECTS: IProject[] = [
       tbt: "65ms",
       cls: "0",
     },
-    github_link: "https://github.com/khairislama/strong-cast",
+    github_link: null,
     external_link: "https://www.strong-cast.com",
     stats: {
       stars: "-",
@@ -351,7 +343,7 @@ export const PROJECTS: IProject[] = [
     github_link: "https://github.com/khairislama/phoenix-garage",
     external_link: "https://phoenix-garage.vercel.app",
     stats: {
-      stars: "-",
+      stars: "2",
       commits: "20",
       prs: "7",
       issues: "-",
@@ -371,22 +363,18 @@ export const PROJECTS: IProject[] = [
     description: "Next.js project showcasing interactive 3D blender models.",
     images: [
       {
-        src: "/1920-1080.png",
-        alt: "blank image",
-      },
-      {
-        src: "/1920-1080.png",
-        alt: "blank image",
+        src: "/projects/phoenix-garage/image-1.webp",
+        alt: "The phoenix garage welcoming page",
       },
     ],
     vertical_images: [
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/phoenix-garage/image-vertical-1.webp",
+        alt: "Phoenix garage landing",
       },
       {
-        src: "/600-650.png",
-        alt: "blank image",
+        src: "/projects/phoenix-garage/image-vertical-2.webp",
+        alt: "Phoenix garage active page",
       },
     ],
   },
