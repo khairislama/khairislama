@@ -34,7 +34,7 @@ function ProjectInfo({ project }: { project: IProject }) {
             height={1080}
             priority
             className="object-cover w-full"
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            sizes="100vw"
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(
               shimmer(1920, 1080)
