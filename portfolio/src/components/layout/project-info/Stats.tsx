@@ -45,7 +45,7 @@ function StatsOneProject({ project }: { project: IProject }) {
         </div>
       ) : (
         <div className="relative z-20 hidden md:flex items-center justify-center h-full">
-          <p className="text-5xl xl:text-7xl font-syne text-center font-bold uppercase">
+          <p className="text-4xl xl:text-6xl font-syne text-center font-bold uppercase">
             {translations("no-performance")
               .split(" ")
               .map((word, i) => (

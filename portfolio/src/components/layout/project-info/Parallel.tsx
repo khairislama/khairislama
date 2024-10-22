@@ -1,5 +1,6 @@
 import { shimmer, toBase64 } from "@/lib/image";
 import { IProject } from "@/lib/Projects";
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 
 export const runtime = "edge";
@@ -13,7 +14,10 @@ function ParallelImages({ project }: { project: IProject }) {
           alt={project.vertical_images[0].alt}
           width={600}
           height={650}
-          className="object-cover w-full"
+          className={cn(
+            "object-cover w-full",
+            project.vertical_images[0]?.blur && "blur-sm"
+          )}
           sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(
@@ -29,7 +33,10 @@ function ParallelImages({ project }: { project: IProject }) {
           alt={project.vertical_images[1].alt}
           width={600}
           height={650}
-          className="object-cover w-full"
+          className={cn(
+            "object-cover w-full",
+            project.vertical_images[1]?.blur && "blur-sm"
+          )}
           sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
           placeholder="blur"
           blurDataURL={`data:image/svg+xml;base64,${toBase64(

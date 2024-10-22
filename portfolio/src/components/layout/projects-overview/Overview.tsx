@@ -9,7 +9,7 @@ function Overview({
 }>) {
   return (
     <div
-      className={`flex flex-col relative md:mt-24 md:hover:scale-105 duration-300 ease-in-out transition-all ${
+      className={`flex flex-col relative mt-20 md:mt-24 md:hover:-translate-y-4 duration-300 ease-in-out transition-all group ${
         reverse ? "md:flex-row-reverse" : "md:flex-row"
       }`}
     >
