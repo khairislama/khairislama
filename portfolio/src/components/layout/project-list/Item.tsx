@@ -1,10 +1,12 @@
 import PrefixedLink from "@/components/PrefixedLink";
 import { IProject } from "@/lib/Projects";
 import { ChevronRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export const runtime = "edge";
 
 function ProjectItem({ project }: { project: IProject }) {
+  const translations = useTranslations(`Project-${project.slug}`);
   return (
     <PrefixedLink
       href={`/projects/${project.slug}`}
@@ -16,7 +18,7 @@ function ProjectItem({ project }: { project: IProject }) {
             {project.name}
           </h3>
           <p className="border-2 border-foreground rounded-full py-[1px] px-3 text-xs md:group-hover:hidden transform duration-300 ease-in-out">
-            {project.type}
+            {translations("type")}
           </p>
         </div>
         <div className="flex items-center gap-6">
@@ -27,12 +29,12 @@ function ProjectItem({ project }: { project: IProject }) {
             />
             <p className="capitalize"> {project.languages[0].name} </p>
           </div>
-          <p>{project.updated_at}</p>
+          <p>{translations("updated_at")}</p>
         </div>
       </div>
       <div className="hidden md:flex md:flex-col items-end gap-4 mb-3 md:group-hover:text-foreground md:group-hover:-translate-x-4 transform duration-300 ease-in-out delay-75 max-w-lg">
-        <p> {project.featured} </p>
-        <p className="text-end"> {project.description} </p>
+        <p> {translations("client")} </p>
+        <p className="text-end"> {translations("description")} </p>
       </div>
       <ChevronRight className="h-4 w-4 group-hover:scale-150 transform duration-300 ease-in-out md:hidden" />
     </PrefixedLink>
