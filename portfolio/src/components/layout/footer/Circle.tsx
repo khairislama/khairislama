@@ -26,7 +26,7 @@ function Circle() {
       </svg>
       <div className="w-28 h-28 flex items-center justify-center rounded-full overflow-hidden border-foreground/70 border-2 border-dashed absolute left-[50%] translate-x-[-50%] top-[20%]">
         <Image
-          src="/avatars/Avatar-7.png"
+          src="/avatars/Avatar-7.webp"
           alt="@khairislama"
           width={100}
           height={100}

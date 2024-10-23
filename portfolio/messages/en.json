@@ -127,8 +127,10 @@
     "click-for-details": "click for details"
   },
   "Project-carthabot": {
+    "type": "private",
     "title": "Project Details - Carthabot",
     "subtitle": "CarthaBot is an educational platform designed to teach STEM concepts through interactive, hands-on activities with robotics. Using Next.js, the project focuses on creating a seamless, multi-language experience with a responsive and modern UI. My role includes designing intuitive controls and enhancing CarthaBot’s educational potential.",
+    "description": "Interactive multi-language STEM learning platform with robots.",
     "story-1": "CarthaBot was a freelance project aimed at developing an educational platform to inspire students to explore STEM through robotics. My task was to build a user-friendly interface, ensuring that users of all ages could easily interact with CarthaBot and its educational activities. The platform includes features like multi-language support and an interactive UI to cater to students worldwide, making learning both fun and accessible. It’s built with Next.js, allowing for a fast, smooth experience across all devices, whether it’s a desktop or smartphone.",
     "story-2": "The purpose of the project is to enhance the hands-on learning potential of CarthaBot by integrating easy-to-use controls, advanced sensors, and programmable features. By developing a responsive, customizable platform, I am helping CarthaBot serve as a powerful tool for teaching robotics and programming in an interactive way. My focus is on delivering a platform that is engaging, accessible, and capable of making STEM concepts more approachable for students.",
     "tag-1": "freelance",
@@ -139,6 +141,7 @@
     "tag-6": "Next.js",
     "tag-7": "next-intl",
     "start-date": "2 Aug 2024",
+    "updated_at": "Currently working on...",
     "client": "Fab 619",
     "role": "Developer",
     "exploration": "Working on CarthaBot gave me the chance to tackle the challenge of creating an educational platform that feels modern and interactive. I developed a sleek, responsive UI that works seamlessly across all devices, enhancing accessibility and user engagement. The integration of advanced sensor data and programmable features was a key technical hurdle, allowing users to control CarthaBot and create their own behaviors. Multi-language support was another challenge, but essential to ensure the platform could reach a global audience. Overall, this project sharpened my skills in web development and user experience design, with a focus on creating educational tools.",
@@ -150,8 +153,10 @@
     "feature-6": "Long Battery Life"
   },
   "Project-formulation": {
+    "type": "private",
     "title": "Project Details - Formulation",
     "subtitle": "The Formulation project is a large-scale digital platform designed to modernize Hutchinson’s formulation processes, replacing outdated methods with a secure, cloud-based solution. As the solo backend developer, I designed and managed the relational database using NestJS, TypeORM, and PostgreSQL, hosted on Azure for optimized performance and scalability.",
+    "description": "Cloud-based formulation solution using NestJS and PostgreSQL.",
     "story-1": "The Formulation project was launched to digitalize and enhance the Hutchinson Group’s formulation processes, which previously relied on Excel sheets for managing complex data. The goal was to build a secure, cloud-hosted platform that could handle vast amounts of data while improving efficiency. As the lead backend developer, I took on the challenge of creating a robust database architecture using NestJS, TypeORM, and PostgreSQL. The platform is integrated with Angular for frontend development and hosted on Azure, providing scalable, secure infrastructure. With over 3,500 hours invested in development, the project is a key part of Hutchinson’s cloud transition.",
     "story-2": "This project solves the problem of outdated, inefficient data handling by providing a modern, reliable solution that streamlines formulation processes across multiple departments. The backend architecture focuses on maintaining security, performance, and data integrity, with over 1,600 tests performed to ensure quality. My role as the sole backend developer involves ensuring the smooth operation of data management, implementing cloud-hosted solutions, and maintaining system security according to C4 standards. The platform sets a new standard for future digital transformation projects within the company.",
     "tag-1": "backend",
@@ -164,6 +169,7 @@
     "tag-8": "security",
     "tag-9": "Azure",
     "start-date": "30 April 2023",
+    "updated_at": "Currently working on...",
     "client": "Hutchinson",
     "role": "Backend Developer",
     "exploration": "The Formulation project allowed me to dive deep into backend architecture at an enterprise level, focusing on building a cloud-based system capable of handling sensitive data securely. I explored complex relational database design, optimizing performance with TypeORM and PostgreSQL. One of the biggest challenges was maintaining C4-level security standards, which required rigorous testing and implementation. Azure cloud integration was another area where I gained experience, ensuring scalability and seamless performance for Hutchinson’s expanding needs. Through this project, I achieved a robust backend infrastructure capable of supporting the company’s future cloud initiatives, driving both innovation and efficiency across the group.",
@@ -175,8 +181,10 @@
     "feature-6": "Cloud hosting and scaling via Azure"
   },
   "Project-fab-619": {
+    "type": "private",
     "title": "Project Details - Fab 619",
     "subtitle": "Fab 619 is a modern showcase website for a startup, featuring five key sections: home, about, contact, services, and blog. The goal is to present the company’s vision, services, and expertise in a sleek and professional manner.",
+    "description": "Showcase portfolio website for Fab 619.",
     "story-1": "The Fab 619 project aims to establish an online presence for a startup through a streamlined, professional showcase website. The site will include essential sections like home, about, contact, services, and a blog to provide insights into the company’s offerings. As the web engineer, I will focus on creating a clean, responsive design that effectively communicates the startup’s message while offering easy navigation and a user-friendly interface.",
     "tag-1": "showcase",
     "tag-2": "Next.js",
@@ -187,6 +195,7 @@
     "tag-7": "multi-page website",
     "tag-8": "next-intl",
     "start-date": "Soon...",
+    "updated_at": "Updated on Aug 4",
     "client": "Fab 619",
     "role": "Developer",
     "exploration": "This project will allow me to enhance my skills in creating a multi-page, responsive website while focusing on clean design and SEO optimization. With sections dedicated to various aspects of the startup, I’ll work to ensure the site is user-friendly and effectively communicates Fab 619’s brand and services. Developing the blog section will be an interesting challenge, providing dynamic content management and engagement for visitors. This project is an opportunity to refine my expertise in building sleek, professional showcase websites.",
@@ -198,8 +207,10 @@
     "feature-6": "Multi-language support"
   },
   "Project-next-internationalization": {
+    "type": "public",
     "title": "Project Details - Next JS Internationalization",
     "subtitle": "A basic demo project exploring the use of internationalization in Next.js using the next-intl package to support multiple languages seamlessly.",
+    "description": "A basic Next.js project to test internationalization using the next-intl package.",
     "story-1": "The Next.js Internationalization project serves as a personal tutorial to experiment with the next-intl package for adding multi-language support to a Next.js application. I created this demo to test and learn the process of integrating internationalization features, focusing on how to manage translations, locale routing, and dynamic content rendering in different languages. This project is a learning opportunity to enhance my understanding of i18n in Next.js environments.",
     "tag-1": "tutorial",
     "tag-2": "Next.js",
@@ -209,6 +220,7 @@
     "tag-6": "demo project",
     "tag-7": "multi-language support",
     "start-date": "4 Aug 2024",
+    "updated_at": "Updated on Sep 10",
     "client": "self",
     "role": "Developer",
     "exploration": "This project will allow me to enhance my skills in creating a multi-page, responsive website while focusing on clean design and SEO optimization. With sections dedicated to various aspects of the startup, I’ll work to ensure the site is user-friendly and effectively communicates Fab 619’s brand and services. Developing the blog section will be an interesting challenge, providing dynamic content management and engagement for visitors. This project is an opportunity to refine my expertise in building sleek, professional showcase websites.",
@@ -219,8 +231,10 @@
     "feature-5": "Simplified internationalization setup"
   },
   "Project-strong-cast": {
+    "type": "private",
     "title": "Project Details - Strong Cast",
     "subtitle": "Strong Cast is an e-commerce platform built to sell premium fishing lines in the U.S. market. Leveraging Next.js and Shopify, I’m developing a seamless, high-performance online store tailored to Strong Cast’s specific business needs.",
+    "description": "An e-commerce platform for selling casts.",
     "story-1": "Strong Cast was created to provide a dedicated platform for selling high-quality fishing lines to the U.S. market, focusing on delivering a smooth, engaging shopping experience. My role as the web engineer involves building the frontend with Next.js, taking advantage of its fast performance and server-rendered features for optimal SEO. The backend relies on the Shopify Storefront API, ensuring efficient product management and a seamless checkout process. Together, these technologies create a customized solution that showcases the products in a visually appealing and user-friendly way.",
     "story-2": "The platform is designed to handle the specific demands of e-commerce, including fast load times, responsive design, and smooth interactions from browsing to checkout. Strong Cast’s business model required a solution that combined the flexibility of a custom frontend with the power of Shopify’s e-commerce tools. My focus has been on maintaining a consistent user experience while adhering to industry standards for security, scalability, and performance.",
     "tag-1": "e-commerce",
@@ -232,6 +246,7 @@
     "tag-7": "USA market",
     "tag-8": "custom solution",
     "start-date": "15 December 2023",
+    "updated_at": "Updated on Mar 9",
     "client": "Strong Cast",
     "role": "Developer",
     "exploration": "Building Strong Cast allowed me to deepen my expertise in e-commerce development while utilizing Next.js and Shopify. I explored Next.js’s incremental static regeneration, ensuring fast load times and improved SEO, which are crucial for online stores. Integrating the Shopify Storefront API was a new challenge, enabling me to manage products, handle customer data, and create a smooth checkout experience. The project sharpened my skills in combining custom frontend with robust e-commerce backends, and I successfully delivered a high-performance, responsive platform that meets Strong Cast’s business goals.",
@@ -242,8 +257,10 @@
     "feature-5": "Responsive design for all devices"
   },
   "Project-phoenix-garage": {
+    "type": "public",
     "title": "Project Details - Phoenix Garage",
     "subtitle": "Phoenix Garage is an experimental 3D web project featuring interactive car and motorcycle models, along with hidden surprises, using Next.js and Three.js for immersive experiences.",
+    "description": "Next.js project showcasing interactive 3D blender models.",
     "story-1": "Phoenix Garage was created as a tutorial project to explore 3D web development using pre-built Blender models and Three.js. The goal was to experiment with 3D rendering, interactive animations, and custom object creation, such as a floating glass object in front of text. This project provided an opportunity to deepen my skills in 3D rendering, manipulating lighting, and creating visually engaging scenes directly in the browser using cutting-edge web technologies.",
     "tag-1": "tutorial",
     "tag-2": "Blender models",
@@ -254,6 +271,7 @@
     "tag-7": "Three.js",
     "tag-8": "React Three Fiber",
     "start-date": "2 Jun 2024",
+    "updated_at": "Updated on Jun 13",
     "client": "Self",
     "role": "Developer",
     "exploration": "In Phoenix Garage, I pushed my understanding of 3D rendering in web applications by experimenting with Blender model integration and Three.js. I successfully created interactive animations, dynamic lighting setups, and a custom glass object that floats in front of text. The hidden Easter eggs, like the dragon and phoenix models, added an extra layer of discovery for users. This project allowed me to experiment with advanced rendering techniques and implement a visually captivating showcase of 3D models and animations.",
@@ -265,8 +283,10 @@
     "feature-6": "Seamless Blender model integration"
   },
   "Project-robot-playground": {
+    "type": "public",
     "title": "Project Details - Robot Playground",
     "subtitle": "Robot Playground is an experimental 3D web project built with Next.js, Three.js, and React Three Fiber. It integrates Blender models and interactive animations to create immersive, real-time experiences directly in the browser. This project pushes the limits of modern web technology and showcases the future of 3D web development.",
+    "description": "An experimental 3D web project using Next.js, Three.js, React Three Fiber, and postprocessing.",
     "story-1": "Robot Playground was born out of my curiosity to explore the world of 3D web development and experiment with advanced web technologies. Using tools like Next.js, Three.js, and React Three Fiber, I set out to create an interactive experience where users could engage with 3D models and animations. The project includes Blender model integration, dynamic lighting, and postprocessing effects such as Bloom to deliver a visually engaging experience. Scrolling triggers animations, adding another layer of interaction.",
     "story-2": "The main goal of this project is to showcase how far 3D web experiences can be pushed within modern web browsers. By combining real-time performance and stunning visuals, it serves as a playground for exploring new techniques in web development. As the developer, my role was to handle the entire technical stack, including Blender integration, animation, and optimizing performance to ensure smooth interaction across devices.",
     "tag-1": "solo",
@@ -277,6 +297,7 @@
     "tag-6": "Next.js",
     "tag-7": "Three.js",
     "start-date": "2 Jun 2024",
+    "updated_at": "Updated on Jun 6",
     "client": "Self",
     "role": "Developer",
     "exploration": "Working on Robot Playground allowed me to dive deep into 3D web development and the powerful tools available today. I integrated Blender models seamlessly into a Next.js application, mastered React Three Fiber for handling complex animations, and used Framer Motion to trigger animations based on user scroll. Visual effects like Bloom and dynamic lighting were challenging but rewarding to implement, adding cinematic quality to the project. I also introduced custom camera controls to ensure smooth user experience and incorporated a performance monitoring panel to keep track of frame rates. This project pushed my skills in both frontend development and 3D modeling, proving what’s possible with modern web technologies.",
@@ -288,8 +309,10 @@
     "feature-6": "Performance Monitoring"
   },
   "Project-wassalli": {
+    "type": "private",
     "title": "Project Details - Wassalli",
     "subtitle": "Wassalli is a digital platform designed to streamline package delivery between France and North Africa by connecting private carriers with individuals needing shipment services. Built using Next.js and Tailwind CSS, it offers a user-friendly interface for enhanced shipping visibility.",
+    "description": "Wassalli is a digital platform designed to streamline package delivery between France and North Africa.",
     "story-1": "Wassalli was developed as my end-of-study project during a six-month internship at SLK Consulting in Paris, France. The project aimed to address the growing demand for private carriers in the C2C shipping domain, especially between France and North African countries such as Tunisia, Algeria, and Morocco. My role was to design and develop an application that connects individual shippers with private carriers, facilitating easier package delivery through a multi-platform interface (web and mobile). The platform's goal is to make the process of sending and receiving parcels more efficient by offering users better visibility and access to private transport services that traditionally rely on informal networks.",
     "story-2": "The import/export market between France and North Africa has seen steady growth, with a significant increase in small parcel shipments. However, many private transporters operate without a unified platform, with information about their services often spread through word of mouth or online groups. Wassalli fills this gap by creating a centralized space where users can search, rate, and engage with transporters, providing transparency and convenience to the cross-border shipping process.",
     "story-3": "During the project, I worked on the front-end using Next.js and Tailwind CSS, ensuring the platform was both visually appealing and functional across devices. The project involved complex user flows, from search to booking and feedback collection, which helped users find reliable carriers. My work on Wassalli demonstrated my ability to manage complex applications, meet client needs, and deliver a tailored, high-quality solution for an emerging market.",
@@ -302,6 +325,7 @@
     "tag-7": "web app",
     "tag-8": "France-North Africa",
     "start-date": "1 Mars 2022",
+    "updated_at": "Updated on Oct 23, 2022",
     "client": "SLK Consulting",
     "role": "Developer",
     "exploration": "Through Wassalli, I gained valuable experience in developing a robust platform that bridges informal markets with modern technology. I successfully built a responsive, user-friendly interface using Next.js and Tailwind CSS, ensuring it was optimized for both desktop and mobile devices. Working with SLK Consulting allowed me to explore real-world shipping challenges and propose innovative solutions for connecting private carriers with clients. The project helped me deepen my skills in web development, user interface design, and logistics, and resulted in a system that could potentially revolutionize C2C shipping between France and North Africa.",
@@ -313,8 +337,10 @@
     "feature-6": "Tailored for shipments between France and North Africa"
   },
   "Project-slk-consulting": {
+    "type": "private",
     "title": "Project Details - SLK Consulting",
     "subtitle": "A showcase website for SLK Consulting, designed with HTML, CSS, and JavaScript, providing an online presence for the company while utilizing animations for an engaging user experience.",
+    "description": "A showcase website for SLK Consulting, designed with HTML, CSS, and JavaScript.",
     "story-1": "Before embarking on the Wassalli project, I created a simple showcase website for SLK Consulting during my internship. The purpose of this project was to give the company an online platform to display their services and general information. The website was built using plain HTML, CSS, and JavaScript, focusing on presenting content in a clear and professional manner while integrating modern web design practices.",
     "story-2": "In the process, I experimented with a range of animations to make the website more interactive and visually engaging. This project allowed me to develop a deeper understanding of frontend development, improve my skills in animation techniques, and deliver a sleek, functional site for SLK Consulting. Though simple, it served as a key learning experience for mastering foundational web technologies.",
     "tag-1": "html",
@@ -325,6 +351,7 @@
     "tag-6": "web-design",
     "tag-7": "internship",
     "start-date": "12 Mars 2022",
+    "updated_at": "Updated on Sep 17, 2022",
     "client": "SLK Consulting",
     "role": "Developer",
     "exploration": "This project marked an important step in honing my web development skills, especially in using plain HTML, CSS, and JavaScript. It allowed me to experiment with animations and create a dynamic, visually appealing showcase website. The experience deepened my understanding of web design principles and prepared me for more complex projects like Wassalli.",
@@ -335,8 +362,10 @@
     "feature-5": "Optimized for fast loading speeds"
   },
   "Project-dilab": {
+    "type": "private",
     "title": "Project Details - Dilab",
     "subtitle": "A one-page showcase website for Dilab, designed to present the company’s services and information with a clean and modern layout, built using HTML, CSS, and JavaScript.",
+    "description": "A showcase website for Dilab, designed with HTML, CSS, and JavaScript.",
     "story-1": "Following my work on SLK Consulting’s website, I was tasked with creating a one-page showcase site for their partner company, Dilab. The goal was to design a simple, yet professional web presence that clearly communicates Dilab’s services and values. Using HTML, CSS, and JavaScript, I built a streamlined, responsive page that efficiently delivers essential information while maintaining a modern look.",
     "story-2": "The project focused on ensuring a fluid user experience, integrating animations for smooth transitions between sections. This one-page layout allowed for concise presentation, where every detail was crafted for clarity and engagement. It served as an opportunity to refine my skills in single-page website design, with emphasis on simplicity and performance.",
     "tag-1": "html",
@@ -347,6 +376,7 @@
     "tag-6": "one-page-website",
     "tag-7": "responsive-design",
     "start-date": "24 Mars 2022",
+    "updated_at": "Updated on Sep 17, 2022",
     "client": "SLK Consulting",
     "role": "Developer",
     "exploration": "This project allowed me to dive deeper into the development of single-page websites, particularly honing my skills in creating smooth, engaging animations. It also taught me the importance of delivering key content in a concise and visually appealing way. Building the Dilab site further solidified my understanding of responsive design and user experience optimization.",
@@ -357,8 +387,10 @@
     "feature-5": "Fast loading times due to lightweight structure"
   },
   "Project-khairislama": {
+    "type": "public",
     "title": "Project Details - Khairi SLAMA",
     "subtitle": "A personal portfolio built with Next.js and Tailwind CSS, featuring a multi-language platform, modern design, and optimized performance, SEO, and animations to showcase my work and skills.",
+    "description": "A personal portfolio built with Next.js and Tailwind CSS.",
     "story-1": "My portfolio is a reflection of my journey as a web developer, combining technical expertise with a focus on clean, responsive design. Built using Next.js for its powerful server-side rendering and Tailwind CSS for rapid styling, this project highlights the key skills I've honed over the years, from performance optimization to multi-language support using next-intl. The goal is to present my projects and services in a way that is both visually appealing and technically robust, giving visitors a seamless and engaging experience.",
     "story-2": "One of the core aspects of this portfolio is its responsiveness and adaptability across various devices, ensuring that the design looks sharp and navigable on both mobile and desktop platforms. By implementing Next.js' built-in SEO capabilities and best practices, I've ensured that the site is optimized for search engines, contributing to visibility and discoverability. Animations and interactive elements like tooltip previews add a layer of interactivity that reflects my modern approach to web design.",
     "story-3": "The portfolio also serves as a platform for potential employers, clients, and collaborators to get a sense of my capabilities. Whether it's backend work, front-end animations, or full-stack projects, this portfolio encapsulates my growth as a developer and my dedication to delivering high-performance, aesthetically pleasing solutions",
@@ -373,6 +405,7 @@
     "tag-9": "tooltip",
     "tag-10": "performance-optimization",
     "start-date": "10 Sep 2024",
+    "updated_at": "Currently working on...",
     "client": "Self",
     "role": "Developer",
     "exploration": "Developing my portfolio allowed me to implement cutting-edge web technologies like Next.js and Tailwind CSS, while exploring internationalization with next-intl. It gave me a hands-on approach to creating a highly responsive, SEO-optimized platform. This project also sharpened my skills in performance optimization and user interactivity through smooth animations and useful features like tooltips. Through this, I created not just a showcase for my work, but a demonstration of what I can bring to future projects.",
@@ -383,8 +416,10 @@
     "feature-5": "Clean, modern, and fast user interface built with Tailwind CSS"
   },
   "Project-threejs-tuto": {
+    "type": "public",
     "title": "Project Details - Three JS Tuto",
     "subtitle": "A tutorial project built with Vite and Three.js to explore 3D web development, featuring a rotating sphere with dynamic lighting and smooth scroll animations.",
+    "description": "A tutorial project built with Vite and Three.js to explore 3D web development.",
     "story-1": "ThreeJs Tuto was created as a personal learning project to dive into 3D web development using Three.js and Vite. The goal was to experiment with 3D model rendering, lighting effects, and animations while familiarizing myself with Vite’s fast build process. This simple yet elegant project showcases a rotating, lit sphere with smooth scroll animations, providing a solid foundation for understanding interactive 3D graphics on the web.",
     "tag-1": "threejs",
     "tag-2": "vite",
@@ -395,6 +430,7 @@
     "tag-7": "interactive-3d",
     "tag-8": "gsap",
     "start-date": "2 Jun 2024",
+    "updated_at": "Updated on Jun 6",
     "client": "Self",
     "role": "Developer",
     "exploration": "This project allowed me to explore the fundamentals of Three.js for rendering 3D graphics while using Vite for faster build times. I gained experience in creating smooth animations, dynamic lighting effects, and interactive camera movements. The project served as a hands-on learning tool, enhancing my understanding of WebGL and interactive 3D graphics in a web context.",
@@ -405,8 +441,10 @@
     "feature-5": "Fast build process with Vite for optimized performance"
   },
   "Project-anime-world": {
+    "type": "public",
     "title": "Project Details - Anime World",
     "subtitle": "A modern Next.js 14.2.3 project to explore popular anime with smooth Framer Motion animations and infinite scrolling using react-intersection-observer.",
+    "description": "A tutorial project for smooth Framer Motion animations and infinite scrolling.",
     "story-1": "Anime World is a personal tutorial project designed to refresh my Next.js skills and enhance best practices, while also integrating features like infinite scroll and smooth animations. Using Next.js 14.2.3, Framer Motion, and react-intersection-observer, I focused on creating a high-performance, visually appealing app that showcases a list of popular anime. The project serves as a practical way to sharpen my expertise in server-side rendering, client-side interactivity, and responsive design.",
     "tag-1": "nextjs14",
     "tag-2": "infinite-scroll",
@@ -416,6 +454,7 @@
     "tag-6": "server-actions",
     "tag-7": "responsive-design",
     "start-date": "26 May 2024",
+    "updated_at": "Updated on Jun 6",
     "client": "Self",
     "role": "Developer",
     "exploration": "This project allowed me to explore Next.js 14.2.3’s new features while integrating infinite scroll and animations with Framer Motion. It reinforced best practices in handling server-side actions and dynamically loading content. Additionally, working with react-intersection-observer helped improve my understanding of lazy loading and in-view detection for efficient performance.",
