@@ -4,6 +4,7 @@ import {
   KnowAboutMe,
   ProjectsOverview,
   Skills,
+  Testimonials,
 } from "@/components/layout";
 import Services from "@/components/layout/services";
 import { Metadata } from "next";
@@ -50,7 +51,7 @@ export default function Home() {
       <Skills />
       <ProjectsOverview />
       <Services />
-      {/* <Testimonials /> */}
+      <Testimonials />
       <ContactCard />
     </main>
   );
