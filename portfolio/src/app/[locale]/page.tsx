@@ -10,7 +10,6 @@ import Services from "@/components/layout/services";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 
-export const runtime = "edge";
 export const metadata: Metadata = {
   title: "Khairi Slama | Full-Stack Engineer | Web Development Portfolio",
   description:
