@@ -8,9 +8,8 @@ import {
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 
-export const runtime = "edge";
 export const metadata: Metadata = {
-  title: "About Khairi Slama | Full-Stack Engineer & Security Specialist",
+  title: "About",
   description:
     "Learn about Khairi Slama, a passionate full-stack engineer specializing in secure, high-performance web solutions. Discover his journey, current work, and life beyond code.",
   keywords:
