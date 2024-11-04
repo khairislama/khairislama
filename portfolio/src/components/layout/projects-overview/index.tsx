@@ -10,8 +10,6 @@ import StrongCastHighlights from "./StrongCastHighlights";
 import WassalliHighlights from "./WassalliHighlights";
 import { BOOKMARKED_PROJECTS } from "@/lib/Projects";
 
-export const runtime = "edge";
-
 function ProjectsOverview() {
   const translations = useTranslations("ProjectsOverview");
 
@@ -81,7 +79,11 @@ function ProjectsOverview() {
         </article>
         <div className="flex w-full mx-auto max-w-7xl items-center justify-center mt-16">
           <div className="h-[1px] w-full bg-foreground/70" />
-          <PrefixedLink href="/projects" className="text-lg w-80 font-bold">
+          <PrefixedLink
+            href="/projects"
+            className="text-lg w-80 font-bold"
+            label="view more"
+          >
             {translations("view-more")}
           </PrefixedLink>
           <div className="h-[1px] w-full bg-foreground/70" />

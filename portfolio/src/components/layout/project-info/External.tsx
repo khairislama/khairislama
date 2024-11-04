@@ -8,8 +8,6 @@ import { ExternalLink, Slash } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-export const runtime = "edge";
-
 function ExternalOneProject({
   external_link,
 }: {

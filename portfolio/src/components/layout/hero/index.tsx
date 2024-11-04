@@ -4,8 +4,6 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import AnimatedText from "@/components/AnimatedText";
 
-export const runtime = "edge";
-
 function Hero() {
   const translations = useTranslations("Hero");
 
@@ -26,8 +24,8 @@ function Hero() {
       <Image
         src="/hero/eclipse3.svg"
         alt="eclipse"
-        width={1330}
-        height={288}
+        width={1440}
+        height={688}
         className="absolute object-cover w-full pointer-events-none bottom-[7%] sm:bottom-0 md:-bottom-24 xl:inset-32"
         sizes="30vw"
       />
@@ -35,9 +33,10 @@ function Hero() {
         src="/hero/background2.webp"
         alt="curvy lines"
         width={1200}
-        height={1200}
+        height={635}
         priority
-        className="hidden lg:block absolute -bottom-[90%] object-cover opacity-30 w-full pointer-events-none"
+        loading={"eager"}
+        className="hidden lg:block absolute -bottom-[50%] object-cover opacity-30 w-full pointer-events-none"
         sizes="50vw,(max-width: 768px) 30vw"
       />
     </section>

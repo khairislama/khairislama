@@ -3,12 +3,11 @@ import { IProject } from "@/lib/Projects";
 import { ChevronRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 
-export const runtime = "edge";
-
 function ProjectItem({ project }: { project: IProject }) {
   const translations = useTranslations(`Project-${project.slug}`);
   return (
     <PrefixedLink
+      label={project.name}
       href={`/projects/${project.slug}`}
       className="w-full flex items-center justify-between border-b-2 border-foreground/70 group my-4 md:hover:scale-95 transition duration-300 ease-in-out"
     >

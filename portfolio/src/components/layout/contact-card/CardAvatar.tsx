@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-export const runtime = "edge";
-
 function CardAvatar() {
   return (
     <div className="aspect-square w-24 rounded-full flex items-center justify-center bg-gradient-to-b from-[#383838] to-background-darker">
