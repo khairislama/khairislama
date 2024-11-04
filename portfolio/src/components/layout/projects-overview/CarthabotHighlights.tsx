@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 function CarthabotHighlights() {
   const translations = useTranslations("ProjectsOverview");
 

@@ -2,8 +2,6 @@ import { Binary, Blocks, Check, ShoppingCart, Wrench } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 const cards = [
   {
     border:

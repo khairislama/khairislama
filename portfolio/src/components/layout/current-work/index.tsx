@@ -2,8 +2,6 @@ import { shimmer, toBase64 } from "@/lib/image";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 function AboutCurrentWork() {
   const translations = useTranslations("About.current-work");
   return (

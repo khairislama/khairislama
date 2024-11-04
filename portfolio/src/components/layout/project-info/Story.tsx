@@ -3,8 +3,6 @@ import TagsOneProject from "./Tags";
 import InfoOneProject from "./Info";
 import { IProject } from "@/lib/Projects";
 
-export const runtime = "edge";
-
 function StoryOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
   const projectTranslations = useTranslations(`Project-${project.slug}`);

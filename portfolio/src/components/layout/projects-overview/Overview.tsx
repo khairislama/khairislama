@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 function Overview({
   children,
   reverse,

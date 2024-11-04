@@ -32,6 +32,7 @@ const CustomLink = ({
     pathname === fullLink || (href === "/" && pathname === `/${langPrefix}`);
   return (
     <Link
+      aria-label={title}
       href={fullLink}
       className={`${className} relative group hover:text-foreground ${
         isActive && "text-foreground"

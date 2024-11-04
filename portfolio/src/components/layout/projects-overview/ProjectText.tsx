@@ -11,8 +11,6 @@ import { ExternalLink, Link2 } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-export const runtime = "edge";
-
 interface Props {
   reverse?: boolean;
   projectNumber: number;
@@ -69,7 +67,7 @@ function ProjectText({
         }`}
       >
         {github && (
-          <Link href={github} target="_blank">
+          <Link href={github} target="_blank" aria-label="github link">
             <TooltipProvider>
               <Tooltip delayDuration={0}>
                 <TooltipTrigger className="uppercase">
@@ -83,13 +81,13 @@ function ProjectText({
           </Link>
         )}
         <PrefixedLink href={viewMore}>
-          <Button variant={"ghost"}>
+          <Button variant={"ghost"} aria-label="read more about this project">
             <ExternalLink className="w-8 h-8 mr-4" />{" "}
             {translations(`read-more`)}{" "}
           </Button>
         </PrefixedLink>
         {demo && (
-          <Link href={demo} target="_blank">
+          <Link href={demo} target="_blank" aria-label="demo link">
             <TooltipProvider>
               <Tooltip delayDuration={0}>
                 <TooltipTrigger className="uppercase">
