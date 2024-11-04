@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 import CustomLink from "./CustomLink";
 
-export const runtime = "edge";
-
 function Navigation() {
   const translations = useTranslations("Navbar");
   return (
