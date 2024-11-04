@@ -55,8 +55,10 @@ function Services() {
             </div>
           ))}
         </div>
-        <h3 className="text-2xl mt-16">{translations("services-title")}</h3>
-        <p className="text-lg mt-2 text-foreground/40">
+        <h3 className="text-2xl mt-16 text-foreground/90">
+          {translations("services-title")}
+        </h3>
+        <p className="text-lg mt-2 text-foreground/70">
           {translations("services-subtitle")}
         </p>
         <article className="w-full max-w-xl mx-auto flex flex-col mt-16 gap-3">
