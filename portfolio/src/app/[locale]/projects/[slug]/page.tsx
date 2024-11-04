@@ -8,8 +8,6 @@ import { PROJECTS } from "@/lib/Projects";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 
-export const runtime = "edge";
-
 // Dynamic metadata generation based on the project slug
 export function generateMetadata({
   params,
@@ -27,7 +25,7 @@ export function generateMetadata({
   }
 
   return {
-    title: `${project.name} | Khairi Slama's Web Development Projects`,
+    title: `${project.name}`,
     description: project.description,
     keywords: `${project.name}, Web Development, ${project.languages
       .map((tech) => tech.name)
@@ -38,7 +36,7 @@ export function generateMetadata({
       url: `https://khairislama.vercel.app/projects/${project.slug}`, // Update the base URL accordingly
       images: [
         {
-          url: `https://khairislama.vercel.app${project.images[0]?.src}`, // Use the first image from the project
+          url: `https://khairislama.vercel.app/${project.images[0]?.src}`, // Use the first image from the project
           width: 1200,
           height: 630,
           alt: project.images[0]?.alt || `${project.name} project image`,
@@ -55,9 +53,6 @@ export default function SingleProjectPage({
 }) {
   const { slug } = params;
   const translations = useTranslations(`Project-${slug}`);
-
-  // Set the locale for static rendering
-  // unstable_setRequestLocale(locale);
 
   /// Find the index of the project
   const projectIndex = PROJECTS.findIndex((project) => project.slug === slug);
