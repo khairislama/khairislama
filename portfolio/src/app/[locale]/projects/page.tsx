@@ -2,10 +2,8 @@ import { PageHero, ProjectsList } from "@/components/layout";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 
-export const runtime = "edge";
 export const metadata: Metadata = {
-  title:
-    "Khairi Slama | Web Development Projects | Full-Stack & 3D Integrations",
+  title: "My Projects",
   description:
     "Explore Khairi Slama’s diverse web development projects, focusing on performance, security, and innovation. Featuring Next.js, Blender 3D, and full-stack solutions, these projects showcase cutting-edge technologies and impactful digital experiences.",
   keywords:

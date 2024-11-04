@@ -28,8 +28,8 @@ function ContactCard() {
           <div className="w-full flex flex-col gap-4 text-left">
             <div className="flex flex-col sm:flex-row items-center justify-start gap-6">
               <CardAvatar />
-              <div className="px-4 py-2 rounded-full bg-foreground/10 flex items-center justify-center gap-2">
-                <Dot className="text-green-500 h-10 w-10" />
+              <div className="pl-4 pr-12 py-3 rounded-full bg-foreground/10 flex items-center justify-center gap-2">
+                <Dot className="text-green-500 h-8 w-8" />
                 {translations("available")}
               </div>
             </div>
