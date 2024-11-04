@@ -3,8 +3,6 @@ import { IProject } from "@/lib/Projects";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 function ParallelImages({ project }: { project: IProject }) {
   return (
     <div className="flex flex-col md:flex-row gap-4 md:gap-8 my-10">

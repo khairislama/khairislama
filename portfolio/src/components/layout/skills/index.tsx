@@ -2,8 +2,6 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import SkillsGroup from "./SkillsGroup";
 
-export const runtime = "edge";
-
 function Skills() {
   const translations = useTranslations("Skills");
   return (

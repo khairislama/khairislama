@@ -4,8 +4,6 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 function getRandomProjects(excludeIndex: number, count: number) {
   const filteredProjects = PROJECTS.filter(
     (_, index) => index !== excludeIndex

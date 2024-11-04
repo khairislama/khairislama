@@ -3,8 +3,6 @@ import { useTranslations } from "next-intl";
 import Picture from "./Picture";
 import PrefixedLink from "@/components/PrefixedLink";
 
-export const runtime = "edge";
-
 interface Props {
   title: string;
   description: string;
@@ -46,6 +44,7 @@ function KnowAboutMe({
             <Button
               size={"lg"}
               className="h-12 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full sm:w-1/2 rounded-3xl transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300"
+              aria-label="discover more about khairi slama"
             >
               <PrefixedLink href="/about">
                 {translations("call-to-action")}

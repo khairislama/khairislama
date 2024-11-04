@@ -3,8 +3,6 @@ import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 function Overview({
   image,
 }: {

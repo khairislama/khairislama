@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 function PageHero({ title, subtitle }: { title: string; subtitle: string }) {
   return (
     <section

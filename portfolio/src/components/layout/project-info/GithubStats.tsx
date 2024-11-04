@@ -2,8 +2,6 @@ import { IProject } from "@/lib/Projects";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 function GithubStats({ project }: { project: IProject }) {
   const { stats } = project;
   const translations = useTranslations(`Projects`);

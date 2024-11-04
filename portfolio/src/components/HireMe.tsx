@@ -1,8 +1,6 @@
 import Link from "next/link";
 import { CircularText } from "./CircularText";
 
-export const runtime = "edge";
-
 function HireMe() {
   return (
     <div className="hidden lg:flex fixed left-4 bottom-4 items-center justify-center overflow-hidden z-50">

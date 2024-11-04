@@ -9,8 +9,6 @@ import {
 import Overview from "./Overview";
 import { useTranslations } from "next-intl";
 
-export const runtime = "edge";
-
 function ProjectsList() {
   const translations = useTranslations("Projects");
   return (
@@ -28,7 +26,10 @@ function ProjectsList() {
         (project, i) => (
           <TooltipProvider key={i}>
             <Tooltip delayDuration={0}>
-              <TooltipTrigger className="uppercase w-full flex">
+              <TooltipTrigger
+                className="uppercase w-full flex"
+                aria-label="project information"
+              >
                 <ProjectItem project={project} />
               </TooltipTrigger>
               <TooltipContent
@@ -49,7 +50,10 @@ function ProjectsList() {
         (project, i) => (
           <TooltipProvider key={i}>
             <Tooltip delayDuration={0}>
-              <TooltipTrigger className="uppercase w-full flex">
+              <TooltipTrigger
+                className="uppercase w-full flex"
+                aria-label="project information"
+              >
                 <ProjectItem project={project} />
               </TooltipTrigger>
               <TooltipContent
@@ -70,7 +74,10 @@ function ProjectsList() {
         (project, i) => (
           <TooltipProvider key={i}>
             <Tooltip delayDuration={0}>
-              <TooltipTrigger className="uppercase w-full flex">
+              <TooltipTrigger
+                className="uppercase w-full flex"
+                aria-label="project information"
+              >
                 <ProjectItem project={project} />
               </TooltipTrigger>
               <TooltipContent
