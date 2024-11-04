@@ -1,8 +1,6 @@
 import { useTranslations } from "next-intl";
 import Marquee from "react-fast-marquee";
 
-export const runtime = "edge";
-
 function FeaturesOneProject({
   features,
   slug,

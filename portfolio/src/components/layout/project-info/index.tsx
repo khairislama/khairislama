@@ -13,8 +13,6 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-export const runtime = "edge";
-
 function ProjectInfo({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
 

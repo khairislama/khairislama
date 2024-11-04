@@ -54,10 +54,11 @@ export default function NavLanguage() {
   return (
     <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
       <DropdownMenuTrigger
-        className="flex items-center px-2 focus:border-0"
+        aria-label="Open language menu"
+        className="flex items-center px-2 focus:border-0 w-24"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {currentLang}
+        <span className="w-12">{currentLang}</span>
         <ChevronDown className="h-4 w-4 ml-2" />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="bg-card ml-6 shadow-lg">

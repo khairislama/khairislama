@@ -1,8 +1,6 @@
 import { shimmer, toBase64 } from "@/lib/image";
 import Image from "next/image";
 
-export const runtime = "edge";
-
 interface Props {
   src: string;
   alt: string;
@@ -37,7 +35,6 @@ function Picture({ src, alt, width, height, bottomFocused }: Props) {
             width={width}
             height={height}
             className={`brightness-105 w-full h-full object-cover object-top`}
-            priority
             sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(

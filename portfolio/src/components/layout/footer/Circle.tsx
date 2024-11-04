@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-export const runtime = "edge";
-
 function Circle() {
   return (
     <div className="w-48 h-auto flex items-center justify-center relative rounded-full border-2 border-foreground/70 border-dashed p-3">

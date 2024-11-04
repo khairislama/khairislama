@@ -33,6 +33,7 @@ export default function NavBurger() {
       <DropdownMenuTrigger
         className="flex lg:hidden items-center bg-transparent text-foreground/70 h-full px-2 sm:px-3 md:px-6 ring-0"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label="navigation menu"
       >
         <AlignJustify className="h-6 w-6 sm:h-8 sm:w-8" />
       </DropdownMenuTrigger>

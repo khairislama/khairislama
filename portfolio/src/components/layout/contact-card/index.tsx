@@ -6,8 +6,6 @@ import PrefixedLink from "@/components/PrefixedLink";
 import CardAvatar from "./CardAvatar";
 import { Dot } from "lucide-react";
 
-export const runtime = "edge";
-
 function ContactCard() {
   const translations = useTranslations("Contact");
   return (
@@ -30,12 +28,12 @@ function ContactCard() {
               <CardAvatar />
               <div className="pl-4 pr-12 py-3 rounded-full bg-foreground/10 flex items-center justify-center gap-2">
                 <Dot className="text-green-500 h-8 w-8" />
-                {translations("available")}
+                <span className="w-32">{translations("available")}</span>
               </div>
             </div>
-            <h4 className="text-lg text-foreground font-semibold">
+            <h3 className="text-lg text-foreground font-semibold">
               {translations("hero")}
-            </h4>
+            </h3>
             <p className="text-lg">{translations("description")}</p>
           </div>
           <div className="flex flex-col items-center justify-end">
@@ -45,6 +43,7 @@ function ContactCard() {
             <div className="mt-10">
               <Button
                 size={"lg"}
+                aria-label="let's create magic together"
                 className="bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
               >
                 <PrefixedLink href="/about#contact-form">

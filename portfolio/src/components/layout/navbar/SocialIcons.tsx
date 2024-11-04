@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export const runtime = "edge";
-
 function SocialIcons() {
   return (
     <>
@@ -10,6 +8,7 @@ function SocialIcons() {
         href="https://www.instagram.com/khairislama/"
         target="_blank"
         className="hover:scale-105"
+        aria-label="instagram"
       >
         <Image
           src="/icons/social/instagram.svg"
@@ -23,6 +22,7 @@ function SocialIcons() {
         href="https://www.linkedin.com/in/khairi-slama/"
         target="_blank"
         className="hover:scale-105"
+        aria-label="linkedin"
       >
         <Image
           src="/icons/social/linkedin.svg"
@@ -36,6 +36,7 @@ function SocialIcons() {
         href="https://www.facebook.com/khairi.slama/"
         target="_blank"
         className="hover:scale-105"
+        aria-label="facebook"
       >
         <Image
           src="/icons/social/facebook.svg"
@@ -49,6 +50,7 @@ function SocialIcons() {
         href="https://github.com/khairislama"
         target="_blank"
         className="hover:scale-105"
+        aria-label="github"
       >
         <Image
           src="/icons/social/github.svg"

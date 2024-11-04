@@ -6,8 +6,6 @@ import { IProject } from "@/lib/Projects";
 import { shimmer, toBase64 } from "@/lib/image";
 import { cn } from "@/lib/utils";
 
-export const runtime = "edge";
-
 function ExplorationOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
   const projectTranslations = useTranslations(`Project-${project.slug}`);
