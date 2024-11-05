@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { Footer, Navbar } from "@/components/layout";
 import { Rubik, Syne } from "next/font/google";
-import { ThemeProvider } from "@/components/theme-provider";
 import HireMe from "@/components/HireMe";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
+import "./globals.css";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -38,17 +37,10 @@ export default async function RootLayout({
         className={`${rubik.variable} ${syne.variable} antialiased bg-background text-foreground/70`}
       >
         <NextIntlClientProvider messages={messages}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
             <Navbar />
             {children}
             <HireMe />
             <Footer />
-          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

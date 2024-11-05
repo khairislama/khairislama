@@ -34,8 +34,9 @@ function Picture({ src, alt, width, height, bottomFocused }: Props) {
             alt={alt}
             width={width}
             height={height}
-            className={`brightness-105 w-full h-full object-cover object-top`}
-            sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+            priority
+            className={`w-full h-full object-cover object-top`}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             placeholder="blur"
             blurDataURL={`data:image/svg+xml;base64,${toBase64(
               shimmer(width, height)

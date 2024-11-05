@@ -28,7 +28,8 @@ function Avatar() {
           transition: { duration: 1, repeat: Infinity },
         }}
       >
-        <AvatarImage src="/avatars/Avatar-3.webp" alt="@khairislama" />
+        <AvatarImage src="/avatars/Avatar-3.webp" alt="@khairislama" width={108} height={96} 
+        sizes="30vw"/>
         <AvatarFallback>KS</AvatarFallback>
       </MotionLink>
     </TheAvatar>

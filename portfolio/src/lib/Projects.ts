@@ -35,6 +35,7 @@ export interface IProject {
     value: number;
   }[];
   updated_at: string;
+  updated_at_date?: Date;
   featured: string;
   description: string;
   images: IImage[];
@@ -222,6 +223,7 @@ export const PROJECTS: IProject[] = [
       { name: "Javascript", color: "#ffd700", value: 0.8 },
     ],
     updated_at: "Updated on Aug 4",
+    updated_at_date: new Date("2024-8-4"),
     featured: "Client project",
     description: "Showcase portfolio website for Fab 619.",
     images: [
@@ -265,6 +267,7 @@ export const PROJECTS: IProject[] = [
       { name: "CSS", color: "#ce7eb8", value: 2.2 },
     ],
     updated_at: "Updated on Sep 10",
+    updated_at_date: new Date("2024-9-10"),
     featured: "Tutorial",
     description:
       "A basic Next.js project to test internationalization using the next-intl package.",
@@ -314,6 +317,7 @@ export const PROJECTS: IProject[] = [
       { name: "Other", color: "#f8f0f0", value: 0.9 },
     ],
     updated_at: "Updated on Mar 9",
+    updated_at_date: new Date("2024-3-9"),
     featured: "Client project",
     description: "An e-commerce platform for selling casts.",
     images: [
@@ -365,6 +369,7 @@ export const PROJECTS: IProject[] = [
       { name: "Javascript", color: "#ffd700", value: 2.6 },
     ],
     updated_at: "Updated on Jun 13",
+    updated_at_date: new Date("2024-6-13"),
     featured: "Tutorial",
     description: "Next.js project showcasing interactive 3D blender models.",
     images: [
@@ -412,6 +417,7 @@ export const PROJECTS: IProject[] = [
       { name: "Javascript", color: "#ffd700", value: 4.3 },
     ],
     updated_at: "Updated on Jun 6",
+    updated_at_date: new Date("2024-6-6"),
     featured: "Tutorial",
     description:
       "An experimental 3D web project using Next.js, Three.js, React Three Fiber, and postprocessing.",
@@ -470,6 +476,7 @@ export const PROJECTS: IProject[] = [
       { name: "CSS", color: "#ce7eb8", value: 2.0 },
     ],
     updated_at: "Updated on Oct 23, 2022",
+    updated_at_date: new Date("2022-10-23"),
     featured: "Internship",
     description:
       "Wassalli is a digital platform designed to streamline package delivery between France and North Africa.",
@@ -524,6 +531,7 @@ export const PROJECTS: IProject[] = [
       { name: "Html", color: "#e34c26", value: 6.4 },
     ],
     updated_at: "Updated on Sep 17, 2022",
+    updated_at_date: new Date("2022-9-17"),
     featured: "Internship",
     description:
       "A showcase website for SLK Consulting, designed with HTML, CSS, and JavaScript.",
@@ -578,6 +586,7 @@ export const PROJECTS: IProject[] = [
       { name: "Html", color: "#e34c26", value: 3.3 },
     ],
     updated_at: "Updated on Sep 17, 2022",
+    updated_at_date: new Date("2022-9-17"),
     featured: "Internship",
     description:
       "A showcase website for Dilab, designed with HTML, CSS, and JavaScript.",
@@ -683,6 +692,7 @@ export const PROJECTS: IProject[] = [
       { name: "CSS", color: "#ce7eb8", value: 15.5 },
     ],
     updated_at: "Updated on Jun 6",
+    updated_at_date: new Date("2022-6-6"),
     featured: "Self",
     description:
       "A tutorial project built with Vite and Three.js to explore 3D web development.",
@@ -731,6 +741,7 @@ export const PROJECTS: IProject[] = [
       { name: "Javascript", color: "#ffd700", value: 1.0 },
     ],
     updated_at: "Updated on Jun 6",
+    updated_at_date: new Date("2022-6-6"),
     featured: "Self",
     description:
       "A tutorial project for smooth Framer Motion animations and infinite scrolling.",

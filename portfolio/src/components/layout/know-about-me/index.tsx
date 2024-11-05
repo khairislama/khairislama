@@ -43,10 +43,10 @@ function KnowAboutMe({
           {button && (
             <Button
               size={"lg"}
-              className="h-12 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full sm:w-1/2 rounded-3xl transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300"
-              aria-label="discover more about khairi slama"
+              className="mt-4 h-12 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full sm:w-1/2 rounded-3xl transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300 min-w-fit"
+              aria-label="discover more about Khairi Slama"
             >
-              <PrefixedLink href="/about">
+              <PrefixedLink className="h-full w-full flex items-center justify-center" href="/about">
                 {translations("call-to-action")}
               </PrefixedLink>
             </Button>

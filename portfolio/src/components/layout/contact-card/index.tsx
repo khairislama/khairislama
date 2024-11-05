@@ -28,7 +28,7 @@ function ContactCard() {
               <CardAvatar />
               <div className="pl-4 pr-12 py-3 rounded-full bg-foreground/10 flex items-center justify-center gap-2">
                 <Dot className="text-green-500 h-8 w-8" />
-                <span className="w-32">{translations("available")}</span>
+                <span className="w-60 text-center">{translations("available")}</span>
               </div>
             </div>
             <h3 className="text-lg text-foreground font-semibold">
@@ -37,14 +37,14 @@ function ContactCard() {
             <p className="text-lg">{translations("description")}</p>
           </div>
           <div className="flex flex-col items-center justify-end">
-            <div className="flex items-center justify-around w-2/3 mt-10 ">
+            <div className="flex items-center justify-around w-2/3 mt-8">
               <SocialIcons />
             </div>
-            <div className="mt-10">
+            <div className="mt-12 md:mt-24">
               <Button
                 size={"lg"}
                 aria-label="let's create magic together"
-                className="bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full rounded-lg transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                className="p-6 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
               >
                 <PrefixedLink href="/about#contact-form">
                   {translations("call-to-action")}
