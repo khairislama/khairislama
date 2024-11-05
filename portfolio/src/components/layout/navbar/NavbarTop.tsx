@@ -1,9 +1,20 @@
 import { useTranslations } from "next-intl";
-import NavLanguage from "./NavLanguage";
 import Link from "next/link";
+import dynamic from "next/dynamic";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function NavbarTop() {
   const translations = useTranslations("Navbar");
+
+  // Loading component to display for all imports
+  const Loading = () => (
+    <Skeleton className="w-24 h-5 bg-foreground/30" />
+  );
+
+  const NavLanguage = dynamic(() => import('./NavLanguage'), {
+    loading: () => <Loading />,
+    ssr: false,
+  });
 
   return (
     <div className="h-6 lg:h-8 w-full">
