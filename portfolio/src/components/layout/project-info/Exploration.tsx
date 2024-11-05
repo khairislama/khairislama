@@ -1,14 +1,21 @@
 import Image from "next/image";
-import FeaturesOneProject from "./Features";
 import StatsOneProject from "./Stats";
 import { useTranslations } from "next-intl";
 import { IProject } from "@/lib/Projects";
 import { shimmer, toBase64 } from "@/lib/image";
 import { cn } from "@/lib/utils";
+import dynamic from "next/dynamic";
+import { Skeleton } from "@/components/ui/skeleton";
 
 function ExplorationOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
   const projectTranslations = useTranslations(`Project-${project.slug}`);
+
+  const FeaturesOneProject = dynamic(() => import('./Features'), 
+  { loading: () => 
+    <Skeleton className="w-full max-w-3xl mx-auto my-3 md:mb-2 md:mt-10 h-8 bg-foreground flex items-center justify-center rounded-full" />
+     , ssr: false 
+  });
 
   return (
     <section aria-labelledby="exploration" className="flex flex-col gap-6">

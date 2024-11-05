@@ -108,7 +108,7 @@ export default function ContactForm() {
         size={"lg"}
         type="submit"
         disabled={isLoading}
-        className="bg-secondary text-foreground uppercase tracking-wide rounded-3xl hover:bg-secondary/90"
+        className="bg-primary text-foreground uppercase tracking-wide rounded-3xl hover:bg-primary/90"
       >
         SEND
       </Button>

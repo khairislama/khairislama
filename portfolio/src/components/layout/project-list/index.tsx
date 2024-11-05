@@ -18,7 +18,7 @@ function ProjectsList() {
     >
       <h2
         id="projects-list"
-        className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4"
+        className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-secondary/70 inner-shadow my-4"
       >
         {translations("open-projects")}
       </h2>
@@ -27,8 +27,8 @@ function ProjectsList() {
           <TooltipProvider key={i}>
             <Tooltip delayDuration={0}>
               <TooltipTrigger
-                className="uppercase w-full flex"
-                aria-label="project information"
+                className="uppercase w-full flex py-4"
+                aria-label={`project ${project.name} information`}
               >
                 <ProjectItem project={project} />
               </TooltipTrigger>
@@ -43,7 +43,7 @@ function ProjectsList() {
         )
       )}
 
-      <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4">
+      <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-secondary/70 inner-shadow my-4">
         {translations("worked-on")}
       </h2>
       {PROJECTS.filter((project) => project.label === "done").map(
@@ -51,8 +51,8 @@ function ProjectsList() {
           <TooltipProvider key={i}>
             <Tooltip delayDuration={0}>
               <TooltipTrigger
-                className="uppercase w-full flex"
-                aria-label="project information"
+                className="uppercase w-full flex py-4"
+                aria-label={`project ${project.name} information`}
               >
                 <ProjectItem project={project} />
               </TooltipTrigger>
@@ -67,7 +67,7 @@ function ProjectsList() {
         )
       )}
 
-      <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-primary/30 inner-shadow my-4">
+      <h2 className="text-3xl md:text-4xl text-center underline font-syne font-semibold tracking-wider text-secondary/70 inner-shadow my-4">
         {translations("tutorial-projects")}
       </h2>
       {PROJECTS.filter((project) => project.label === "tuto").map(
@@ -75,8 +75,8 @@ function ProjectsList() {
           <TooltipProvider key={i}>
             <Tooltip delayDuration={0}>
               <TooltipTrigger
-                className="uppercase w-full flex"
-                aria-label="project information"
+                className="uppercase w-full flex py-4"
+                aria-label={`project ${project.name} information`}
               >
                 <ProjectItem project={project} />
               </TooltipTrigger>

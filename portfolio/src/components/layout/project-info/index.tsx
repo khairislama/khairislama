@@ -59,6 +59,7 @@ function ProjectInfo({ project }: { project: IProject }) {
       <div className="w-full mx-auto max-w-xl my-16 flex items-center justify-between">
         {project?.external_link ? (
           <Link
+          aria-label="External demo link"
             href={project.external_link}
             className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground/80 text-2xl hover:bg-foreground/20 hover:text-foreground uppercase flex items-center justify-center font-semibold"
             target="_blank"
@@ -72,6 +73,7 @@ function ProjectInfo({ project }: { project: IProject }) {
         )}
         {project?.github_link ? (
           <Link
+          aria-label="Github repository link"
             href={project.github_link}
             className="h-20 w-[45%] sm:w-[40%] rounded-full bg-foreground/40 text-foreground/80 text-2xl hover:bg-foreground/20 hover:text-foreground uppercase flex items-center justify-center font-semibold"
             target="_blank"

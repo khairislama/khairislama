@@ -45,6 +45,7 @@ export interface IProject {
 export const BOOKMARKED_PROJECTS: Partial<IProject>[] = [
   {
     slug: "carthabot",
+    name: "carthabot",
     external_link: "https://carthabot.vercel.app/",
     images: [
       {
@@ -55,6 +56,7 @@ export const BOOKMARKED_PROJECTS: Partial<IProject>[] = [
   },
   {
     slug: "formulation",
+    name: "formulation",
     images: [
       {
         src: "/projects/formulation/image-1.webp",
@@ -65,6 +67,7 @@ export const BOOKMARKED_PROJECTS: Partial<IProject>[] = [
   },
   {
     slug: "strong-cast",
+    name: "strong cast",
     github_link: "https://github.com/khairislama/strong-cast",
     external_link: "https://www.strong-cast.com",
     images: [
@@ -76,6 +79,7 @@ export const BOOKMARKED_PROJECTS: Partial<IProject>[] = [
   },
   {
     slug: "wassalli",
+    name: "wassalli",
     external_link: "https://wassalli.vercel.app",
     images: [
       {

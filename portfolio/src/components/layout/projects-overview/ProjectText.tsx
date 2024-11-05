@@ -1,5 +1,4 @@
 import PrefixedLink from "@/components/PrefixedLink";
-import { Button } from "@/components/ui/button";
 import {
   Tooltip,
   TooltipContent,
@@ -15,6 +14,7 @@ interface Props {
   reverse?: boolean;
   projectNumber: number;
   viewMore: string;
+  name: string;
   children?: React.ReactNode;
   github?: string;
   demo?: string;
@@ -24,6 +24,7 @@ function ProjectText({
   projectNumber,
   reverse,
   viewMore,
+  name,
   children,
   github,
   demo,
@@ -36,7 +37,7 @@ function ProjectText({
       }`}
     >
       <p
-        className={`font-syne font-bold text-primary text-sm ${
+        className={`font-syne font-bold text-secondary text-sm ${
           reverse && "md:text-end"
         }`}
       >
@@ -62,7 +63,7 @@ function ProjectText({
         {children}
       </div>
       <div
-        className={`mt-4 flex gap-6 p-2 items-center justify-center md:justify-start md:group-hover:translate-y-4 duration-300 ease-in-out transition-all z-20 ${
+        className={`my-4 flex gap-6 p-2 items-center justify-center md:justify-start md:group-hover:translate-y-4 duration-300 ease-in-out transition-all z-20 ${
           reverse && "flex-row-reverse"
         }`}
       >
@@ -70,7 +71,7 @@ function ProjectText({
           <Link href={github} target="_blank" className="h-full w-full flex items-center justify-center" >
             <TooltipProvider>
               <Tooltip delayDuration={0}>
-                <TooltipTrigger className="uppercase" aria-label="github link">
+                <TooltipTrigger className="uppercase" aria-label={`github link for ${name}`}>
                   <GitHubLogoIcon className="w-8 h-8" />
                 </TooltipTrigger>
                 <TooltipContent className="bg-foreground flex items-center gap-2">
@@ -80,17 +81,16 @@ function ProjectText({
             </TooltipProvider>
           </Link>
         )}
-        <PrefixedLink href={viewMore} label="read more about this project" className="h-full w-full flex items-center justify-center">
-          <Button variant={"ghost"}>
+        <PrefixedLink href={viewMore} label={`read more about ${name}`} className="h-14 w-full flex items-center justify-center p-3">
             <ExternalLink className="w-8 h-8 mr-4" />{" "}
             {translations(`read-more`)}{" "}
-          </Button>
+            <span className="sr-only" >about {name}</span>
         </PrefixedLink>
         {demo && (
           <Link href={demo} target="_blank" className="h-full w-full flex items-center justify-center">
             <TooltipProvider>
               <Tooltip delayDuration={0}>
-                <TooltipTrigger className="uppercase" aria-label="demo link">
+                <TooltipTrigger className="uppercase" aria-label={`demo link for ${name}`}>
                   <Link2 className="w-8 h-8" />
                 </TooltipTrigger>
                 <TooltipContent className="bg-foreground flex items-center gap-2">

@@ -11,7 +11,7 @@ function FeaturesOneProject({
   const translations = useTranslations(`Project-${slug}`);
 
   return (
-    <ul className="relative">
+    <div className="relative h-10">
       <Marquee
         autoFill
         pauseOnHover
@@ -20,6 +20,7 @@ function FeaturesOneProject({
         gradient
         gradientColor="#121120"
       >
+        <ul className="flex space-x-3">
         {Array.from({ length: features }).map((_, i) => (
           <li
             className="py-1 px-4 bg-foreground/40 rounded-full mx-3 text-center text-foreground font-rubik"
@@ -28,8 +29,9 @@ function FeaturesOneProject({
             {translations(`feature-${i + 1}`)}
           </li>
         ))}
+        </ul>
       </Marquee>
-    </ul>
+    </div>
   );
 }
 

@@ -5,7 +5,7 @@ function TagsOneProject({ tags, slug }: { tags: number; slug: string }) {
   const translations = useTranslations(`Project-${slug}`);
 
   return (
-    <ul className="w-full max-w-3xl mx-auto relative">
+    <div className="w-full max-w-3xl mx-auto relative h-10">
       <Marquee
         autoFill
         pauseOnHover
@@ -14,6 +14,7 @@ function TagsOneProject({ tags, slug }: { tags: number; slug: string }) {
         gradient
         gradientColor="#121120"
       >
+        <ul className="flex space-x-3"> {/* Flex to keep items in a row */}
         {Array.from({ length: tags }).map((_, i) => (
           <li
             className="py-1 px-4 bg-foreground/40 rounded-full mx-3 text-center text-foreground font-rubik"
@@ -22,8 +23,9 @@ function TagsOneProject({ tags, slug }: { tags: number; slug: string }) {
             {translations(`tag-${i + 1}`)}
           </li>
         ))}
+        </ul>
       </Marquee>
-    </ul>
+    </div>
   );
 }
 

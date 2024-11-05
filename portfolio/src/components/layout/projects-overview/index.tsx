@@ -36,6 +36,7 @@ function ProjectsOverview() {
               projectNumber={1}
               viewMore={`/projects/${BOOKMARKED_PROJECTS[0].slug}`}
               demo={BOOKMARKED_PROJECTS[0].external_link!}
+              name={BOOKMARKED_PROJECTS[0].name!}
             >
               <CarthabotHighlights />
             </ProjectText>
@@ -47,6 +48,7 @@ function ProjectsOverview() {
               projectNumber={2}
               reverse
               viewMore={`/projects/${BOOKMARKED_PROJECTS[1].slug}`}
+              name={BOOKMARKED_PROJECTS[1].name!}
             >
               <FormulationHighlights />
             </ProjectText>
@@ -59,6 +61,7 @@ function ProjectsOverview() {
               viewMore={`/projects/${BOOKMARKED_PROJECTS[2].slug}`}
               demo={BOOKMARKED_PROJECTS[2].external_link!}
               github={BOOKMARKED_PROJECTS[2].github_link!}
+              name={BOOKMARKED_PROJECTS[2].name!}
             >
               <StrongCastHighlights />
             </ProjectText>
@@ -71,6 +74,7 @@ function ProjectsOverview() {
               reverse
               viewMore={`/projects/${BOOKMARKED_PROJECTS[3].slug}`}
               demo={BOOKMARKED_PROJECTS[3].external_link!}
+              name={BOOKMARKED_PROJECTS[3].name!}
             >
               <WassalliHighlights />
             </ProjectText>
