@@ -9,7 +9,7 @@ function Footer() {
       <div className="max-w-4xl mx-auto flex flex-col items-center justify-center overflow-hidden">
         <Circle />
         <div className="bg-background/50 mt-14 p-3 rounded-xl border-foreground/70 border shadow-xl">
-          <h4 className="text-xs flex items-center justify-center gap-2">
+          <h3 className="text-xs flex items-center justify-center gap-2">
             <span> {translations("cooked with love in")} </span>
             <Image
               src="/icons/tunisia.webp"
@@ -34,7 +34,7 @@ function Footer() {
               height={62}
               className="w-4"
             />
-          </h4>
+          </h3>
         </div>
         <p className="text-xs mt-4 text-foreground/70">
           &copy; Khairi SLAMA 2024

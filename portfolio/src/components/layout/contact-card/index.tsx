@@ -46,7 +46,7 @@ function ContactCard() {
                 aria-label="let's create magic together"
                 className="p-6 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
               >
-                <PrefixedLink href="/about#contact-form">
+                <PrefixedLink href="/about#contact-form" className="h-full w-full flex items-center justify-center" >
                   {translations("call-to-action")}
                 </PrefixedLink>
               </Button>

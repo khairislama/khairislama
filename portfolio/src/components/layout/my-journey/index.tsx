@@ -26,8 +26,8 @@ function MyJourney() {
               width={500}
               height={500}
               priority
-              className="object-cover w-full h-auto"
-              sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
+              className="object-cover w-full h-full"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               placeholder="blur"
               blurDataURL={`data:image/svg+xml;base64,${toBase64(
                 shimmer(500, 500)
@@ -40,7 +40,7 @@ function MyJourney() {
         src="/hero/background2.webp"
         alt="curvy lines"
         width={1200}
-        height={1200}
+        height={635}
         className="hidden lg:block absolute -bottom-[80%] xl:-bottom-[110%] 2xl:-bottom-[170%] object-cover opacity-30 w-full pointer-events-none"
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
