@@ -6,8 +6,6 @@ export default function RootLayout({
   return children;
 }
 
-// TODO: Add robot xml.
+// TODO: Add more metadata info (OG image)
 // TODO: make contact form works
 // TODO: Return CV attachment
-// TODO: Add stars and a switch color in the end for the footer
-// TODO: Fixed updated at and small paragraphs for project to multi language
