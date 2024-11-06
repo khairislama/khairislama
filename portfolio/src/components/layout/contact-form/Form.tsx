@@ -6,11 +6,13 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { handleContact } from "@/app/actions/contact";
+import { useRouter } from "next/navigation";
 
 export default function ContactForm() {
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState("");
   const { toast } = useToast();
+  const router = useRouter()
 
   const handleSubmit = (formData: FormData) => {
     startTransition(async () => {
@@ -23,6 +25,7 @@ export default function ContactForm() {
           description: `Thank you for contacting us. We will get back to you soon enough`,
           className: "bg-gradient-to-r from-background to-primary",
         })
+        router.push('/')        
       } else {
         toast({
           title: "Oops!",
