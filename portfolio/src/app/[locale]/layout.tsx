@@ -21,7 +21,10 @@ export const metadata: Metadata = {
   description:
     "Explore Khairi Slama's web development portfolio, with a focus on security, 3D web, and performance optimization. Available for opportunities in Luxembourg and France.",
   keywords:
-    "Khairi Slama, Full-Stack Engineer, Web Development, Next.js, Tailwind, Freelance, Luxembourg, France, Security, 3D Blender, Tunisian Engineer, Performance, Web Solutions",
+    "Khairi Slama, Khairislama, Full-Stack Engineer, Web Development, Next.js, Tailwind, Freelance, Luxembourg, France, Security, 3D Blender, Tunisian Engineer, Performance, Web Solutions",
+  openGraph: {
+    images: [{ url: "/opengraph-image.png" }]
+  }
 };
 
 export default async function RootLayout({
@@ -32,8 +35,45 @@ export default async function RootLayout({
   params: { locale: string };
 }>) {
   const messages = await getMessages();
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Khairi Slama",
+    "url": "https://khairislama.com",
+    "image": "https://khairislama.com/opengraph-image.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/khairislama",
+      "https://www.instagram.com/khairislama/",
+      "https://github.com/khairislama",
+      "https://www.facebook.com/khairi.slama/"
+    ],
+    "jobTitle": "Full-Stack Engineer",
+    "description": "Full-Stack Engineer specializing in web development, security, and 3D integration, available for freelance opportunities.",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Hutchinson Sousse"
+    },
+    "alumniOf": "Polytechnique School of Sousse",
+    "knowsAbout": [
+      "Web Development", "Engineering", "Next.js", "Tailwind", "3D Web"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sousse",
+      "addressCountry": "Tunisia"
+    }
+  }
+
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        {/* JSON-LD structured data */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      </head>
       <body
         className={`${rubik.variable} ${syne.variable} antialiased bg-background text-foreground/70`}
       >
