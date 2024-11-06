@@ -5,6 +5,7 @@ import HireMe from "@/components/HireMe";
 import { getMessages } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
+import { Toaster } from "@/components/ui/toaster";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default async function RootLayout({
             {children}
             <HireMe />
             <Footer />
+            <Toaster />
         </NextIntlClientProvider>
       </body>
     </html>

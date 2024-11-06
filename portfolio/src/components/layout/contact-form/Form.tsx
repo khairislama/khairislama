@@ -21,7 +21,7 @@ export default function ContactForm() {
         toast({
           title: `Hi  ${result.name}!`,
           description: `Thank you for contacting us. We will get back to you soon enough`,
-          className: "bg-gradient-to-r from-background-base-100 to-primary",
+          className: "bg-gradient-to-r from-background to-primary",
         })
       } else {
         toast({
@@ -29,7 +29,7 @@ export default function ContactForm() {
           description:
             "An error occured during the process, please try again later.",
           className:
-            "bg-gradient-to-r from-background-base-100 to-destructive",
+            "bg-gradient-to-r from-background to-destructive",
         });
         setError("Failed to submit the form");
       }
