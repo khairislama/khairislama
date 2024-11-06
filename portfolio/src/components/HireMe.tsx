@@ -8,7 +8,7 @@ function HireMe() {
         <CircularText className="fill-foreground animate-spin-slow" />
 
         <Link
-          href="mailto:khairi.slama.1996.br@gmail.com"
+          href="mailto:contact@khairislama.com"
           className="flex items-center justify-center absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-foreground text-background shadow-md border border-solid border-foreground w-20 h-20 rounded-full font-semibold hover:bg-background hover:text-foreground"
         >
           Hire Me

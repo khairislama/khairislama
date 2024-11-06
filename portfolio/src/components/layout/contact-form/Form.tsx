@@ -1,84 +1,70 @@
 "use client";
 
-import { useRef, useState } from "react";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { useState, useTransition } from "react";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { handleContact } from "@/app/actions/contact";
 
 export default function ContactForm() {
-  const [isLoading, setIsLoading] = useState(false);
-  const formRef = useRef<HTMLFormElement>(null);
+  const [isPending, startTransition] = useTransition();
   const [error, setError] = useState("");
   const { toast } = useToast();
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    setIsLoading(true);
+  const handleSubmit = (formData: FormData) => {
+    startTransition(async () => {
+      const result = await handleContact(formData);
 
-    try {
-      const formData = new FormData(event.currentTarget);
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        body: formData,
-      });
-      if (!response.ok) {
-        throw new Error(`Failed to contact. Status: ${response.status}`);
+      if (result.success) {
+        setError("")
+        toast({
+          title: `Hi  ${result.name}!`,
+          description: `Thank you for contacting us. We will get back to you soon enough`,
+          className: "bg-gradient-to-r from-background-base-100 to-primary",
+        })
+      } else {
+        toast({
+          title: "Oops!",
+          description:
+            "An error occured during the process, please try again later.",
+          className:
+            "bg-gradient-to-r from-background-base-100 to-destructive",
+        });
+        setError("Failed to submit the form");
       }
-      const data = await response.json();
-      data.success
-        ? toast({
-            title: `Hi  ${formData.get("name")}!`,
-            description: `Thank you for contacting us. We will get back to you soon enough`,
-            className: "bg-gradient-to-r from-background-base-100 to-primary",
-            action: (
-              <Link href="/faq">
-                <Button variant="link" className="gap-x-2 whitespace-nowrap">
-                  <span>Open F.A.Q</span>
-                  <ArrowRight className="h-5 w-5" />
-                </Button>
-              </Link>
-            ),
-          })
-        : toast({
-            title: "Oops!",
-            description:
-              "An error occured during the process, please try again later.",
-            className:
-              "bg-gradient-to-r from-background-base-100 to-destructive",
-          });
-    } catch (error) {
-      setError("Failed to submit the form");
-      toast({
-        title: "Oops!",
-        description:
-          "An error occured during the process, please try again later.",
-        className: "bg-gradient-to-r from-background-base-100 to-destructive",
-      });
-    } finally {
-      setIsLoading(false);
-      const form = formRef.current;
-      if (form) {
-        form.reset();
-      }
-    }
+    });
   };
 
   return (
-    <form onSubmit={handleSubmit} ref={formRef}>
+    <form action={handleSubmit} >
       <div className="mb-6">
         <label
           htmlFor="name"
           className="block mb-3 font-medium sm:font-semibold sm:text-lg lg:text-xl uppercase"
         >
-          Email
+          Name
         </label>
         <Input
           id="name"
           name="name"
           type="text"
+          autoComplete="off"
+          required
+          className="w-full sm:h-12 lg:h-14 border-0 border-b-2"
+        />
+      </div>
+      <div className="mb-6">
+        <label
+          htmlFor="email"
+          className="block mb-3 font-medium sm:font-semibold sm:text-lg lg:text-xl uppercase"
+        >
+          Email
+        </label>
+        <Input
+          id="email"
+          name="email"
+          type="email"
           autoComplete="off"
           required
           className="w-full sm:h-12 lg:h-14 border-0 border-b-2"
@@ -107,7 +93,7 @@ export default function ContactForm() {
       <Button
         size={"lg"}
         type="submit"
-        disabled={isLoading}
+        disabled={isPending}
         className="bg-primary text-foreground uppercase tracking-wide rounded-3xl hover:bg-primary/90"
       >
         SEND
