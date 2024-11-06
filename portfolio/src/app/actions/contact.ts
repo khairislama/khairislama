@@ -16,8 +16,8 @@ export async function handleContact(formData: FormData) {
 
   // Construct the email message
   const msg = {
-    to: "contact@khairislama.com",
-    from: email,
+    to: "khairi.slama.1996.br@gmail.com",
+    from: "contact@khairislama.com",
     subject: `New Contact Form Submission from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     html: `
