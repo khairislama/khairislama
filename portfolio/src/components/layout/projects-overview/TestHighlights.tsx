@@ -1,23 +1,40 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-function FormulationHighlights() {
+function TestHighlights() {
   const translations = useTranslations("ProjectsOverview");
 
   return (
     <div className="flex flex-col gap-5">
       <div className="grid grid-cols-3 w-full mt-2 gap-4">
         <div>
-          <p className="text-2xl font-semibold text-green-400">+3500h</p>
-          <p className="text-sm">{translations("formulation-highlight-1")}</p>
+          <p className="text-2xl font-semibold text-green-400">+sdfsdf</p>
+          <p className="text-sm">
+            {" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur, hic itaque, unde quam repellat maxime libero ratione
+            eius corrupti quia aspernatur corporis ducimus, ab dolores quisquam
+            dignissimos tempore quos odio?{" "}
+          </p>
         </div>
         <div>
-          <p className="text-2xl font-semibold text-green-400">1600+</p>
-          <p className="text-sm">{translations("formulation-highlight-2")}</p>
+          <p className="text-2xl font-semibold text-green-400">sdfsdf+</p>
+          <p className="text-sm">
+            {" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+            delectus eligendi rerum et velit, harum in dolor doloribus aut
+            aliquam reprehenderit blanditiis! Ex, minima ipsa. Aperiam accusamus
+            quis blanditiis quo.{" "}
+          </p>
         </div>
         <div>
-          <p className="text-2xl font-semibold text-green-400">€220k</p>
-          <p className="text-sm">{translations("formulation-highlight-3")}</p>
+          <p className="text-2xl font-semibold text-green-400">sdfsdf</p>
+          <p className="text-sm">
+            {" "}
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, vero
+            cupiditate beatae nisi nobis in odit est excepturi fuga architecto.
+            Dicta magnam sit est error sint! Alias delectus ipsa tempora?
+          </p>
         </div>
       </div>
       <div className="flex items-center justify-start gap-1 xl:gap-4 col-span-2">
@@ -87,4 +104,4 @@ function FormulationHighlights() {
   );
 }
 
-export default FormulationHighlights;
+export default TestHighlights;
