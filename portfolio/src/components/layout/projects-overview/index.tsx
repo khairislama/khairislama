@@ -5,7 +5,6 @@ import ProjectText from "./ProjectText";
 import ProjectImage from "./ProjectImage";
 import PrefixedLink from "@/components/PrefixedLink";
 import CarthabotHighlights from "./CarthabotHighlights";
-import FormulationHighlights from "./FormulationHighlights";
 import StrongCastHighlights from "./StrongCastHighlights";
 import WassalliHighlights from "./WassalliHighlights";
 import { BOOKMARKED_PROJECTS } from "@/lib/Projects";
@@ -45,41 +44,41 @@ function ProjectsOverview() {
           <Overview reverse>
             <div className="w-full max-w-7xl h-1 bg-gradient-to-r from-primary/80 via-background to-secondary/80 md:hidden mb-10 blur-sm" />
             <ProjectText
+              projectNumber={3}
+              viewMore={`/projects/${BOOKMARKED_PROJECTS[1].slug}`}
+              demo={BOOKMARKED_PROJECTS[1].external_link!}
+              github={BOOKMARKED_PROJECTS[1].github_link!}
+              name={BOOKMARKED_PROJECTS[1].name!}
+            >
+              <StrongCastHighlights />
+            </ProjectText>
+            <ProjectImage image={BOOKMARKED_PROJECTS[1].images![0]} />
+          </Overview>
+          <Overview>
+            <div className="w-full max-w-7xl h-1 bg-gradient-to-r from-primary/80 via-background to-secondary/80 md:hidden mb-10 blur-sm" />
+            <ProjectText
+              projectNumber={4}
+              reverse
+              viewMore={`/projects/${BOOKMARKED_PROJECTS[2].slug}`}
+              demo={BOOKMARKED_PROJECTS[2].external_link!}
+              name={BOOKMARKED_PROJECTS[2].name!}
+            >
+              <WassalliHighlights />
+            </ProjectText>
+            <ProjectImage image={BOOKMARKED_PROJECTS[2].images![0]} reverse />
+          </Overview>
+          {/* <Overview reverse>
+            <div className="w-full max-w-7xl h-1 bg-gradient-to-r from-primary/80 via-background to-secondary/80 md:hidden mb-10 blur-sm" />
+            <ProjectText
               projectNumber={2}
               reverse
               viewMore={`/projects/${BOOKMARKED_PROJECTS[1].slug}`}
               name={BOOKMARKED_PROJECTS[1].name!}
             >
-              <FormulationHighlights />
+              <TestHighlights />
             </ProjectText>
             <ProjectImage image={BOOKMARKED_PROJECTS[1].images![0]} reverse />
-          </Overview>
-          <Overview>
-            <div className="w-full max-w-7xl h-1 bg-gradient-to-r from-primary/80 via-background to-secondary/80 md:hidden mb-10 blur-sm" />
-            <ProjectText
-              projectNumber={3}
-              viewMore={`/projects/${BOOKMARKED_PROJECTS[2].slug}`}
-              demo={BOOKMARKED_PROJECTS[2].external_link!}
-              github={BOOKMARKED_PROJECTS[2].github_link!}
-              name={BOOKMARKED_PROJECTS[2].name!}
-            >
-              <StrongCastHighlights />
-            </ProjectText>
-            <ProjectImage image={BOOKMARKED_PROJECTS[2].images![0]} />
-          </Overview>
-          <Overview reverse>
-            <div className="w-full max-w-7xl h-1 bg-gradient-to-r from-primary/80 via-background to-secondary/80 md:hidden mb-10 blur-sm" />
-            <ProjectText
-              projectNumber={4}
-              reverse
-              viewMore={`/projects/${BOOKMARKED_PROJECTS[3].slug}`}
-              demo={BOOKMARKED_PROJECTS[3].external_link!}
-              name={BOOKMARKED_PROJECTS[3].name!}
-            >
-              <WassalliHighlights />
-            </ProjectText>
-            <ProjectImage image={BOOKMARKED_PROJECTS[3].images![0]} reverse />
-          </Overview>
+          </Overview> */}
         </article>
         <div className="flex w-full mx-auto max-w-7xl items-center justify-center mt-16">
           <div className="h-[1px] w-full bg-foreground/70" />

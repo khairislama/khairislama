@@ -55,17 +55,6 @@ export const BOOKMARKED_PROJECTS: Partial<IProject>[] = [
     ],
   },
   {
-    slug: "formulation",
-    name: "formulation",
-    images: [
-      {
-        src: "/projects/formulation/image-1.webp",
-        alt: "Dashboard of formulation platform",
-        blur: true,
-      },
-    ],
-  },
-  {
     slug: "strong-cast",
     name: "strong cast",
     github_link: "https://github.com/khairislama/strong-cast",
@@ -140,62 +129,6 @@ export const PROJECTS: IProject[] = [
       {
         src: "/projects/carthabot/image-vertical-2.webp",
         alt: "pillar of services",
-      },
-    ],
-  },
-  {
-    label: "current",
-    slug: "formulation",
-    name: "Formulation",
-    type: "private",
-    stories: 2,
-    tags: 9,
-    features: 6,
-    performance: null,
-    github_link: null,
-    external_link: null,
-    stats: {
-      stars: "-",
-      commits: "807",
-      prs: "190",
-      issues: "-",
-      tests: "-",
-      technologies: [
-        { src: "/skills/nestjs.webp", alt: "nest js" },
-        { src: "/skills/typeorm.png", alt: "typeorm" },
-        { src: "/skills/postgresql.webp", alt: "postgresql" },
-      ],
-    },
-    languages: [
-      { name: "Typescript", color: "#3178C6", value: 99.8 },
-      { name: "Other", color: "#f8f0f0", value: 0.2 },
-    ],
-    updated_at: "Currently working on...",
-    featured: "Work project",
-    description:
-      "Cloud-based formulation solution using NestJS and PostgreSQL.",
-    images: [
-      {
-        src: "/projects/formulation/image-1.webp",
-        alt: "Dashboard of formulation platform",
-        blur: true,
-      },
-      {
-        src: "/projects/formulation/image-2.webp",
-        alt: "the recipe page",
-        blur: true,
-      },
-    ],
-    vertical_images: [
-      {
-        src: "/projects/formulation/image-vertical-1.webp",
-        alt: "input output management",
-        blur: true,
-      },
-      {
-        src: "/projects/formulation/image-vertical-2.webp",
-        alt: "History feature",
-        blur: true,
       },
     ],
   },
