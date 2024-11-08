@@ -71,54 +71,54 @@
   },
   "About": {
     "title": "À propos de moi",
-    "subtitle": "Je suis un ingénieur logiciel passionné, spécialisé dans le développement web avec un focus sur la création de solutions web performantes et sécurisées. Mon expérience couvre le développement backend chez Hutchinson ainsi que des missions freelance sur des plateformes full-stack utilisant les dernières technologies web. J'aime relever des défis complexes et créer des expériences numériques intuitives. Toujours guidé par l'innovation, je suis prêt à apporter mon expertise à des projets d'envergure à l'étranger.",
+    "subtitle": "Ingénieur logiciel expérimenté, passionné par le développement web performant et sécurisé. Je maîtrise les technologies backend et full-stack modernes, avec une expérience en ingénierie de la sécurité chez Hutchinson et missions freelance sur Next.js. J'aime résoudre des défis techniques et créer des expériences web intuitives. Mon objectif est d'apporter mes compétences en développement à des projets ambitieux à l'étranger.",
     "my-journey": {
       "title": "Mon parcours",
-      "description": "J'ai obtenu un diplôme d'ingénieur full-stack, reconnu par le prestigieux label EUR-ACE, l'équivalent d'un diplôme européen. Mon parcours académique s'est achevé avec un projet de fin d'études passionnant à Paris, où j'ai eu l'opportunité de concevoir une plateforme web complète. Ce projet a non seulement affiné mes compétences en technologies web de pointe, mais a également renforcé ma passion pour la résolution de problèmes et l'innovation dans le domaine de la tech."
+      "description": "Ingénieur full-stack diplômé avec label EUR-ACE, gage de reconnaissance européenne. Mon projet de fin d’études à Paris a renforcé mes compétences en développement de plateformes web et ma passion pour l'innovation dans la tech. Ce projet m'a permis de maîtriser des technologies avancées, et d’approfondir ma capacité à résoudre des problèmes complexes."
     },
     "current-work": {
-      "title": "Ingénierie de la sécurité et innovation chez Hutchinson",
-      "description": "J'ai été impliqué dans des projets critiques de développement backend, utilisant NestJS pour créer des solutions hautement sécurisées pour l'industrie. Durant plus d'un an et sept mois, j'ai contribué à des projets en veillant à ce qu'ils respectent les normes de sécurité les plus strictes tout en maintenant des performances optimales. Chaque projet me pousse à améliorer à la fois l'architecture de sécurité et la performance des systèmes, un aspect essentiel de mon rôle."
+      "title": "Sécurité et innovation chez Hutchinson",
+      "description": "En tant que développeur backend, j'utilise NestJS pour construire des solutions hautement sécurisées pour l'industrie. Depuis plus d'un an et sept mois, je conçois des architectures robustes, respectant les normes de sécurité et optimisées en performance. J’optimise continuellement la sécurité et l’efficacité des systèmes dans chaque projet."
     },
     "know-me": {
-      "title": "Au-delà du code - Mes passions en dehors du travail",
-      "description": "Lorsque je ne travaille pas sur des codes complexes, vous me trouverez souvent en plein air. J'adore les escapades en camping, qui me permettent de déconnecter du monde numérique et de me reconnecter à la nature. Le footing, la randonnée et le sport me maintiennent actif, avec mon Malinois belge toujours à mes côtés lors de ces aventures. Que ce soit pour explorer de nouveaux sentiers ou passer du temps en groupe, je crois en l'équilibre entre ma vie technologique et des expériences réelles"
+      "title": "Au-delà du code - Passions et loisirs",
+      "description": "Quand je ne suis pas dans le code, je suis souvent en plein air, en camping ou en footing. J’aime la randonnée et les sports, souvent accompagné de mon Malinois belge. Ces escapades en nature m’offrent un équilibre essentiel entre ma vie digitale et des expériences réelles."
     },
     "contact": {
-      "title": "Contactez-nous"
+      "title": "Contactez-moi"
     }
   },
   "Projects": {
     "title": "Mes projets",
-    "subtitle": "Au fil de ma carrière, j'ai réalisé une gamme diversifiée de projets qui démontrent ma capacité à allier technologies de pointe et solutions sécurisées et pratiques. Des plateformes full-stack développées avec Next.js aux intégrations 3D avec Blender, chaque projet reflète mon souci de la performance, de la sécurité et de l'innovation. Je suis constamment à la recherche de nouvelles façons de repousser les limites du développement web, en créant des expériences numériques percutantes. Voici un aperçu de certains de mes travaux les plus notables.",
+    "subtitle": "Une diversité de projets démontrant ma capacité à fusionner technologies avancées et sécurité. De plateformes full-stack avec Next.js à des intégrations 3D, chaque projet illustre mon engagement pour la performance, la sécurité et l'innovation. Je suis motivé par le développement de solutions numériques percutantes et sécurisées. Voici quelques-uns de mes travaux notables.",
     "github-link": "Lien Github",
     "no-github-link": "Pas de lien Github pour ce projet",
-    "demo": "Demo",
-    "no-demo": "Pas de démo disponible pour ce projet",
+    "demo": "Démo",
+    "no-demo": "Pas de démo disponible",
     "code": "Code",
     "project-story": "Histoire du projet",
-    "start-date": "Date de début",
+    "start-date": "Début",
     "client": "Client",
     "role": "Rôle",
     "exploration": "Exploration",
-    "no-performance": "Pas de stats perf",
+    "no-performance": "Pas de stats de performance",
     "github-stats": "Statistiques Github",
-    "total-star-earned": "Total star earned",
+    "total-star-earned": "Total stars",
     "total-commits": "Total commits",
     "total-prs": "Total PRs",
-    "total-issues": "Total des problèmes",
+    "total-issues": "Total problèmes",
     "total-tests": "Total tests",
     "technologies": "Technologies",
-    "language": "Language",
-    "previous-work": "Travaux antérieurs",
-    "next-work": "Travaux suivants",
+    "language": "Langue",
+    "previous-work": "Projets précédents",
+    "next-work": "Projets suivants",
     "other-projects": "Autres projets",
     "performance": "Performance",
     "structure": "Structure",
     "open-projects": "Projets ouverts",
     "worked-on": "Travaillé",
     "tutorial-projects": "Projets tutoriels",
-    "click-for-details": "cliquez pour plus d'informations"
+    "click-for-details": "Voir plus d'informations"
   },
   "Project-carthabot": {
     "type": "privée",
