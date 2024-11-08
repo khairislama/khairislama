@@ -19,16 +19,18 @@ function ContactCard() {
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
       <div className="max-w-4xl mx-auto text-center mt-36 p-4 sm:p-6 xl:p-0">
-        <h2 id="contact-card" className="text-header">
+        <h1 id="contact-card" className="text-header">
           {translations("title")}
-        </h2>
+        </h1>
         <div className="contact-card my-32">
           <div className="w-full flex flex-col gap-4 text-left">
             <div className="flex flex-col sm:flex-row items-center justify-start gap-6">
               <CardAvatar />
               <div className="pl-4 pr-12 py-3 rounded-full bg-foreground/10 flex items-center justify-center gap-2">
                 <Dot className="text-green-500 h-8 w-8" />
-                <span className="w-60 text-center">{translations("available")}</span>
+                <h2 className="w-60 text-center">
+                  {translations("available")}
+                </h2>
               </div>
             </div>
             <h3 className="text-lg text-foreground font-semibold">
@@ -46,8 +48,11 @@ function ContactCard() {
                 aria-label="let's create magic together"
                 className="p-6 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full rounded-xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
               >
-                <PrefixedLink href="/about#contact-form" className="h-full w-full flex items-center justify-center" >
-                  {translations("call-to-action")}
+                <PrefixedLink
+                  href="/about#contact-form"
+                  className="h-full w-full flex items-center justify-center"
+                >
+                  <h3>{translations("call-to-action")}</h3>
                 </PrefixedLink>
               </Button>
             </div>

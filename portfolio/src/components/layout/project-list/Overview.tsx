@@ -1,3 +1,4 @@
+import PrefixedLink from "@/components/PrefixedLink";
 import { shimmer, toBase64 } from "@/lib/image";
 import { cn } from "@/lib/utils";
 import { useTranslations } from "next-intl";
@@ -5,12 +6,14 @@ import Image from "next/image";
 
 function Overview({
   image,
+  slug,
 }: {
   image: {
     src: string;
     alt: string;
     blur?: boolean;
   };
+  slug: string;
 }) {
   const translations = useTranslations("Projects");
   return (
@@ -28,9 +31,12 @@ function Overview({
         )}`}
       />
       <div className="absolute top-0 left-0 w-full h-full bg-background/30 flex items-center justify-center shadow-[inset_1px_1px_150px_12px_rgba(0,0,0,0.9)]">
-        <h4 className="text-white font-semibold text-2xl">
+        <PrefixedLink
+          href={`/project/${slug}`}
+          className="text-white font-semibold text-2xl"
+        >
           {translations("click-for-details")}
-        </h4>
+        </PrefixedLink>
       </div>
     </div>
   );

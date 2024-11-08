@@ -12,6 +12,7 @@ interface Props {
   width: number;
   height: number;
   bottomFocused?: boolean;
+  home?: boolean;
 }
 
 function KnowAboutMe({
@@ -23,6 +24,7 @@ function KnowAboutMe({
   width,
   height,
   bottomFocused,
+  home,
 }: Props) {
   const translations = useTranslations("KnowMe");
   return (
@@ -33,12 +35,21 @@ function KnowAboutMe({
         }`}
       >
         <div className="my-auto flex flex-col gap-4 lg:gap-14">
-          <h2
-            id="about-me"
-            className="font-syne font-bold text-5xl max-w-md text-balance"
-          >
-            {title}
-          </h2>
+          {home ? (
+            <h2
+              id="about-me"
+              className="font-syne font-bold text-5xl max-w-md text-balance"
+            >
+              {title}
+            </h2>
+          ) : (
+            <h3
+              id="about-me"
+              className="font-syne font-bold text-5xl max-w-md text-balance"
+            >
+              {title}
+            </h3>
+          )}
           <p className="font-rubik text-justify">{description}</p>
           {button && (
             <Button
@@ -46,8 +57,11 @@ function KnowAboutMe({
               className="mt-4 h-12 bg-gradient-to-r from-primary to-secondary text-foreground/80 font-rubik w-full sm:w-1/2 rounded-3xl transition ease-in-out delay-150 md:hover:-translate-y-1 md:hover:scale-110 duration-300 min-w-fit"
               aria-label="discover more about Khairi Slama"
             >
-              <PrefixedLink className="h-full w-full flex items-center justify-center" href="/about">
-                {translations("call-to-action")}
+              <PrefixedLink
+                className="h-full w-full flex items-center justify-center"
+                href="/about"
+              >
+                <h3>{translations("call-to-action")}</h3>
               </PrefixedLink>
             </Button>
           )}

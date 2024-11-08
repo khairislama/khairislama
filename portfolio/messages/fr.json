@@ -7,118 +7,118 @@
     "projects": "Projets"
   },
   "Hero": {
-    "welcome": "Je suis Khairi",
-    "title": "Développeur logiciel mi-senior"
+    "welcome": "Je suis Khairi Slama",
+    "title": "Ingénieur & développeur web mi-senior"
   },
   "KnowMe": {
     "title": "Apprenez à mieux me connaître",
-    "description": "Diplômé ingénieur full-stack avec une solide expérience en développement web et un focus profond sur la sécurité. Je suis passionné par l'application de mes compétences à des projets stimulants et la fourniture de solutions innovantes. Ce portfolio met en avant mon large éventail de travaux, des conceptions web élégantes aux applications robustes et sécurisées. Mon parcours de développeur est guidé par le désir de créer des solutions web performantes et impactantes.",
+    "description": "Je suis un ingénieur full-stack spécialisé dans le développement web, axé sur la sécurité et la performance. Mon portfolio montre mes travaux en web design, applications robustes et sécurisées, et met en avant mon expertise en solutions innovantes et performantes. Ce parcours est guidé par ma passion pour l’ingénierie logicielle et la création de solutions web d'impact.",
     "call-to-action": "Découvrez-en plus sur moi"
   },
   "Skills": {
     "title": "Compétences",
-    "header": "Des sites Web et mobiles à la gestion des données et des réseaux",
-    "subtitle": "J'ai eu l'opportunité de travailler avec divers outils."
+    "header": "Des sites modernes et performants aux solutions de gestion des données et réseaux",
+    "subtitle": "Expérience avec un large éventail de technologies pour des applications web."
   },
   "ProjectsOverview": {
     "title": "Projets",
-    "featured-1": "Projet client",
-    "featured-2": "Projet client",
-    "featured-3": "Projet de stage",
+    "featured-1": "Plateforme éducative STEM",
+    "featured-2": "Projet client - E-commerce",
+    "featured-3": "Projet C2C livraison",
     "project-1-title": "Carthabot TN",
-    "project-1-description": "La plateforme éducative CarthaBot vise à offrir une expérience d'apprentissage engageante et interactive pour les étudiants explorant les concepts STEM. En tant qu'ingénieur web, mon rôle consiste à concevoir une interface conviviale, à soutenir l'accès multilingue et à garantir une interaction fluide avec le robot. En tirant parti de Next.js et de fonctionnalités personnalisées, je crée une plateforme moderne qui améliore le potentiel éducatif de CarthaBot.",
+    "project-1-description": "Carthabot TN est une plateforme éducative pour l'apprentissage STEM, offrant une expérience interactive pour les étudiants. J'ai conçu une interface intuitive, en utilisant Next.js pour une accessibilité multilingue et une interaction fluide avec le robot.",
     "project-2-title": "Strong cast shop",
-    "project-2-description": "Le projet e-commerce Strong Cast vise à établir une plateforme en ligne robuste pour la vente de lignes de pêche de haute qualité sur le marché américain. En tant qu'ingénieur web, mon rôle est de créer une expérience utilisateur fluide et une gestion efficace des produits en tirant parti des technologies Next.js et Shopify.",
+    "project-2-description": "Strong Cast est une boutique en ligne américaine de lignes de pêche. Mon rôle inclut l'optimisation de l'UX et la gestion des produits via Next.js et Shopify pour une expérience d'achat fluide et performante.",
     "project-3-title": "Wassalli Platform",
-    "project-3-description": "La plateforme Wassalli vise à simplifier la livraison transfrontalière de colis entre la France et l'Afrique du Nord en mettant en relation les transporteurs privés avec les particuliers recherchant des services d'expédition. Développé lors de mon stage de six mois chez SLK Consulting à Paris, le projet utilise Next.js et Tailwind CSS pour créer une interface conviviale et multiplateforme. Mon rôle consistait à concevoir et développer l'application pour améliorer la visibilité des expéditions et rationaliser le processus pour les transporteurs privés, répondant ainsi à la demande croissante sur le marché du transport maritime C2C. Wassalli comble le fossé d'une industrie informelle, offrant aux utilisateurs une solution fiable, transparente et efficace.",
+    "project-3-description": "Wassalli est une plateforme pour la livraison de colis entre France et Afrique du Nord, reliant transporteurs et particuliers. Projet développé avec Next.js et Tailwind, optimisé pour améliorer la visibilité et simplifier le processus logistique C2C.",
     "performance": "Performance",
     "stack": "Technologies",
     "backend-stack": "Technologies backend",
-    "structure": "Structure",
-    "github-link": "Lien GitHub",
-    "view-more": "Voir plus",
-    "read-more": "En savoir plus",
-    "demo-link": "Lien de démonstration"
+    "structure": "Architecture",
+    "github-link": "GitHub",
+    "view-more": "Voir plus de projets",
+    "read-more": "Lire la suite",
+    "demo-link": "Démo en ligne"
   },
   "Services": {
     "title": "Services",
-    "service-1": "Développement web",
-    "service-2": "Solutions backend",
-    "service-3": "Applications Web 3D",
-    "service-4": "Conception d'API",
-    "service-5": "E-commerce",
-    "services-title": "Solutions Web optimisées pour chaque besoin",
-    "services-subtitle": "Du développement au déploiement, je crée des applications web efficaces et évolutives.",
-    "card-1-title": "Pro du développement web",
-    "card-1-description": "Front-end haute performance et design réactif.",
-    "card-2-title": "Expert backend",
-    "card-2-description": "Solutions côté serveur évolutives avec NestJS et Node.",
-    "card-3-title": "Créateur d'e-commerce",
-    "card-3-description": "Boutiques en ligne complètes avec intégrations transparentes.",
-    "card-4-title": "Architecte d'API",
-    "card-4-description": "APIs RESTful et GraphQL pour toutes les plateformes."
+    "service-1": "Développement web personnalisé",
+    "service-2": "Solutions backend évolutives",
+    "service-3": "Applications 3D interactives",
+    "service-4": "Conception d'API performante",
+    "service-5": "Solutions e-commerce complètes",
+    "services-title": "Solutions web optimisées pour votre succès",
+    "services-subtitle": "Je crée des applications web performantes, de l'idée au déploiement.",
+    "card-1-title": "Développement web professionnel",
+    "card-1-description": "Front-end performant avec design responsive.",
+    "card-2-title": "Backend évolutif",
+    "card-2-description": "Infrastructure backend fiable avec NestJS et Node.",
+    "card-3-title": "E-commerce personnalisé",
+    "card-3-description": "Boutiques intégrées pour un marché en ligne.",
+    "card-4-title": "API robuste",
+    "card-4-description": "APIs RESTful et GraphQL optimisées pour toutes plateformes."
   },
   "Contact": {
     "title": "Contact",
-    "available": "Disponible pour travailler",
-    "hero": "Écrivez-moi ou dites 👋 sur les réseaux sociaux",
-    "description": "Que vous soyez un développeur ayant besoin de soutien ou une startup en phase de démarrage souhaitant augmenter ses performances, j'aimerais discuter de votre projet 💜",
-    "call-to-action": "Créons de la magie ensemble ✨"
+    "available": "Ouvert aux projets",
+    "hero": "Envoyez-moi un message ou dites 👋 sur les réseaux",
+    "description": "Que ce soit pour un projet de développement ou un besoin spécifique, je suis disponible pour discuter et collaborer 💜",
+    "call-to-action": "Créons ensemble des solutions impactantes ✨"
   },
   "Footer": {
-    "cooked with love in": "cuisiné avec amour à",
+    "cooked with love in": "Conçu avec passion à",
     "with": "avec"
   },
   "About": {
     "title": "À propos de moi",
-    "subtitle": "Je suis un ingénieur logiciel passionné, spécialisé dans le développement web avec un focus sur la création de solutions web performantes et sécurisées. Mon expérience couvre le développement backend chez Hutchinson ainsi que des missions freelance sur des plateformes full-stack utilisant les dernières technologies web. J'aime relever des défis complexes et créer des expériences numériques intuitives. Toujours guidé par l'innovation, je suis prêt à apporter mon expertise à des projets d'envergure à l'étranger.",
+    "subtitle": "Ingénieur logiciel expérimenté, passionné par le développement web performant et sécurisé. Je maîtrise les technologies backend et full-stack modernes, avec une expérience en ingénierie de la sécurité chez Hutchinson et missions freelance sur Next.js. J'aime résoudre des défis techniques et créer des expériences web intuitives. Mon objectif est d'apporter mes compétences en développement à des projets ambitieux à l'étranger.",
     "my-journey": {
       "title": "Mon parcours",
-      "description": "J'ai obtenu un diplôme d'ingénieur full-stack, reconnu par le prestigieux label EUR-ACE, l'équivalent d'un diplôme européen. Mon parcours académique s'est achevé avec un projet de fin d'études passionnant à Paris, où j'ai eu l'opportunité de concevoir une plateforme web complète. Ce projet a non seulement affiné mes compétences en technologies web de pointe, mais a également renforcé ma passion pour la résolution de problèmes et l'innovation dans le domaine de la tech."
+      "description": "Ingénieur full-stack diplômé avec label EUR-ACE, gage de reconnaissance européenne. Mon projet de fin d’études à Paris a renforcé mes compétences en développement de plateformes web et ma passion pour l'innovation dans la tech. Ce projet m'a permis de maîtriser des technologies avancées, et d’approfondir ma capacité à résoudre des problèmes complexes."
     },
     "current-work": {
-      "title": "Ingénierie de la sécurité et innovation chez Hutchinson",
-      "description": "J'ai été impliqué dans des projets critiques de développement backend, utilisant NestJS pour créer des solutions hautement sécurisées pour l'industrie. Durant plus d'un an et sept mois, j'ai contribué à des projets en veillant à ce qu'ils respectent les normes de sécurité les plus strictes tout en maintenant des performances optimales. Chaque projet me pousse à améliorer à la fois l'architecture de sécurité et la performance des systèmes, un aspect essentiel de mon rôle."
+      "title": "Sécurité et innovation chez Hutchinson",
+      "description": "En tant que développeur backend, j'utilise NestJS pour construire des solutions hautement sécurisées pour l'industrie. Depuis plus d'un an et sept mois, je conçois des architectures robustes, respectant les normes de sécurité et optimisées en performance. J’optimise continuellement la sécurité et l’efficacité des systèmes dans chaque projet."
     },
     "know-me": {
-      "title": "Au-delà du code - Mes passions en dehors du travail",
-      "description": "Lorsque je ne travaille pas sur des codes complexes, vous me trouverez souvent en plein air. J'adore les escapades en camping, qui me permettent de déconnecter du monde numérique et de me reconnecter à la nature. Le footing, la randonnée et le sport me maintiennent actif, avec mon Malinois belge toujours à mes côtés lors de ces aventures. Que ce soit pour explorer de nouveaux sentiers ou passer du temps en groupe, je crois en l'équilibre entre ma vie technologique et des expériences réelles"
+      "title": "Au-delà du code - Passions et loisirs",
+      "description": "Quand je ne suis pas dans le code, je suis souvent en plein air, en camping ou en footing. J’aime la randonnée et les sports, souvent accompagné de mon Malinois belge. Ces escapades en nature m’offrent un équilibre essentiel entre ma vie digitale et des expériences réelles."
     },
     "contact": {
-      "title": "Contactez-nous"
+      "title": "Contactez-moi"
     }
   },
   "Projects": {
     "title": "Mes projets",
-    "subtitle": "Au fil de ma carrière, j'ai réalisé une gamme diversifiée de projets qui démontrent ma capacité à allier technologies de pointe et solutions sécurisées et pratiques. Des plateformes full-stack développées avec Next.js aux intégrations 3D avec Blender, chaque projet reflète mon souci de la performance, de la sécurité et de l'innovation. Je suis constamment à la recherche de nouvelles façons de repousser les limites du développement web, en créant des expériences numériques percutantes. Voici un aperçu de certains de mes travaux les plus notables.",
+    "subtitle": "Une diversité de projets démontrant ma capacité à fusionner technologies avancées et sécurité. De plateformes full-stack avec Next.js à des intégrations 3D, chaque projet illustre mon engagement pour la performance, la sécurité et l'innovation. Je suis motivé par le développement de solutions numériques percutantes et sécurisées. Voici quelques-uns de mes travaux notables.",
     "github-link": "Lien Github",
     "no-github-link": "Pas de lien Github pour ce projet",
-    "demo": "Demo",
-    "no-demo": "Pas de démo disponible pour ce projet",
+    "demo": "Démo",
+    "no-demo": "Pas de démo disponible",
     "code": "Code",
     "project-story": "Histoire du projet",
-    "start-date": "Date de début",
+    "start-date": "Début",
     "client": "Client",
     "role": "Rôle",
     "exploration": "Exploration",
-    "no-performance": "Pas de stats perf",
+    "no-performance": "Pas de stats de performance",
     "github-stats": "Statistiques Github",
-    "total-star-earned": "Total star earned",
+    "total-star-earned": "Total stars",
     "total-commits": "Total commits",
     "total-prs": "Total PRs",
-    "total-issues": "Total des problèmes",
+    "total-issues": "Total problèmes",
     "total-tests": "Total tests",
     "technologies": "Technologies",
-    "language": "Language",
-    "previous-work": "Travaux antérieurs",
-    "next-work": "Travaux suivants",
+    "language": "Langue",
+    "previous-work": "Projets précédents",
+    "next-work": "Projets suivants",
     "other-projects": "Autres projets",
     "performance": "Performance",
     "structure": "Structure",
     "open-projects": "Projets ouverts",
     "worked-on": "Travaillé",
     "tutorial-projects": "Projets tutoriels",
-    "click-for-details": "cliquez pour plus d'informations"
+    "click-for-details": "Voir plus d'informations"
   },
   "Project-carthabot": {
     "type": "privée",

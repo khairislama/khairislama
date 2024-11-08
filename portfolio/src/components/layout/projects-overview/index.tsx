@@ -46,26 +46,26 @@ function ProjectsOverview() {
             <ProjectText
               projectNumber={2}
               viewMore={`/projects/${BOOKMARKED_PROJECTS[1].slug}`}
+              reverse
               demo={BOOKMARKED_PROJECTS[1].external_link!}
               github={BOOKMARKED_PROJECTS[1].github_link!}
               name={BOOKMARKED_PROJECTS[1].name!}
             >
               <StrongCastHighlights />
             </ProjectText>
-            <ProjectImage image={BOOKMARKED_PROJECTS[1].images![0]} />
+            <ProjectImage image={BOOKMARKED_PROJECTS[1].images![0]} reverse />
           </Overview>
           <Overview>
             <div className="w-full max-w-7xl h-1 bg-gradient-to-r from-primary/80 via-background to-secondary/80 md:hidden mb-10 blur-sm" />
             <ProjectText
               projectNumber={3}
-              reverse
               viewMore={`/projects/${BOOKMARKED_PROJECTS[2].slug}`}
               demo={BOOKMARKED_PROJECTS[2].external_link!}
               name={BOOKMARKED_PROJECTS[2].name!}
             >
               <WassalliHighlights />
             </ProjectText>
-            <ProjectImage image={BOOKMARKED_PROJECTS[2].images![0]} reverse />
+            <ProjectImage image={BOOKMARKED_PROJECTS[2].images![0]} />
           </Overview>
           {/* <Overview reverse>
             <div className="w-full max-w-7xl h-1 bg-gradient-to-r from-primary/80 via-background to-secondary/80 md:hidden mb-10 blur-sm" />
