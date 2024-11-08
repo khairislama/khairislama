@@ -37,7 +37,7 @@ function Services() {
         className="absolute object-cover w-full pointer-events-none -top-10 sm:-top-[10%] xl:-top-[14%] 2xl:-top-[32%] -z-10 brightness-125"
         sizes="100vw, (max-width: 1200px) 50vw,(max-width: 768px) 30vw"
       />
-      <div className="max-w-4xl mx-auto flex flex-col p-4 sm:p-6 xl:p-0 text-center">
+      <div className="max-w-6xl mx-auto flex flex-col p-4 sm:p-6 xl:p-0 text-center">
         <h2 id="services" className="text-header">
           {translations("title")}
         </h2>
@@ -48,16 +48,13 @@ function Services() {
               className="py-3 bg-foreground/5 flex items-center justify-center rounded-2xl gap-1 shadow-xl border border-foreground/10"
             >
               <Check className="h-5 w-6 text-[#B084FF]" />{" "}
-              <span className="text-xs">
-                {" "}
-                {translations(`service-${i + 1}`)}{" "}
-              </span>
+              <h3 className="text-xs"> {translations(`service-${i + 1}`)} </h3>
             </div>
           ))}
         </div>
-        <h3 className="text-2xl mt-16 text-foreground/90">
+        <h2 className="text-2xl mt-16 text-foreground/90">
           {translations("services-title")}
-        </h3>
+        </h2>
         <p className="text-lg mt-2 text-foreground/70">
           {translations("services-subtitle")}
         </p>
@@ -77,10 +74,10 @@ function Services() {
                 </div>
               </div>
               <div className="col-span-3 text-justify">
-                <h4 className="text-lg font-semibold text-center sm:text-start">
+                <h3 className="text-lg font-semibold text-center sm:text-start">
                   {" "}
                   {translations(`card-${i + 1}-title`)}{" "}
-                </h4>
+                </h3>
                 <p className="text-sm mt-2 text-center sm:text-start">
                   {" "}
                   {translations(`card-${i + 1}-description`)}{" "}

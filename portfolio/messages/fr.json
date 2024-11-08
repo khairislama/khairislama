@@ -7,66 +7,66 @@
     "projects": "Projets"
   },
   "Hero": {
-    "welcome": "Je suis Khairi",
-    "title": "Développeur logiciel mi-senior"
+    "welcome": "Je suis Khairi Slama",
+    "title": "Ingénieur & développeur web mi-senior"
   },
   "KnowMe": {
     "title": "Apprenez à mieux me connaître",
-    "description": "Diplômé ingénieur full-stack avec une solide expérience en développement web et un focus profond sur la sécurité. Je suis passionné par l'application de mes compétences à des projets stimulants et la fourniture de solutions innovantes. Ce portfolio met en avant mon large éventail de travaux, des conceptions web élégantes aux applications robustes et sécurisées. Mon parcours de développeur est guidé par le désir de créer des solutions web performantes et impactantes.",
+    "description": "Je suis un ingénieur full-stack spécialisé dans le développement web, axé sur la sécurité et la performance. Mon portfolio montre mes travaux en web design, applications robustes et sécurisées, et met en avant mon expertise en solutions innovantes et performantes. Ce parcours est guidé par ma passion pour l’ingénierie logicielle et la création de solutions web d'impact.",
     "call-to-action": "Découvrez-en plus sur moi"
   },
   "Skills": {
     "title": "Compétences",
-    "header": "Des sites Web et mobiles à la gestion des données et des réseaux",
-    "subtitle": "J'ai eu l'opportunité de travailler avec divers outils."
+    "header": "Des sites modernes et performants aux solutions de gestion des données et réseaux",
+    "subtitle": "Expérience avec un large éventail de technologies pour des applications web."
   },
   "ProjectsOverview": {
     "title": "Projets",
-    "featured-1": "Projet client",
-    "featured-2": "Projet client",
-    "featured-3": "Projet de stage",
+    "featured-1": "Plateforme éducative STEM",
+    "featured-2": "Projet client - E-commerce",
+    "featured-3": "Projet C2C livraison",
     "project-1-title": "Carthabot TN",
-    "project-1-description": "La plateforme éducative CarthaBot vise à offrir une expérience d'apprentissage engageante et interactive pour les étudiants explorant les concepts STEM. En tant qu'ingénieur web, mon rôle consiste à concevoir une interface conviviale, à soutenir l'accès multilingue et à garantir une interaction fluide avec le robot. En tirant parti de Next.js et de fonctionnalités personnalisées, je crée une plateforme moderne qui améliore le potentiel éducatif de CarthaBot.",
+    "project-1-description": "Carthabot TN est une plateforme éducative pour l'apprentissage STEM, offrant une expérience interactive pour les étudiants. J'ai conçu une interface intuitive, en utilisant Next.js pour une accessibilité multilingue et une interaction fluide avec le robot.",
     "project-2-title": "Strong cast shop",
-    "project-2-description": "Le projet e-commerce Strong Cast vise à établir une plateforme en ligne robuste pour la vente de lignes de pêche de haute qualité sur le marché américain. En tant qu'ingénieur web, mon rôle est de créer une expérience utilisateur fluide et une gestion efficace des produits en tirant parti des technologies Next.js et Shopify.",
+    "project-2-description": "Strong Cast est une boutique en ligne américaine de lignes de pêche. Mon rôle inclut l'optimisation de l'UX et la gestion des produits via Next.js et Shopify pour une expérience d'achat fluide et performante.",
     "project-3-title": "Wassalli Platform",
-    "project-3-description": "La plateforme Wassalli vise à simplifier la livraison transfrontalière de colis entre la France et l'Afrique du Nord en mettant en relation les transporteurs privés avec les particuliers recherchant des services d'expédition. Développé lors de mon stage de six mois chez SLK Consulting à Paris, le projet utilise Next.js et Tailwind CSS pour créer une interface conviviale et multiplateforme. Mon rôle consistait à concevoir et développer l'application pour améliorer la visibilité des expéditions et rationaliser le processus pour les transporteurs privés, répondant ainsi à la demande croissante sur le marché du transport maritime C2C. Wassalli comble le fossé d'une industrie informelle, offrant aux utilisateurs une solution fiable, transparente et efficace.",
+    "project-3-description": "Wassalli est une plateforme pour la livraison de colis entre France et Afrique du Nord, reliant transporteurs et particuliers. Projet développé avec Next.js et Tailwind, optimisé pour améliorer la visibilité et simplifier le processus logistique C2C.",
     "performance": "Performance",
     "stack": "Technologies",
     "backend-stack": "Technologies backend",
-    "structure": "Structure",
-    "github-link": "Lien GitHub",
-    "view-more": "Voir plus",
-    "read-more": "En savoir plus",
-    "demo-link": "Lien de démonstration"
+    "structure": "Architecture",
+    "github-link": "GitHub",
+    "view-more": "Voir plus de projets",
+    "read-more": "Lire la suite",
+    "demo-link": "Démo en ligne"
   },
   "Services": {
     "title": "Services",
-    "service-1": "Développement web",
-    "service-2": "Solutions backend",
-    "service-3": "Applications Web 3D",
-    "service-4": "Conception d'API",
-    "service-5": "E-commerce",
-    "services-title": "Solutions Web optimisées pour chaque besoin",
-    "services-subtitle": "Du développement au déploiement, je crée des applications web efficaces et évolutives.",
-    "card-1-title": "Pro du développement web",
-    "card-1-description": "Front-end haute performance et design réactif.",
-    "card-2-title": "Expert backend",
-    "card-2-description": "Solutions côté serveur évolutives avec NestJS et Node.",
-    "card-3-title": "Créateur d'e-commerce",
-    "card-3-description": "Boutiques en ligne complètes avec intégrations transparentes.",
-    "card-4-title": "Architecte d'API",
-    "card-4-description": "APIs RESTful et GraphQL pour toutes les plateformes."
+    "service-1": "Développement web personnalisé",
+    "service-2": "Solutions backend évolutives",
+    "service-3": "Applications 3D interactives",
+    "service-4": "Conception d'API performante",
+    "service-5": "Solutions e-commerce complètes",
+    "services-title": "Solutions web optimisées pour votre succès",
+    "services-subtitle": "Je crée des applications web performantes, de l'idée au déploiement.",
+    "card-1-title": "Développement web professionnel",
+    "card-1-description": "Front-end performant avec design responsive.",
+    "card-2-title": "Backend évolutif",
+    "card-2-description": "Infrastructure backend fiable avec NestJS et Node.",
+    "card-3-title": "E-commerce personnalisé",
+    "card-3-description": "Boutiques intégrées pour un marché en ligne.",
+    "card-4-title": "API robuste",
+    "card-4-description": "APIs RESTful et GraphQL optimisées pour toutes plateformes."
   },
   "Contact": {
     "title": "Contact",
-    "available": "Disponible pour travailler",
-    "hero": "Écrivez-moi ou dites 👋 sur les réseaux sociaux",
-    "description": "Que vous soyez un développeur ayant besoin de soutien ou une startup en phase de démarrage souhaitant augmenter ses performances, j'aimerais discuter de votre projet 💜",
-    "call-to-action": "Créons de la magie ensemble ✨"
+    "available": "Ouvert aux projets",
+    "hero": "Envoyez-moi un message ou dites 👋 sur les réseaux",
+    "description": "Que ce soit pour un projet de développement ou un besoin spécifique, je suis disponible pour discuter et collaborer 💜",
+    "call-to-action": "Créons ensemble des solutions impactantes ✨"
   },
   "Footer": {
-    "cooked with love in": "cuisiné avec amour à",
+    "cooked with love in": "Conçu avec passion à",
     "with": "avec"
   },
   "About": {

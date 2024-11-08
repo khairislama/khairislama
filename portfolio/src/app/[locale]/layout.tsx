@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     template: "%s - Khairi Slama | Full-Stack Engineer",
   },
   description:
-    "Explore Khairi Slama's web development portfolio, with a focus on security, 3D web, and performance optimization. Available for opportunities in Luxembourg and France.",
+    "Khairi Slama's portfolio showcases advanced web development with a focus on performance, security, and 3D web. Available for freelance and software engineering roles in Tunisia, Luxembourg, and France.",
   keywords:
-    "Khairi Slama, Full-Stack Engineer, Web Development, Next.js, Tailwind, Freelance, Luxembourg, France, Security, 3D Blender, Tunisian Engineer, Performance, Web Solutions",
+    "Khairi Slama, Slama Khairi, Full-Stack Engineer, Web Developer, Portfolio, Next.js Developer, Tailwind CSS, Freelance Developer, Coding, Tunisia, Modern Portfolio, Performance Web, SEO Optimized, 3D Web Developer, Engineer, Coding Portfolio, Tunisian Engineer, Freelance Web Developer, Backend Security",
   openGraph: {
     images: [{ url: "/opengraph-image.png" }],
   },
@@ -48,21 +48,26 @@ export default async function RootLayout({
       "https://github.com/khairislama",
       "https://www.facebook.com/khairi.slama/",
     ],
-    jobTitle: "Full-Stack Engineer",
+    jobTitle: "Full-Stack Engineer and Web Developer",
     description:
-      "Full-Stack Engineer specializing in web development, security, and 3D integration, available for freelance opportunities.",
+      "Full-Stack Engineer specializing in high-performance web development, security, and 3D integrations.",
     worksFor: {
       "@type": "Organization",
-      name: "Hutchinson Sousse",
+      name: "Hutchinson Sousse Industry",
     },
-    alumniOf: "Polytechnique School of Sousse",
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "Polytechnique School of Sousse",
+    },
     knowsAbout: [
       "Web Development",
-      "Engineering",
       "Next.js",
-      "Tailwind",
-      "3D Web",
+      "Tailwind CSS",
+      "3D Web Integration",
+      "Performance Optimization",
+      "Security Engineering",
     ],
+    tagline: "Modern Portfolio and Performance Web Specialist",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Sousse",

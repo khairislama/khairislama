@@ -8,12 +8,12 @@ function MyJourney() {
     <section aria-labelledby="journey" className="relative w-full my-6">
       <div className="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center md:justify-between w-full gap-8 z-10 px-4 sm:px-6 xl:px-0">
         <div className="flex flex-col gap-4 md:max-w-md lg:max-w-xl xl:max-w-3xl z-10">
-          <h2
+          <h3
             id="journey"
             className="text-3xl lg:text-4xl font-semibold font-syne text-foreground tracking-wider"
           >
             {translations("title")}
-          </h2>
+          </h3>
           <p className="text-lg tracking-wide font-rubik text-justify">
             {translations("description")}
           </p>

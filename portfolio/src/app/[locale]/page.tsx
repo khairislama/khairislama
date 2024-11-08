@@ -22,6 +22,7 @@ export default function Home() {
         alt="Khairi SLAMA"
         width={705}
         height={969}
+        home
       />
       <Skills />
       <ProjectsOverview />
