@@ -5,9 +5,13 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "*",
-        allow: ["/"],
+        allow: ["/", "/en"],
+      },
+      {
+        userAgent: "*",
+        disallow: ["/fr", "/de", "/nl", "/lu"], // Interdire l'indexation des autres langues (à ajuster si nécessaire)
       },
     ],
-    sitemap: "https://khairislama.com/sitemap.xml",
+    sitemap: "https://www.khairislama.com/sitemap.xml",
   };
 }
