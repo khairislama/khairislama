@@ -40,8 +40,8 @@ export default async function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Khairi Slama",
-    url: "https://khairislama.com",
-    image: "https://khairislama.com/opengraph-image.png",
+    url: "https://www.khairislama.com",
+    image: "https://www.khairislama.com/opengraph-image.png",
     sameAs: [
       "https://www.linkedin.com/in/khairislama",
       "https://www.instagram.com/khairislama/",
