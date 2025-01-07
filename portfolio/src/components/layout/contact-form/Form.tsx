@@ -12,27 +12,26 @@ export default function ContactForm() {
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState("");
   const { toast } = useToast();
-  const router = useRouter()
+  const router = useRouter();
 
   const handleSubmit = (formData: FormData) => {
     startTransition(async () => {
       const result = await handleContact(formData);
 
       if (result.success) {
-        setError("")
+        setError("");
         toast({
           title: `Hi  ${result.name}!`,
           description: `Thank you for contacting us. We will get back to you soon enough`,
           className: "bg-gradient-to-r from-background to-primary",
-        })
-        router.push('/')        
+        });
+        router.push("/");
       } else {
         toast({
           title: "Oops!",
           description:
             "An error occured during the process, please try again later.",
-          className:
-            "bg-gradient-to-r from-background to-destructive",
+          className: "bg-gradient-to-r from-background to-destructive",
         });
         setError("Failed to submit the form");
       }
@@ -40,7 +39,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form action={handleSubmit} >
+    <form action={handleSubmit}>
       <div className="mb-6">
         <label
           htmlFor="name"
