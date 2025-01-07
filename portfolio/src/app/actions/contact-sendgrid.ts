@@ -1,6 +1,9 @@
 "use server";
 
-import nodemailer from "nodemailer";
+import sgMail from "@sendgrid/mail";
+
+// Initialize SendGrid with API key
+sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 
 export async function handleContact(formData: FormData) {
   const name = formData.get("name") as string;
@@ -11,21 +14,11 @@ export async function handleContact(formData: FormData) {
     return { success: false, error: "All fields are required." };
   }
 
-  // Configure Nodemailer
-  const transporter = nodemailer.createTransport({
-    host: process.env.SMTP_HOST, // Use your email provider's SMTP server (e.g., smtp.gmail.com, smtp.office365.com)
-    port: Number(process.env.SMTP_PORT), // Common SMTP port
-    secure: true, // Use TLS (false for 587, true for 465)
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  });
-
   // Construct the email message
-  const mailOptions = {
-    from: "contact@khairislama.com", // Your email (sender)
-    to: "contact@khairislama.com", // Your email (receiver)
+  const msg = {
+    to: "contact@khairislama.com",
+    from: "contact@khairislama.com",
+    replyTo: email, // The user's email entered in the contact form
     subject: `New Contact Form Submission from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\nMessage: ${message}`,
     html: `
@@ -36,10 +29,10 @@ export async function handleContact(formData: FormData) {
   };
 
   try {
-    await transporter.sendMail(mailOptions);
+    await sgMail.send(msg);
     return { success: true, name };
   } catch (error) {
-    console.error("Nodemailer Error:", error);
+    console.error("SendGrid Error:", error);
     return { success: false, error: "Failed to send email." };
   }
 }
