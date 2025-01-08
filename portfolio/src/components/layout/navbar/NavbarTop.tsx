@@ -20,7 +20,7 @@ export default function NavbarTop() {
         <span className="cursor-default">+ 216 54 00 73 87</span>
         <Link
           aria-label="Download CV"
-          href="CV-nov-2024-anglais.pdf"
+          href="/CV-nov-2024-anglais.pdf"
           className="cursor-pointer"
           download={true}
         >
