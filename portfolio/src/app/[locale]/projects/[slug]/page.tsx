@@ -1,3 +1,4 @@
+import { use } from "react";
 import NotFound from "@/app/not-found";
 import {
   PageHero,
@@ -9,11 +10,12 @@ import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 
 // Dynamic metadata generation based on the project slug
-export function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Metadata {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+): Promise<Metadata> {
+  const params = await props.params;
   const { slug } = params;
   const project = PROJECTS.find((p) => p.slug === slug);
 
@@ -46,11 +48,12 @@ export function generateMetadata({
   };
 }
 
-export default function SingleProjectPage({
-  params,
-}: {
-  params: { slug: string };
-}) {
+export default function SingleProjectPage(
+  props: {
+    params: Promise<{ slug: string }>;
+  }
+) {
+  const params = use(props.params);
   const { slug } = params;
   const translations = useTranslations(`Project-${slug}`);
 

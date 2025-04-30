@@ -8,8 +8,19 @@ import {
 } from "@/components/layout";
 import Services from "@/components/layout/services";
 import { useTranslations } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { use } from "react";
 
-export default function Home() {
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export default function Home({ params }: Props) {
+  const { locale } = use(params);
+
+  // Enable static rendering
+  setRequestLocale(locale);
+
   const translations = useTranslations("");
   return (
     <main className="w-full overflow-hidden">

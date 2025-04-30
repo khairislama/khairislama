@@ -1,18 +1,11 @@
 import { useTranslations } from "next-intl";
 import InfoOneProject from "./Info";
 import { IProject } from "@/lib/Projects";
-import dynamic from "next/dynamic";
-import { Skeleton } from "@/components/ui/skeleton";
+import TagsOneProject from "./Tags";
 
 function StoryOneProject({ project }: { project: IProject }) {
   const translations = useTranslations(`Projects`);
   const projectTranslations = useTranslations(`Project-${project.slug}`);
-  
-  const TagsOneProject = dynamic(() => import('./Tags'), 
-  { loading: () => 
-    <Skeleton className="w-full max-w-3xl mx-auto my-10 h-10 bg-foreground flex items-center justify-center rounded-full" />
-     , ssr: false 
-  });
 
   return (
     <section aria-labelledby="project-story" className="w-full my-12">

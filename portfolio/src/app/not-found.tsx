@@ -1,14 +1,17 @@
-import Link from "next/link";
+"use client";
 
-export default function NotFound() {
+import Error from "next/error";
+
+// This page renders when a route like `/unknown.txt` is requested.
+// In this case, the layout at `app/[locale]/layout.tsx` receives
+// an invalid value as the `[locale]` param and calls `notFound()`.
+
+export default function GlobalNotFound() {
   return (
-    <div className="flex flex-col items-center justify-center w-full bg-background gap-4 h-screen">
-      <h1 className="font-semibold text-7xl">404</h1>
-      <p className="font-semibold text-foreground/70 text-2xl">
-        {" "}
-        Please try returning home
-      </p>
-      <Link href="/">Return home</Link>
-    </div>
+    <html lang="en">
+      <body>
+        <Error statusCode={404} />;
+      </body>
+    </html>
   );
 }

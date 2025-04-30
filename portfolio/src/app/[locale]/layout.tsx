@@ -2,10 +2,22 @@ import type { Metadata } from "next";
 import { Footer, Navbar } from "@/components/layout";
 import { Rubik, Syne } from "next/font/google";
 import HireMe from "@/components/HireMe";
-import { getMessages } from "next-intl/server";
+import {
+  getMessages,
+  getTranslations,
+  setRequestLocale,
+} from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
+import { Locale, routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
+import Head from "next/head";
+
+type Props = {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+};
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -13,27 +25,69 @@ const rubik = Rubik({
 });
 const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 
-export const metadata: Metadata = {
-  title: {
-    default: "Portfolio - Khairi Slama | Full-Stack Engineer",
-    template: "%s - Khairi Slama | Full-Stack Engineer",
-  },
-  description:
-    "Khairi Slama's portfolio showcases advanced web development with a focus on performance, security, and 3D web. Available for freelance and software engineering roles in Tunisia, Luxembourg, and France.",
-  keywords:
-    "Khairi Slama, Slama Khairi, Full-Stack Engineer, Web Developer, Portfolio, Next.js Developer, Tailwind CSS, Freelance Developer, Coding, Tunisia, Modern Portfolio, Performance Web, SEO Optimized, 3D Web Developer, Engineer, Coding Portfolio, Tunisian Engineer, Freelance Web Developer, Backend Security",
-  openGraph: {
-    images: [{ url: "/opengraph-image.png" }],
-  },
-};
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export async function generateMetadata(props: Omit<Props, "children">) {
+  const { locale } = await props.params;
+
+  // const t = await getTranslations({ locale, namespace: "home-Metadata" });
+
+  return {
+    title: {
+      default: "Portfolio - Khairi Slama | Full-Stack Engineer",
+      template: "%s - Khairi Slama | Full-Stack Engineer",
+    },
+    description:
+      "Khairi Slama's portfolio showcases advanced web development with a focus on performance, security, and 3D web. Available for freelance and software engineering roles in Tunisia, Luxembourg, and France.",
+    keywords:
+      "Khairi Slama, Slama Khairi, Full-Stack Engineer, Web Developer, Portfolio, Next.js Developer, Tailwind CSS, Freelance Developer, Coding, Tunisia, Modern Portfolio, Performance Web, SEO Optimized, 3D Web Developer, Engineer, Coding Portfolio, Tunisian Engineer, Freelance Web Developer, Backend Security",
+    openGraph: {
+      images: [{ url: "/opengraph-image.png" }],
+    },
+    // openGraph: {
+    //   type: "website",
+    //   url: "https://khairislama.com",
+    //   title: t("ogTitle"),
+    //   description: t("ogDescription"),
+    //   images: [
+    //     {
+    //       url: "/logo/fab-619-logo.png",
+    //       width: 1200,
+    //       height: 630,
+    //       alt: t("ogTitle"),
+    //     },
+    //   ],
+    // },
+    // twitter: {
+    //   handle: "@khairislama",
+    //   site: "@khairislama",
+    //   cardType: "summary_large_image",
+    //   image: "/logo/fab-619-logo.png",
+    //   title: t("twitterTitle"),
+    //   description: t("twitterDescription"),
+    //   creator: "@khairislama",
+    // },
+  };
+}
 
 export default async function RootLayout({
   children,
-  params: { locale },
-}: Readonly<{
-  children: React.ReactNode;
-  params: { locale: string };
-}>) {
+  params,
+}: Readonly<Props>) {
+  // Ensure that the incoming `locale` is valid
+  const { locale } = await params;
+
+  if (!routing.locales.includes(locale as Locale)) {
+    notFound();
+  }
+
+  // Enable static rendering
+  setRequestLocale(locale);
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
   const messages = await getMessages();
 
   const structuredData = {
@@ -77,15 +131,15 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} suppressHydrationWarning>
-      <head>
+      <Head>
         {/* JSON-LD structured data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-      </head>
+      </Head>
       <body
-        className={`${rubik.variable} ${syne.variable} antialiased bg-background text-foreground/70`}
+        className={`${rubik.variable} ${syne.variable} antialiased bg-background text-foreground/70 debug-screens`}
       >
         <NextIntlClientProvider messages={messages}>
           <Navbar />
