@@ -8,13 +8,12 @@ import {
 import { PROJECTS } from "@/lib/Projects";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
+import { Locale } from "@/i18n/routing";
 
 // Dynamic metadata generation based on the project slug
-export async function generateMetadata(
-  props: {
-    params: Promise<{ slug: string }>;
-  }
-): Promise<Metadata> {
+export async function generateMetadata(props: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
   const params = await props.params;
   const { slug } = params;
   const project = PROJECTS.find((p) => p.slug === slug);
@@ -48,11 +47,9 @@ export async function generateMetadata(
   };
 }
 
-export default function SingleProjectPage(
-  props: {
-    params: Promise<{ slug: string }>;
-  }
-) {
+export default function SingleProjectPage(props: {
+  params: Promise<{ slug: string }>;
+}) {
   const params = use(props.params);
   const { slug } = params;
   const translations = useTranslations(`Project-${slug}`);
@@ -87,5 +84,17 @@ export default function SingleProjectPage(
         nextProjectSlug={nextProjectSlug}
       />
     </main>
+  );
+}
+
+export function generateStaticParams() {
+  const locales: Locale[] = ["en", "fr", "de", "lu", "nl"]; // Your supported locales
+
+  // Generate params for each locale and project slug combination
+  return locales.flatMap((locale) =>
+    PROJECTS.map((project) => ({
+      locale,
+      projectSlug: project.slug,
+    }))
   );
 }

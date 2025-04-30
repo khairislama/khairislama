@@ -4,7 +4,6 @@ import NavBurger from "./NavBurger";
 import Navigation from "./Navigation";
 import SocialIcons from "./SocialIcons";
 import { MoonIcon } from "@/components/MoonIcon";
-import dynamic from "next/dynamic";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Suspense } from "react";
 import Avatar from "./Avatar";

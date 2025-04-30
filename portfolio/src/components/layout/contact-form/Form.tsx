@@ -1,17 +1,16 @@
 "use client";
 
 import { useState, useTransition } from "react";
-import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { handleContact } from "@/app/actions/contact";
 import { useRouter } from "next/navigation";
+import { toast } from "sonner";
 
 export default function ContactForm() {
   const [isPending, startTransition] = useTransition();
   const [error, setError] = useState("");
-  const { toast } = useToast();
   const router = useRouter();
 
   const handleSubmit = (formData: FormData) => {
@@ -20,15 +19,13 @@ export default function ContactForm() {
 
       if (result.success) {
         setError("");
-        toast({
-          title: `Hi  ${result.name}!`,
+        toast(`Hi  ${result.name}!`, {
           description: `Thank you for contacting us. We will get back to you soon enough`,
           className: "bg-gradient-to-r from-background to-primary",
         });
         router.push("/");
       } else {
-        toast({
-          title: "Oops!",
+        toast("Oops!", {
           description:
             "An error occured during the process, please try again later.",
           className: "bg-gradient-to-r from-background to-destructive",

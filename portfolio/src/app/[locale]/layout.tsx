@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Footer, Navbar } from "@/components/layout";
 import { Rubik, Syne } from "next/font/google";
 import HireMe from "@/components/HireMe";
@@ -9,10 +8,10 @@ import {
 } from "next-intl/server";
 import { NextIntlClientProvider } from "next-intl";
 import "./globals.css";
-import { Toaster } from "@/components/ui/toaster";
 import { Locale, routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import Head from "next/head";
+import { Toaster } from "@/components/ui/sonner";
 
 type Props = {
   children: React.ReactNode;
@@ -32,17 +31,18 @@ export function generateStaticParams() {
 export async function generateMetadata(props: Omit<Props, "children">) {
   const { locale } = await props.params;
 
-  // const t = await getTranslations({ locale, namespace: "home-Metadata" });
+  const translate = await getTranslations({
+    locale,
+    namespace: "Home-Metadata",
+  });
 
   return {
     title: {
-      default: "Portfolio - Khairi Slama | Full-Stack Engineer",
-      template: "%s - Khairi Slama | Full-Stack Engineer",
+      default: translate("title.default"),
+      template: "%s - Khairi Slama | " + translate("title.template"),
     },
-    description:
-      "Khairi Slama's portfolio showcases advanced web development with a focus on performance, security, and 3D web. Available for freelance and software engineering roles in Tunisia, Luxembourg, and France.",
-    keywords:
-      "Khairi Slama, Slama Khairi, Full-Stack Engineer, Web Developer, Portfolio, Next.js Developer, Tailwind CSS, Freelance Developer, Coding, Tunisia, Modern Portfolio, Performance Web, SEO Optimized, 3D Web Developer, Engineer, Coding Portfolio, Tunisian Engineer, Freelance Web Developer, Backend Security",
+    description: translate("description"),
+    keywords: translate("keywords"),
     openGraph: {
       images: [{ url: "/opengraph-image.png" }],
     },

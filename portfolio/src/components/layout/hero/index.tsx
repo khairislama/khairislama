@@ -2,7 +2,6 @@ import React, { Suspense } from "react";
 import Picture from "./Picture";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import dynamic from "next/dynamic";
 import AnimatedText from "@/components/AnimatedText";
 
 function Hero() {
