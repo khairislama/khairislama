@@ -1,13 +1,17 @@
-import React from "react";
+import React, { Suspense } from "react";
 import Picture from "./Picture";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import dynamic from "next/dynamic";
+import AnimatedText from "@/components/AnimatedText";
 
 function Hero() {
   const translations = useTranslations("Hero");
-  const AnimatedText = dynamic(() => import('@/components/AnimatedText'), 
-  { loading: () => <h1 className="h-32 w-full text-2xl text-center mt-10 animate-pulse" >Loading...</h1> , ssr: false });
+
+  const Loading = () => (
+    <h1 className="h-32 w-full text-2xl text-center mt-10 animate-pulse">
+      Loading...
+    </h1>
+  );
   return (
     <section aria-labelledby="welcome" className="relative w-full font-syne">
       <div className="flex flex-col items-center justify-between max-w-3xl mx-auto mt-10 md:mt-14 lg:mt-16 pb-16 z-20">
@@ -16,10 +20,12 @@ function Hero() {
           {translations("welcome")}{" "}
         </h1>
         <Picture />
-        <AnimatedText
-          text={translations("title")}
-          className="text-center text-5xl sm:text-6xl lg:text-7xl uppercase font-bold text-foreground/70 mt-10 text-balance h-32"
-        />
+        <Suspense fallback={<Loading />}>
+          <AnimatedText
+            text={translations("title")}
+            className="text-center text-5xl sm:text-6xl lg:text-7xl uppercase font-bold text-foreground/70 mt-10 text-balance h-32"
+          />
+        </Suspense>
       </div>
       {/* Eclipse SVG positioned under h2 */}
       <Image

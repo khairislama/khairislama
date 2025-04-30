@@ -1,14 +1,22 @@
 import type { Config } from "tailwindcss";
 
-const config: Config = {
+export default {
   darkMode: ["class"],
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-  ],
+  content: ["./components/**/*.{ts,tsx}", "./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      container: {
+        center: true,
+        padding: "3rem",
+        screens: {
+          DEFAULT: "100%",
+          sm: "640px",
+          md: "768px",
+          lg: "1024px",
+          xl: "1280px",
+          "2xl": "1500px",
+        },
+      },
       colors: {
         background: {
           DEFAULT: "hsl(var(--background))",
@@ -86,11 +94,16 @@ const config: Config = {
         rubik: ["var(--font-rubik)", "sans-serif"],
         syne: ["var(--font-syne)", "sans-serif"],
       },
+      screens: {
+        "2k": "1920px", // Full HD (common desktop)
+        "2.5k": "2560px", // QHD / WQHD (1440p)
+        "4k": "3840px", // UHD
+        "5k": "5120px", // iMac 27", ultra-wide monitors
+      },
     },
   },
   plugins: [
     require("tailwindcss-animate"),
     require("tailwindcss-debug-screens"),
   ],
-};
-export default config;
+} satisfies Config;

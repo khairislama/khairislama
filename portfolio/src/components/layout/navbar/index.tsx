@@ -4,15 +4,11 @@ import NavBurger from "./NavBurger";
 import Navigation from "./Navigation";
 import SocialIcons from "./SocialIcons";
 import { MoonIcon } from "@/components/MoonIcon";
-import dynamic from "next/dynamic";
 import { Skeleton } from "@/components/ui/skeleton";
+import { Suspense } from "react";
+import Avatar from "./Avatar";
 
 function Navbar() {
-  const Avatar = dynamic(() => import('./Avatar'), 
-  { loading: () => <div className="absolute left-[50%] translate-x-[-50%] top-0" >
-    <Skeleton className="w-10 h-10 bg-foreground flex items-center justify-center rounded-full" />
-    </div> , ssr: false 
-  });
   return (
     <header className="sticky top-0 z-50 w-full drop-shadow-xl bg-background/70 hover:bg-background backdrop-blur-sm focus-within:bg-background transition-all ease-in-out duration-300 font-rubik">
       <NavbarTop />
@@ -26,7 +22,9 @@ function Navbar() {
             </div>
           </div>
         </div>
-        <Avatar />
+        <Suspense fallback={<AvatarFallback />}>
+          <Avatar />
+        </Suspense>
         <NavBurger />
         <Image
           src="/icons/social/github.svg"
@@ -39,5 +37,11 @@ function Navbar() {
     </header>
   );
 }
+
+const AvatarFallback = () => (
+  <div className="absolute left-[50%] translate-x-[-50%] top-0">
+    <Skeleton className="w-10 h-10 bg-foreground flex items-center justify-center rounded-full" />
+  </div>
+);
 
 export default Navbar;

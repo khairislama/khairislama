@@ -1,4 +1,12 @@
 {
+  "Home-Metadata": {
+    "title": {
+      "default": "Portfolio - Khairi Slama | Full-Stack Engineer",
+      "template": "Full-Stack Engineer"
+    },
+    "description": "Khairi Slama's portfolio showcases advanced web development with a focus on performance, security, and 3D web. Available for freelance and software engineering roles in Tunisia, Luxembourg, and France.",
+    "keywords": "Khairi Slama, Slama Khairi, Full-Stack Engineer, Web Developer, Portfolio, Next.js Developer, Tailwind CSS, Freelance Developer, Coding, Tunisia, Modern Portfolio, Performance Web, SEO Optimized, 3D Web Developer, Engineer, Coding Portfolio, Tunisian Engineer, Freelance Web Developer, Backend Security"
+  },
   "Navbar": {
     "cv": "CV downloaden",
     "home": "Home",
