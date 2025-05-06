@@ -7,10 +7,10 @@
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-- 🏭 I’m currently working with Hutchinson Sousse group in a Nest.JS project.
-- 🌱 I’m currently developing with Next.js for my side projects.
-- 🔭 I’m looking for prospects for my future plans.
-- 💬 Ask me about your deep thoughts and we'll have a long conversation.
+- 🚀 Founder of my new company **Kaidos**, building clean, fast, secure web products.
+- 🌱 I’m currently developing full-stack apps using **Next.js** & **NestJS**.
+- 🔭 Always looking for cool tech and strong collaborations.
+- 💬 Ask me about code, startup life, or coffee ☕.
 - 📫 How to reach me: khairi.slama.1996.br@gmail.com / +216 54 007 387 / Fb: khairi.slama / Linkedin: khairi-slama-808514187
 - 🩵 I'd rather dance in the rain than cry in the storm.
 
@@ -25,7 +25,7 @@
 <p align="left">
 <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nextjs/nextjs-original.svg" alt="nextjs" width="40" height="40"/> </a>
 <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png" alt="react" width="40" height="40"/> </a>
+<a href="https://nestjs.com/" target="_blank" rel="noreferrer"> <img src="https://static-00.iconduck.com/assets.00/nestjs-icon-2048x2040-3rrvcej8.png" alt="nestjs" width="40" height="40"/> </a>
 <a href="https://typeorm.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/typeorm/typeorm/master/resources/logo_big.png" alt="typeorm" width="40" height="40"/> </a>
 <a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a>
 <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a>
