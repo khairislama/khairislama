@@ -7,8 +7,7 @@
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-- 🚀 Founder of my new company **Kaidos**, building clean, fast, secure web products.
-- 🌱 I’m currently developing full-stack apps using **Next.js** & **NestJS**.
+- 🌱 I’m currently developing full-stack apps using **Next.js** & secured **NestJS** APIs.
 - 🔭 Always looking for cool tech and strong collaborations.
 - 💬 Ask me about code, startup life, or coffee ☕.
 - 📫 How to reach me: khairi.slama.1996.br@gmail.com / +216 54 007 387 / Fb: khairi.slama / Linkedin: khairi-slama-808514187
