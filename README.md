@@ -37,6 +37,7 @@ I architect the digital future of organizations by designing connected ecosystem
   </a>
 </p>
 
+<p align="center"><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=khairislama&" alt="khairislama" width="70%" /></p>
 ---
 
 ### 🤝 Connect With Me
