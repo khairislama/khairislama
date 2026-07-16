@@ -42,10 +42,12 @@ I architect the digital future of organizations by designing connected ecosystem
 
 ### 🤝 Connect With Me
 
+
 *   **Email:** khairi.slama.1996.br@gmail.com
 *   **LinkedIn:** [linkedin.com/in/khairi-slama](https://linkedin.com/in/khairi-slama)
 *   **Facebook:** [fb.com/khairi.slama](https://fb.com/khairi.slama)
 *   **Instagram:** [@khairislama](https://instagram.com/khairislama)
+
 
 <p align="left">
   <a href="https://linkedin.com/in/khairi-slama" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" /></a>
